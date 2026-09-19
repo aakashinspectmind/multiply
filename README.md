@@ -73,6 +73,10 @@ npm run causes:index             # data/causes/index.ts, from the files in data/
 npm run cost-base                # data/cost-base.ts, from the World Bank API (207 countries)
 ```
 
+`causes:index` also runs as `prebuild`, so a cause file cannot ship without being wired into the
+directory. It was possible to forget, and it happened, and then a researched ministry sat in the
+repo invisible to every visitor.
+
 ## Layout
 
 | Path                        | What                                                                                        |

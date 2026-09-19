@@ -1,4 +1,5 @@
 import type { Cause } from '@/lib/types';
+import { abwe } from './abwe';
 import { africaNewLife } from './africa-new-life';
 import { africanMissionHealthcare } from './african-mission-healthcare';
 import { amazimaMinistries } from './amazima-ministries';
@@ -64,6 +65,7 @@ import { reachingSoulsInternational } from './reaching-souls-international';
 import { samaritansPurse } from './samaritans-purse';
 import { sat7 } from './sat-7';
 import { seedEffect } from './seed-effect';
+import { serge } from './serge';
 import { shepherdsGlobalClassroom } from './shepherds-global-classroom';
 import { sinapis } from './sinapis';
 import { theSeedCompany } from './the-seed-company';
@@ -95,6 +97,7 @@ import { zoeInternational } from './zoe-international';
  * never by position.
  */
 export const causes: Cause[] = [
+  abwe,
   africaNewLife,
   africanMissionHealthcare,
   amazimaMinistries,
@@ -160,6 +163,7 @@ export const causes: Cause[] = [
   samaritansPurse,
   sat7,
   seedEffect,
+  serge,
   shepherdsGlobalClassroom,
   sinapis,
   theSeedCompany,

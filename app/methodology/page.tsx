@@ -75,9 +75,20 @@ export default function MethodologyPage() {
           turn a marketing number into a denominator and hand it back to you as arithmetic.
         </p>
         <p className="mt-4 text-lg text-gray-800">
+          Where a ministry advertises a price and we can divide out our own, we print both — but
+          only when the two are about the same thing. Asia Harvest advertises $3.00 per Bible
+          printed, and what we can divide out is $833 per evangelist supported for a year. Both are
+          true, and neither is a check on the other, so setting them side by side as though one
+          tested the other would accuse a ministry of an overstatement it never made. When the units
+          differ the page says so in those words instead.
+        </p>
+        <p className="mt-4 text-lg text-gray-800">
           Cost per outcome is also not comparable across different kinds of work. A Bible placed and
           a spinal surgery are not competing purchases, and ranking them against each other would be
-          arithmetic doing the work of discernment.
+          arithmetic doing the work of discernment. That is why the board on the front page shows
+          the furthest-going ministry within each kind of work rather than one winner overall: a
+          single list would be topped by whichever unit is cheapest to count, every time, at every
+          amount.
         </p>
       </section>
 
@@ -93,13 +104,14 @@ export default function MethodologyPage() {
         </p>
         <p className="mt-3 text-lg text-gray-800">
           The one number we can source everywhere is the cost base: national income per person, from
-          the World Bank, against the United States. It is 148 times lower in Malawi and 79 times
-          lower in Uganda. That is a real and enormous difference in what a wage, a bag of cement or
-          a nurse’s day costs — and it is the honest core of “$1 goes further here.”
+          the World Bank, against the United States. It is 370 times lower in Burundi, 148 times
+          lower in Malawi and 79 times lower in Uganda. That is a real and enormous difference in
+          what a wage, a bag of cement or a nurse’s day costs — and it is the honest core of “$1
+          goes further here.”
         </p>
         <p className="mt-3 text-lg text-gray-800">
           It is also not an efficiency score. A cheap country is not the same as a good ministry,
-          and a 148× cost base does not mean your gift accomplishes 148 times as much. Poor
+          and a 370× cost base does not mean your gift accomplishes 370 times as much. Poor
           countries are harder places to work: logistics cost more, equipment is imported at a
           premium, and oversight is thinner. The ratio tells you why the ceiling is higher. Whether
           a particular ministry reaches it is what the rest of its page is about.

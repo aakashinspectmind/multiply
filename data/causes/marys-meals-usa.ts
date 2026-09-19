@@ -5,7 +5,7 @@ export const marysMealsUsa: Cause = {
   name: "Mary's Meals USA",
   tagline:
     'Feeds more than three million children a daily school meal, and publishes what a year of it actually cost — in pounds, not the dollars you give.',
-  category: 'children',
+  category: 'food',
   countries: ['Malawi', 'Zambia', 'Zimbabwe', 'Ethiopia', 'Kenya', 'Haiti', 'Mozambique'],
   whatTheyDo:
     'One meal, every school day, in the place of education. Mary’s Meals serves a daily meal at school so that the meal is a reason to attend rather than a reason to stay home, and the school roll is the thing it counts. In 2025 the programme reached an enrolment of 3,151,977 children in over 6,400 schools across 16 countries, the largest of them Malawi. Mary’s Meals USA is the American fundraising affiliate: it raises money and grants almost all of it — $21,105,000 in 2025 — to Mary’s Meals International in Scotland, which runs the feeding programme.',
@@ -17,13 +17,11 @@ export const marysMealsUsa: Cause = {
     scriptures: [
       {
         ref: 'Matthew 25:35',
-        text:
-          'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
+        text: 'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
       },
       {
         ref: 'Isaiah 58:10',
-        text:
-          'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
+        text: 'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
       },
       {
         ref: 'Proverbs 22:9',
@@ -72,28 +70,23 @@ export const marysMealsUsa: Cause = {
   scores: {
     gospelCentrality: {
       value: 1,
-      note:
-        'A Christian origin, honestly stated, and nothing more than that. The founding faith is described in the past tense, the international body states that the mission belongs to people of all faiths and none, there is no statement of faith, and no part of the programme involves teaching or proclamation. Scored 1 rather than 0 because the ministry does name a Christian spirituality as what shapes it, which is more than “faith-based”.',
+      note: 'A Christian origin, honestly stated, and nothing more than that. The founding faith is described in the past tense, the international body states that the mission belongs to people of all faiths and none, there is no statement of faith, and no part of the programme involves teaching or proclamation. Scored 1 rather than 0 because the ministry does name a Christian spirituality as what shapes it, which is more than “faith-based”.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The programme is delivered inside 6,400 existing local schools in 16 countries and the ministry describes itself as working “alongside communities” to serve the meals, which is where almost all of the labour is. Against that, this is a two-tier northern structure: a Scottish charity holding the programme and an American affiliate raising the money, and we found no disclosure of national board representation in either.',
+      note: 'The programme is delivered inside 6,400 existing local schools in 16 countries and the ministry describes itself as working “alongside communities” to serve the meals, which is where almost all of the labour is. Against that, this is a two-tier northern structure: a Scottish charity holding the programme and an American affiliate raising the money, and we found no disclosure of national board representation in either.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Both entities publish. Mary’s Meals USA posts audited financial statements showing exactly how much was granted onward, and Mary’s Meals International publishes a full trustees’ annual report with a five-year KPI table that includes its own cost per child and charitable spend ratio. Very few ministries publish a unit cost trend and then report a year in which it rose.',
+      note: 'Both entities publish. Mary’s Meals USA posts audited financial statements showing exactly how much was granted onward, and Mary’s Meals International publishes a full trustees’ annual report with a five-year KPI table that includes its own cost per child and charitable spend ratio. Very few ministries publish a unit cost trend and then report a year in which it rose.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The count is precise and it moves — enrolment of 3,151,977 in 2025 against 2,594,868 in 2024, with a fall in 2023 reported rather than smoothed over. But enrolment is not meals eaten: a child on the roll of a school that serves meals is counted whether or not she attended, and no attendance or meals-served figure is published alongside it.',
+      note: 'The count is precise and it moves — enrolment of 3,151,977 in 2025 against 2,594,868 in 2024, with a fall in 2023 reported rather than smoothed over. But enrolment is not meals eaten: a child on the roll of a school that serves meals is counted whether or not she attended, and no attendance or meals-served figure is published alongside it.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Mary’s Meals International publishes an actual average cost per child for five consecutive years and compares it to its own public commitment, which is better than almost anyone in this directory. Marked down to 2 because that figure is in sterling and belongs to a different legal entity from the one a US donor gives to, and because the American price of $25.20 is published with no exchange rate and no reconciliation to it.',
+      note: 'Mary’s Meals International publishes an actual average cost per child for five consecutive years and compares it to its own public commitment, which is better than almost anyone in this directory. Marked down to 2 because that figure is in sterling and belongs to a different legal entity from the one a US donor gives to, and because the American price of $25.20 is published with no exchange rate and no reconciliation to it.',
     },
   },
   notVerified: [
@@ -123,8 +116,7 @@ export const marysMealsUsa: Cause = {
       publisher: "Mary's Meals USA",
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the $25.20 school-year price, the “more than 3 million children every school day” claim, the per-country children-served figures, and the statement about the Catholic faith of the founder.',
+      note: 'Source of the $25.20 school-year price, the “more than 3 million children every school day” claim, the per-country children-served figures, and the statement about the Catholic faith of the founder.',
     },
     {
       id: 'mmusa-reports',
@@ -143,8 +135,7 @@ export const marysMealsUsa: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Program services $22,557,168, of which $21,105,000 is a grant to Mary’s Meals International; management and general $644,694; fundraising $418,004; total expenses $23,619,866.',
+      note: 'Program services $22,557,168, of which $21,105,000 is a grant to Mary’s Meals International; management and general $644,694; fundraising $418,004; total expenses $23,619,866.',
     },
     {
       id: 'mmusa-impact-25',
@@ -163,8 +154,7 @@ export const marysMealsUsa: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the 3,151,977 enrolment, the £50.4m cost of the school feeding programme against £56.0m of total expenditure, the five-year cost-per-child KPI table, and the statement that the mission belongs to people of all faiths and none. All financial figures in this document are in pounds sterling.',
+      note: 'Source of the 3,151,977 enrolment, the £50.4m cost of the school feeding programme against £56.0m of total expenditure, the five-year cost-per-child KPI table, and the statement that the mission belongs to people of all faiths and none. All financial figures in this document are in pounds sterling.',
     },
   ],
 };

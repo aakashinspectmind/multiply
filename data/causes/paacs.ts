@@ -23,7 +23,12 @@ export const paacs: Cause = {
   ],
   whatTheyDo:
     'PAACS runs accredited surgical residencies inside existing Christian mission hospitals in Africa — general surgery, paediatric surgery, orthopaedics, neurosurgery, head and neck, obstetrics and gynaecology. Residents are African doctors who train for five to six years where they will practise, taught largely by visiting and resident missionary surgeons, and who move through a formal discipleship curriculum alongside the surgical one. As of the year ending June 2025 it had 28 programmes at 21 mission hospitals in 12 countries, 186 residents and fellows in training, and 187 graduates.',
-  accreditations: [{ label: 'ECFA member (stated on the site, no badge or profile link)', sourceId: 'paacs-financials' }],
+  accreditations: [
+    {
+      label: 'ECFA member (stated on the site, no badge or profile link)',
+      sourceId: 'paacs-financials',
+    },
+  ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
     mandate:
@@ -31,20 +36,21 @@ export const paacs: Cause = {
     scriptures: [
       {
         ref: '2 Timothy 2:2',
-        text:
-          'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
+        text: 'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
       },
       {
         ref: 'Matthew 9:37–38',
-        text:
-          'Then he said to his disciples, “The harvest is plentiful, but the labourers are few; therefore pray earnestly to the Lord of the harvest to send out labourers into his harvest.”',
+        text: 'Then he said to his disciples, “The harvest is plentiful, but the labourers are few; therefore pray earnestly to the Lord of the harvest to send out labourers into his harvest.”',
       },
       {
         ref: 'Luke 10:9',
         text: 'Heal the sick in it and say to them, “The kingdom of God has come near to you.”',
       },
     ],
-    doctrine: { label: 'Ten-clause statement of faith', sourceId: 'paacs-faith' },
+    doctrine: {
+      label: 'Ten-clause statement of faith',
+      sourceId: 'paacs-faith',
+    },
     concerns: [
       'PAACS requires residents to "Be a sincere follower of Jesus Christ as evidenced by your words, your actions and your lifestyle." That is a coherent position for a discipleship programme and it also means a Muslim or animist surgeon in Niger, where the need is as acute, cannot train here. A donor should decide deliberately whether they are funding surgical capacity or Christian surgical capacity; PAACS is unambiguously the second.',
       'The Form 990 reports 24 foreign grants with every recipient name left blank, all described as "GENERAL SUPPORT", and $182,233 of them unitemised. The grantees are mission hospitals PAACS names freely elsewhere on its website, so this is almost certainly a filing habit rather than concealment — but as filed, the money leaves the return untraceable.',
@@ -79,8 +85,7 @@ export const paacs: Cause = {
       {
         label: 'surgeons who graduated in FY2025',
         count: 31,
-        note:
-          'About $158,000 per graduate, which charges a whole year of training 186 people to the 31 who finished. It is the wrong arithmetic but it is the right order of magnitude for what a completed surgeon costs.',
+        note: 'About $158,000 per graduate, which charges a whole year of training 186 people to the 31 who finished. It is the wrong arithmetic but it is the right order of magnitude for what a completed surgeon costs.',
       },
     ],
   },
@@ -89,6 +94,7 @@ export const paacs: Cause = {
       quote: 'One year of PAACS training and discipleship requires about $25,000.',
       sourceId: 'paacs-resident',
       impliedCostPerOutcome: 25000,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'resident-year',
     },
     {
@@ -105,28 +111,23 @@ export const paacs: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A ten-clause statement of faith, a mission statement that begins with glorifying God, a discipleship curriculum that runs in parallel with the surgical one, and a requirement that residents be followers of Christ. There is no ambiguity here at all.',
+      note: 'A ten-clause statement of faith, a mission statement that begins with glorifying God, a discipleship curriculum that runs in parallel with the surgical one, and a requirement that residents be followers of Christ. There is no ambiguity here at all.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The entire product is African surgical leadership: 186 African residents, 187 African graduates practising in 25 countries, taught inside African hospitals on the condition that they stay. The organisation is American and so is its board, which is the only reason this is not higher.',
+      note: 'The entire product is African surgical leadership: 186 African residents, 187 African graduates practising in 25 countries, taught inside African hospitals on the condition that they stay. The organisation is American and so is its board, which is the only reason this is not higher.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Four years of audited statements and four Form 990s are posted on the site, and the audit’s functional matrix separates donated services from cash, which is what makes this page checkable. Marked down because the ECFA claim is text with no badge or member profile behind it, because Schedule F names no grantee, and because the site’s own impact counters contradict the filings.',
+      note: 'Four years of audited statements and four Form 990s are posted on the site, and the audit’s functional matrix separates donated services from cash, which is what makes this page checkable. Marked down because the ECFA claim is text with no badge or member profile behind it, because Schedule F names no grantee, and because the site’s own impact counters contradict the filings.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Residents, graduates, programmes, hospitals and countries are all counted precisely and the year-on-year progression is coherent. Marked down because the headline "46,500 individuals" is explicitly the ministry’s own estimate rather than a count, and because no graduate-retention figure is published — retention is the one outcome that decides whether the model works.',
+      note: 'Residents, graduates, programmes, hospitals and countries are all counted precisely and the year-on-year progression is coherent. Marked down because the headline "46,500 individuals" is explicitly the ministry’s own estimate rather than a count, and because no graduate-retention figure is published — retention is the one outcome that decides whether the model works.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'PAACS publishes a price for one year of training and our own division of audited programme spending by residents in training comes to $26,342 against their advertised $25,000 — agreement within 5.4%. That is the closest match between a ministry’s marketing figure and its audited arithmetic anywhere in this directory.',
+      note: 'PAACS publishes a price for one year of training and our own division of audited programme spending by residents in training comes to $26,342 against their advertised $25,000 — agreement within 5.4%. That is the closest match between a ministry’s marketing figure and its audited arithmetic anywhere in this directory.',
     },
   },
   notVerified: [
@@ -155,8 +156,7 @@ export const paacs: Cause = {
       publisher: 'PAACS',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Carries an undated "Our Impact This Year" panel whose figures do not match the FY2025 filings.',
+      note: 'Carries an undated "Our Impact This Year" panel whose figures do not match the FY2025 filings.',
     },
     {
       id: 'paacs-purpose',
@@ -218,8 +218,7 @@ export const paacs: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: 'FYE June 2025',
-      note:
-        'Programme services $4,899,695 of $5,825,603 total. The functional matrix shows $2,450,370 of contributed non-financial assets charged entirely to medical training and education services.',
+      note: 'Programme services $4,899,695 of $5,825,603 total. The functional matrix shows $2,450,370 of contributed non-financial assets charged entirely to medical training and education services.',
     },
     {
       id: 'paacs-990-25',
@@ -229,8 +228,7 @@ export const paacs: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: 'FYE June 2025',
-      note:
-        'Part III carries the 186 in training, 51 new starters, 28 programmes and 12 countries; Schedule O adds the 31 graduates and 187 alumni. Part IX line 25 totals $3,410,302, which excludes the donated services in the audit.',
+      note: 'Part III carries the 186 in training, 51 new starters, 28 programmes and 12 countries; Schedule O adds the 31 graduates and 187 alumni. Part IX line 25 totals $3,410,302, which excludes the donated services in the audit.',
     },
     {
       id: 'paacs-propublica',

@@ -18,18 +18,15 @@ export const homeOfHopeMinistries: Cause = {
     scriptures: [
       {
         ref: 'Psalm 68:5–6',
-        text:
-          'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home.',
+        text: 'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home.',
       },
       {
         ref: 'James 1:27',
-        text:
-          'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        text: 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
       },
       {
         ref: 'Leviticus 19:14',
-        text:
-          'You shall not curse the deaf or put a stumbling block before the blind, but you shall fear your God: I am the Lord.',
+        text: 'You shall not curse the deaf or put a stumbling block before the blind, but you shall fear your God: I am the Lord.',
       },
     ],
     concerns: [
@@ -66,6 +63,7 @@ export const homeOfHopeMinistries: Cause = {
       quote: 'The monthly expenses per child at Home of Hope are about $62',
       sourceId: 'hoh-financials',
       impliedCostPerOutcome: 744,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'year of care for a child',
     },
     {
@@ -77,28 +75,23 @@ export const homeOfHopeMinistries: Cause = {
   scores: {
     gospelCentrality: {
       value: 1,
-      note:
-        'The word “Ministries” is in the name and Edith’s account of her call is explicitly about obedience to God. Beyond that there is no statement of faith, no church partnership described and no gospel content in any programme description.',
+      note: 'The word “Ministries” is in the name and Edith’s account of her call is explicitly about obedience to God. Beyond that there is no statement of faith, no church partnership described and no gospel content in any programme description.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The strongest case in this directory. Founded, led and staffed in Jinja by Ugandans, out of one Ugandan mother’s experience of raising a disabled son. The American entity is a volunteer board whose function is to send money.',
+      note: 'The strongest case in this directory. Founded, led and staffed in Jinja by Ugandans, out of one Ugandan mother’s experience of raising a disabled son. The American entity is a volunteer board whose function is to send money.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Form 990-EZ for 2021 and 2024 posted on the site, the IRS determination letter posted, impact reports shared, and a per-child cost published — unusual candour for an organisation this size. Held back by a 2024 filing posted as a scan, no audit since 2018, and no Ugandan financial statements.',
+      note: 'Form 990-EZ for 2021 and 2024 posted on the site, the IRS determination letter posted, impact reports shared, and a per-child cost published — unusual candour for an organisation this size. Held back by a 2024 filing posted as a scan, no audit since 2018, and no Ugandan financial statements.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Programme counts are published but mostly as monthly averages — “up to 8 clients in a month”, “an average of 7 clients” — with no annual totals, and the one cumulative figure has no stated period.',
+      note: 'Programme counts are published but mostly as monthly averages — “up to 8 clients in a month”, “an average of 7 clients” — with no annual totals, and the one cumulative figure has no stated period.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both numbers exist and the ministry’s own $62 a month lands within about 20% of the figure its tax return implies. Marked down because the count is imprecise and comes from a different year than the spending.',
+      note: 'Both numbers exist and the ministry’s own $62 a month lands within about 20% of the figure its tax return implies. Marked down because the count is imprecise and comes from a different year than the spending.',
     },
   },
   notVerified: [

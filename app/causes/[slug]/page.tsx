@@ -98,9 +98,7 @@ export default async function CausePage({
         )}
         <p className="mt-3 text-lg text-gray-800">{cause.whatTheyDo}</p>
         <p className="mt-3 text-base text-gray-700">{cause.countries.join(' · ')}</p>
-        <p className="mt-4 text-base text-gray-800">
-          {VERIFICATION_MEANING[cause.verification]}
-        </p>
+        <p className="mt-4 text-base text-gray-800">{VERIFICATION_MEANING[cause.verification]}</p>
 
         <div className="mt-5 flex flex-wrap items-center gap-4">
           <a

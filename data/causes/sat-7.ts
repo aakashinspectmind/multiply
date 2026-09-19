@@ -25,8 +25,7 @@ export const sat7: Cause = {
     scriptures: [
       {
         ref: 'Romans 10:14',
-        text:
-          'How are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?',
+        text: 'How are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?',
       },
       {
         ref: 'Mark 16:15',
@@ -34,8 +33,7 @@ export const sat7: Cause = {
       },
       {
         ref: 'Matthew 28:20',
-        text:
-          'Teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.',
+        text: 'Teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.',
       },
     ],
     doctrine: { label: 'Statements of Faith', sourceId: 'sat7-about' },
@@ -72,14 +70,12 @@ export const sat7: Cause = {
       {
         label: 'viewers offered spiritual support',
         count: 20700,
-        note:
-          'A narrower response count from the same page, and $1,042 each. SAT-7 does not define what “offered spiritual support” involved or how it differs from a conversation.',
+        note: 'A narrower response count from the same page, and $1,042 each. SAT-7 does not define what “offered spiritual support” involved or how it differs from a conversation.',
       },
       {
         label: 'YouTube video views',
         count: 26200000,
-        note:
-          'Eighty-two cents a view — and included here as a warning, not a recommendation. A view is not a person, is not a conversation, and in many cases is a few seconds of autoplay. This is how quickly a media cost model slides toward a fraction of a cent once the denominator stops describing a human being who did something.',
+        note: 'Eighty-two cents a view — and included here as a warning, not a recommendation. A view is not a person, is not a conversation, and in many cases is a few seconds of autoplay. This is how quickly a media cost model slides toward a fraction of a cent once the denominator stops describing a human being who did something.',
       },
     ],
   },
@@ -106,28 +102,23 @@ export const sat7: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The Nicene Creed and the Lausanne Covenant are both published as statements of faith, alongside a statement on marriage, sexuality and the sanctity of life. The channels exist to make Christ known in a region SAT-7 says is 96% non-Christian, and it does not sell airtime to anyone else. The content mix is broader than preaching — children’s education, literacy, public theology — but the ministry’s identity is unambiguous.',
+      note: 'The Nicene Creed and the Lausanne Covenant are both published as statements of faith, alongside a statement on marriage, sexuality and the sanctity of life. The channels exist to make Christ known in a region SAT-7 says is 96% non-Christian, and it does not sell airtime to anyone else. The content mix is broader than preaching — children’s education, literacy, public theology — but the ministry’s identity is unambiguous.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The strongest case in this batch. The CEO, Rita El-Mounayer, is a Lebanese Christian who came up through the ministry; the studios are in Egypt, Lebanon and Turkey; SAT-7 states that 80% of programming is made by local Christians; and the structure is 14 independent legal entities in which the Western fundraising arms are members, not owners. The 80% figure is SAT-7’s own and we could not check it.',
+      note: 'The strongest case in this batch. The CEO, Rita El-Mounayer, is a Lebanese Christian who came up through the ministry; the studios are in Egypt, Lebanon and Turkey; SAT-7 states that 80% of programming is made by local Christians; and the structure is 14 independent legal entities in which the Western fundraising arms are members, not owners. The 80% figure is SAT-7’s own and we could not check it.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'SAT-7 North America posts audited statements, the global annual report publishes combined figures across all 14 entities with the channel-by-channel split, and KPMG audits the Cyprus entities and reviewed the principles behind the combined summary. Held at 2 because the combined global figures are a summary rather than an audited consolidated statement, the individual entity accounts are only “available on request”, and the largest single line in the US audit is a grant to a related party.',
+      note: 'SAT-7 North America posts audited statements, the global annual report publishes combined figures across all 14 entities with the channel-by-channel split, and KPMG audits the Cyprus entities and reviewed the principles behind the combined summary. Held at 2 because the combined global figures are a summary rather than an audited consolidated statement, the individual entity accounts are only “available on request”, and the largest single line in the US audit is a grant to a related party.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'SAT-7 publishes dated response counts and keeps them separate from platform metrics — conversations and viewers offered support are reported next to views and interactions rather than added to them, which is more discipline than most media ministries show. Marked down because a “conversation” is undefined, one viewer may be counted more than once, and nobody outside SAT-7 has checked the totals.',
+      note: 'SAT-7 publishes dated response counts and keeps them separate from platform metrics — conversations and viewers offered support are reported next to views and interactions rather than added to them, which is more discipline than most media ministries show. Marked down because a “conversation” is undefined, one viewer may be counted more than once, and nobody outside SAT-7 has checked the totals.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves of the division come from the same document and the same year, and the count describes something a person actually did. Marked down because the numerator is total global expenditure against a subset of the audience, and because SAT-7 publishes no per-unit figure of its own to check ours against.',
+      note: 'Both halves of the division come from the same document and the same year, and the count describes something a person actually did. Marked down because the numerator is total global expenditure against a subset of the audience, and because SAT-7 publishes no per-unit figure of its own to check ours against.',
     },
   },
   notVerified: [
@@ -166,8 +157,7 @@ export const sat7: Cause = {
       publisher: 'SAT-7 North America',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Carries the Nicene Creed and Lausanne Covenant as SAT-7’s statements of faith, the 80% local-production and 80% programme-spending claims, the “96% non-Christian” figure for the region, and the statement that SAT-7 does not sell airtime.',
+      note: 'Carries the Nicene Creed and Lausanne Covenant as SAT-7’s statements of faith, the 80% local-production and 80% programme-spending claims, the “96% non-Christian” figure for the region, and the statement that SAT-7 does not sell airtime.',
     },
     {
       id: 'sat7-financials',
@@ -176,8 +166,7 @@ export const sat7: Cause = {
       publisher: 'SAT-7 North America',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Displays ECFA, Charity Navigator four-star, Candid/GuideStar, BBB and Missio Nexus badges, and links the audited statements.',
+      note: 'Displays ECFA, Charity Navigator four-star, Candid/GuideStar, BBB and Missio Nexus badges, and links the audited statements.',
     },
     {
       id: 'sat7-audit-25',
@@ -187,8 +176,7 @@ export const sat7: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Program services $11,459,392, management and general $939,600, fundraising $1,485,355, total $13,884,347. Includes the related-party note: $9,361,061 of grants to SAT-7 International plus $285,775 of expenses paid on its behalf, and the disclosure that SAT-7 International may suspend or eliminate SAT-7 NA’s use of the SAT-7 name.',
+      note: 'Program services $11,459,392, management and general $939,600, fundraising $1,485,355, total $13,884,347. Includes the related-party note: $9,361,061 of grants to SAT-7 International plus $285,775 of expenses paid on its behalf, and the disclosure that SAT-7 International may suspend or eliminate SAT-7 NA’s use of the SAT-7 name.',
     },
     {
       id: 'sat7-ar-25',
@@ -198,8 +186,7 @@ export const sat7: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of both halves of the cost model. The “Viewer engagement in 2025” page reports 75,100 conversations, 20,700 viewers offered spiritual support, 26,200,000 YouTube views, 14,700,000 Facebook interactions, 3,900,000 Instagram interactions and 8,100 app downloads; those figures are set as graphics rather than printed text, and we read them off the rendered page. The financial summary reports total 2025 expenditure of USD 21,574,000 across the four channels, derived from the statements of all 14 SAT-7 legal entities, with the Cyprus entities audited by KPMG Ltd.',
+      note: 'Source of both halves of the cost model. The “Viewer engagement in 2025” page reports 75,100 conversations, 20,700 viewers offered spiritual support, 26,200,000 YouTube views, 14,700,000 Facebook interactions, 3,900,000 Instagram interactions and 8,100 app downloads; those figures are set as graphics rather than printed text, and we read them off the rendered page. The financial summary reports total 2025 expenditure of USD 21,574,000 across the four channels, derived from the statements of all 14 SAT-7 legal entities, with the Cyprus entities audited by KPMG Ltd.',
     },
     {
       id: 'sat7-propublica',

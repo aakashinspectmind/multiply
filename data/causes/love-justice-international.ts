@@ -38,18 +38,15 @@ export const loveJusticeInternational: Cause = {
     scriptures: [
       {
         ref: 'Proverbs 24:11–12',
-        text:
-          'Rescue those who are being taken away to death; hold back those who are stumbling to the slaughter. If you say, “Behold, we did not know this,” does not he who weighs the heart perceive it?',
+        text: 'Rescue those who are being taken away to death; hold back those who are stumbling to the slaughter. If you say, “Behold, we did not know this,” does not he who weighs the heart perceive it?',
       },
       {
         ref: 'Isaiah 58:6',
-        text:
-          'Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free, and to break every yoke?',
+        text: 'Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free, and to break every yoke?',
       },
       {
         ref: 'Proverbs 31:8–9',
-        text:
-          'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
+        text: 'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
       },
     ],
     doctrine: {
@@ -91,8 +88,7 @@ export const loveJusticeInternational: Cause = {
       {
         label: 'interceptions and arrests together',
         count: 27166,
-        note:
-          'Love Justice’s own method splits its anti-trafficking investment between two outcomes, interceptions and arrests, so 26,822 interceptions plus 344 arrests is the denominator its own calculation implies. It gives $130.49.',
+        note: 'Love Justice’s own method splits its anti-trafficking investment between two outcomes, interceptions and arrests, so 26,822 interceptions plus 344 arrests is the denominator its own calculation implies. It gives $130.49.',
       },
     ],
   },
@@ -101,6 +97,7 @@ export const loveJusticeInternational: Cause = {
       quote: 'At the end of 2025, our one-year cost-per-intercept number stood at $112.',
       sourceId: 'lji-faq',
       impliedCostPerOutcome: 112,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'interception',
     },
     {
@@ -122,28 +119,23 @@ export const loveJusticeInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The mission statement names Jesus Christ, the FAQ explains where and when the gospel is presented, and the report is written in explicitly Christian terms. It also states that no service is contingent on a person’s response, which is the right answer to the question of aid tied to a hearing.',
+      note: 'The mission statement names Jesus Christ, the FAQ explains where and when the gospel is presented, and the report is written in explicitly Christian terms. It also states that no service is contingent on a person’s response, which is the right answer to the question of aid tied to a hearing.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The work is done by 238 trained monitors and 345 staff who are nationals of the countries they serve, with country offices reviewing their own intercept records. Governance and fundraising sit in the United States.',
+      note: 'The work is done by 238 trained monitors and 345 staff who are nationals of the countries they serve, with country offices reviewing their own intercept records. Governance and fundraising sit in the United States.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited financial statements and Form 990s going back to 2016 are posted on the site, with a functional expense table detailed to the line. The FAQ also publishes the method behind the advertised cost per intercept, which almost no ministry does.',
+      note: 'Audited financial statements and Form 990s going back to 2016 are posted on the site, with a functional expense table detailed to the line. The FAQ also publishes the method behind the advertised cost per intercept, which almost no ministry does.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The count is precise, dated to a stated fiscal year, and accompanied by a published verification procedure — two national office staff review each record, and country samples are audited. Marked down because all of that verification is internal and the unit itself is a judgement about a future harm that did not happen.',
+      note: 'The count is precise, dated to a stated fiscal year, and accompanied by a published verification procedure — two national office staff review each record, and country samples are audited. Marked down because all of that verification is internal and the unit itself is a judgement about a future harm that did not happen.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Both halves of the division are published in documents the ministry posts, the ministry advertises its own figure, and it publishes the method behind it well enough that the gap between $112 and our $132.16 is explainable rather than mysterious.',
+      note: 'Both halves of the division are published in documents the ministry posts, the ministry advertises its own figure, and it publishes the method behind it well enough that the gap between $112 and our $132.16 is explainable rather than mysterious.',
     },
   },
   notVerified: [
@@ -188,8 +180,7 @@ export const loveJusticeInternational: Cause = {
       publisher: 'Love Justice International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the ministry’s definition of an intercept, the three-step cost-per-intercept calculation, the $112 and “around $200” figures, and the statement that no service is contingent on a person’s response to the gospel.',
+      note: 'Source of the ministry’s definition of an intercept, the three-step cost-per-intercept calculation, the $112 and “around $200” figures, and the statement that no service is contingent on a person’s response to the gospel.',
     },
     {
       id: 'lji-audit-25',
@@ -199,8 +190,7 @@ export const loveJusticeInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Year ended 30 September 2025. Program services $3,544,842, management and general $588,285, fundraising $1,332,154, total expenses $5,465,281, with a line-by-line functional table that includes the Nepal Dream School at $53,901 and Children’s Ministries at $389,057.',
+      note: 'Year ended 30 September 2025. Program services $3,544,842, management and general $588,285, fundraising $1,332,154, total expenses $5,465,281, with a line-by-line functional table that includes the Nepal Dream School at $53,901 and Children’s Ministries at $389,057.',
     },
     {
       id: 'lji-ar-25',
@@ -210,8 +200,7 @@ export const loveJusticeInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of 26,822 interceptions, 344 arrests, 57 monitoring stations, 18 countries, 238 monitors, 345 staff, 14 family homes, 169 children and 232 students. The headline figures are set in display type on the opening spread; the verification footnote is printed beneath them.',
+      note: 'Source of 26,822 interceptions, 344 arrests, 57 monitoring stations, 18 countries, 238 monitors, 345 staff, 14 family homes, 169 children and 232 students. The headline figures are set in display type on the opening spread; the verification footnote is printed beneath them.',
     },
     {
       id: 'lji-990-24',

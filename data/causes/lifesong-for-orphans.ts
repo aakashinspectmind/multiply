@@ -30,7 +30,10 @@ export const lifesongForOrphans: Cause = {
   whatTheyDo:
     'Lifesong for Orphans does three distinct things from Gridley, Illinois. It funds local partners caring for orphaned and vulnerable children in seventeen countries, largely through child sponsorship at $68 a month. It makes grants and interest-free loans to Christian families adopting, which in the year we reviewed was $9.6m of spending — more than a quarter of the total. And it runs ten businesses in Haiti, India, Uganda, Ukraine and Zambia that employ caregivers and graduates and return profit to the care programmes. The structure that defines the ministry is the 100% Pledge: the Manna Foundation and a group of business partners cover fundraising and administration separately, so Lifesong tells donors "100% of your received donation will directly help children in need."',
   accreditations: [
-    { label: 'Evangelical Council for Financial Accountability member', sourceId: 'lifesong-ecfa' },
+    {
+      label: 'Evangelical Council for Financial Accountability member',
+      sourceId: 'lifesong-ecfa',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -39,18 +42,15 @@ export const lifesongForOrphans: Cause = {
     scriptures: [
       {
         ref: 'James 1:27',
-        text:
-          'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        text: 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
       },
       {
         ref: 'Galatians 4:4–5',
-        text:
-          'But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons.',
+        text: 'But when the fullness of time had come, God sent forth his Son, born of woman, born under the law, to redeem those who were under the law, so that we might receive adoption as sons.',
       },
       {
         ref: 'Psalm 68:5–6',
-        text:
-          'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
+        text: 'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
       },
       {
         ref: 'Matthew 18:5',
@@ -92,14 +92,12 @@ export const lifesongForOrphans: Cause = {
       {
         label: 'children Lifesong says it currently supports worldwide',
         count: 10644,
-        note:
-          'A live figure on the orphan care page — "we help support 10,644 children around the world" — with no date and no fiscal year attached. Lower than the 990 count, which is what you would expect if the 990 figure includes people reached rather than children supported.',
+        note: 'A live figure on the orphan care page — "we help support 10,644 children around the world" — with no date and no fiscal year attached. Lower than the 990 count, which is what you would expect if the 990 figure includes people reached rather than children supported.',
       },
       {
         label: 'children reached with gospel-centered care, homepage counter',
         count: 12650,
-        note:
-          'The homepage counter, undated, and higher again than either of the other two. Three published counts of roughly the same thing, none of which matches another.',
+        note: 'The homepage counter, undated, and higher again than either of the other two. Three published counts of roughly the same thing, none of which matches another.',
       },
     ],
   },
@@ -129,28 +127,23 @@ export const lifesongForOrphans: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A full statement of faith with proof texts on the Trinity, the infallibility of Scripture, substitutionary atonement, eternal judgement, the unborn and marriage. The stated aim of care begins "Be taught the Gospel and how to be followers of Christ," the 990 lists biblical training as part of the programme, and adoption grants are restricted to Christian families. Nothing here is implied.',
+      note: 'A full statement of faith with proof texts on the Trinity, the infallibility of Scripture, substitutionary atonement, eternal judgement, the unborn and marriage. The stated aim of care begins "Be taught the Gospel and how to be followers of Christ," the 990 lists biblical training as part of the programme, and adoption grants are restricted to Christian families. Nothing here is implied.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Delivery is through local partners and Schedule F reports 2,552 employees and agents outside the United States across 26 offices, so the hands are local. Governance, fundraising and grant decisions sit in Gridley, Illinois, under a US board, and the programme description includes American short-term mission trips as a funded activity.',
+      note: 'Delivery is through local partners and Schedule F reports 2,552 employees and agents outside the United States across 26 offices, so the hands are local. Governance, fundraising and grant decisions sit in Gridley, Illinois, under a US board, and the programme description includes American short-term mission trips as a funded activity.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Form 990s for the years ended June 2020 through June 2024 are posted on the ministry’s own site, and it is an ECFA member with a live profile. Marked down because no audited financial statements are published — the 990 is the only document — and because the most recent one covers a year that ended in June 2024, two fiscal years back from the date we looked.',
+      note: 'Form 990s for the years ended June 2020 through June 2024 are posted on the ministry’s own site, and it is an ECFA member with a live profile. Marked down because no audited financial statements are published — the 990 is the only document — and because the most recent one covers a year that ended in June 2024, two fiscal years back from the date we looked.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Three different counts of children served are published — 11,414 in the 990, 10,644 on the orphan care page, 12,650 on the homepage — and none of them can be reconciled to another. The 990 figure is labelled "approximate," has no published total, and mixes children in year-round care with people reached on short-term trips. The adoption side reports "over 3,000 individuals/families," a unit that counts two different things at once.',
+      note: 'Three different counts of children served are published — 11,414 in the 990, 10,644 on the orphan care page, 12,650 on the homepage — and none of them can be reconciled to another. The 990 figure is labelled "approximate," has no published total, and mixes children in year-round care with people reached on short-term trips. The adoption side reports "over 3,000 individuals/families," a unit that counts two different things at once.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'A single program line and a count of who that line reached exist in the same document for the same year, which is better than most. Marked down hard because the resulting figure is about twice the $816 a year the ministry itself advertises, and no published document explains the gap.',
+      note: 'A single program line and a count of who that line reached exist in the same document for the same year, which is better than most. Marked down hard because the resulting figure is about twice the $816 a year the ministry itself advertises, and no published document explains the gap.',
     },
   },
   notVerified: [
@@ -188,8 +181,7 @@ export const lifesongForOrphans: Cause = {
       publisher: 'Lifesong for Orphans',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The seventeen-country list and the statement "Together with people like you, we help support 10,644 children around the world."',
+      note: 'The seventeen-country list and the statement "Together with people like you, we help support 10,644 children around the world."',
     },
     {
       id: 'lifesong-sponsor',
@@ -235,8 +227,7 @@ export const lifesongForOrphans: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Tax year 1 July 2023 to 30 June 2024. Part III line 4a gives orphan care spending of $19,592,756 and the seven regional counts of individuals reached, which we summed to 11,414; Part IX line 25 gives total expenses of $34,369,966; Schedule F gives 26 foreign offices and 2,552 foreign employees and agents.',
+      note: 'Tax year 1 July 2023 to 30 June 2024. Part III line 4a gives orphan care spending of $19,592,756 and the seven regional counts of individuals reached, which we summed to 11,414; Part IX line 25 gives total expenses of $34,369,966; Schedule F gives 26 foreign offices and 2,552 foreign employees and agents.',
     },
     {
       id: 'lifesong-ecfa',

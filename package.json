@@ -7,8 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test lib/*.test.ts",
+    "stats": "tsx scripts/stats.ts",
+    "causes:index": "node scripts/build-causes-index.mjs",
+    "cost-base": "node scripts/build-cost-base.mjs",
     "check:sources": "tsx scripts/check-sources.mjs",
     "check:sources:offline": "tsx scripts/check-sources.mjs --offline"
   },
@@ -24,6 +29,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "prettier": "^3.9.8",
     "tailwindcss": "^4",
     "tsx": "^4.23.13",
     "typescript": "^5"

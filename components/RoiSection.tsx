@@ -104,9 +104,9 @@ export function RoiSection({ cause }: { cause: Cause }) {
               · read {COST_BASE_SOURCE.retrieved}
             </p>
             <p className="mt-2 text-base text-gray-700">
-              This is a cost-of-living ratio, not a measure of how well the ministry spends. It tells
-              you what a local wage or a bag of cement costs, and nothing about whether the work is
-              any good — the rest of this page is for that.
+              This is a cost-of-living ratio, not a measure of how well the ministry spends. It
+              tells you what a local wage or a bag of cement costs, and nothing about whether the
+              work is any good — the rest of this page is for that.
             </p>
           </>
         ) : (

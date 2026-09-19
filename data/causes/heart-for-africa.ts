@@ -19,18 +19,15 @@ export const heartForAfrica: Cause = {
     scriptures: [
       {
         ref: 'James 1:27',
-        text:
-          'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        text: 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
       },
       {
         ref: 'Matthew 25:40',
-        text:
-          'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.',
+        text: 'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.',
       },
       {
         ref: 'Isaiah 58:7',
-        text:
-          'Is it not to share your bread with the hungry and bring the homeless poor into your house; when you see the naked, to cover him, and not to hide yourself from your own flesh?',
+        text: 'Is it not to share your bread with the hungry and bring the homeless poor into your house; when you see the naked, to cover him, and not to hide yourself from your own flesh?',
       },
     ],
     concerns: [
@@ -66,8 +63,7 @@ export const heartForAfrica: Cause = {
       {
         label: 'children enrolled when the Project Canaan school opened for 2025',
         count: 342,
-        note:
-          'The school is the largest single programme and this is its own count, but it excludes the babies and toddlers who are the most expensive children on the property.',
+        note: 'The school is the largest single programme and this is its own count, but it excludes the babies and toddlers who are the most expensive children on the property.',
       },
     ],
   },
@@ -81,28 +77,23 @@ export const heartForAfrica: Cause = {
   scores: {
     gospelCentrality: {
       value: 1,
-      note:
-        'Jesus is named once on the site, in a core value about being his hands and feet, and the founders write openly as Christians. There is no statement of faith, no church partnership described, and no discipleship content in any programme description.',
+      note: 'Jesus is named once on the site, in a core value about being his hands and feet, and the founders write openly as Christians. There is no statement of faith, no church partnership described, and no discipleship content in any programme description.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'Founded and still led by the Maxwells, who relocated from Canada; the US office is in Georgia. The field operation is staffed by Eswatini nationals and the 2025 school year opened under a new Eswatini principal, but governance and fundraising sit in North America.',
+      note: 'Founded and still led by the Maxwells, who relocated from Canada; the US office is in Georgia. The field operation is staffed by Eswatini nationals and the 2025 school year opened under a new Eswatini principal, but governance and fundraising sit in North America.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'The best in this directory. Audited consolidated statements for 2021 through 2024 and Form 990s for the same years are posted on the site, and the audit consolidates the Eswatini entity — so the numbers cover the place the work happens, not just the American fundraising shell. Functional expenses are broken out line by line.',
+      note: 'The best in this directory. Audited consolidated statements for 2021 through 2024 and Form 990s for the same years are posted on the site, and the audit consolidates the Eswatini entity — so the numbers cover the place the work happens, not just the American fundraising shell. Functional expenses are broken out line by line.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The children in care are counted precisely and the count moves as children arrive — 434 after five arrivals in January 2025 — and school enrolment is published at the start of each year. Food distribution is described by communities reached and miles driven rather than meals served, so the largest outreach programme has no countable unit.',
+      note: 'The children in care are counted precisely and the count moves as children arrive — 434 after five arrivals in January 2025 — and school enrolment is published at the start of each year. Food distribution is described by communities reached and miles driven rather than meals served, so the largest outreach programme has no countable unit.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves of the division exist and both are sourced, one from an audit. Marked down because the numerator covers a farm and a business as well as the children, and the ministry publishes no per-child figure of its own to check ours against.',
+      note: 'Both halves of the division exist and both are sourced, one from an audit. Marked down because the numerator covers a farm and a business as well as the children, and the ministry publishes no per-child figure of its own to check ours against.',
     },
   },
   notVerified: [
@@ -163,8 +154,7 @@ export const heartForAfrica: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Consolidated with HFA Eswatini. Program services $4,847,584 of $6,070,929 total expenses, with a line-by-line functional breakdown.',
+      note: 'Consolidated with HFA Eswatini. Program services $4,847,584 of $6,070,929 total expenses, with a line-by-line functional breakdown.',
     },
     {
       id: 'hfa-990-24',
@@ -182,8 +172,7 @@ export const heartForAfrica: Cause = {
       publisher: 'Heart for Africa',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of both counts: "the number of children in our care reached 434" and "we are starting with 342 children" when the school opened on 22 January 2025.',
+      note: 'Source of both counts: "the number of children in our care reached 434" and "we are starting with 342 children" when the school opened on 22 January 2025.',
     },
   ],
 };

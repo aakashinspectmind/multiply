@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import Link from 'next/link';
 import './globals.css';
 import { causes } from '@/data/causes';
+import { lastRetrieved } from '@/lib/impact';
 import { site } from '@/data/site';
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
@@ -24,7 +25,10 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
             </Link>
             <p className="text-base text-gray-700">{site.tagline}</p>
             <nav className="ml-auto flex gap-5 text-base">
-              <Link href="/" className="text-accent underline decoration-accent/30 hover:decoration-accent">
+              <Link
+                href="/"
+                className="text-accent underline decoration-accent/30 hover:decoration-accent"
+              >
                 Causes
               </Link>
               <Link
@@ -43,8 +47,9 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
           <div className="mx-auto w-full max-w-5xl space-y-3 px-5 py-8 text-base text-gray-700">
             <p className="font-medium text-ink">{site.moneyPolicy}</p>
             <p>
-              {causes.length} causes, researched from public documents on 18 September 2026. No site
-              visits and no calls yet, so nothing here is more than a desk review — read{' '}
+              {causes.length} causes, researched from public documents, most recently read on{' '}
+              {lastRetrieved(causes)}. No site visits and no calls yet, so nothing here is more than
+              a desk review — read{' '}
               <Link href="/methodology" className="text-accent underline">
                 how we score
               </Link>{' '}

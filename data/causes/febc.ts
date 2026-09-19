@@ -43,13 +43,11 @@ export const febc: Cause = {
       },
       {
         ref: 'Romans 10:14',
-        text:
-          'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?',
+        text: 'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching?',
       },
       {
         ref: 'Matthew 28:19–20',
-        text:
-          'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you.',
+        text: 'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you.',
       },
     ],
     doctrine: { label: 'Statement of Faith', sourceId: 'febc-mission' },
@@ -83,28 +81,23 @@ export const febc: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A full evangelical statement of faith is published, the mission statement is about the gospel and nothing else, and the ministry’s stated commitment is to “meeting the spiritual needs of our listeners”. There is no ambiguity about what this organisation is for.',
+      note: 'A full evangelical statement of faith is published, the mission statement is about the gospel and nothing else, and the ministry’s stated commitment is to “meeting the spiritual needs of our listeners”. There is no ambiguity about what this organisation is for.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The broadcasting is done by 19 nationally run affiliate offices, and the audit’s country-by-country grant table shows the money genuinely going to them. Marked down because governance, fundraising and the largest single production budget stay in Frisco, Texas, and the US office describes its own role as providing “leadership, consulting services and training” to the affiliates.',
+      note: 'The broadcasting is done by 19 nationally run affiliate offices, and the audit’s country-by-country grant table shows the money genuinely going to them. Marked down because governance, fundraising and the largest single production budget stay in Frisco, Texas, and the US office describes its own role as providing “leadership, consulting services and training” to the affiliates.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Audited statements and the Form 990 are both posted on the site, the audit breaks grants down by country, and Schedule F shows the foreign structure honestly. Held at 2 because the two documents covering the same fiscal year disagree on program services by $88,950, and because the majority of program spending goes to entities whose own accounts are not published.',
+      note: 'Audited statements and the Form 990 are both posted on the site, the audit breaks grants down by country, and Schedule F shows the foreign structure honestly. Held at 2 because the two documents covering the same fiscal year disagree on program services by $88,950, and because the majority of program spending goes to entities whose own accounts are not published.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Stations, languages, countries and broadcast hours are all counted, but those are inputs. The only thing offered as a result is “150 million listener engagements”, which is undated and undefined. No responses, letters, calls or app messages are published.',
+      note: 'Stations, languages, countries and broadcast hours are all counted, but those are inputs. The only thing offered as a result is “150 million listener engagements”, which is undated and undefined. No responses, letters, calls or app messages are published.',
     },
     costEvidence: {
       value: 0,
-      note:
-        'There is no denominator here that can honestly be divided into the spending. We looked, and the absence is the finding.',
+      note: 'There is no denominator here that can honestly be divided into the spending. We looked, and the absence is the finding.',
     },
   },
   notVerified: [
@@ -140,8 +133,7 @@ export const febc: Cause = {
       publisher: 'FEBC',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Carries the full statement of faith, the mission statement, and FEBC’s “Commitment to Ministry”.',
+      note: 'Carries the full statement of faith, the mission statement, and FEBC’s “Commitment to Ministry”.',
     },
     {
       id: 'febc-impact',
@@ -150,8 +142,7 @@ export const febc: Cause = {
       publisher: 'FEBC',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the 150 million “listener engagements” claim and the 152 languages / 50 countries / 260 stations / 1,571 hours figures. None of them is dated.',
+      note: 'Source of the 150 million “listener engagements” claim and the 152 languages / 50 countries / 260 stations / 1,571 hours figures. None of them is dated.',
     },
     {
       id: 'febc-financials',
@@ -160,8 +151,7 @@ export const febc: Cause = {
       publisher: 'FEBC',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Displays the ECFA accredited seal and a Charity Navigator 4-star badge, states 8% administration and 10% fundraising, and links the audit and the Form 990.',
+      note: 'Displays the ECFA accredited seal and a Charity Navigator 4-star badge, states 8% administration and 10% fundraising, and links the audit and the Form 990.',
     },
     {
       id: 'febc-audit-25',
@@ -171,8 +161,7 @@ export const febc: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Broadcast operations $14,643,421 of $17,671,560 total expenses. Note 11 lists grants to affiliates by country, totalling $8,204,680, and states the stations are not under the direct control of the US office.',
+      note: 'Broadcast operations $14,643,421 of $17,671,560 total expenses. Note 11 lists grants to affiliates by country, totalling $8,204,680, and states the stations are not under the direct control of the US office.',
     },
     {
       id: 'febc-990-24',
@@ -182,8 +171,7 @@ export const febc: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Part III splits program spending into grants ($8,204,680), US studio production ($3,847,676) and support to 19 affiliate offices ($2,074,052). Part IX line 25 reports $14,554,471 of program services. Schedule F reports zero foreign offices and four agents.',
+      note: 'Part III splits program spending into grants ($8,204,680), US studio production ($3,847,676) and support to 19 affiliate offices ($2,074,052). Part IX line 25 reports $14,554,471 of program services. Schedule F reports zero foreign offices and four agents.',
     },
   ],
 };

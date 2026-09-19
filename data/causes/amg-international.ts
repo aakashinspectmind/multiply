@@ -7,7 +7,7 @@ export const amgInternational: Cause = {
   ein: '13-1766596',
   tagline:
     'Bible Clubs in 551 African public schools, child development centres in 11 countries — and an audit that carries a qualified opinion two years running.',
-  category: 'children',
+  category: 'education',
   countries: [
     'Ghana',
     'Togo',
@@ -23,7 +23,10 @@ export const amgInternational: Cause = {
   whatTheyDo:
     'AMG has been sending money to national workers since 1942 and employs 22 people, all of them in Chattanooga. The education side has two parts. Child and youth development centres in eleven countries provide schooling, food, medicine and clothing to sponsored children. Bible Clubs run inside 551 government schools across Ghana, Togo, Benin, Nigeria, Sierra Leone, Liberia and Kenya, staffed by volunteers whom AMG’s national missionaries equip. Alongside that it trains pastors, plants churches, runs media evangelism, responds to disasters, built a $382,000 expansion at Upendo Christian School in Uganda and began a $475,000 school in Kenya — and owns 98.42% of St. Luke’s Hospital, a 280-bed hospital in Thessaloniki, Greece. The work is done through 188 partner organisations and local leaders; AMG reports no offices and no staff anywhere outside the United States.',
   accreditations: [
-    { label: 'Evangelical Council for Financial Accountability (ECFA)', sourceId: 'amg-financials' },
+    {
+      label: 'Evangelical Council for Financial Accountability (ECFA)',
+      sourceId: 'amg-financials',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -36,13 +39,11 @@ export const amgInternational: Cause = {
       },
       {
         ref: 'Deuteronomy 6:6–7',
-        text:
-          'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
+        text: 'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
       },
       {
         ref: 'Matthew 19:14',
-        text:
-          'Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven.',
+        text: 'Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven.',
       },
     ],
     doctrine: {
@@ -87,14 +88,12 @@ export const amgInternational: Cause = {
       {
         label: 'students reached through AMG Bible Clubs in 551 African schools',
         count: 143000,
-        note:
-          'About $72 each, and printed by AMG as "approximately 143,000". The most concrete count in the report, but it is a weekly club rather than schooling, and charging the whole organisation to it ignores everything else AMG did.',
+        note: 'About $72 each, and printed by AMG as "approximately 143,000". The most concrete count in the report, but it is a weekly club rather than schooling, and charging the whole organisation to it ignores everything else AMG did.',
       },
       {
         label: 'pastors and church leaders trained',
         count: 6889,
-        note:
-          'About $1,497 each. A different kind of work entirely, included to show how much the headline figure depends on which denominator the ministry chooses to lead with.',
+        note: 'About $1,497 each. A different kind of work entirely, included to show how much the headline figure depends on which denominator the ministry chooses to lead with.',
       },
     ],
   },
@@ -129,28 +128,23 @@ export const amgInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'An eleven-clause statement of faith including inerrancy and final judgment, a mission to "ADVANCE THE GOSPEL", Bible Clubs as the flagship education programme, 100 church plants and 6,889 pastors trained in one year. Nothing is soft-pedalled.',
+      note: 'An eleven-clause statement of faith including inerrancy and final judgment, a mission to "ADVANCE THE GOSPEL", Bible Clubs as the flagship education programme, 100 church plants and 6,889 pastors trained in one year. Nothing is soft-pedalled.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'Twenty-two employees, all American, all in Tennessee; zero staff, agents or offices in any foreign region; 188 partner organisations and national workers doing everything. Structurally this is as devolved as a US-registered ministry gets. The same structure is why the accountability questions in concerns are unanswerable from AMG’s filings — a 3 here is not a compliment about oversight.',
+      note: 'Twenty-two employees, all American, all in Tennessee; zero staff, agents or offices in any foreign region; 188 partner organisations and national workers doing everything. Structurally this is as devolved as a US-registered ministry gets. The same structure is why the accountability questions in concerns are unanswerable from AMG’s filings — a 3 here is not a compliment about oversight.',
     },
     financialTransparency: {
       value: 1,
-      note:
-        'AMG posts its full audit, its full Form 990 and seven years of impact reports on its own site, which earns real credit. Then the audit arrives with a qualified opinion for the second year running because two majority-owned companies are missing from it, the 990 shows total expenses of $10,360,228 against the audit’s $10,310,493, the impact report’s "$9,883,045 total gifts" reconciles to neither, and $7.2 million of foreign spending is reported with no recipient, no office and no agent. Publishing documents that do not agree with each other is not transparency.',
+      note: 'AMG posts its full audit, its full Form 990 and seven years of impact reports on its own site, which earns real credit. Then the audit arrives with a qualified opinion for the second year running because two majority-owned companies are missing from it, the 990 shows total expenses of $10,360,228 against the audit’s $10,310,493, the impact report’s "$9,883,045 total gifts" reconciles to neither, and $7.2 million of foreign spending is reported with no recipient, no office and no agent. Publishing documents that do not agree with each other is not transparency.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'One number carries the whole report — 255,078 — with no definition, no method, and a caption that contradicts the heading above it. The strongest sub-figure, 143,000 Bible Club students, is prefaced "approximately". Professions of faith are presented as impact. There is no count of sponsored children, no school enrolment figure, no exam result and no completion rate anywhere.',
+      note: 'One number carries the whole report — 255,078 — with no definition, no method, and a caption that contradicts the heading above it. The strongest sub-figure, 143,000 Bible Club students, is prefaced "approximately". Professions of faith are presented as impact. There is no count of sponsored children, no school enrolment figure, no exam result and no completion rate anywhere.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'Both halves are published by the ministry for the same calendar year, and the numerator comes from an audit. Scored low because that audit is qualified and the denominator’s own label cannot decide whether it describes one programme or all of them.',
+      note: 'Both halves are published by the ministry for the same calendar year, and the numerator comes from an audit. Scored low because that audit is qualified and the denominator’s own label cannot decide whether it describes one programme or all of them.',
     },
   },
   notVerified: [
@@ -191,8 +185,7 @@ export const amgInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'QUALIFIED opinion, dated March 4, 2026, for both years presented: AMG does not consolidate AMG Publishers, Inc. (100% owned) or St. Luke’s Hospital (98.42% owned, 280 beds, Thessaloniki), and "the effects on the accompanying financial statements of the failure to consolidate have not been determined." Total expenses $10,310,493 — program $8,848,324 (Childcare Ministry $3,720,445, Ministry Projects $3,688,408, Missionaries $1,439,471), general and administrative $277,447, fundraising $1,184,722.',
+      note: 'QUALIFIED opinion, dated March 4, 2026, for both years presented: AMG does not consolidate AMG Publishers, Inc. (100% owned) or St. Luke’s Hospital (98.42% owned, 280 beds, Thessaloniki), and "the effects on the accompanying financial statements of the failure to consolidate have not been determined." Total expenses $10,310,493 — program $8,848,324 (Childcare Ministry $3,720,445, Ministry Projects $3,688,408, Missionaries $1,439,471), general and administrative $277,447, fundraising $1,184,722.',
     },
     {
       id: 'amg-impact-2025',
@@ -202,8 +195,7 @@ export const amgInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'An 18 MB designed PDF; the headline counts are set in graphics over two columns. Source of 255,078 students impacted, 188 partner organisations, 100 church plants, 6,889 pastors trained, the 143,000 students in 551 schools with 12,452 professions of faith, and the $382,000 and $475,000 school projects.',
+      note: 'An 18 MB designed PDF; the headline counts are set in graphics over two columns. Source of 255,078 students impacted, 188 partner organisations, 100 church plants, 6,889 pastors trained, the 143,000 students in 551 schools with 12,452 professions of faith, and the $382,000 and $475,000 school projects.',
     },
     {
       id: 'amg-990-2025',
@@ -213,8 +205,7 @@ export const amgInternational: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Total expenses $10,360,228, which does not match the audit. Three program lines, none reporting any grants. Schedule F shows $7,221,845 of foreign programme expenditure across eight regions with 0 offices and 0 employees or agents in every one. Part VII shows a director receiving $201,803 of other compensation from the organisation and related organisations; Schedule O discloses that two directors are cousins-in-law.',
+      note: 'Total expenses $10,360,228, which does not match the audit. Three program lines, none reporting any grants. Schedule F shows $7,221,845 of foreign programme expenditure across eight regions with 0 offices and 0 employees or agents in every one. Part VII shows a director receiving $201,803 of other compensation from the organisation and related organisations; Schedule O discloses that two directors are cousins-in-law.',
     },
     {
       id: 'amg-financials',
@@ -223,8 +214,7 @@ export const amgInternational: Cause = {
       publisher: 'AMG International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Links the current audit, the current 990 and impact reports back to 2019. Also carries the ECFA and Charity Navigator claim, the designated-funds redirection policy and the donor privacy statement.',
+      note: 'Links the current audit, the current 990 and impact reports back to 2019. Also carries the ECFA and Charity Navigator claim, the designated-funds redirection policy and the donor privacy statement.',
     },
     {
       id: 'amg-children',

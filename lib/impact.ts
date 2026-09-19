@@ -24,6 +24,27 @@ export function sourceById(cause: Cause, id: string): Source {
   return source;
 }
 
+/**
+ * The most recent date any document in the directory was read, formatted for a
+ * reader.
+ *
+ * Derived rather than typed, because a hand-written "researched on" date in the
+ * footer is a claim about freshness that goes quietly false the next time a
+ * cause is added — and freshness is the one thing a donor cannot check for
+ * themselves.
+ */
+export function lastRetrieved(causes: Cause[]): string {
+  const dates = causes.flatMap((cause) => cause.sources.map((source) => source.retrieved)).sort();
+  const latest = dates.at(-1);
+  if (!latest) throw new Error('The directory cites no sources, so it has no read date');
+  return new Date(`${latest}T00:00:00Z`).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'UTC',
+  });
+}
+
 /** Dollars per outcome, from the two sourced numbers and nothing else. */
 export function costPerOutcome(model: CostModel): number {
   if (model.count.amount <= 0) {
@@ -72,7 +93,11 @@ export function formatCount(value: number): string {
 export function formatSharePercent(value: number): string {
   if (value >= 10) return `${Math.round(value)}%`;
   if (value >= 1) return `${value.toFixed(1)}%`;
-  return `${value.toFixed(2)}%`;
+  // A dollar against a $49,000 outcome is 0.002% of it, and rounding that to
+  // "0.00%" tells the reader their gift did nothing. It is a real share of a
+  // very expensive thing, so say so rather than rounding it out of existence.
+  if (value >= 0.01) return `${value.toFixed(2)}%`;
+  return 'less than 0.01%';
 }
 
 /** Donor-facing sentence for one cause at one gift size. */
@@ -150,6 +175,12 @@ export function buysPhrase(line: GiftLine): string {
   if (line.impact.kind === 'funds') {
     const noun = line.impact.whole === 1 ? line.model.outcome : line.model.outcomePlural;
     return `${formatCount(line.impact.whole)} ${noun}`;
+  }
+  // "42% of one wheelchair" is a share a reader can picture. "0.002% of one
+  // language" is not, so once the fraction stops being legible as a percentage
+  // the pooling is the clearer fact: this is one gift out of the number it takes.
+  if (line.impact.sharePercent < 1) {
+    return `1 of ${formatCount(line.impact.giversNeeded)} gifts toward one ${line.model.outcome}`;
   }
   return `${formatSharePercent(line.impact.sharePercent)} of one ${line.model.outcome}`;
 }

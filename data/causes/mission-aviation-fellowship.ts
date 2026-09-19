@@ -7,25 +7,23 @@ export const missionAviationFellowship: Cause = {
   ein: '95-1920983',
   tagline:
     'Forty-two aircraft flying missionaries, doctors and Bible translators into places with no roads — and it counts every flight.',
-  category: 'evangelism',
-  countries: [
-    'Democratic Republic of Congo',
-    'Ecuador',
-    'Haiti',
-    'Indonesia',
-    'Lesotho',
-    'Liberia',
-    'Mozambique',
-  ],
+  category: 'logistics',
+  countries: ['DR Congo', 'Ecuador', 'Haiti', 'Indonesia', 'Lesotho', 'Liberia', 'Mozambique'],
   whatTheyDo:
     'MAF flies small aircraft into places where roads either do not exist or take days to travel. In fiscal year 2024 its fleet of 42 aircraft made 16,477 flights carrying missionaries, evangelists, doctors, relief workers, Bible translators and teachers, and delivered over 4.3 million pounds of cargo; more than 280 organisations used the service. It also runs technology and communications work for remote ministries, and in Indonesia it started the Papua Hope School to train Papuan pilots and mechanics. Aviation is the whole model: MAF does not do the evangelism, medicine or translation itself, it is the logistics layer underneath other people’s work.',
   accreditations: [
     { label: 'ECFA accredited', sourceId: 'maf-accountability' },
-    { label: 'International Association of Missionary Aviation', sourceId: 'maf-accountability' },
+    {
+      label: 'International Association of Missionary Aviation',
+      sourceId: 'maf-accountability',
+    },
     { label: 'Mission Safety International', sourceId: 'maf-accountability' },
     { label: 'Accord Network', sourceId: 'maf-accountability' },
     { label: 'Missio Nexus', sourceId: 'maf-accountability' },
-    { label: 'National Business Aviation Association', sourceId: 'maf-accountability' },
+    {
+      label: 'National Business Aviation Association',
+      sourceId: 'maf-accountability',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -34,8 +32,7 @@ export const missionAviationFellowship: Cause = {
     scriptures: [
       {
         ref: 'Romans 10:14–15',
-        text:
-          'How are they to hear without someone preaching? And how are they to preach unless they are sent? As it is written, “How beautiful are the feet of those who preach the good news!”',
+        text: 'How are they to hear without someone preaching? And how are they to preach unless they are sent? As it is written, “How beautiful are the feet of those who preach the good news!”',
       },
       {
         ref: 'Mark 16:15',
@@ -81,8 +78,7 @@ export const missionAviationFellowship: Cause = {
       {
         label: 'passengers carried',
         count: 46000,
-        note:
-          'About $944 a passenger. MAF reports “over 46,000”, so the true figure is higher and the real cost per passenger is lower. A passenger is also not a person — the same missionary flying in and out counts twice.',
+        note: 'About $944 a passenger. MAF reports “over 46,000”, so the true figure is higher and the real cost per passenger is lower. A passenger is also not a person — the same missionary flying in and out counts twice.',
       },
     ],
   },
@@ -97,35 +93,31 @@ export const missionAviationFellowship: Cause = {
       sourceId: 'maf-highlights-25',
     },
     {
-      quote: 'After each showing, roughly 10-12 people take steps to pursue a relationship with God.',
+      quote:
+        'After each showing, roughly 10-12 people take steps to pursue a relationship with God.',
       sourceId: 'maf-highlights-25',
     },
   ],
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A full evangelical statement of faith is published, ending on the church’s duty to preach the gospel to every creature, and the vision stated in MAF’s own tax filing is to “SEE ISOLATED PEOPLE CHANGED BY THE LOVE OF CHRIST”. The flights themselves are logistics and much of the cargo is medical — this is a ministry serving gospel work rather than doing it — but there is nothing ambiguous about whose work it is serving.',
+      note: 'A full evangelical statement of faith is published, ending on the church’s duty to preach the gospel to every creature, and the vision stated in MAF’s own tax filing is to “SEE ISOLATED PEOPLE CHANGED BY THE LOVE OF CHRIST”. The flights themselves are logistics and much of the cargo is medical — this is a ministry serving gospel work rather than doing it — but there is nothing ambiguous about whose work it is serving.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'Schedule F reports 13 foreign offices and 193 employees and agents overseas, which is a real field presence rather than a grant-making shell. But the model is sending: $37,338,683 of salaries and benefits dominates the budget, and pilots and aircraft mechanics are largely expatriate. The Papua Hope School exists specifically to train Papuan pilots and mechanics, which is the right direction and is one school.',
+      note: 'Schedule F reports 13 foreign offices and 193 employees and agents overseas, which is a real field presence rather than a grant-making shell. But the model is sending: $37,338,683 of salaries and benefits dominates the budget, and pilots and aircraft mechanics are largely expatriate. The Papua Hope School exists specifically to train Papuan pilots and mechanics, which is the right direction and is one school.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'MAF posts both a complete Form 990 and audited consolidated statements on its own site, and the 990’s Part III narrative is unusually specific for a federal filing. Held at 2 because the two documents report programme spending $5.1 million apart with no reconciliation, and because the annual report mixes MAF-US figures with a map of the wider global MAF family on the same spread.',
+      note: 'MAF posts both a complete Form 990 and audited consolidated statements on its own site, and the 990’s Part III narrative is unusually specific for a federal filing. Held at 2 because the two documents report programme spending $5.1 million apart with no reconciliation, and because the annual report mixes MAF-US figures with a map of the wider global MAF family on the same spread.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The flight count is exact, is for a stated fiscal year, and is filed with the IRS under penalty of perjury — better evidence than most ministries offer. Marked down because a flight is an input to somebody else’s ministry rather than an outcome in itself, the passenger and cargo figures are rounded, and no one outside MAF has audited the flight logs.',
+      note: 'The flight count is exact, is for a stated fiscal year, and is filed with the IRS under penalty of perjury — better evidence than most ministries offer. Marked down because a flight is an input to somebody else’s ministry rather than an outcome in itself, the passenger and cargo figures are rounded, and no one outside MAF has audited the flight logs.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves of the division sit in the same paragraph of the same document, which is as clean as this gets. Marked down because the numerator covers grants and non-aviation programmes as well as flying, and because the audit would give a materially different answer — $2,948 a flight instead of $2,637 — with nothing to say which is right.',
+      note: 'Both halves of the division sit in the same paragraph of the same document, which is as clean as this gets. Marked down because the numerator covers grants and non-aviation programmes as well as flying, and because the audit would give a materially different answer — $2,948 a flight instead of $2,637 — with nothing to say which is right.',
     },
   },
   notVerified: [
@@ -162,8 +154,7 @@ export const missionAviationFellowship: Cause = {
       publisher: 'Mission Aviation Fellowship',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Full evangelical statement, including the inerrancy of Scripture in the original writings and the church’s duty to preach the gospel to every creature.',
+      note: 'Full evangelical statement, including the inerrancy of Scripture in the original writings and the church’s duty to preach the gospel to every creature.',
     },
     {
       id: 'maf-accountability',
@@ -172,8 +163,7 @@ export const missionAviationFellowship: Cause = {
       publisher: 'Mission Aviation Fellowship',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Lists ECFA, the International Association of Missionary Aviation, Mission Safety International, the Accord Network, Missio Nexus and the National Business Aviation Association.',
+      note: 'Lists ECFA, the International Association of Missionary Aviation, Mission Safety International, the Accord Network, Missio Nexus and the National Business Aviation Association.',
     },
     {
       id: 'maf-where',
@@ -200,8 +190,7 @@ export const missionAviationFellowship: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Part III reports a single programme line: expenses $43,443,617 including grants of $3,238,489, revenue $9,296,558, with the 16,477 flights and 42 aircraft in the narrative. Schedule F reports 13 foreign offices, 193 employees and agents, and $18,552,457 of foreign expenditure.',
+      note: 'Part III reports a single programme line: expenses $43,443,617 including grants of $3,238,489, revenue $9,296,558, with the 16,477 flights and 42 aircraft in the narrative. Schedule F reports 13 foreign offices, 193 employees and agents, and $18,552,457 of foreign expenditure.',
     },
     {
       id: 'maf-audit-24',
@@ -211,8 +200,7 @@ export const missionAviationFellowship: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Programme $48,574,725, management and general $4,128,121, fundraising $10,315,192, total $63,018,038, of which $37,338,683 is salaries and benefits. Programme spending here is $5.1 million higher than the Form 990 reports.',
+      note: 'Programme $48,574,725, management and general $4,128,121, fundraising $10,315,192, total $63,018,038, of which $37,338,683 is salaries and benefits. Programme spending here is $5.1 million higher than the Form 990 reports.',
     },
     {
       id: 'maf-highlights-25',
@@ -222,8 +210,7 @@ export const missionAviationFellowship: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'A designed report, mostly narrative, with the footnote that all figures refer to MAF-US only. Source of the Papua Hope School enrolment of 430 students in 2025 and of the JESUS film account we quote but do not count. Several headline statistics in it are set as graphics; we took the figures used on this page from printed text and from the Form 990 instead.',
+      note: 'A designed report, mostly narrative, with the footnote that all figures refer to MAF-US only. Source of the Papua Hope School enrolment of 430 students in 2025 and of the JESUS film account we quote but do not count. Several headline statistics in it are set as graphics; we took the figures used on this page from printed text and from the Form 990 instead.',
     },
   ],
 };

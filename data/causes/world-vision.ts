@@ -12,10 +12,22 @@ export const worldVision: Cause = {
   whatTheyDo:
     'World Vision is the largest Christian relief and development organisation in the world, with a presence in nearly 100 countries and $1.43bn of operating expenses in the year we reviewed. Child sponsorship is the front door: 865,000 children were supported by United States donors and 2.8 million by sponsors worldwide. What the money buys is not a package for one child — it funds the water systems, health services, schooling, child protection and livelihoods work in that child’s community, alongside emergency response in 70 countries, 2.8 million people gaining lasting clean water access, and $174 million of food grants. The organisation says this plainly on its own sponsorship page: "Rather than going only to one child, funds are pooled to strengthen systems around them."',
   accreditations: [
-    { label: 'Charter member, Evangelical Council for Financial Accountability', sourceId: 'wv-accountability' },
-    { label: 'BBB Wise Giving Alliance accredited charity', sourceId: 'wv-accountability' },
-    { label: 'Charity Navigator four-star rating', sourceId: 'wv-accountability' },
-    { label: 'Candid Platinum seal of transparency, 2025', sourceId: 'wv-accountability' },
+    {
+      label: 'Charter member, Evangelical Council for Financial Accountability',
+      sourceId: 'wv-accountability',
+    },
+    {
+      label: 'BBB Wise Giving Alliance accredited charity',
+      sourceId: 'wv-accountability',
+    },
+    {
+      label: 'Charity Navigator four-star rating',
+      sourceId: 'wv-accountability',
+    },
+    {
+      label: 'Candid Platinum seal of transparency, 2025',
+      sourceId: 'wv-accountability',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -24,25 +36,25 @@ export const worldVision: Cause = {
     scriptures: [
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
       {
         ref: 'Isaiah 58:6–7',
-        text:
-          'Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free, and to break every yoke? Is it not to share your bread with the hungry and bring the homeless poor into your house?',
+        text: 'Is not this the fast that I choose: to loose the bonds of wickedness, to undo the straps of the yoke, to let the oppressed go free, and to break every yoke? Is it not to share your bread with the hungry and bring the homeless poor into your house?',
       },
       {
         ref: 'James 1:27',
-        text:
-          'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        text: 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
       },
       {
         ref: 'Matthew 18:5',
         text: 'Whoever receives one such child in my name receives me.',
       },
     ],
-    doctrine: { label: 'Mission statement and statement of belief', sourceId: 'wv-mission' },
+    doctrine: {
+      label: 'Mission statement and statement of belief',
+      sourceId: 'wv-mission',
+    },
     concerns: [
       'Attribution at this scale is the real problem, and no amount of good accounting fixes it. A community with a World Vision programme also has a government, other charities, remittances and its own economy. When World Vision reports that 2.8 million people gained lasting clean water access or that 35.6 million people were reached through 104 emergency responses, those are counts of people in places where it worked, not measures of change it caused. The spending is verifiable to the dollar; the counterfactual is not verifiable at all, and the bigger the number the less it tells you about any individual child.',
       'The $39 a month is not a budget for your child, and the gap between what a sponsor pays and what is dedicated to sponsorship is large. $39 a month is $468 a year; the audited child sponsorship funding line works out at about $269 per US-supported sponsored child. The difference is not diversion — it is fundraising at 10.1% of operating expenses, management and general at 4.1%, and the fact that sponsored communities are also funded from other programme lines. World Vision discloses the pooling clearly. It does not publish the reconciliation, so a donor has to be told the arithmetic by someone else.',
@@ -77,17 +89,16 @@ export const worldVision: Cause = {
       {
         label: 'registered children supported by World Vision sponsors worldwide',
         count: 2800000,
-        note:
-          'World Vision reports that "sponsors worldwide supported 2.8 million registered children, including 865,000 children supported by U.S. donors." Dividing the US funding line by the global count would be wrong — the other 1.9 million are funded by support offices in other countries whose spending is not in these statements — and it is here so the relationship between the two figures is visible rather than buried.',
+        note: 'World Vision reports that "sponsors worldwide supported 2.8 million registered children, including 865,000 children supported by U.S. donors." Dividing the US funding line by the global count would be wrong — the other 1.9 million are funded by support offices in other countries whose spending is not in these statements — and it is here so the relationship between the two figures is visible rather than buried.',
       },
     ],
   },
   ministryClaims: [
     {
-      quote:
-        'For $39 a month, walk alongside a child and their community toward lasting change.',
+      quote: 'For $39 a month, walk alongside a child and their community toward lasting change.',
       sourceId: 'wv-sponsor',
       impliedCostPerOutcome: 468,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'year of sponsorship for one child and their community',
     },
     {
@@ -113,28 +124,23 @@ export const worldVision: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The mission statement names Jesus Christ and the kingdom of God explicitly — "an international partnership of Christians whose mission is to follow our Lord and Savior Jesus Christ in working with the poor and oppressed" — and is followed by a published statement of belief in the Trinity and the authority of Scripture. Charter member of ECFA. Faith is stated, not inferred. What the score does not tell you is how the gospel is present in any given programme, which varies across nearly a hundred countries.',
+      note: 'The mission statement names Jesus Christ and the kingdom of God explicitly — "an international partnership of Christians whose mission is to follow our Lord and Savior Jesus Christ in working with the poor and oppressed" — and is followed by a published statement of belief in the Trinity and the authority of Scripture. Charter member of ECFA. Faith is stated, not inferred. What the score does not tell you is how the gospel is present in any given programme, which varies across nearly a hundred countries.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Structured as an international partnership of national offices rather than a US agency with field branches, which is the right architecture, and delivery in each country is by nationals. Marked down because we could not verify the composition of programme leadership from published documents, and because the audited statements we reviewed are those of the American entity, where governance, fundraising and $135,844,000 of salaries sit.',
+      note: 'Structured as an international partnership of national offices rather than a US agency with field branches, which is the right architecture, and delivery in each country is by nationals. Marked down because we could not verify the composition of programme leadership from published documents, and because the audited statements we reviewed are those of the American entity, where governance, fundraising and $135,844,000 of salaries sit.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited consolidated statements on its own site with a functional expense schedule detailed enough to isolate a $232,484,000 child sponsorship funding line — the only sponsorship ministry in this directory where that is possible. Programme ratio, joint costs and public-sector funding loss all disclosed. Charity Navigator four stars, BBB Wise Giving Alliance accredited, Candid Platinum, ECFA charter member.',
+      note: 'Audited consolidated statements on its own site with a functional expense schedule detailed enough to isolate a $232,484,000 child sponsorship funding line — the only sponsorship ministry in this directory where that is possible. Programme ratio, joint costs and public-sector funding loss all disclosed. Charity Navigator four stars, BBB Wise Giving Alliance accredited, Candid Platinum, ECFA charter member.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The sponsorship count is specific enough to divide and is reported consistently against the funding line. Everything else is reach: 35.6 million people through emergency responses, 2.8 million gaining clean water, "over one million" this and that. At this scale a count of people reached is a count of where programmes operated, and no definition of "benefited from child sponsorship programs" is published.',
+      note: 'The sponsorship count is specific enough to divide and is reported consistently against the funding line. Everything else is reach: 35.6 million people through emergency responses, 2.8 million gaining clean water, "over one million" this and that. At this scale a count of people reached is a count of where programmes operated, and no definition of "benefited from child sponsorship programs" is published.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'A dedicated sponsorship funding line in an audited schedule and a matching count of sponsored children supported by US donors, in the same fiscal year, from documents World Vision publishes itself. That is the cleanest single-programme division in this category, and the reason a $39 ask can be checked here and not elsewhere.',
+      note: 'A dedicated sponsorship funding line in an audited schedule and a matching count of sponsored children supported by US donors, in the same fiscal year, from documents World Vision publishes itself. That is the cleanest single-programme division in this category, and the reason a $39 ask can be checked here and not elsewhere.',
     },
   },
   notVerified: [
@@ -200,8 +206,7 @@ export const worldVision: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Year ended 30 September 2025, amounts in thousands. Programme services $1,222,847 of $1,425,840 total operating expenses. The functional expense schedule carries a discrete "Child sponsorship" funding line of $232,484 within international programmes, which is the numerator used here.',
+      note: 'Year ended 30 September 2025, amounts in thousands. Programme services $1,222,847 of $1,425,840 total operating expenses. The functional expense schedule carries a discrete "Child sponsorship" funding line of $232,484 within international programmes, which is the numerator used here.',
     },
     {
       id: 'wv-impact-25',
@@ -211,8 +216,7 @@ export const worldVision: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the 865,000 US-supported sponsored children, the 2.8 million global figure, the emergency response and clean water counts, the $142 million loss of public-sector funding and the gifts-in-kind totals. The headline counts are set in designed spreads and were read from the rendered pages.',
+      note: 'Source of the 865,000 US-supported sponsored children, the 2.8 million global figure, the emergency response and clean water counts, the $142 million loss of public-sector funding and the gifts-in-kind totals. The headline counts are set in designed spreads and were read from the rendered pages.',
     },
   ],
 };

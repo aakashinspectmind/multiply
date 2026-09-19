@@ -34,22 +34,20 @@ export const destinyRescue: Cause = {
     scriptures: [
       {
         ref: 'Psalm 82:3–4',
-        text:
-          'Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked.',
+        text: 'Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked.',
       },
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
       {
         ref: 'Luke 10:34–35',
-        text:
-          'He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper.',
+        text: 'He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper.',
       },
     ],
     doctrine: {
-      label: 'Statement of faith affirming the Trinity, the divinity and atoning death of Christ, salvation through him, and the indwelling Holy Spirit',
+      label:
+        'Statement of faith affirming the Trinity, the divinity and atoning death of Christ, salvation through him, and the indwelling Holy Spirit',
       sourceId: 'dr-faith',
     },
     concerns: [
@@ -72,12 +70,12 @@ export const destinyRescue: Cause = {
       sourceId: 'dr-financial-integrity',
     },
     {
-      quote:
-        'At least 80 percent of your designated gift will go to programs that defend kids.',
+      quote: 'At least 80 percent of your designated gift will go to programs that defend kids.',
       sourceId: 'dr-financial-integrity',
     },
     {
-      quote: 'Every year an independent accounting firm conducts an audit of our financial records.',
+      quote:
+        'Every year an independent accounting firm conducts an audit of our financial records.',
       sourceId: 'dr-financial-integrity',
     },
     {
@@ -89,28 +87,23 @@ export const destinyRescue: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A full seven-point statement of faith is published, the faith page says keeping God at the centre is the organisation’s number one strategic priority, and the model is built on the Parable of the Good Samaritan by name. The ministry also states that sharing the gospel with every survivor who enters its care is a goal. That last point is the one a donor should press on: a child who has just been removed from exploitation is not well placed to decline anything, and nothing published says how consent is handled.',
+      note: 'A full seven-point statement of faith is published, the faith page says keeping God at the centre is the organisation’s number one strategic priority, and the model is built on the Parable of the Good Samaritan by name. The ministry also states that sharing the gospel with every survivor who enters its care is a goal. That last point is the one a donor should press on: a child who has just been removed from exploitation is not well placed to decline anything, and nothing published says how consent is handled.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The field work is done by national agents and national teams, which the method requires. Governance and fundraising sit across several Western offices, and the US entity’s own books are mostly a grant-making pass-through.',
+      note: 'The field work is done by national agents and national teams, which the method requires. Governance and fundraising sit across several Western offices, and the US entity’s own books are mostly a grant-making pass-through.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'The US entity posts audited statements, Form 990s and annual reports back to 2017, is an active ECFA member, and states that an independent audit is done every year. Marked down because the audited entity is not the operating entity, no consolidated accounts exist, and the 2025 year has an impact report with no audit behind it.',
+      note: 'The US entity posts audited statements, Form 990s and annual reports back to 2017, is an active ECFA member, and states that an independent audit is done every year. Marked down because the audited entity is not the operating entity, no consolidated accounts exist, and the 2025 year has an impact report with no audit behind it.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'The counts are unusually well broken down for this sector — by age band, by exploitation category, by whether law enforcement was involved, with a chart of three years — and the report even flags where two figures overlap. But no rescue has any confirmation from outside the ministry, and the single most important figure, the 2,763 rescues with no police involvement, is self-certified by construction.',
+      note: 'The counts are unusually well broken down for this sector — by age band, by exploitation category, by whether law enforcement was involved, with a chart of three years — and the report even flags where two figures overlap. But no rescue has any confirmation from outside the ministry, and the single most important figure, the 2,763 rescues with no police involvement, is self-certified by construction.',
     },
     costEvidence: {
       value: 0,
-      note:
-        'There is a denominator and there is a numerator, and they belong to different organisations in different years. Nothing here can honestly be divided, and the ministry advertises no cost per rescue.',
+      note: 'There is a denominator and there is a numerator, and they belong to different organisations in different years. Nothing here can honestly be divided, and the ministry advertises no cost per rescue.',
     },
   },
   notVerified: [
@@ -160,8 +153,7 @@ export const destinyRescue: Cause = {
       publisher: 'Destiny Rescue',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Lists Cambodia, the Dominican Republic, Kenya, Nepal, South Africa, Thailand, Uganda, Zimbabwe and “Undisclosed Locations”, and names the four support offices. The Philippines is not on this list but appears repeatedly in the 2025 impact report, so we include it.',
+      note: 'Lists Cambodia, the Dominican Republic, Kenya, Nepal, South Africa, Thailand, Uganda, Zimbabwe and “Undisclosed Locations”, and names the four support offices. The Philippines is not on this list but appears repeatedly in the 2025 impact report, so we include it.',
     },
     {
       id: 'dr-financial-integrity',
@@ -170,8 +162,7 @@ export const destinyRescue: Cause = {
       publisher: 'Destiny Rescue',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the 81% and 80% claims and the active ECFA membership. Its document library posts a Form 990, an audit report and an annual report for every year from 2017 through 2024. For 2025 it posts an impact report and nothing else.',
+      note: 'Source of the 81% and 80% claims and the active ECFA membership. Its document library posts a Form 990, an audit report and an annual report for every year from 2017 through 2024. For 2025 it posts an impact report and nothing else.',
     },
     {
       id: 'dr-audit-24',
@@ -181,8 +172,7 @@ export const destinyRescue: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Year ended 31 December 2024, US entity only. Program expense $5,673,504 of $7,169,183 total, with a functional table that splits artist speakers between programme and fundraising.',
+      note: 'Year ended 31 December 2024, US entity only. Program expense $5,673,504 of $7,169,183 total, with a functional table that splits artist speakers between programme and fundraising.',
     },
     {
       id: 'dr-ir-25',
@@ -192,8 +182,7 @@ export const destinyRescue: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of all 2025 counts, the age and exploitation breakdowns, the 574 law-enforcement operations, and the disclosure that eleven Nepal border survivors also appear in a separate figure. Most figures are set in designed graphics.',
+      note: 'Source of all 2025 counts, the age and exploitation breakdowns, the 574 law-enforcement operations, and the disclosure that eleven Nepal border survivors also appear in a separate figure. Most figures are set in designed graphics.',
     },
     {
       id: 'dr-propublica',
@@ -202,8 +191,7 @@ export const destinyRescue: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'Filings with data from 2010 through 2023. The 2024 Form 990 is posted on the ministry’s own site but has not yet appeared here; there is no 2025 return anywhere.',
+      note: 'Filings with data from 2010 through 2023. The 2024 Form 990 is posted on the ministry’s own site but has not yet appeared here; there is no 2025 return anywhere.',
     },
     {
       id: 'dri-propublica',
@@ -212,8 +200,7 @@ export const destinyRescue: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'The separate coordinating entity, based in Muncie, Indiana. Total expenses $1,380,525 in 2023, its most recent return with data. Far too small to account for the global programme on its own.',
+      note: 'The separate coordinating entity, based in Muncie, Indiana. Total expenses $1,380,525 in 2023, its most recent return with data. Far too small to account for the global programme on its own.',
     },
   ],
 };

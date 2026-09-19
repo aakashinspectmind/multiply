@@ -16,13 +16,11 @@ export const theTimothyInitiative: Cause = {
     scriptures: [
       {
         ref: '2 Timothy 2:2',
-        text:
-          'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
+        text: 'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
       },
       {
         ref: 'Ephesians 4:11–12',
-        text:
-          'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.',
+        text: 'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.',
       },
       {
         ref: 'Matthew 28:19–20',
@@ -41,19 +39,26 @@ export const theTimothyInitiative: Cause = {
   },
   ministryClaims: [],
   scores: {
-    gospelCentrality: { value: 3, note: 'Disciple-making and church planting are the whole programme.' },
-    localLeadership: { value: 3, note: 'Planters are nationals trained in their own contexts; the multiplication model depends on it.' },
+    gospelCentrality: {
+      value: 3,
+      note: 'Disciple-making and church planting are the whole programme.',
+    },
+    localLeadership: {
+      value: 3,
+      note: 'Planters are nationals trained in their own contexts; the multiplication model depends on it.',
+    },
     financialTransparency: {
       value: 0,
-      note:
-        'No accreditation seal, financial statement, annual report or Form 990 link found on the site as of 18 September 2026. This is the gap to close first.',
+      note: 'No accreditation seal, financial statement, annual report or Form 990 link found on the site as of 18 September 2026. This is the gap to close first.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Results are anecdotal — 70 baptisms in Ethiopia, 350+ widows reached, 300+ disciple makers in training — rather than annual totals with definitions.',
+      note: 'Results are anecdotal — 70 baptisms in Ethiopia, 350+ widows reached, 300+ disciple makers in training — rather than annual totals with definitions.',
     },
-    costEvidence: { value: 0, note: 'Neither spending nor annual outcome totals are published.' },
+    costEvidence: {
+      value: 0,
+      note: 'Neither spending nor annual outcome totals are published.',
+    },
   },
   notVerified: [
     'Whether TTI is ECFA accredited or publishes audited financials anywhere. Nothing was findable on the site.',

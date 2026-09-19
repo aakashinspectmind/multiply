@@ -34,20 +34,20 @@ const RENAME = {
   'Russian Federation': 'Russia',
   'Slovak Republic': 'Slovakia',
   'Syrian Arab Republic': 'Syria',
-  'Turkiye': 'Turkey',
-  'Türkiye': 'Turkey',
+  Turkiye: 'Turkey',
+  Türkiye: 'Turkey',
   'Venezuela, RB': 'Venezuela',
   'Viet Nam': 'Vietnam',
   'Yemen, Rep.': 'Yemen',
   'Somalia, Fed. Rep.': 'Somalia',
   'Brunei Darussalam': 'Brunei',
   'Puerto Rico (US)': 'Puerto Rico',
-  'Naoero': 'Nauru',
+  Naoero: 'Nauru',
   'Hong Kong SAR, China': 'Hong Kong',
   'Macao SAR, China': 'Macao',
   "Cote d'Ivoire": "Côte d'Ivoire",
   'Sao Tome and Principe': 'São Tomé and Príncipe',
-  'Curacao': 'Curaçao',
+  Curacao: 'Curaçao',
   'St. Lucia': 'Saint Lucia',
   'St. Kitts and Nevis': 'Saint Kitts and Nevis',
   'St. Vincent and the Grenadines': 'Saint Vincent and the Grenadines',
@@ -91,7 +91,10 @@ rows.sort((a, b) => a.gniPerCapita - b.gniPerCapita || a.name.localeCompare(b.na
 
 const entries = rows
   .map((row) => {
-    const key = /^[A-Za-z][A-Za-z ]*$/.test(row.name) && !row.name.includes(' ') ? row.name : `'${row.name.replace(/'/g, "\\'")}'`;
+    const key =
+      /^[A-Za-z][A-Za-z ]*$/.test(row.name) && !row.name.includes(' ')
+        ? row.name
+        : `'${row.name.replace(/'/g, "\\'")}'`;
     return `  ${key}: { gniPerCapita: ${row.gniPerCapita}, year: '${row.year}' },`;
   })
   .join('\n');

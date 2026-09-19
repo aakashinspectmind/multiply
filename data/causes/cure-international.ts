@@ -23,7 +23,10 @@ export const cureInternational: Cause = {
     { label: 'ECFA accredited', sourceId: 'cure-site' },
     { label: 'Charity Navigator four stars', sourceId: 'cure-site' },
     { label: 'Candid Platinum Transparency 2025', sourceId: 'cure-site' },
-    { label: 'Excellence in Giving certified transparent', sourceId: 'cure-site' },
+    {
+      label: 'Excellence in Giving certified transparent',
+      sourceId: 'cure-site',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -32,21 +35,21 @@ export const cureInternational: Cause = {
     scriptures: [
       {
         ref: 'Matthew 9:35',
-        text:
-          'And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction.',
+        text: 'And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction.',
       },
       {
         ref: 'Luke 14:13–14',
-        text:
-          'But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you.',
+        text: 'But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you.',
       },
       {
         ref: 'Matthew 25:40',
-        text:
-          'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.',
+        text: 'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.',
       },
     ],
-    doctrine: { label: '“We share Jesus” is one of five stated distinctives', sourceId: 'cure-site' },
+    doctrine: {
+      label: '“We share Jesus” is one of five stated distinctives',
+      sourceId: 'cure-site',
+    },
     concerns: [
       'Medical mission carries a permanent risk that care becomes the price of a hearing. CURE treats children regardless of their family’s faith, which is the right answer, but we have not read a written policy on how chaplains handle consent.',
     ],
@@ -78,8 +81,7 @@ export const cureInternational: Cause = {
       {
         label: 'people who heard the gospel through CURE in FY25',
         count: 275288,
-        note:
-          'The same program spending divided by the number of people CURE reports sharing the gospel with: about $145 each. It is the same money as the surgery figure, counted against a different outcome — the two cannot be added together.',
+        note: 'The same program spending divided by the number of people CURE reports sharing the gospel with: about $145 each. It is the same money as the surgery figure, counted against a different outcome — the two cannot be added together.',
       },
     ],
   },
@@ -88,34 +90,30 @@ export const cureInternational: Cause = {
       quote: 'Efficiency is increasing. 40% decrease in cost per surgery',
       sourceId: 'cure-ar25',
       impliedCostPerOutcome: 1704,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'surgery',
     },
   ],
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'Named and structural, not incidental: "We share Jesus" is one of five stated distinctives, and FY25 reporting counts 275,288 people who heard the gospel alongside the surgical numbers.',
+      note: 'Named and structural, not incidental: "We share Jesus" is one of five stated distinctives, and FY25 reporting counts 275,288 people who heard the gospel alongside the surgical numbers.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Hospitals are staffed and increasingly led by national clinicians — the FY25 report follows an Ethiopian surgeon trained at CURE Kenya now leading Ethiopia’s first pediatric spine program. Governance and fundraising remain US-based.',
+      note: 'Hospitals are staffed and increasingly led by national clinicians — the FY25 report follows an Ethiopian surgeon trained at CURE Kenya now leading Ethiopia’s first pediatric spine program. Governance and fundraising remain US-based.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Statement of activities printed in the annual report, Form 990 filings back to 2002, and four separate accreditations. One unexplained gap between the report and the 990 — see below.',
+      note: 'Statement of activities printed in the annual report, Form 990 filings back to 2002, and four separate accreditations. One unexplained gap between the report and the 990 — see below.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Surgeries are a delivered service and are counted per hospital, which is well above the sector norm. But the counts are CURE’s own, and there is no published follow-up on how children do a year later.',
+      note: 'Surgeries are a delivered service and are counted per hospital, which is well above the sector norm. But the counts are CURE’s own, and there is no published follow-up on how children do a year later.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Both numbers are published, CURE divides them itself, and its answer and ours agree within 11%. Nothing else in this directory is this checkable.',
+      note: 'Both numbers are published, CURE divides them itself, and its answer and ours agree within 11%. Nothing else in this directory is this checkable.',
     },
   },
   notVerified: [

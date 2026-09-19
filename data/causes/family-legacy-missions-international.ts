@@ -12,7 +12,10 @@ export const familyLegacyMissionsInternational: Cause = {
   whatTheyDo:
     'Family Legacy works in one city. It owns and runs 17 Christian Legacy Academies in the Lusaka compounds where its children live, staffed by more than 400 educators, teaching about 10,800 children who go home at the end of the day; an Excel Beyond programme carries graduates into university, trades and work; and the Tree of Life Children’s Village, a 130-acre site, houses about 400 children whose homes are unsafe or whose health makes home impossible, with the stated purpose of returning them. The fourth programme is Camp LIFE, a short-term missions operation that brings hundreds of American volunteers to Zambia each year and is, in the ministry’s own words on its Form 990, "a cornerstone of Family Legacy’s mission." The US entity is in Dallas; the Zambian entity, Family Legacy Missions Zambia, is in Lusaka and is consolidated into the audit.',
   accreditations: [
-    { label: 'Evangelical Council for Financial Accountability member', sourceId: 'flmi-ecfa' },
+    {
+      label: 'Evangelical Council for Financial Accountability member',
+      sourceId: 'flmi-ecfa',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -21,13 +24,11 @@ export const familyLegacyMissionsInternational: Cause = {
     scriptures: [
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
       {
         ref: 'Psalm 68:5–6',
-        text:
-          'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
+        text: 'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
       },
       {
         ref: 'Matthew 18:5',
@@ -38,7 +39,10 @@ export const familyLegacyMissionsInternational: Cause = {
         text: 'Train up a child in the way he should go; even when he is old he will not depart from it.',
       },
     ],
-    doctrine: { label: 'Faith Statement and Philosophy of Ministry', sourceId: 'flmi-philosophy' },
+    doctrine: {
+      label: 'Faith Statement and Philosophy of Ministry',
+      sourceId: 'flmi-philosophy',
+    },
     concerns: [
       'About 400 children live full time at Tree of Life, and residential care at that scale is the most contested model in Christian orphan care. The practitioner consensus is that children develop better in families and communities than in institutions, however well run, and the cost difference is large. Family Legacy states the same position in its own philosophy of ministry: the village "offers short-term residence and care to children whose home or health circumstances are extremely vulnerable – it is not meant to replace a child’s God-given family and community," and children are reintegrated once safety standards are met "since connection to one’s community is the most effective setting for a child’s healthy development." That is the right answer. What we cannot find is the number: no published document says how many children were reintegrated in the period, or how long the average stay lasts, so the word "short-term" is a stated intention we could not check.',
       'Camp LIFE and the short-term missions programme cost $1,616,663 — 14% of all programme spending — and the Form 990 describes it as "HUNDREDS OF AMBASSADORS-VOLUNTEERS PRIMARILY FROM THE UNITED STATES-TRAVEL TO ZAMBIA TO CARE FOR THE CHILDREN, BUILD RELATIONSHIPS THROUGH PLAY, AND SHARE THE MESSAGE OF JESUS." Child-protection specialists warn specifically about this: a stream of visiting adults who form warm attachments with vulnerable children for a week and then leave. The concern is not that the volunteers are insincere, it is that the practice is designed around the visitor’s experience, and here one dollar in seven of programme spending pays for it.',
@@ -73,14 +77,12 @@ export const familyLegacyMissionsInternational: Cause = {
       {
         label: 'children who participated in the educational programmes',
         count: 10800,
-        note:
-          'The Form 990 says "OVER 10,800 CHILDREN WHO PARTICIPATED IN ITS EDUCATIONAL PROGRAMS" against a Legacy Academies line of $6,879,630 — about $637 per child for the nine months, which is the number to use if what you want to fund is schooling rather than the whole ministry.',
+        note: 'The Form 990 says "OVER 10,800 CHILDREN WHO PARTICIPATED IN ITS EDUCATIONAL PROGRAMS" against a Legacy Academies line of $6,879,630 — about $637 per child for the nine months, which is the number to use if what you want to fund is schooling rather than the whole ministry.',
       },
       {
         label: 'children in full-time residential care at Tree of Life',
         count: 400,
-        note:
-          'Not a denominator for total programme spending — dividing everything by 400 would be meaningless. It belongs here because its own programme line, $1,665,007 for "MORE THAN 400 CHILDREN RESIDING AT THE TREE OF LIFE VILLAGE," works out at about $4,163 per child for nine months. That is the price of the residential model, published by the ministry that runs it.',
+        note: 'Not a denominator for total programme spending — dividing everything by 400 would be meaningless. It belongs here because its own programme line, $1,665,007 for "MORE THAN 400 CHILDREN RESIDING AT THE TREE OF LIFE VILLAGE," works out at about $4,163 per child for nine months. That is the price of the residential model, published by the ministry that runs it.',
       },
     ],
   },
@@ -111,28 +113,23 @@ export const familyLegacyMissionsInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A published philosophy of ministry that defines God as "the holy, triune God of Christianity," sets out creation, fall, atonement and resurrection explicitly, and names introducing others to Jesus as the first task. A separate faith statement. Seventeen Christian academies with a discipleship curriculum and weekly church for Tree of Life students. Nothing here is implied.',
+      note: 'A published philosophy of ministry that defines God as "the holy, triune God of Christianity," sets out creation, fall, atonement and resurrection explicitly, and names introducing others to Jesus as the first task. A separate faith statement. Seventeen Christian academies with a discipleship curriculum and weekly church for Tree of Life students. Nothing here is implied.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The Zambian entity employs more than 400 educators plus social workers and is consolidated into the audit, so the teaching and care are Zambian. Governance, fundraising and strategy sit with a Dallas board, and the 990 places an American short-term missions programme at the centre of the ministry rather than the margin, which is the opposite of a locally led design.',
+      note: 'The Zambian entity employs more than 400 educators plus social workers and is consolidated into the audit, so the teaching and care are Zambian. Governance, fundraising and strategy sit with a Dallas board, and the 990 places an American short-term missions programme at the centre of the ministry rather than the margin, which is the opposite of a locally led design.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Consolidated audited statements and Form 990s posted on its own site for every year from 2009, ECFA membership, and an audit note that volunteers its own liquidity problem, its budget variance, the reversal of favourable exchange rates and a note maturing in 2027. It also publishes the 13% overhead assessment on designated gifts in plain words. Ministries under financial pressure usually go quiet; this one did the opposite.',
+      note: 'Consolidated audited statements and Form 990s posted on its own site for every year from 2009, ECFA membership, and an audit note that volunteers its own liquidity problem, its budget variance, the reversal of favourable exchange rates and a note maturing in 2027. It also publishes the 13% overhead assessment on designated gifts in plain words. Ministries under financial pressure usually go quiet; this one did the opposite.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'An audited count — 11,300 children served in the nine months — sits in Note 12 of the financial statements, which is a better place for a number than a marketing page, and the 990 breaks it into 10,800 in education and 400 in residence. Marked down because Camp LIFE is a funded programme with no published attendance figure and the 990 calls it the point where "for most of these children" the journey begins, so an unknown number inside the counts may be children who attended a camp.',
+      note: 'An audited count — 11,300 children served in the nine months — sits in Note 12 of the financial statements, which is a better place for a number than a marketing page, and the 990 breaks it into 10,800 in education and 400 in residence. Marked down because Camp LIFE is a funded programme with no published attendance figure and the 990 calls it the point where "for most of these children" the journey begins, so an unknown number inside the counts may be children who attended a camp.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Spending and count in the same audited document for the same period, programme lines and per-programme counts in the 990, and a published price list by programme tier so our arithmetic can be compared with the ministry’s own. The only reason this is not a perfect figure is the nine-month period, which the ministry discloses.',
+      note: 'Spending and count in the same audited document for the same period, programme lines and per-programme counts in the 990, and a published price list by programme tier so our arithmetic can be compared with the ministry’s own. The only reason this is not a perfect figure is the nine-month period, which the ministry discloses.',
     },
   },
   notVerified: [
@@ -178,8 +175,7 @@ export const familyLegacyMissionsInternational: Cause = {
       publisher: 'Family Legacy Missions International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The doctrinal statement, the definition of the problem, and the position on residential care and reintegration. Links a separate faith statement at familylegacy.com/faith-statement/.',
+      note: 'The doctrinal statement, the definition of the problem, and the position on residential care and reintegration. Links a separate faith statement at familylegacy.com/faith-statement/.',
     },
     {
       id: 'flmi-sponsor',
@@ -188,8 +184,7 @@ export const familyLegacyMissionsInternational: Cause = {
       publisher: 'Family Legacy Missions International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Publishes three sponsorship prices side by side: $55 a month for grades 1–6, $72 for grades 7–12, and $300 for full-time residential care at Tree of Life.',
+      note: 'Publishes three sponsorship prices side by side: $55 a month for grades 1–6, $72 for grades 7–12, and $300 for full-time residential care at Tree of Life.',
     },
     {
       id: 'flmi-financials',
@@ -198,8 +193,7 @@ export const familyLegacyMissionsInternational: Cause = {
       publisher: 'Family Legacy Missions International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Links consolidated audits and Form 990s from 2009 onward, and states the 87%/13% split applied to designated gifts.',
+      note: 'Links consolidated audits and Form 990s from 2009 onward, and states the 87%/13% split applied to designated gifts.',
     },
     {
       id: 'flmi-audit-25',
@@ -209,8 +203,7 @@ export const familyLegacyMissionsInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025 (nine months to 30 September)',
-      note:
-        'Consolidated with Family Legacy Missions Zambia. Programme services $11,362,527 of $13,877,552 total expenses. Note 12 is the source of the audited count: "11,300 vulnerable children were served during the nine months ended September 30, 2025," and of the disclosures on the fiscal-year change, the budget variance and the 2026 exchange-rate reversal.',
+      note: 'Consolidated with Family Legacy Missions Zambia. Programme services $11,362,527 of $13,877,552 total expenses. Note 12 is the source of the audited count: "11,300 vulnerable children were served during the nine months ended September 30, 2025," and of the disclosures on the fiscal-year change, the budget variance and the 2026 exchange-rate reversal.',
     },
     {
       id: 'flmi-990-25',
@@ -220,8 +213,7 @@ export const familyLegacyMissionsInternational: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025 (nine months to 30 September)',
-      note:
-        'Part III gives the programme lines and their counts: Legacy Academies $6,879,630 for over 10,800 children; Tree of Life $1,665,007 for more than 400 residents; short-term missions $1,616,663; other programmes $1,189,042.',
+      note: 'Part III gives the programme lines and their counts: Legacy Academies $6,879,630 for over 10,800 children; Tree of Life $1,665,007 for more than 400 residents; short-term missions $1,616,663; other programmes $1,189,042.',
     },
     {
       id: 'flmi-ecfa',

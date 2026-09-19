@@ -3,7 +3,8 @@ import type { Cause } from '@/lib/types';
 export const bibleLeagueInternational: Cause = {
   slug: 'bible-league-international',
   name: 'Bible League International',
-  tagline: 'Scripture, Bible studies and church-planter training through local churches in 40+ countries.',
+  tagline:
+    'Scripture, Bible studies and church-planter training through local churches in 40+ countries.',
   category: 'scripture',
   countries: [
     'Bangladesh',
@@ -22,7 +23,10 @@ export const bibleLeagueInternational: Cause = {
     'Bible League places Bibles and easy-to-read Scripture, runs small-group Bible studies, trains church planters and teaches adult literacy, working through local churches and national partner organisations rather than its own field staff.',
   accreditations: [
     { label: 'ECFA accredited', sourceId: 'bl-site' },
-    { label: 'Excellence in Giving certified transparent', sourceId: 'bl-site' },
+    {
+      label: 'Excellence in Giving certified transparent',
+      sourceId: 'bl-site',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -31,18 +35,15 @@ export const bibleLeagueInternational: Cause = {
     scriptures: [
       {
         ref: 'Romans 10:14, 17',
-        text:
-          'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard?… So faith comes from hearing, and hearing through the word of Christ.',
+        text: 'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard?… So faith comes from hearing, and hearing through the word of Christ.',
       },
       {
         ref: 'Isaiah 55:11',
-        text:
-          'So shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose.',
+        text: 'So shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose.',
       },
       {
         ref: '2 Timothy 3:16–17',
-        text:
-          'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness.',
+        text: 'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness.',
       },
     ],
     concerns: [
@@ -82,8 +83,7 @@ export const bibleLeagueInternational: Cause = {
       {
         label: 'Bibles and study, literacy and training materials shared (4,094,825)',
         count: 4094825,
-        note:
-          'About $5.10 per item. Counting only the 984,197 items that were Bibles gives about $21 per Bible.',
+        note: 'About $5.10 per item. Counting only the 984,197 items that were Bibles gives about $21 per Bible.',
       },
     ],
   },
@@ -102,23 +102,19 @@ export const bibleLeagueInternational: Cause = {
     },
     localLeadership: {
       value: 3,
-      note:
-        'Delivery runs through 46 program partners and 64 licensee partners, and the planters are local — 1,690 newly trained planters started 1,736 churches in FY25.',
+      note: 'Delivery runs through 46 program partners and 64 licensee partners, and the planters are local — 1,690 newly trained planters started 1,736 churches in FY25.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Full statement of activities in the annual report: $28,211,285 of expenditures, 74.0% program, 10.1% administration, 15.9% fundraising. Seven years of reports online.',
+      note: 'Full statement of activities in the annual report: $28,211,285 of expenditures, 74.0% program, 10.1% administration, 15.9% fundraising. Seven years of reports online.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Counts are large, round and self-reported, and the headline unit — people "engaged" — is not defined. Materials shipped is an output, not evidence that anyone read them.',
+      note: 'Counts are large, round and self-reported, and the headline unit — people "engaged" — is not defined. Materials shipped is an output, not evidence that anyone read them.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both numbers are published and the division works, but the ministry’s own advertised price is roughly eight times cheaper than the documents imply, and it does not say why.',
+      note: 'Both numbers are published and the division works, but the ministry’s own advertised price is roughly eight times cheaper than the documents imply, and it does not say why.',
     },
   },
   notVerified: [

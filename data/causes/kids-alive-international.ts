@@ -7,13 +7,19 @@ export const kidsAliveInternational: Cause = {
   ein: '31-1140515',
   tagline:
     'Schools for abused and abandoned children in six countries, with audited accounts and a student count you can divide.',
-  category: 'children',
+  category: 'education',
   countries: ['Guatemala', 'Haiti', 'Kenya', 'Lebanon', 'Peru', 'Zambia'],
   whatTheyDo:
     'Kids Alive runs schools for children who have been abused, abandoned or are at risk of it, and wraps the classroom in the things that keep a traumatised child in school — tutoring, therapy, meals, uniforms, medical care and counselling. Around the schools sit three other programmes: family strengthening (parent training, family preservation, job skills), protective care (foster care, reunification, residential care and independent living for children a court has removed from home) and justice advocacy, where its own staff pursue prosecutions of abusers. Founded in 1916. Field programmes are staffed and led locally; the Alpharetta office raises money and grants it out.',
   accreditations: [
-    { label: 'Evangelical Council for Financial Accountability (ECFA)', sourceId: 'ka-financials' },
-    { label: 'Charity Navigator four-star rating, claimed 20 years running', sourceId: 'ka-financials' },
+    {
+      label: 'Evangelical Council for Financial Accountability (ECFA)',
+      sourceId: 'ka-financials',
+    },
+    {
+      label: 'Charity Navigator four-star rating, claimed 20 years running',
+      sourceId: 'ka-financials',
+    },
     { label: 'Candid (GuideStar) platinum seal', sourceId: 'ka-financials' },
   ],
   verification: 'documents-reviewed',
@@ -23,13 +29,11 @@ export const kidsAliveInternational: Cause = {
     scriptures: [
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
       {
         ref: 'Proverbs 31:8–9',
-        text:
-          'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
+        text: 'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
       },
       {
         ref: 'Proverbs 22:6',
@@ -76,14 +80,12 @@ export const kidsAliveInternational: Cause = {
       {
         label: 'children, family and community members impacted',
         count: 30696,
-        note:
-          'The ministry’s own headline number, and the widest unit it publishes. It counts a parent at a training session and a child in a classroom the same way, so it is the right denominator for the whole programme and the wrong one for a school place.',
+        note: 'The ministry’s own headline number, and the widest unit it publishes. It counts a parent at a training session and a child in a classroom the same way, so it is the right denominator for the whole programme and the wrong one for a school place.',
       },
       {
         label: 'hours of tutoring delivered',
         count: 463104,
-        note:
-          'The only unit Kids Alive publishes that is a measure of delivery rather than enrolment — an hour either happened or it did not. Charging all programme spending to tutoring hours prices an hour at about $23, which overstates tutoring and understates nothing.',
+        note: 'The only unit Kids Alive publishes that is a measure of delivery rather than enrolment — an hour either happened or it did not. Charging all programme spending to tutoring hours prices an hour at about $23, which overstates tutoring and understates nothing.',
       },
     ],
   },
@@ -92,11 +94,13 @@ export const kidsAliveInternational: Cause = {
       quote: 'Become a Student Champion with a monthly commitment of $50.',
       sourceId: 'ka-student-champions',
       impliedCostPerOutcome: 600,
+      sameUnitAsCostModel: true,
       impliedOutcome:
         'a scholarship to attend the school, discipleship and counselling, education and tutoring, meals, uniforms and medical care for one student',
     },
     {
-      quote: 'Kids Alive International is a Christian organization grounded in the historic Apostles\' and Nicene Creeds and in the authority of Scripture as God’s inspired Word.',
+      quote:
+        "Kids Alive International is a Christian organization grounded in the historic Apostles' and Nicene Creeds and in the authority of Scripture as God’s inspired Word.",
       sourceId: 'ka-about',
     },
     {
@@ -113,28 +117,23 @@ export const kidsAliveInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'A creedal statement of faith, Christ named in the mission, discipleship and counselling inside the school day, and a stated policy of serving "children of all faiths—and no faith at all" without conditions. Marked down to 2 because the ministry describes itself as "a faith-based nonprofit" on its financial pages and the mission statement it filed with the IRS is entirely secular in wording — the gospel is real here but is not always the thing said first.',
+      note: 'A creedal statement of faith, Christ named in the mission, discipleship and counselling inside the school day, and a stated policy of serving "children of all faiths—and no faith at all" without conditions. Marked down to 2 because the ministry describes itself as "a faith-based nonprofit" on its financial pages and the mission statement it filed with the IRS is entirely secular in wording — the gospel is real here but is not always the thing said first.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Delivery is local: 42 staff, agents and contractors abroad, one foreign office, and two-thirds of programme money granted out to be spent by field organisations. Marked at 2 rather than 3 because the senior titles that appear on the Form 990 — global director of programming, regional director of development — are US-based and paid on US salaries, and no page names the national leaders of the six country programmes.',
+      note: 'Delivery is local: 42 staff, agents and contractors abroad, one foreign office, and two-thirds of programme money granted out to be spent by field organisations. Marked at 2 rather than 3 because the senior titles that appear on the Form 990 — global director of programming, regional director of development — are US-based and paid on US salaries, and no page names the national leaders of the six country programmes.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Ten consecutive years of audited financial statements and ten Form 990s posted on the ministry’s own site, a clean unqualified audit opinion, the functional split published, ECFA accreditation, and a safeguarding policy published in full. This is what a donor should be able to expect and very few ministries actually do.',
+      note: 'Ten consecutive years of audited financial statements and ten Form 990s posted on the ministry’s own site, a clean unqualified audit opinion, the functional split published, ECFA accreditation, and a safeguarding policy published in full. This is what a donor should be able to expect and very few ministries actually do.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Four counts published each year with a stated period, two of them — therapy hours and tutoring hours — measures of delivery rather than enrolment, which is rare and good. Marked down because "lives impacted" is undefined, the student count is enrolment, the count of schools and of children in residential care is not published, and nobody outside the ministry has checked any of it.',
+      note: 'Four counts published each year with a stated period, two of them — therapy hours and tutoring hours — measures of delivery rather than enrolment, which is rare and good. Marked down because "lives impacted" is undefined, the student count is enrolment, the count of schools and of children in residential care is not published, and nobody outside the ministry has checked any of it.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Audited programme spending and a dated student count for the same twelve months, both published by the ministry, plus an advertised monthly price to hold the result against. The division is straightforward; the interpretation is where the care is needed.',
+      note: 'Audited programme spending and a dated student count for the same twelve months, both published by the ministry, plus an advertised monthly price to hold the result against. The division is straightforward; the interpretation is where the care is needed.',
     },
   },
   notVerified: [
@@ -173,8 +172,7 @@ export const kidsAliveInternational: Cause = {
       publisher: 'Kids Alive International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the creedal faith statement, the mission statement, and the commitment to serve "children of all faiths—and no faith at all".',
+      note: 'Source of the creedal faith statement, the mission statement, and the commitment to serve "children of all faiths—and no faith at all".',
     },
     {
       id: 'ka-financials',
@@ -183,8 +181,7 @@ export const kidsAliveInternational: Cause = {
       publisher: 'Kids Alive International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Links ten years of Form 990s and ten years of audited statements. Source of the 75.4 / 14.0 / 10.6 split, the ECFA, Charity Navigator, GuideStar and BBB claims, and the "As a faith-based nonprofit" wording.',
+      note: 'Links ten years of Form 990s and ten years of audited statements. Source of the 75.4 / 14.0 / 10.6 split, the ECFA, Charity Navigator, GuideStar and BBB claims, and the "As a faith-based nonprofit" wording.',
     },
     {
       id: 'ka-fs-2024',
@@ -194,8 +191,7 @@ export const kidsAliveInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Unqualified opinion, report dated November 13, 2025. Program services $10,791,751, general and administrative $1,706,862, fundraising $1,726,936, total $14,225,549. The functional table shows $7,966,044 of programme spending in a single line, "Ministry and mission support".',
+      note: 'Unqualified opinion, report dated November 13, 2025. Program services $10,791,751, general and administrative $1,706,862, fundraising $1,726,936, total $14,225,549. The functional table shows $7,966,044 of programme spending in a single line, "Ministry and mission support".',
     },
     {
       id: 'ka-990-2024',
@@ -205,8 +201,7 @@ export const kidsAliveInternational: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Part III reports the whole $10,791,751 as one program line "including grants of $7,413,121". Schedule F shows 1 foreign office, 42 staff, agents and contractors abroad, $9,243,701 of foreign expenditure, and seven unnamed grantee organisations.',
+      note: 'Part III reports the whole $10,791,751 as one program line "including grants of $7,413,121". Schedule F shows 1 foreign office, 42 staff, agents and contractors abroad, $9,243,701 of foreign expenditure, and seven unnamed grantee organisations.',
     },
     {
       id: 'ka-annual-2024',
@@ -216,8 +211,7 @@ export const kidsAliveInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Source of the denominator: "3,740 Students receiving life-changing education*", footnoted "*Numbers Reflect 2024 Impact Across Kids Alive Countries."',
+      note: 'Source of the denominator: "3,740 Students receiving life-changing education*", footnoted "*Numbers Reflect 2024 Impact Across Kids Alive Countries."',
     },
     {
       id: 'ka-annual-2024-pdf',
@@ -227,8 +221,7 @@ export const kidsAliveInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'The designed report behind the page. Same four headline counts, footnoted "*January - December 2024", plus the Dominican Republic figure of 7 schools and over 2,000 students.',
+      note: 'The designed report behind the page. Same four headline counts, footnoted "*January - December 2024", plus the Dominican Republic figure of 7 schools and over 2,000 students.',
     },
     {
       id: 'ka-annual-2025',
@@ -238,8 +231,7 @@ export const kidsAliveInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        '76,099 lives impacted, 19,538 therapy hours, 514,156 tutoring hours, 1,511 students, 432 staff, "Numbers Reflect January - December 2025 Impact Across All Six Kids Alive Countries." Page 49 sets out the Dominican Republic transition to an independent organisation, completing by June 2026. No audited 2025 statements are posted yet, so these counts have no matching spending figure.',
+      note: '76,099 lives impacted, 19,538 therapy hours, 514,156 tutoring hours, 1,511 students, 432 staff, "Numbers Reflect January - December 2025 Impact Across All Six Kids Alive Countries." Page 49 sets out the Dominican Republic transition to an independent organisation, completing by June 2026. No audited 2025 statements are posted yet, so these counts have no matching spending figure.',
     },
     {
       id: 'ka-student-champions',
@@ -248,8 +240,7 @@ export const kidsAliveInternational: Cause = {
       publisher: 'Kids Alive International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The $50 a month price and the list of what it is said to provide: scholarship, discipleship and counselling, education and tutoring, meals, uniforms, medical care. Offered for Haiti, Kenya, Lebanon and Zambia only.',
+      note: 'The $50 a month price and the list of what it is said to provide: scholarship, discipleship and counselling, education and tutoring, meals, uniforms, medical care. Offered for Haiti, Kenya, Lebanon and Zambia only.',
     },
     {
       id: 'ka-safeguarding',

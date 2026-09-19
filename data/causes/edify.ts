@@ -5,8 +5,8 @@ export const edify: Cause = {
   name: 'Edify',
   ein: '27-0892545',
   tagline:
-    'Trains and lends to the owners of low-fee Christian schools that already exist. Publishes its own cost per student — $1.50 — and defines it.',
-  category: 'children',
+    'Trains and lends to the owners of low-fee Christian schools that already exist. Advertises $1.50 a student, a figure that counts children whose fees its own donors do not pay.',
+  category: 'education',
   countries: [
     'Burkina Faso',
     'Ethiopia',
@@ -28,7 +28,10 @@ export const edify: Cause = {
   whatTheyDo:
     'Edify does not build schools and does not run schools. In sixteen countries across Africa and Latin America it works with the owners of existing low-fee, independent, Christ-centred schools and offers them three things: training for school leaders and teachers, loan capital through local lending partners so a proprietor can add classrooms or equipment, and education technology for classrooms. The loans revolve — repayments are relent — so the same capital keeps working. Its stated client is the school owner and the teacher; the student is the beneficiary at one remove. Founded 2009 in San Diego by the late Tiger Dawson and Chris Crane; country programmes are run by regional vice-presidents who are themselves African and Latin American.',
   accreditations: [
-    { label: 'Evangelical Council for Financial Accountability (ECFA)', sourceId: 'edify-faqs' },
+    {
+      label: 'Evangelical Council for Financial Accountability (ECFA)',
+      sourceId: 'edify-faqs',
+    },
     {
       label: 'Claims highest ratings from Charity Navigator, Candid and Excellence in Giving',
       sourceId: 'edify-faqs',
@@ -41,8 +44,7 @@ export const edify: Cause = {
     scriptures: [
       {
         ref: 'Deuteronomy 6:6–7',
-        text:
-          'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
+        text: 'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
       },
       {
         ref: 'Proverbs 22:6',
@@ -50,8 +52,7 @@ export const edify: Cause = {
       },
       {
         ref: '2 Timothy 3:16–17',
-        text:
-          'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.',
+        text: 'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.',
       },
     ],
     doctrine: {
@@ -73,8 +74,8 @@ export const edify: Cause = {
       'This is the clearest case in the directory of riding an existing network rather than building one. The schools are already there, already enrolled, already staffed and already charging fees that cover teaching; Edify adds training, credit and technology on top. Delivery is by local staff — $4,466,972 of international salaries against $1,253,041 of US programme salaries, with West African, East African and Latin American programmes each led by a regional vice-president from that region. And the capital multiplies without new money: $18.6 million of cumulative loan capital has produced $67.8 million of lending, "365% of the loan capital from Edify, as our lending partners recycle principal repayments."',
   },
   costModel: {
-    outcome: 'student in a school Edify worked with, for a year',
-    outcomePlural: 'students in schools Edify worked with, for a year',
+    outcome: 'school leader or teacher trained',
+    outcomePlural: 'school leaders and teachers trained',
     spend: {
       amount: 18075081,
       basis: 'total-expenses',
@@ -82,39 +83,35 @@ export const edify: Cause = {
       sourceId: 'edify-audit-2025',
     },
     count: {
-      amount: 12083667,
-      label: 'students impacted in independent Christ-centered schools',
+      amount: 97410,
+      label: 'school leaders and teachers trained',
       fiscalYear: '2025',
       sourceId: 'edify-annual-2025',
     },
     attribution: 'all-program-spend',
     caveat:
-      'This is Edify’s own published unit and its own definition — "Cost per student = total Edify expenses divided by total students impacted" — and our arithmetic reproduces the $1.50 it prints. Read it as a cost of reach, not a cost of education. A student is counted when they attend a school that has "interacted with Edify via a loan, training, education technology, conference, etc."; their teacher’s salary, their classroom and their books are paid for by fees their own family pays to an independent proprietor. Edify pays none of the cost of that child’s schooling. Of 45,188 schools counted in 2025, 969 actually received a loan and 3,562 were in the intensive three-year Core programme. The figure also includes $1,817,340 of loan capital which is expensed in the year but lent out and repaid, so part of the numerator is not consumed at all. The denominator is enrolment reported by schools Edify does not own, not attendance, and nobody outside Edify has audited it.',
+      'We deliberately do not divide by the number Edify advertises. Edify publishes a cost per student of $1.50 — "total Edify expenses divided by total students impacted" — and the arithmetic reproduces exactly, but a student is counted when they attend a school that has "interacted with Edify via a loan, training, education technology, conference, etc.", and their teacher’s salary, classroom and books are paid for by fees their own family pays to an independent proprietor. Edify pays none of the cost of that child’s schooling, so $1.50 is a cost of reach rather than a cost of anything delivered. Training is what Edify does itself: 56,084 school leaders and 41,326 teachers in 2025. Charging the whole organisation to training alone overstates it in the other direction, because the same budget also made 1,068 loans and placed classroom technology — so read $186 as an upper bound on a trainee and $1.50 as a lower bound on a child, with the truth between them and closer to neither. Two further limits: $1,817,340 of the numerator is loan capital, expensed in the year but lent out and repaid rather than consumed, and every count here is reported by schools Edify does not own and has been audited by nobody outside Edify.',
     alternates: [
       {
-        label: 'school leaders and teachers trained by Edify and Edify’s partners',
-        count: 97410,
-        note:
-          'The closest thing to a unit of work Edify actually performs — 56,084 school leaders and 41,326 teachers in 2025. Total spending divided by this is about $186 a person trained, which charges the whole organisation to training alone and so overstates it.',
+        label: 'students impacted in independent Christ-centered schools',
+        count: 12083667,
+        note: 'Edify’s own denominator and its own formula, which divides out to the $1.50 per student it advertises. Listed here rather than above because Edify does not pay for those children’s schooling — their families do.',
       },
       {
         label: 'schools impacted through training, capital, and education technology',
         count: 45188,
-        note:
-          'About $400 a school. The same definitional problem as the student count: a school that attended one conference counts the same as a school in the three-year programme.',
+        note: 'About $400 a school. The same definitional problem as the student count: a school that attended one conference counts the same as a school in the three-year programme.',
       },
       {
         label: 'Core Schools in the intensive three-year programme',
         count: 3562,
-        note:
-          'The strictest denominator Edify publishes, and the one where the relationship is deep enough to expect a result: about $5,075 per Core School for the year. Core Schools report a 96.7% national exam pass rate against an 87% national average, which is the only outcome evidence Edify publishes that is not a count of reach.',
+        note: 'The strictest denominator Edify publishes, and the one where the relationship is deep enough to expect a result: about $5,075 per Core School for the year. Core Schools report a 96.7% national exam pass rate against an 87% national average, which is the only outcome evidence Edify publishes that is not a count of reach.',
       },
     ],
   },
   ministryClaims: [
     {
-      quote:
-        'Cost per student = total Edify expenses divided by total students impacted.',
+      quote: 'Cost per student = total Edify expenses divided by total students impacted.',
       sourceId: 'edify-financials',
       impliedCostPerOutcome: 1.5,
       impliedOutcome: 'one student enrolled at a school Edify worked with during the year',
@@ -143,28 +140,23 @@ export const edify: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The Apostles’ Creed published in full with two supporting passages, a mission that says "Christ-centered" rather than "values-based", a vision stated as "Flourishing Godly Nations", core values each hung on a verse, and a named vice-president for Christ-centred education. The theory of change puts "Firm identity & faith in Jesus" first among the outcomes it wants. The creed is short and says nothing about baptism, church order or sexuality, which is a deliberate choice for a partner-facing organisation rather than a gap in conviction.',
+      note: 'The Apostles’ Creed published in full with two supporting passages, a mission that says "Christ-centered" rather than "values-based", a vision stated as "Flourishing Godly Nations", core values each hung on a verse, and a named vice-president for Christ-centred education. The theory of change puts "Firm identity & faith in Jesus" first among the outcomes it wants. The creed is short and says nothing about baptism, church order or sexuality, which is a deliberate choice for a partner-facing organisation rather than a gap in conviction.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'International salaries and benefits are $4,466,972 against $1,253,041 of US programme salaries, the West African and East African programmes are each led by a vice-president from the region, the Latin American programme by a Peruvian, and the schools themselves are owned and run by local proprietors rather than by Edify. The chief executive, chief development officer and chief financial officer are American.',
+      note: 'International salaries and benefits are $4,466,972 against $1,253,041 of US programme salaries, the West African and East African programmes are each led by a vice-president from the region, the Latin American programme by a Peruvian, and the schools themselves are owned and run by local proprietors rather than by Edify. The chief executive, chief development officer and chief financial officer are American.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Sixteen consecutive years of independent audits, Form 990s and annual reports posted on the ministry’s own site, a consolidated unqualified opinion covering subsidiaries, a functional expense table by natural category, a management discussion and analysis that explains the loan accounting against itself, and an audit committee chaired by a named director. It also publishes a cost-per-student figure with the formula attached. This is the top of the class.',
+      note: 'Sixteen consecutive years of independent audits, Form 990s and annual reports posted on the ministry’s own site, a consolidated unqualified opinion covering subsidiaries, a functional expense table by natural category, a management discussion and analysis that explains the loan accounting against itself, and an audit committee chaired by a named director. It also publishes a cost-per-student figure with the formula attached. This is the top of the class.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Scored low, and the reason matters. The headline counts are reach: schools that interacted with Edify and every child enrolled at them. The one real outcome measure — 96.7% pass rate in Core Schools against an 87% national average — is published as two bare percentages with no sample size, no country breakdown, no year-on-year series and no statement of who collected it, and Core Schools are by definition a selected tenth of the roster. Twelve million "students impacted" tells a donor almost nothing about whether any child learned more.',
+      note: 'Scored low, and the reason matters. The headline counts are reach: schools that interacted with Edify and every child enrolled at them. The one real outcome measure — 96.7% pass rate in Core Schools against an 87% national average — is published as two bare percentages with no sample size, no country breakdown, no year-on-year series and no statement of who collected it, and Core Schools are by definition a selected tenth of the roster. Twelve million "students impacted" tells a donor almost nothing about whether any child learned more.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Both halves are published by the ministry, for the same fiscal year, with the formula stated. We reproduced the division and got the printed figure. Whether the unit means anything is a separate question, answered in the caveat.',
+      note: 'Both halves are published by the ministry, for the same fiscal year, with the formula stated. We reproduced the division and got the printed figure. Whether the unit means anything is a separate question, answered in the caveat.',
     },
   },
   notVerified: [
@@ -202,8 +194,7 @@ export const edify: Cause = {
       publisher: 'Edify',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Sixteen years of audits, 990s and annual reports. Source of the published cost per student ($1.50 in 2025, $1.76 in 2024, $1.95 in 2023) and its stated formula.',
+      note: 'Sixteen years of audits, 990s and annual reports. Source of the published cost per student ($1.50 in 2025, $1.76 in 2024, $1.95 in 2023) and its stated formula.',
     },
     {
       id: 'edify-audit-2025',
@@ -213,8 +204,7 @@ export const edify: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Unqualified opinion on Edify and Subsidiaries. Program $14,556,129, general and administrative $1,032,613, fundraising $2,486,339, total $18,075,081. The functional table shows $3,908,509 of school leader and teacher training and $1,817,340 of grants for revolving loans inside the programme figure.',
+      note: 'Unqualified opinion on Edify and Subsidiaries. Program $14,556,129, general and administrative $1,032,613, fundraising $2,486,339, total $18,075,081. The functional table shows $3,908,509 of school leader and teacher training and $1,817,340 of grants for revolving loans inside the programme figure.',
     },
     {
       id: 'edify-annual-2025',
@@ -224,8 +214,7 @@ export const edify: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'A designed 13-page PDF; the headline counts are set in graphics and the management discussion is in two narrow columns, so we rendered page 11 as an image and read it directly. Source of 12,083,667 students impacted, 45,188 schools, 97,410 leaders and teachers trained, 3,562 Core Schools, the 96.7% versus 87% exam comparison, the loan figures and the per-country student counts.',
+      note: 'A designed 13-page PDF; the headline counts are set in graphics and the management discussion is in two narrow columns, so we rendered page 11 as an image and read it directly. Source of 12,083,667 students impacted, 45,188 schools, 97,410 leaders and teachers trained, 3,562 Core Schools, the 96.7% versus 87% exam comparison, the loan figures and the per-country student counts.',
     },
     {
       id: 'edify-990-2025',
@@ -243,8 +232,7 @@ export const edify: Cause = {
       publisher: 'Edify',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the definitions of Client, Core and Champion School, the statements that Edify neither builds nor runs schools, the description of partner schools as "low-fee, independent (non-government-funded)", the 80% programme claim, and the ECFA membership.',
+      note: 'Source of the definitions of Client, Core and Champion School, the statements that Edify neither builds nor runs schools, the description of partner schools as "low-fee, independent (non-government-funded)", the 80% programme claim, and the ECFA membership.',
     },
     {
       id: 'edify-beliefs',

@@ -19,18 +19,15 @@ export const freeWheelchairMission: Cause = {
     scriptures: [
       {
         ref: 'Luke 14:13–14',
-        text:
-          'But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you.',
+        text: 'But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you.',
       },
       {
         ref: 'Proverbs 31:8–9',
-        text:
-          'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
+        text: 'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
       },
       {
         ref: 'Matthew 25:40',
-        text:
-          'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.',
+        text: 'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.',
       },
     ],
     concerns: [
@@ -70,6 +67,7 @@ export const freeWheelchairMission: Cause = {
         'The average cost of our Free Wheelchair Mission wheelchair models is $108, which covers manufacturing and shipping of wheelchairs.',
       sourceId: 'fwm-faqs',
       impliedCostPerOutcome: 108,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'wheelchair',
     },
     {
@@ -90,28 +88,23 @@ export const freeWheelchairMission: Cause = {
   scores: {
     gospelCentrality: {
       value: 1,
-      note:
-        'God is named — the FAQ promises “a message of the love of God” with each chair — but there is no statement of faith, no gospel content described, and no church partnership named. The work is Christian in motive and generic in delivery.',
+      note: 'God is named — the FAQ promises “a message of the love of God” with each chair — but there is no statement of faith, no gospel content described, and no church partnership named. The work is Christian in motive and generic in delivery.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'Headquartered in Irvine, California, with design, manufacturing contracts and governance held there. Distribution is entirely by in-country partners, which is real local delivery, but no partner is named and no field leadership is described, so we cannot score it higher than the structure we can see.',
+      note: 'Headquartered in Irvine, California, with design, manufacturing contracts and governance held there. Distribution is entirely by in-country partners, which is real local delivery, but no partner is named and no field leadership is described, so we cannot score it higher than the structure we can see.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited statements and Form 990s from 2016 through the year ended 30 June 2025 are posted on the ministry’s own accountability page, with a functional expense table detailed enough to separate the in-kind medical line from wheelchair production. Annual reports for every year since 2018 are posted alongside them.',
+      note: 'Audited statements and Form 990s from 2016 through the year ended 30 June 2025 are posted on the ministry’s own accountability page, with a functional expense table detailed enough to separate the in-kind medical line from wheelchair production. Annual reports for every year since 2018 are posted alongside them.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The annual count is published, dated to the fiscal year, tied to a country list, and repeated consistently across the report. Marked down because a chair “sent” is a shipping event, not a person fitted, and the ministry publishes no count of recipients actually seated in a chair.',
+      note: 'The annual count is published, dated to the fiscal year, tied to a country list, and repeated consistently across the report. Marked down because a chair “sent” is a shipping event, not a person fitted, and the ministry publishes no count of recipients actually seated in a chair.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Both halves of the division come out of documents the ministry posts itself, the ministry advertises its own unit price, and the FAQ says precisely what that price includes — which is the one thing that makes the 2.2x gap explainable rather than alarming.',
+      note: 'Both halves of the division come out of documents the ministry posts itself, the ministry advertises its own unit price, and the FAQ says precisely what that price includes — which is the one thing that makes the 2.2x gap explainable rather than alarming.',
     },
   },
   notVerified: [
@@ -163,8 +156,7 @@ export const freeWheelchairMission: Cause = {
       publisher: 'Free Wheelchair Mission',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the $108 claims, the statement that shipping is included in that price, and the “nearly 1.6 million wheelchairs in 95 countries” figure.',
+      note: 'Source of the $108 claims, the statement that shipping is included in that price, and the “nearly 1.6 million wheelchairs in 95 countries” figure.',
     },
     {
       id: 'fwm-audit-25',
@@ -174,8 +166,7 @@ export const freeWheelchairMission: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Program services $15,392,425 of $19,739,453 total expenses. The functional expense table separates “Medical supplies and shipping – In-kind” at $7,590,036 from “Wheelchair production” at $4,324,092.',
+      note: 'Program services $15,392,425 of $19,739,453 total expenses. The functional expense table separates “Medical supplies and shipping – In-kind” at $7,590,036 from “Wheelchair production” at $4,324,092.',
     },
     {
       id: 'fwm-ar-25',
@@ -185,8 +176,7 @@ export const freeWheelchairMission: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of 64,316 wheelchairs to 31 developing countries, the country list, the 78% program ratio claim and the 1.5 million lifetime figure.',
+      note: 'Source of 64,316 wheelchairs to 31 developing countries, the country list, the 78% program ratio claim and the 1.5 million lifetime figure.',
     },
     {
       id: 'fwm-propublica',

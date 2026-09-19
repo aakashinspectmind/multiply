@@ -42,7 +42,8 @@ export const lukeSociety: Cause = {
     'The Luke Society finds Christian doctors, nurses and dentists who already live in a poor community, and pays for the clinic or community health programme they want to run among their own people. It sends money, monthly mentoring, prayer and an annual visit; it does not send clinicians. Each ministry is owned and directed by the national who founded it. Four regional coordinators, also nationals, oversee the ministries in their part of the world, and volunteer Partnership Ministry Teams of American health and business professionals advise individual directors. Founded in 1964 by Christian Reformed doctors to rescue a hospital in Rehoboth, New Mexico, it moved overseas in 1980 and has supported 86 ministry sites in 44 countries since.',
   accreditations: [
     {
-      label: 'ECFA member (claimed on the ministry’s own page; we could not confirm it in ECFA’s directory)',
+      label:
+        'ECFA member (claimed on the ministry’s own page; we could not confirm it in ECFA’s directory)',
       sourceId: 'ls-give',
     },
   ],
@@ -57,13 +58,11 @@ export const lukeSociety: Cause = {
       },
       {
         ref: 'Matthew 9:35–36',
-        text:
-          'And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction. When he saw the crowds, he had compassion for them, because they were harassed and helpless, like sheep without a shepherd.',
+        text: 'And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction. When he saw the crowds, he had compassion for them, because they were harassed and helpless, like sheep without a shepherd.',
       },
       {
         ref: '1 Corinthians 3:6–7',
-        text:
-          'I planted, Apollos watered, but God gave the growth. So neither he who plants nor he who waters is anything, but only God who gives the growth.',
+        text: 'I planted, Apollos watered, but God gave the growth. So neither he who plants nor he who waters is anything, but only God who gives the growth.',
       },
     ],
     doctrine: {
@@ -106,14 +105,12 @@ export const lukeSociety: Cause = {
       {
         label: 'ministries and regional coordinators supported',
         count: 44,
-        note:
-          'About $53,600 each. Adding the four coordinators to the denominator treats a supervisor and a clinic as the same unit, which they plainly are not — but it is the denominator the Form 990 itself uses in one sentence.',
+        note: 'About $53,600 each. Adding the four coordinators to the denominator treats a supervisor and a clinic as the same unit, which they plainly are not — but it is the denominator the Form 990 itself uses in one sentence.',
       },
       {
         label: 'countries with an active ministry',
         count: 29,
-        note:
-          'About $81,300 per country, which is the broadest unit available and the least meaningful. Mali and Niger each have three or four separate ministries; one country in the count has none that is publicly named.',
+        note: 'About $81,300 per country, which is the broadest unit available and the least meaningful. Mali and Niger each have three or four separate ministries; one country in the count has none that is publicly named.',
       },
     ],
   },
@@ -124,7 +121,8 @@ export const lukeSociety: Cause = {
       sourceId: 'ls-about',
     },
     {
-      quote: 'Nearly 90 percent of every dollar donated to the Luke Society goes directly to ministry needs.',
+      quote:
+        'Nearly 90 percent of every dollar donated to the Luke Society goes directly to ministry needs.',
       sourceId: 'ls-give',
     },
     {
@@ -146,28 +144,23 @@ export const lukeSociety: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A seven-clause statement of faith, a mission statement that ends on evangelism and discipleship, and a stated position that "Everything we do at the Luke Society is evangelistically focused". Ministry directors are selected as Christian visionaries first and clinicians second. There is nothing ambiguous here.',
+      note: 'A seven-clause statement of faith, a mission statement that ends on evangelism and discipleship, and a stated position that "Everything we do at the Luke Society is evangelistically focused". Ministry directors are selected as Christian visionaries first and clinicians second. There is nothing ambiguous here.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The strongest case in this category. Every one of the 40 ministries is founded, owned and directed by a national working in their own language and culture, all four regional coordinators are nationals, and the ministry explicitly refuses to send American clinicians or work teams. The board, the staff and the money are in Sioux Falls, which is the only thing keeping this from being higher.',
+      note: 'The strongest case in this category. Every one of the 40 ministries is founded, owned and directed by a national working in their own language and culture, all four regional coordinators are nationals, and the ministry explicitly refuses to send American clinicians or work teams. The board, the staff and the money are in Sioux Falls, which is the only thing keeping this from being higher.',
     },
     financialTransparency: {
       value: 1,
-      note:
-        'The ministry publishes nothing financial: no audit, no Form 990, no annual report, no expense split, no reserve policy. An audit exists and is available only on request. It also advertises that "Nearly 90 percent of every dollar donated" reaches ministry needs, where its own return puts programme spending at 83.4% of expenses and 77.3% of contributions. Not 0, because the return itself is complete, detailed and internally consistent, all 12 directors are independent and uncompensated, and the required governance policies are in place.',
+      note: 'The ministry publishes nothing financial: no audit, no Form 990, no annual report, no expense split, no reserve policy. An audit exists and is available only on request. It also advertises that "Nearly 90 percent of every dollar donated" reaches ministry needs, where its own return puts programme spending at 83.4% of expenses and 77.3% of contributions. Not 0, because the return itself is complete, detailed and internally consistent, all 12 directors are independent and uncompensated, and the required governance policies are in place.',
     },
     outcomeEvidence: {
       value: 0,
-      note:
-        'A zero, and it is a finding rather than an oversight. The Luke Society publishes no aggregate outcome figure of any kind — not patients seen, consultations, births, surgeries, vaccinations, health workers trained, or communities reached — for any year, anywhere. What it counts are inputs: 40 ministries, 29 countries, 4 coordinators, 1,400 prayer partners. Its own Schedule F says the ministries are asked every month for statistical data on clinic and community health education activities, so the data is collected and simply never published. Individual ministry pages carry occasional narrative volumes, such as more than 800 patients a month in Monrovia, which cannot be added up. Publishing the monthly statistics it already receives would move this score immediately.',
+      note: 'A zero, and it is a finding rather than an oversight. The Luke Society publishes no aggregate outcome figure of any kind — not patients seen, consultations, births, surgeries, vaccinations, health workers trained, or communities reached — for any year, anywhere. What it counts are inputs: 40 ministries, 29 countries, 4 coordinators, 1,400 prayer partners. Its own Schedule F says the ministries are asked every month for statistical data on clinic and community health education activities, so the data is collected and simply never published. Individual ministry pages carry occasional narrative volumes, such as more than 800 patients a month in Monrovia, which cannot be added up. Publishing the monthly statistics it already receives would move this score immediately.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'There is a cost model only because the denominator happens to be confirmed by two independent documents. But the unit is a clinic rather than a patient, so the figure cannot be compared with anything else in this category; the ministry publishes no cost figure of its own; and the single efficiency claim it does make does not match its own tax return.',
+      note: 'There is a cost model only because the denominator happens to be confirmed by two independent documents. But the unit is a clinic rather than a patient, so the figure cannot be compared with anything else in this category; the ministry publishes no cost figure of its own; and the single efficiency claim it does make does not match its own tax return.',
     },
   },
   notVerified: [
@@ -207,8 +200,7 @@ export const lukeSociety: Cause = {
       publisher: 'Luke Society',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Carries the "What we don’t do" section, the seven faith statements adopted from ECFA, and the statement that the work is evangelistically focused. There is no financial information on this page or anywhere else on the site.',
+      note: 'Carries the "What we don’t do" section, the seven faith statements adopted from ECFA, and the statement that the work is evangelistically focused. There is no financial information on this page or anywhere else on the site.',
     },
     {
       id: 'ls-history',
@@ -217,8 +209,7 @@ export const lukeSociety: Cause = {
       publisher: 'Luke Society',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the 40 ministries in 29 countries figure, the 86 sites in 44 countries since 1964, and the timeline from which the countries on this page were taken. Active ministries are marked in bold or linked; the page states that some active ministries are deliberately omitted for security.',
+      note: 'Source of the 40 ministries in 29 countries figure, the 86 sites in 44 countries since 1964, and the timeline from which the countries on this page were taken. Active ministries are marked in bold or linked; the page states that some active ministries are deliberately omitted for security.',
     },
     {
       id: 'ls-ministries',
@@ -235,8 +226,7 @@ export const lukeSociety: Cause = {
       publisher: 'Luke Society',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the "nearly 90 percent" claim, the ECFA membership claim, the statement that no medical brigades are sent, and the description of Partnership Ministry Teams making annual visits.',
+      note: 'Source of the "nearly 90 percent" claim, the ECFA membership claim, the statement that no medical brigades are sent, and the description of Partnership Ministry Teams making annual visits.',
     },
     {
       id: 'ls-monrovia',
@@ -245,8 +235,7 @@ export const lukeSociety: Cause = {
       publisher: 'Luke Society',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'A representative ministry page. Gives 53 staff, more than 800 patients a month and daily devotions in the waiting room. These per-ministry volumes are narrative and are not aggregated anywhere.',
+      note: 'A representative ministry page. Gives 53 staff, more than 800 patients a month and daily devotions in the waiting room. These per-ministry volumes are narrative and are not aggregated anywhere.',
     },
     {
       id: 'ls-990-25',
@@ -256,8 +245,7 @@ export const lukeSociety: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-19',
       fiscalYear: '2025',
-      note:
-        'Signed 28 April 2026. Part IX line 25 gives programme $2,358,948 of $2,829,489; Part III carries the 40 foreign organisations and 4 regional coordinators; Part XII line 2b confirms the financial statements are audited. The ministry does not post this return itself, and ProPublica blocks automated download of the raw XML, so we read its rendered reconstruction of the IRS data.',
+      note: 'Signed 28 April 2026. Part IX line 25 gives programme $2,358,948 of $2,829,489; Part III carries the 40 foreign organisations and 4 regional coordinators; Part XII line 2b confirms the financial statements are audited. The ministry does not post this return itself, and ProPublica blocks automated download of the raw XML, so we read its rendered reconstruction of the IRS data.',
     },
     {
       id: 'ls-990-sched-f',
@@ -267,8 +255,7 @@ export const lukeSociety: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-19',
       fiscalYear: '2025',
-      note:
-        'Part I line 1 is answered "No"; Part I line 3 gives the seven regional totals; Part II shows the general-support and capital split with all 40 recipient names blank; Part III shows the four regional coordinators; Part V describes the monitoring procedures.',
+      note: 'Part I line 1 is answered "No"; Part I line 3 gives the seven regional totals; Part II shows the general-support and capital split with all 40 recipient names blank; Part III shows the four regional coordinators; Part V describes the monitoring procedures.',
     },
     {
       id: 'ls-990-sched-o',
@@ -278,8 +265,7 @@ export const lukeSociety: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-19',
       fiscalYear: '2025',
-      note:
-        'Carries the mission statement as filed, the disclosure that Doug and Holly Van Hofwegen are related, and the answer "DOCUMENTS AVAILABLE UPON REQUEST" to Part VI Section C line 19 on public availability of financial statements.',
+      note: 'Carries the mission statement as filed, the disclosure that Doug and Holly Van Hofwegen are related, and the answer "DOCUMENTS AVAILABLE UPON REQUEST" to Part VI Section C line 19 on public availability of financial statements.',
     },
     {
       id: 'ls-propublica',
@@ -288,8 +274,7 @@ export const lukeSociety: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-19',
-      note:
-        'Where the multi-year series used here comes from: net assets of $6,446,790 in 2019 rising to $17,755,453 in 2025 against expenses that never exceeded $2,856,937.',
+      note: 'Where the multi-year series used here comes from: net assets of $6,446,790 in 2019 rising to $17,755,453 in 2025 against expenses that never exceeded $2,856,937.',
     },
   ],
 };

@@ -24,18 +24,15 @@ export const newGenerations: Cause = {
     scriptures: [
       {
         ref: 'Matthew 28:18–20',
-        text:
-          'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you.',
+        text: 'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you.',
       },
       {
         ref: 'Acts 14:23',
-        text:
-          'And when they had appointed elders for them in every church, with prayer and fasting they committed them to the Lord in whom they had believed.',
+        text: 'And when they had appointed elders for them in every church, with prayer and fasting they committed them to the Lord in whom they had believed.',
       },
       {
         ref: '2 Timothy 2:2',
-        text:
-          'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
+        text: 'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
       },
     ],
     doctrine: { label: 'Statement of Faith', sourceId: 'ng-faith' },
@@ -72,14 +69,12 @@ export const newGenerations: Cause = {
       {
         label: 'new churches reported in South Asia alone',
         count: 19895,
-        note:
-          'South Asia produced 68.9% of the 2024 churches on about 11.9% of the foreign spending disclosed in Schedule F. The regional rows sum exactly to the headline total, which is the one internal check on this number that does hold.',
+        note: 'South Asia produced 68.9% of the 2024 churches on about 11.9% of the foreign spending disclosed in Schedule F. The regional rows sum exactly to the headline total, which is the one internal check on this number that does hold.',
       },
       {
         label: 'new Disciple Making Movements that crossed into fourth-generation growth',
         count: 75,
-        note:
-          'New Generations says movements, not churches, are “our main measure of success”. A movement is at least 100 churches four generations deep, so this denominator is far harder to reach and gives a cost of $92,911 each.',
+        note: 'New Generations says movements, not churches, are “our main measure of success”. A movement is at least 100 churches four generations deep, so this denominator is far harder to reach and gives a cost of $92,911 each.',
       },
     ],
   },
@@ -101,28 +96,23 @@ export const newGenerations: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A full statement of faith on the site, and the programme is disciple-making and church planting with nothing else in it. Their own definition of a church — “spiritual families centered on Jesus, shaped by His Word, and committed to making more disciples” — is the whole product.',
+      note: 'A full statement of faith on the site, and the programme is disciple-making and church planting with nothing else in it. Their own definition of a church — “spiritual families centered on Jesus, shaped by His Word, and committed to making more disciples” — is the whole product.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The 2024 Form 990 Schedule F reports no office and no employee, agent or contractor in any foreign region. Every planter is a national. Governance and fundraising are in Wheaton, Illinois.',
+      note: 'The 2024 Form 990 Schedule F reports no office and no employee, agent or contractor in any foreign region. Every planter is a national. Governance and fundraising are in Wheaton, Illinois.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited statements and Form 990s for 2021 through 2024 are posted on the site, with a line-by-line functional breakdown, an ECFA member profile and four other accreditation seals. Schedule F discloses foreign spending by region.',
+      note: 'Audited statements and Form 990s for 2021 through 2024 are posted on the site, with a line-by-line functional breakdown, an ECFA member profile and four other accreditation seals. Schedule F discloses foreign spending by region.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Counts are published quarterly and annually, the regional rows add up to the headline totals, and the definitions of “church” and “movement” are printed next to the numbers — better than anything else in this category. Marked down two points because the cumulative totals contradict each other across their own pages and no external verification is published.',
+      note: 'Counts are published quarterly and annually, the regional rows add up to the headline totals, and the definitions of “church” and “movement” are printed next to the numbers — better than anything else in this category. Marked down two points because the cumulative totals contradict each other across their own pages and no external verification is published.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Both halves exist, one from an audit and one from the impact report for the same year, and the program figure reconciles between the audit and Form 990 to the dollar. New Generations publishes no cost per church itself.',
+      note: 'Both halves exist, one from an audit and one from the impact report for the same year, and the program figure reconciles between the audit and Form 990 to the dollar. New Generations publishes no cost per church itself.',
     },
   },
   notVerified: [
@@ -135,7 +125,7 @@ export const newGenerations: Cause = {
     'Whether the churches become self-supporting. The multiplication argument depends on later generations costing nothing, and no figure is published for how many churches still need outside money after a year.',
   ],
   notes: [
-    'The single largest item inside program services is one line on both the audit and Form 990: Disciple Making Movements, $4,101,928, or 58.9% of program spending. If you charged only that line to church planting the figure would be $142.07 per church rather than $241.35. We used the full program figure because the rest of the program budget also feeds the same work.',
+    'The single largest item inside program services is one line on both the audit and Form 990: Disciple Making Movements, $4,101,928, or 58.9% of program spending. If you charged only that line to church planting the figure would be $142.07 per church rather than $241.34. We used the full program figure because the rest of the program budget also feeds the same work.',
     'Schedule F reports $5,765,657 of the $6,968,346 — 82.7% — left the United States. Dividing only the foreign spend gives $199.69 per church.',
     'The regional breakdown in the 2024 report sums exactly to both headline totals: 829 + 19,895 + 1,066 + 2,758 + 2,070 + 310 + 24 + 1,921 = 28,873 churches. We checked this because it is the kind of arithmetic that usually fails.',
     'South Asia reported 19,895 of the 28,873 churches on $621,311 of program spending plus $66,375 of travel, against $3,634,872 plus $421,993 in sub-Saharan Africa. Either South Asia is enormously more productive per dollar or the two regions are counting different things. That gap is the most interesting unanswered question on this page.',
@@ -160,8 +150,7 @@ export const newGenerations: Cause = {
       publisher: 'New Generations',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Describes the quarterly evaluation, internal audit and external audit process, and carries two of the four conflicting cumulative totals — 219,253 churches with 445 movements in one paragraph, 213,452 churches with 460 movements in another.',
+      note: 'Describes the quarterly evaluation, internal audit and external audit process, and carries two of the four conflicting cumulative totals — 219,253 churches with 445 movements in one paragraph, 213,452 churches with 460 movements in another.',
     },
     {
       id: 'ng-faith',
@@ -178,8 +167,7 @@ export const newGenerations: Cause = {
       publisher: 'New Generations',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Links audits and Form 990s for 2021 through 2024 and displays the ECFA, TrustBridge Global, Excellence in Giving, GuideStar and Charity Navigator seals. Source of the 205,123 churches and 3,405,039 disciples figures.',
+      note: 'Links audits and Form 990s for 2021 through 2024 and displays the ECFA, TrustBridge Global, Excellence in Giving, GuideStar and Charity Navigator seals. Source of the 205,123 churches and 3,405,039 disciples figures.',
     },
     {
       id: 'ng-audit-24',
@@ -189,8 +177,7 @@ export const newGenerations: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Program $6,968,346, management and general $525,570, fundraising $788,178, total $8,282,094. Disciple Making Movements is itemised at $4,101,928.',
+      note: 'Program $6,968,346, management and general $525,570, fundraising $788,178, total $8,282,094. Disciple Making Movements is itemised at $4,101,928.',
     },
     {
       id: 'ng-990-24',
@@ -200,8 +187,7 @@ export const newGenerations: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Part IX agrees with the audit to the dollar. Schedule F reports $5,765,657 of foreign expenditure, no office and no employee, agent or contractor in any region, and names no grantee.',
+      note: 'Part IX agrees with the audit to the dollar. Schedule F reports $5,765,657 of foreign expenditure, no office and no employee, agent or contractor in any region, and names no grantee.',
     },
     {
       id: 'ng-impact-24',
@@ -211,8 +197,7 @@ export const newGenerations: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Source of 28,873 new churches, 322,091 new disciples and 75 new movements, and of the definitions of “movement” and “church”. The regional breakdown is set in a graphic; we read the page rather than the extracted text.',
+      note: 'Source of 28,873 new churches, 322,091 new disciples and 75 new movements, and of the definitions of “movement” and “church”. The regional breakdown is set in a graphic; we read the page rather than the extracted text.',
     },
     {
       id: 'ng-impact-25',
@@ -222,8 +207,7 @@ export const newGenerations: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Reports 39,047 new churches and 363,776 new disciples for 2025, and cumulative totals of 196,926 churches, 3,294,444 disciples and 358 movements. No 2025 audit was posted when we looked, so nothing here is divided.',
+      note: 'Reports 39,047 new churches and 363,776 new disciples for 2025, and cumulative totals of 196,926 churches, 3,294,444 disciples and 358 movements. No 2025 audit was posted when we looked, so nothing here is divided.',
     },
   ],
 };

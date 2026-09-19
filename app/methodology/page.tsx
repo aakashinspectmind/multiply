@@ -51,9 +51,9 @@ export default function MethodologyPage() {
         </p>
         <ul className="mt-4 list-disc space-y-3 pl-5 text-lg text-gray-800">
           <li>
-            <span className="font-medium">It is an average, not a price.</span> The next gift may buy
-            more or less than the last one did. It is not a purchase, and no ministry owes you the
-            outcome you divided for.
+            <span className="font-medium">It is an average, not a price.</span> The next gift may
+            buy more or less than the last one did. It is not a purchase, and no ministry owes you
+            the outcome you divided for.
           </li>
           <li>
             <span className="font-medium">Shared costs are charged to one outcome.</span> A hospital
@@ -69,8 +69,8 @@ export default function MethodologyPage() {
           </li>
         </ul>
         <p className="mt-4 text-lg text-gray-800">
-          Where a ministry advertises a price but publishes nothing to divide, we quote the price and
-          say so in those words. The figure stays on the page because it is what the ministry is
+          Where a ministry advertises a price but publishes nothing to divide, we quote the price
+          and say so in those words. The figure stays on the page because it is what the ministry is
           asking you to believe; it is labelled as unchecked because that is what it is. We do not
           turn a marketing number into a denominator and hand it back to you as arithmetic.
         </p>
@@ -98,11 +98,11 @@ export default function MethodologyPage() {
           a nurse’s day costs — and it is the honest core of “$1 goes further here.”
         </p>
         <p className="mt-3 text-lg text-gray-800">
-          It is also not an efficiency score. A cheap country is not the same as a good ministry, and
-          a 148× cost base does not mean your gift accomplishes 148 times as much. Poor countries are
-          harder places to work: logistics cost more, equipment is imported at a premium, and
-          oversight is thinner. The ratio tells you why the ceiling is higher. Whether a particular
-          ministry reaches it is what the rest of its page is about.
+          It is also not an efficiency score. A cheap country is not the same as a good ministry,
+          and a 148× cost base does not mean your gift accomplishes 148 times as much. Poor
+          countries are harder places to work: logistics cost more, equipment is imported at a
+          premium, and oversight is thinner. The ratio tells you why the ceiling is higher. Whether
+          a particular ministry reaches it is what the rest of its page is about.
         </p>
       </section>
 
@@ -111,22 +111,22 @@ export default function MethodologyPage() {
         <p className="mt-3 text-lg text-gray-800">
           Each cause states the biblical mandate the work sits on, with the passages quoted so you
           can weigh them yourself rather than take our summary for it. This is a judgement about the
-          kind of work being done — feeding, healing, translating, sending, defending the
-          fatherless — not a measurement of its results.
+          kind of work being done — feeding, healing, translating, sending, defending the fatherless
+          — not a measurement of its results.
         </p>
         <p className="mt-3 text-lg text-gray-800">
           We also write down our reservations, including the ones a ministry would rather we left
-          out: where a statement of faith is missing, where care could become the price of a hearing,
-          where a model is contested among Christians who do this work for a living. A page with no
-          reservations listed means we found none, which is rarer than it sounds.
+          out: where a statement of faith is missing, where care could become the price of a
+          hearing, where a model is contested among Christians who do this work for a living. A page
+          with no reservations listed means we found none, which is rarer than it sounds.
         </p>
       </section>
 
       <section>
         <h2 className="text-2xl font-semibold tracking-tight">Five questions, three points each</h2>
         <p className="mt-3 text-lg text-gray-800">
-          Scores are our own reading of public documents — a desk review, not an audit and not a site
-          visit. Where we did not look, the score is blank rather than zero.
+          Scores are our own reading of public documents — a desk review, not an audit and not a
+          site visit. Where we did not look, the score is blank rather than zero.
         </p>
         <dl className="mt-5 space-y-4">
           {SCORE_DIMENSIONS.map((dimension) => (

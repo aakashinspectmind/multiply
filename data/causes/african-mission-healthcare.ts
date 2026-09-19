@@ -26,7 +26,10 @@ export const africanMissionHealthcare: Cause = {
   accreditations: [
     { label: 'Charity Navigator four stars', sourceId: 'amh-financials' },
     { label: 'Candid Platinum Transparency', sourceId: 'amh-financials' },
-    { label: 'Excellence in Giving certified transparent', sourceId: 'amh-financials' },
+    {
+      label: 'Excellence in Giving certified transparent',
+      sourceId: 'amh-financials',
+    },
     {
       label: 'Approved International Charity, Combined Federal Campaign',
       sourceId: 'amh-financials',
@@ -39,18 +42,15 @@ export const africanMissionHealthcare: Cause = {
     scriptures: [
       {
         ref: 'Luke 10:34–35',
-        text:
-          'He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, “Take care of him, and whatever more you spend, I will repay you when I come back.”',
+        text: 'He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, “Take care of him, and whatever more you spend, I will repay you when I come back.”',
       },
       {
         ref: 'Matthew 10:8',
-        text:
-          'Heal the sick, raise the dead, cleanse lepers, cast out demons. You received without paying; give without pay.',
+        text: 'Heal the sick, raise the dead, cleanse lepers, cast out demons. You received without paying; give without pay.',
       },
       {
         ref: 'Matthew 25:36',
-        text:
-          'I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
+        text: 'I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
       },
     ],
     concerns: [
@@ -87,20 +87,17 @@ export const africanMissionHealthcare: Cause = {
       {
         label: 'surgical and corrective procedures reported on the Form 990',
         count: 6726,
-        note:
-          'The 990 says 6,726 “surgical and corrective procedures” for the same calendar year in which the highlights book says 5,942 surgeries and 3,606 cataract procedures. Neither document defines its unit and the two do not reconcile.',
+        note: 'The 990 says 6,726 “surgical and corrective procedures” for the same calendar year in which the highlights book says 5,942 surgeries and 3,606 cataract procedures. Neither document defines its unit and the two do not reconcile.',
       },
       {
         label: 'surgeries African Mission Healthcare directly sponsored through SAFE',
         count: 3294,
-        note:
-          'The narrowest count, and the only one tied to a named programme line. SAFE itself spent $1,404,561 — dividing all programme spending by SAFE’s surgeries mixes a small numerator’s output with the whole budget.',
+        note: 'The narrowest count, and the only one tied to a named programme line. SAFE itself spent $1,404,561 — dividing all programme spending by SAFE’s surgeries mixes a small numerator’s output with the whole budget.',
       },
       {
         label: 'clinical visits',
         count: 384679,
-        note:
-          'The broadest unit published, at about $30 each. An outpatient visit and a laparotomy are not the same event and this denominator should never be compared with a cost per surgery.',
+        note: 'The broadest unit published, at about $30 each. An outpatient visit and a laparotomy are not the same event and this denominator should never be compared with a cost per surgery.',
       },
     ],
   },
@@ -110,6 +107,7 @@ export const africanMissionHealthcare: Cause = {
         'In 2025, SAFE sponsored 3,294 surgeries at an average cost of $430 and 432 normal deliveries at an average cost of $30.',
       sourceId: 'amh-highlights-25',
       impliedCostPerOutcome: 430,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'sponsored surgery',
     },
     {
@@ -131,28 +129,23 @@ export const africanMissionHealthcare: Cause = {
   scores: {
     gospelCentrality: {
       value: 1,
-      note:
-        'The work is done at Christian mission hospitals and the ministry funds “Christian medical missionaries” by name, but African Mission Healthcare itself publishes no statement of faith, is co-founded and chaired by a donor who describes his motivation as Jewish, and never claims to be a Christian organisation. The gospel is in the hospitals, not in the funder’s own words.',
+      note: 'The work is done at Christian mission hospitals and the ministry funds “Christian medical missionaries” by name, but African Mission Healthcare itself publishes no statement of faith, is co-founded and chaired by a donor who describes his motivation as Jewish, and never claims to be a Christian organisation. The gospel is in the hospitals, not in the funder’s own words.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The surgery, the hospital and the surgeon are African or long-resident missionary, and 558 African health workers were trained in 2025. But the model is a US foundation awarding grants: the decisions about which hospital gets funded, and the board making them, are American.',
+      note: 'The surgery, the hospital and the surgeon are African or long-resident missionary, and 558 African health workers were trained in 2025. But the model is a US foundation awarding grants: the decisions about which hospital gets funded, and the board making them, are American.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'The full Form 990 is posted on the site with Part III programme detail and a line-by-line Part IX, and four external ratings are displayed. Marked down because the 2025 audited financial statements are behind a page with no downloadable file, and because ECFA — the accreditation that speaks to evangelical governance — is absent.',
+      note: 'The full Form 990 is posted on the site with Part III programme detail and a line-by-line Part IX, and four external ratings are displayed. Marked down because the 2025 audited financial statements are behind a page with no downloadable file, and because ECFA — the accreditation that speaks to evangelical governance — is absent.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Counts are specific and unusually varied: surgeries, cataract procedures, deliveries, C-sections, trainees, clinical visits. Marked down because the 990 and the highlights book give different numbers for the same year and neither defines its unit, and because every count is produced by a grantee hospital rather than by African Mission Healthcare.',
+      note: 'Counts are specific and unusually varied: surgeries, cataract procedures, deliveries, C-sections, trainees, clinical visits. Marked down because the 990 and the highlights book give different numbers for the same year and neither defines its unit, and because every count is produced by a grantee hospital rather than by African Mission Healthcare.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Rare and creditable: the ministry publishes an average cost per sponsored surgery, and $430 × 3,294 plus $30 × 432 comes to $1,429,380 against the $1,404,561 the 990 reports for the SAFE programme — agreement within 1.8%, which is the best internal check in this category. Marked down because that price covers one small programme line and is nowhere reconciled with the other $10.3 million.',
+      note: 'Rare and creditable: the ministry publishes an average cost per sponsored surgery, and $430 × 3,294 plus $30 × 432 comes to $1,429,380 against the $1,404,561 the 990 reports for the SAFE programme — agreement within 1.8%, which is the best internal check in this category. Marked down because that price covers one small programme line and is nowhere reconciled with the other $10.3 million.',
     },
   },
   notVerified: [
@@ -189,8 +182,7 @@ export const africanMissionHealthcare: Cause = {
       publisher: 'African Mission Healthcare',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the mission statement and of the description of the two founders, one Christian and one Jewish.',
+      note: 'Source of the mission statement and of the description of the two founders, one Christian and one Jewish.',
     },
     {
       id: 'amh-history',
@@ -208,8 +200,7 @@ export const africanMissionHealthcare: Cause = {
       publisher: 'African Mission Healthcare',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The headline counters on this page are loaded by script and did not render for us; the quoted claims are from the printed list of clinical results below them.',
+      note: 'The headline counters on this page are loaded by script and did not render for us; the quoted claims are from the printed list of clinical results below them.',
     },
     {
       id: 'amh-financials',
@@ -218,8 +209,7 @@ export const africanMissionHealthcare: Cause = {
       publisher: 'African Mission Healthcare',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Lists the four external ratings. The “96%” is rendered by an animated counter; we took it from the page’s own markup. The link to the 2025 audited statements leads to a page with no file on it.',
+      note: 'Lists the four external ratings. The “96%” is rendered by an animated counter; we took it from the page’s own markup. The link to the 2025 audited statements leads to a page with no file on it.',
     },
     {
       id: 'amh-990-25',
@@ -229,8 +219,7 @@ export const africanMissionHealthcare: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Calendar 2025. Part IX line 25 gives programme $11,660,370 of $13,288,857 total. Part III splits it into $10,255,809 of hospital support and $1,404,561 of SAFE surgical sponsorship, and Schedule O carries the 3,294 surgeries, 432 births, 558 trainees and $2.7 million of equipment.',
+      note: 'Calendar 2025. Part IX line 25 gives programme $11,660,370 of $13,288,857 total. Part III splits it into $10,255,809 of hospital support and $1,404,561 of SAFE surgical sponsorship, and Schedule O carries the 3,294 surgeries, 432 births, 558 trainees and $2.7 million of equipment.',
     },
     {
       id: 'amh-highlights-25',
@@ -240,8 +229,7 @@ export const africanMissionHealthcare: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'A designed annual report with no financial statements in it. Every count here comes from graphic panels, and the SAFE cost sentence is set across nine short lines inside an illustration — we have reflowed it to one line and changed nothing else.',
+      note: 'A designed annual report with no financial statements in it. Every count here comes from graphic panels, and the SAFE cost sentence is set across nine short lines inside an illustration — we have reflowed it to one line and changed nothing else.',
     },
     {
       id: 'amh-propublica',

@@ -31,7 +31,13 @@ function MinistryClaims({
       <ul className="mt-3 space-y-4">
         {cause.ministryClaims.map((claim) => {
           const implied = claim.impliedCostPerOutcome;
-          const factor = implied && perOutcome !== null ? perOutcome / implied : null;
+          // Only an advertised figure about the same unit gets set against our
+          // division. See `sameUnitAsCostModel` — comparing a price per Bible
+          // against a cost per evangelist-year invents a discrepancy.
+          const factor =
+            implied && perOutcome !== null && claim.sameUnitAsCostModel
+              ? perOutcome / implied
+              : null;
           const outcome = claim.impliedOutcome ?? fallbackOutcome;
           if (implied && !outcome) {
             throw new Error(
@@ -63,10 +69,17 @@ function MinistryClaims({
                       : `The two agree within ${Math.round(Math.abs(factor - 1) * 100)}%.`}
                 </p>
               )}
-              {implied && factor === null && (
+              {implied && factor === null && perOutcome === null && (
                 <p className="mt-2 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
                   That works out to {formatMoney(implied)} per {outcome}, on the ministry’s own
                   figure. We have nothing to check it against — see what is missing below.
+                </p>
+              )}
+              {implied && factor === null && perOutcome !== null && (
+                <p className="mt-2 rounded-lg bg-paper px-4 py-3 text-base text-gray-800">
+                  That works out to {formatMoney(implied)} per {outcome}, on the ministry’s own
+                  figure. It is a different unit from the one divided out above — {fallbackOutcome}{' '}
+                  — so the two numbers do not check each other, and we do not pretend they do.
                 </p>
               )}
             </li>

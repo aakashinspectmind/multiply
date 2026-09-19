@@ -18,18 +18,15 @@ export const pearlHouse: Cause = {
     scriptures: [
       {
         ref: 'Proverbs 31:8–9',
-        text:
-          'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
+        text: 'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
       },
       {
         ref: 'Psalm 82:3–4',
-        text:
-          'Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked.',
+        text: 'Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked.',
       },
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
     ],
     concerns: [
@@ -64,8 +61,7 @@ export const pearlHouse: Cause = {
       {
         label: 'students taught at Pearl House Academy and Pearl College',
         count: 385,
-        note:
-          'The largest published count, and the same dollars divided by it land near the low end. Most of these students are not in residential care, so this understates what raising a Pearl costs as badly as the headline overstates it.',
+        note: 'The largest published count, and the same dollars divided by it land near the low end. Most of these students are not in residential care, so this understates what raising a Pearl costs as badly as the headline overstates it.',
       },
     ],
   },
@@ -82,28 +78,23 @@ export const pearlHouse: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'Stated in the tax return itself, not just the marketing: "we empower our girls to discover their unique identity and purpose in Christ". The career centres are described as Christian vocational schools, the Ghanaian board treasurer is an ordained Baptist minister, and the education pages talk about shaping Christ-centred young people. Unambiguous.',
+      note: 'Stated in the tax return itself, not just the marketing: "we empower our girls to discover their unique identity and purpose in Christ". The career centres are described as Christian vocational schools, the Ghanaian board treasurer is an ordained Baptist minister, and the education pages talk about shaping Christ-centred young people. Unambiguous.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Sixty-nine of the staff are in Ghana, operations are run by a Ghanaian CEO of International Operations, and the Ghana board — a minister, an MP and a lawyer — has been in place since 2013. Founders and fundraising remain American, and the US officers are the paid ones.',
+      note: 'Sixty-nine of the staff are in Ghana, operations are run by a Ghanaian CEO of International Operations, and the Ghana board — a minister, an MP and a lawyer — has been in place since 2013. Founders and fundraising remain American, and the US officers are the paid ones.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'The full 2024 Form 990 is posted on the site, including Schedule F, and the functional expense breakdown reconciles to the penny. Held back only by an "independent financial review" rather than a full audit, and by no accreditation such as ECFA.',
+      note: 'The full 2024 Form 990 is posted on the site, including Schedule F, and the functional expense breakdown reconciles to the penny. Held back only by an "independent financial review" rather than a full audit, and by no accreditation such as ECFA.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The 2025 annual report counts staff, Pearls in care, academy students, college students and community-sponsored students separately, which is more granular than most ministries manage. All of it is printed inside images with no text layer, and the report contains no financial statements at all.',
+      note: 'The 2025 annual report counts staff, Pearls in care, academy students, college students and community-sponsored students separately, which is more granular than most ministries manage. All of it is printed inside images with no text layer, and the report contains no financial statements at all.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Spending is split three ways in the return and counts are published, so the division is possible. Marked down because the two come from different years and different documents, and because the ministry publishes no per-girl cost to check against.',
+      note: 'Spending is split three ways in the return and counts are published, so the division is possible. Marked down because the two come from different years and different documents, and because the ministry publishes no per-girl cost to check against.',
     },
   },
   notVerified: [
@@ -158,8 +149,7 @@ export const pearlHouse: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Part IX: program services $2,075,442, management $164,090, fundraising $44,429, total $2,283,961. Schedule F reports one $1,722,228 grant to Ghana, 4 offices and 69 staff.',
+      note: 'Part IX: program services $2,075,442, management $164,090, fundraising $44,429, total $2,283,961. Schedule F reports one $1,722,228 grant to Ghana, 4 offices and 69 staff.',
     },
     {
       id: 'ph-annual-25',
@@ -169,8 +159,7 @@ export const pearlHouse: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Twenty-two pages with no financial statements and almost no text layer. Counts were read off the page images.',
+      note: 'Twenty-two pages with no financial statements and almost no text layer. Counts were read off the page images.',
     },
     {
       id: 'ph-propublica',

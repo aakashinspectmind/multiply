@@ -4,24 +4,19 @@ export const waterMission: Cause = {
   slug: 'water-mission',
   name: 'Water Mission',
   legalName: 'Water Missions International',
-  tagline: 'Christian engineers building safe water systems, handed off to local churches and utilities.',
+  tagline:
+    'Christian engineers building safe water systems, handed off to local churches and utilities.',
   category: 'water',
-  countries: [
-    'Honduras',
-    'Indonesia',
-    'Kenya',
-    'Malawi',
-    'Mexico',
-    'Peru',
-    'Tanzania',
-    'Uganda',
-  ],
+  countries: ['Honduras', 'Indonesia', 'Kenya', 'Malawi', 'Mexico', 'Peru', 'Tanzania', 'Uganda'],
   whatTheyDo:
     'Water Mission designs and builds piped water systems, treatment plants and solar-powered pumps, then stays to keep them running through local operators and small utilities. It also responds to disasters and serves refugee settlements, and it equips local churches to share the gospel alongside the work.',
   ein: '57-1116978',
   accreditations: [
     { label: 'ECFA accredited', sourceId: 'wm-site' },
-    { label: 'Charity Navigator top rating, 19 consecutive years', sourceId: 'wm-site' },
+    {
+      label: 'Charity Navigator top rating, 19 consecutive years',
+      sourceId: 'wm-site',
+    },
     { label: 'Candid Platinum Transparency 2025', sourceId: 'wm-site' },
   ],
   verification: 'documents-reviewed',
@@ -35,13 +30,11 @@ export const waterMission: Cause = {
       },
       {
         ref: 'Matthew 10:42',
-        text:
-          'And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward.',
+        text: 'And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward.',
       },
       {
         ref: 'Isaiah 58:10–11',
-        text:
-          'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness… and you shall be like a spring of water, whose waters do not fail.',
+        text: 'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness… and you shall be like a spring of water, whose waters do not fail.',
       },
     ],
     concerns: [
@@ -75,8 +68,7 @@ export const waterMission: Cause = {
       {
         label: 'people in communities served with ongoing access (nearly 770,000)',
         count: 770000,
-        note:
-          'The stricter denominator: sustained service rather than any contact during the year. About $56 per person, and the number to use if what you care about is water still flowing next year.',
+        note: 'The stricter denominator: sustained service rather than any contact during the year. About $56 per person, and the number to use if what you care about is water still flowing next year.',
       },
     ],
   },
@@ -89,23 +81,19 @@ export const waterMission: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'Describes itself as a Christian engineering nonprofit and equips local churches to share "the Living Water message of Jesus Christ". The gospel runs alongside the engineering rather than being the deliverable.',
+      note: 'Describes itself as a Christian engineering nonprofit and equips local churches to share "the Living Water message of Jesus Christ". The gospel runs alongside the engineering rather than being the deliverable.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'Country programs are staffed locally and the sustainability model hands operation to community committees and small utilities rather than keeping it in-house.',
+      note: 'Country programs are staffed locally and the sustainability model hands operation to community committees and small utilities rather than keeping it in-house.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Publishes full audited financial statements as a PDF, not just a pie chart — program services of $42,762,601 against total expenses of $48,702,959 for 2025, with the prior year alongside.',
+      note: 'Publishes full audited financial statements as a PDF, not just a pie chart — program services of $42,762,601 against total expenses of $48,702,959 for 2025, with the prior year alongside.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Separates "served in 2025" from "ongoing access", which is a distinction most water charities blur. Still self-reported, and neither figure is defined in writing.',
+      note: 'Separates "served in 2025" from "ongoing access", which is a distinction most water charities blur. Still self-reported, and neither figure is defined in writing.',
     },
     costEvidence: {
       value: 3,

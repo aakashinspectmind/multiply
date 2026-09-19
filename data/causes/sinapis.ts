@@ -19,8 +19,7 @@ export const sinapis: Cause = {
     scriptures: [
       {
         ref: 'Mark 4:30–32',
-        text:
-          'It is like a grain of mustard seed, which, when sown on the ground, is the smallest of all the seeds on earth, yet when it is sown it grows up and becomes larger than all the garden plants and puts out large branches, so that the birds of the air can make nests in its shade.',
+        text: 'It is like a grain of mustard seed, which, when sown on the ground, is the smallest of all the seeds on earth, yet when it is sown it grows up and becomes larger than all the garden plants and puts out large branches, so that the birds of the air can make nests in its shade.',
       },
       {
         ref: 'Proverbs 14:23',
@@ -65,7 +64,8 @@ export const sinapis: Cause = {
       sourceId: 'si-impact-25',
     },
     {
-      quote: '88% of Sinapis companies are still in business three years after our engagement with them',
+      quote:
+        '88% of Sinapis companies are still in business three years after our engagement with them',
       sourceId: 'si-impact-25',
     },
     {
@@ -89,33 +89,28 @@ export const sinapis: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'The name is a parable of Jesus, the operating phrase is "profitable Kingdom business", the stated aim includes equipping entrepreneurs spiritually, and alumni are described as funding local churches. That is more than a faith label. It falls short of a 3 because there is no statement of faith and nothing published describes the spiritual content of the curriculum.',
+      note: 'The name is a parable of Jesus, the operating phrase is "profitable Kingdom business", the stated aim includes equipping entrepreneurs spiritually, and alumni are described as funding local churches. That is more than a faith label. It falls short of a 3 because there is no statement of faith and nothing published describes the spiritual content of the curriculum.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'Founded as a Kenyan accelerator and staffed almost entirely by East Africans, with Ugandan and Rwandan country managers, Kenyan operations leadership and local business advisers doing the coaching. The chief executive and part of the board appear to be American, and fundraising is US-based.',
+      note: 'Founded as a Kenyan accelerator and staffed almost entirely by East Africans, with Ugandan and Rwandan country managers, Kenyan operations leadership and local business advisers doing the coaching. The chief executive and part of the board appear to be American, and fundraising is US-based.',
     },
     financialTransparency: {
       value: 1,
-      note:
-        'Nothing is published by Sinapis itself — no audit, no annual report financials, no 990, no accreditation, and the page that looks like a financials page is a blog tag. IRS data through ProPublica is the only reason we can state a size at all, and it stops at 2023 and gives no functional split. A named board is the one point in favour.',
+      note: 'Nothing is published by Sinapis itself — no audit, no annual report financials, no 990, no accreditation, and the page that looks like a financials page is a blog tag. IRS data through ProPublica is the only reason we can state a size at all, and it stops at 2023 and gives no functional split. A named board is the one point in favour.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Paradoxically the strongest outcome reporting in this category and still not good. Sinapis is the only ministry here that publishes a business survival rate, a revenue growth rate and a behavioural measure, and it compares its 88% survival against a 40% regional baseline — which is the right instinct. But every figure is cumulative, self-surveyed, unaudited, and carries no response rate, and survivor bias runs in exactly the direction that flatters it.',
+      note: 'Paradoxically the strongest outcome reporting in this category and still not good. Sinapis is the only ministry here that publishes a business survival rate, a revenue growth rate and a behavioural measure, and it compares its 88% survival against a 40% regional baseline — which is the right instinct. But every figure is cumulative, self-surveyed, unaudited, and carries no response rate, and survivor bias runs in exactly the direction that flatters it.',
     },
     costEvidence: {
       value: 0,
-      note:
-        'Neither half of a division exists. No programme spending figure is published anywhere, and no outcome count is attached to a fiscal year. A finding, not an absence — we went looking and the documents are not there.',
+      note: 'Neither half of a division exists. No programme spending figure is published anywhere, and no outcome count is attached to a fiscal year. A finding, not an absence — we went looking and the documents are not there.',
     },
   },
   notVerified: [
-    'Anything at all about how the money is spent. No audited statements, no annual report financials, no Form 990 on the site. ProPublica\'s extract of the 2023 return gives revenue of $2,422,062 and total expenses of $2,513,731 against assets of $910,797, and no programme-versus-overhead split. Two fiscal years have since closed with nothing published.',
-    'How the 88% three-year survival rate was measured, who was in the sample and how many alumni did not respond. This is the ministry\'s headline claim and it rests on an alumni survey with no published methodology.',
+    "Anything at all about how the money is spent. No audited statements, no annual report financials, no Form 990 on the site. ProPublica's extract of the 2023 return gives revenue of $2,422,062 and total expenses of $2,513,731 against assets of $910,797, and no programme-versus-overhead split. Two fiscal years have since closed with nothing published.",
+    "How the 88% three-year survival rate was measured, who was in the sample and how many alumni did not respond. This is the ministry's headline claim and it rests on an alumni survey with no published methodology.",
     'Whether the 40% East African baseline the 88% is compared against is measured the same way, and where it comes from. No source is given for it.',
     'Whether alumni are 1,000 or 4,080, and whether work began in 2010 or 2011. The site and the impact report disagree on both.',
     'What share of the 16,328 jobs are full-time, and whether a job counted once is counted again in a later year.',
@@ -125,8 +120,8 @@ export const sinapis: Cause = {
   ],
   notes: [
     'We built no cost per outcome here and could not have done so honestly. There is no programme spending figure in existence publicly, and every count spans 15 years. Dividing an IRS total-expense figure from 2023 by a cumulative jobs number from 2025 would produce something that looks like a price and means nothing.',
-    'The genuinely interesting thing about Sinapis is that its clients pay and its alumni raise commercial capital. $120 million of investment over 15 years is money that entered these economies from investors rather than donors, and the ministry\'s claim is that its training is what made the businesses investable. That is the most plausible multiplication story in this category — and the one with the least published evidence behind it.',
-    'The country list on this page covers only the three programmes Sinapis runs itself. Its curriculum also runs through licensed partners in Brazil, Burundi, Cameroon, Egypt, Ghana, Liberia, Mexico, Mongolia and Mozambique, on those partners\' budgets.',
+    "The genuinely interesting thing about Sinapis is that its clients pay and its alumni raise commercial capital. $120 million of investment over 15 years is money that entered these economies from investors rather than donors, and the ministry's claim is that its training is what made the businesses investable. That is the most plausible multiplication story in this category — and the one with the least published evidence behind it.",
+    "The country list on this page covers only the three programmes Sinapis runs itself. Its curriculum also runs through licensed partners in Brazil, Burundi, Cameroon, Egypt, Ghana, Liberia, Mexico, Mongolia and Mozambique, on those partners' budgets.",
     'Jobs created, dependents supported and lives touched through supply chains are stacked in the impact report as 16,328, 81,642 and 437,379. The second and third are estimates built on the first by multiplying out household and supply-chain assumptions that are never stated. Only the first is a count of anything.',
   ],
   siteUrl: 'https://www.sinapis.org/',
@@ -147,8 +142,7 @@ export const sinapis: Cause = {
       publisher: 'Sinapis',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the mission sentence, the mustard-seed explanation, the "over 1,000 alumni" figure, the 2010 founding and the list of directly managed versus partner countries.',
+      note: 'Source of the mission sentence, the mustard-seed explanation, the "over 1,000 alumni" figure, the 2010 founding and the list of directly managed versus partner countries.',
     },
     {
       id: 'si-team',
@@ -167,8 +161,7 @@ export const sinapis: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Contains no financial statements of any kind — it is an impact report, not an annual report. All counts are cumulative and drawn from alumni surveys. The figures sit in a heavily designed layout, so the quoted percentages were reassembled from text extracted out of interleaved columns.',
+      note: 'Contains no financial statements of any kind — it is an impact report, not an annual report. All counts are cumulative and drawn from alumni surveys. The figures sit in a heavily designed layout, so the quoted percentages were reassembled from text extracted out of interleaved columns.',
     },
     {
       id: 'si-propublica',
@@ -177,8 +170,7 @@ export const sinapis: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'The only public financial data on this ministry. Latest available tax year is 2023: revenue $2,422,062, total functional expenses $2,513,731, assets $910,797. ProPublica does not publish the programme/administration split.',
+      note: 'The only public financial data on this ministry. Latest available tax year is 2023: revenue $2,422,062, total functional expenses $2,513,731, assets $910,797. ProPublica does not publish the programme/administration split.',
     },
   ],
 };

@@ -6,11 +6,16 @@ export const feedMyStarvingChildren: Cause = {
   ein: '41-1601449',
   tagline:
     'Packs 382 million fortified meals a year with American volunteers — and its audit shows a third of the cost is labour nobody paid for.',
-  category: 'children',
+  category: 'food',
   countries: ['Global'],
   whatTheyDo:
     'Feed My Starving Children buys rice, soy, vegetables and a vitamin blend in bulk, and has volunteers in the United States hand-pack it into single-meal bags at permanent sites and travelling MobilePack events. The sealed meals are shipped to in-country partners — schools, orphanages, feeding programmes and churches — who distribute them. In the year to February 2026 it provided 382,120,176 meals through 1,207,456 volunteers to partners in 57 countries, and passed five billion meals shipped since it began.',
-  accreditations: [{ label: 'Charity Navigator four-star rating', sourceId: 'fmsc-accountability' }],
+  accreditations: [
+    {
+      label: 'Charity Navigator four-star rating',
+      sourceId: 'fmsc-accountability',
+    },
+  ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
     mandate:
@@ -18,18 +23,15 @@ export const feedMyStarvingChildren: Cause = {
     scriptures: [
       {
         ref: 'Matthew 25:35',
-        text:
-          'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
+        text: 'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
       },
       {
         ref: 'Isaiah 58:10',
-        text:
-          'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
+        text: 'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
       },
       {
         ref: 'Psalm 146:7',
-        text:
-          'Who executes justice for the oppressed, who gives food to the hungry. The Lord sets the prisoners free.',
+        text: 'Who executes justice for the oppressed, who gives food to the hungry. The Lord sets the prisoners free.',
       },
     ],
     concerns: [
@@ -65,8 +67,7 @@ export const feedMyStarvingChildren: Cause = {
       {
         label: 'children fed a daily meal for a year',
         count: 1046904,
-        note:
-          'About $85 for a child-year, and the more meaningful unit. But this is not a count of children: 382,120,176 divided by 365 is 1,046,904, so the figure is the meal total restated, and a child who eats an FMSC meal only on school days is counted as a fraction of a child.',
+        note: 'About $85 for a child-year, and the more meaningful unit. But this is not a count of children: 382,120,176 divided by 365 is 1,046,904, so the figure is the meal total restated, and a child who eats an FMSC meal only on school days is counted as a fraction of a child.',
       },
     ],
   },
@@ -76,6 +77,7 @@ export const feedMyStarvingChildren: Cause = {
         'Donors fund. At 29 cents per meal, gifts of every size become real food for children who need it.',
       sourceId: 'fmsc-give',
       impliedCostPerOutcome: 0.29,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'meal',
     },
     {
@@ -95,28 +97,23 @@ export const feedMyStarvingChildren: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'Explicitly and repeatedly Christian in its own words — “As a Christian nonprofit organization…”, a mission of feeding children “hungry in body and spirit”, Psalm 146:7 on the mission page and Isaiah 58:10 opening the annual report. Held at 2 because every programme dollar buys food, shipping and manufacturing, the spiritual half is subcontracted to unnamed partners, and the ministry’s values page would not render for us so we could not read a statement of faith.',
+      note: 'Explicitly and repeatedly Christian in its own words — “As a Christian nonprofit organization…”, a mission of feeding children “hungry in body and spirit”, Psalm 146:7 on the mission page and Isaiah 58:10 opening the annual report. Held at 2 because every programme dollar buys food, shipping and manufacturing, the spiritual half is subcontracted to unnamed partners, and the ministry’s values page would not render for us so we could not read a statement of faith.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'The lowest score in this batch, and structural rather than a failing. The meals are designed, bought, packed and shipped in the United States by American volunteers and American staff; the only local layer is the in-country partner that hands the food to a child, and those partners are not named. There is no national staff, no local production and no local procurement in the model.',
+      note: 'The lowest score in this batch, and structural rather than a failing. The meals are designed, bought, packed and shipped in the United States by American volunteers and American staff; the only local layer is the in-country partner that hands the food to a child, and those partners are not named. There is no national staff, no local production and no local procurement in the model.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited statements, the Form 990, an annual report and an impact report are all posted on the ministry’s own accountability page, and the audit gives a line-by-line functional expense statement. Crucially it discloses donated production labour as its own line inside program services — the disclosure that let us take the advertised meal price apart. Most ministries would have buried it in a total.',
+      note: 'Audited statements, the Form 990, an annual report and an impact report are all posted on the ministry’s own accountability page, and the audit gives a line-by-line functional expense statement. Crucially it discloses donated production labour as its own line inside program services — the disclosure that let us take the advertised meal price apart. Most ministries would have buried it in a total.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The counting of meals produced and shipped is precise, audited-adjacent and consistent across documents, and the ministry even publishes a delivery success rate. What is missing is the other end: no nutritional, growth or health outcome data for the children who eat the meals, and no evidence a meal shipped became a meal eaten.',
+      note: 'The counting of meals produced and shipped is precise, audited-adjacent and consistent across documents, and the ministry even publishes a delivery success rate. What is missing is the other end: no nutritional, growth or health outcome data for the children who eat the meals, and no evidence a meal shipped became a meal eaten.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'The best in this batch, precisely because the audit lets a sceptic decompose the number. Spending and meal count are for the same fiscal year, and the gifts-in-kind component is disclosed separately, so a donor can see the all-in figure of about 23 cents, the cash figure of about 15 cents, and the advertised 29 cents side by side. The gap between the audited and advertised prices is unexplained, which is why this is a 3 and not more.',
+      note: 'The best in this batch, precisely because the audit lets a sceptic decompose the number. Spending and meal count are for the same fiscal year, and the gifts-in-kind component is disclosed separately, so a donor can see the all-in figure of about 23 cents, the cash figure of about 15 cents, and the advertised 29 cents side by side. The gap between the audited and advertised prices is unexplained, which is why this is a 3 and not more.',
     },
   },
   notVerified: [
@@ -157,8 +154,7 @@ export const feedMyStarvingChildren: Cause = {
       publisher: 'Feed My Starving Children',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the Christian self-description, the mission statement “Feeding God’s children hungry in body and spirit”, and the Psalm 146:7 reference.',
+      note: 'Source of the Christian self-description, the mission statement “Feeding God’s children hungry in body and spirit”, and the Psalm 146:7 reference.',
     },
     {
       id: 'fmsc-give',
@@ -176,8 +172,7 @@ export const feedMyStarvingChildren: Cause = {
       publisher: 'Feed My Starving Children',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Hosts the audited statements, Form 990, annual report and impact report, and states the Charity Navigator four-star rating held for 20 years.',
+      note: 'Hosts the audited statements, Form 990, annual report and impact report, and states the Charity Navigator four-star rating held for 20 years.',
     },
     {
       id: 'fmsc-audit-26',
@@ -187,8 +182,7 @@ export const feedMyStarvingChildren: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2026',
-      note:
-        'Program services $88,836,931, management and general $5,764,594, fundraising $6,353,182, total functional expenses $100,954,707. The functional expense statement discloses donated production labor of $31,366,333 inside program services, and the notes disclose $1,699,943 of donated labour capitalised in inventory valued from industry hiring data.',
+      note: 'Program services $88,836,931, management and general $5,764,594, fundraising $6,353,182, total functional expenses $100,954,707. The functional expense statement discloses donated production labor of $31,366,333 inside program services, and the notes disclose $1,699,943 of donated labour capitalised in inventory valued from industry hiring data.',
     },
     {
       id: 'fmsc-990-25',
@@ -217,8 +211,7 @@ export const feedMyStarvingChildren: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2026',
-      note:
-        'Source of the 382,120,176 meals, 1,046,904 children fed a daily meal for a year, 1,207,456 volunteers, 57 countries, the 99.7% delivery figure and the 88% claim. The headline figures are set in graphics and were read off the rendered pages.',
+      note: 'Source of the 382,120,176 meals, 1,046,904 children fed a daily meal for a year, 1,207,456 volunteers, 57 countries, the 99.7% delivery figure and the 88% claim. The headline figures are set in graphics and were read off the rendered pages.',
     },
   ],
 };

@@ -18,18 +18,15 @@ export const mercyShips: Cause = {
     scriptures: [
       {
         ref: 'Matthew 9:35–36',
-        text:
-          'And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction. When he saw the crowds, he had compassion for them, because they were harassed and helpless, like sheep without a shepherd.',
+        text: 'And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction. When he saw the crowds, he had compassion for them, because they were harassed and helpless, like sheep without a shepherd.',
       },
       {
         ref: 'Luke 4:18',
-        text:
-          'The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed.',
+        text: 'The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed.',
       },
       {
         ref: 'Isaiah 58:10',
-        text:
-          'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
+        text: 'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
       },
     ],
     concerns: [
@@ -67,8 +64,7 @@ export const mercyShips: Cause = {
       {
         label: 'total surgical procedures',
         count: 6860,
-        note:
-          'Mercy Ships states that "A patient often has multiple procedures as part of a single surgery or dental visit and may also have multiple surgeries or dental visits." A procedure is therefore a smaller unit than a surgery, which is a smaller unit than a patient.',
+        note: 'Mercy Ships states that "A patient often has multiple procedures as part of a single surgery or dental visit and may also have multiple surgeries or dental visits." A procedure is therefore a smaller unit than a surgery, which is a smaller unit than a patient.',
       },
       {
         label: 'total unique surgical patients',
@@ -78,8 +74,7 @@ export const mercyShips: Cause = {
       {
         label: 'surgical and dental procedures together',
         count: 38723,
-        note:
-          'The broadest defensible denominator, at about $5,600 each. It puts 31,863 dental procedures alongside maxillofacial tumour removals, which is the kind of blending this site exists to stop.',
+        note: 'The broadest defensible denominator, at about $5,600 each. It puts 31,863 dental procedures alongside maxillofacial tumour removals, which is the kind of blending this site exists to stop.',
       },
     ],
   },
@@ -103,28 +98,23 @@ export const mercyShips: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'Jesus is named in the mission statement on the tax return and throughout the volunteer material, the ships hold chapel and prayer, and ECFA accreditation requires an evangelical doctrinal basis. Marked down because no statement of faith is published and the ministry explicitly welcomes crew who do not share Christian faith.',
+      note: 'Jesus is named in the mission statement on the tax return and throughout the volunteer material, the ships hold chapel and prayer, and ECFA accreditation requires an evangelical doctrinal basis. Marked down because no statement of faith is published and the ministry explicitly welcomes crew who do not share Christian faith.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'The surgery is performed mostly by international volunteer crew from 75 nations. Against that, 689 national day crew were employed in the two host countries and 1,061 African healthcare professionals were trained from 18 nations — the training is the part of this model that transfers leadership, and it is real. Governance is in Texas and the ships are foreign-flagged.',
+      note: 'The surgery is performed mostly by international volunteer crew from 75 nations. Against that, 689 national day crew were employed in the two host countries and 1,061 African healthcare professionals were trained from 18 nations — the training is the part of this model that transfers leadership, and it is real. Governance is in Texas and the ships are foreign-flagged.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Consolidated audited statements with a full functional expense matrix and the complete Form 990 are both posted, and the audit consolidates the international affiliates rather than stopping at the US border. Marked down because the annual report contains no financial statements at all, so a reader who only opens the report sees 5,019 surgeries and no costs, and because the US 990 and the consolidated audit describe very different-sized organisations with no reconciliation between them.',
+      note: 'Consolidated audited statements with a full functional expense matrix and the complete Form 990 are both posted, and the audit consolidates the international affiliates rather than stopping at the US border. Marked down because the annual report contains no financial statements at all, so a reader who only opens the report sees 5,019 surgeries and no costs, and because the US 990 and the consolidated audit describe very different-sized organisations with no reconciliation between them.',
     },
     outcomeEvidence: {
       value: 3,
-      note:
-        'The best outcome reporting in this category. Unique patients, surgeries and procedures are counted separately for both surgery and dentistry, surgeries are broken down by specialty and the seven specialty figures sum exactly to 5,019, and the report prints its own warning that patients and procedures are not the same unit. Very few ministries publish the caveat that makes their own headline number smaller.',
+      note: 'The best outcome reporting in this category. Unique patients, surgeries and procedures are counted separately for both surgery and dentistry, surgeries are broken down by specialty and the seven specialty figures sum exactly to 5,019, and the report prints its own warning that patients and procedures are not the same unit. Very few ministries publish the caveat that makes their own headline number smaller.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves are audited or published for the same calendar year and the functional matrix is detailed enough to separate donated labour from cash. Marked down because Mercy Ships publishes no cost per surgery of its own, and because there is no split between spending on this year’s patients and spending on the ships.',
+      note: 'Both halves are audited or published for the same calendar year and the functional matrix is detailed enough to separate donated labour from cash. Marked down because Mercy Ships publishes no cost per surgery of its own, and because there is no split between spending on this year’s patients and spending on the ships.',
     },
   },
   notVerified: [
@@ -170,8 +160,7 @@ export const mercyShips: Cause = {
       publisher: 'Mercy Ships',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The clearest statement of the ministry’s faith posture anywhere on its sites, under the heading "The model of Jesus".',
+      note: 'The clearest statement of the ministry’s faith posture anywhere on its sites, under the heading "The model of Jesus".',
     },
     {
       id: 'ms-audit-25',
@@ -181,8 +170,7 @@ export const mercyShips: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Mercy Ships and Affiliates. Ship and field operations $216,523,697 of $272,508,894 total expenses, with a line-by-line functional matrix that isolates $54,129,447 of contributed salary expense, $12,198,475 of depreciation and $3,472,957 of dry docking.',
+      note: 'Mercy Ships and Affiliates. Ship and field operations $216,523,697 of $272,508,894 total expenses, with a line-by-line functional matrix that isolates $54,129,447 of contributed salary expense, $12,198,475 of depreciation and $3,472,957 of dry docking.',
     },
     {
       id: 'ms-990-25',
@@ -192,8 +180,7 @@ export const mercyShips: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'A scanned return with an incomplete text layer. We rendered and read Part I, Part III and Part IX as images; the mission statement quoted here is from Part III.',
+      note: 'A scanned return with an incomplete text layer. We rendered and read Part I, Part III and Part IX as images; the mission statement quoted here is from Part III.',
     },
     {
       id: 'ms-ar-25',
@@ -203,8 +190,7 @@ export const mercyShips: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Contains no financial statements. Every count on the "2025 By the Numbers" pages is set as a graphic and was read from the rendered page rather than from extracted text.',
+      note: 'Contains no financial statements. Every count on the "2025 By the Numbers" pages is set as a graphic and was read from the rendered page rather than from extracted text.',
     },
     {
       id: 'ms-propublica',

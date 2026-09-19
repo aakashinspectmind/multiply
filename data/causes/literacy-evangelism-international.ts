@@ -7,11 +7,11 @@ export const literacyEvangelismInternational: Cause = {
   ein: '73-6111804',
   tagline:
     'Writes reading primers out of Bible text, gives them away, and trains the volunteers who teach from them. A $808,483 ministry reporting 71,112 new readers.',
-  category: 'evangelism',
+  category: 'education',
   countries: [
     'Benin',
     'Burkina Faso',
-    'Republic of the Congo',
+    'Republic of Congo',
     'DR Congo',
     'Ghana',
     'Kenya',
@@ -37,18 +37,15 @@ export const literacyEvangelismInternational: Cause = {
     scriptures: [
       {
         ref: 'Deuteronomy 6:6–7',
-        text:
-          'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
+        text: 'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
       },
       {
         ref: '2 Timothy 3:16–17',
-        text:
-          'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.',
+        text: 'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.',
       },
       {
         ref: 'Nehemiah 8:8',
-        text:
-          'They read from the book, from the Law of God, clearly, and they gave the sense, so that the people understood the reading.',
+        text: 'They read from the book, from the Law of God, clearly, and they gave the sense, so that the people understood the reading.',
       },
     ],
     doctrine: {
@@ -91,8 +88,7 @@ export const literacyEvangelismInternational: Cause = {
       {
         label: 'teachers trained',
         count: 995,
-        note:
-          'About $813 per teacher trained, which is the unit of work LEI actually performs and pays for. It also multiplies — a trained tutor keeps teaching classes after the workshop — so this overstates the cost of the last reader and understates the value of the first teacher.',
+        note: 'About $813 per teacher trained, which is the unit of work LEI actually performs and pays for. It also multiplies — a trained tutor keeps teaching classes after the workshop — so this overstates the cost of the last reader and understates the value of the first teacher.',
       },
     ],
   },
@@ -125,28 +121,23 @@ export const literacyEvangelismInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'An eight-article statement of faith published in full, a mission statement that names Jesus Christ, primers built out of Bible text, and training aimed explicitly at "evangelism, discipleship and church planting". There is no ambiguity about what this ministry is for.',
+      note: 'An eight-article statement of faith published in full, a mission statement that names Jesus Christ, primers built out of Bible text, and training aimed explicitly at "evangelism, discipleship and church planting". There is no ambiguity about what this ministry is for.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The teaching is done entirely by nationals and volunteers through seventeen autonomous, indigenous, self-governing Member Nation organisations, which is the strongest possible field model. Held at 2 rather than 3 because LEI-US itself is American, family-led, and spends 76% of its budget on a "Missionary Support" line it does not break down between expatriate and national workers, while separately soliciting gifts for "LEI-US Missionaries".',
+      note: 'The teaching is done entirely by nationals and volunteers through seventeen autonomous, indigenous, self-governing Member Nation organisations, which is the strongest possible field model. Held at 2 rather than 3 because LEI-US itself is American, family-led, and spends 76% of its budget on a "Missionary Support" line it does not break down between expatriate and national workers, while separately soliciting gifts for "LEI-US Missionaries".',
     },
     financialTransparency: {
       value: 1,
-      note:
-        'Annual reports going back to 2022 are posted, which is more than many small ministries manage, and the president’s letter is signed. But there is no audit, the figures are marked unaudited, the categories are not GAAP and contain no program or fundraising line, the reserve movement is shown on both sides of the table, the /legal page promises downloadable 990s and provides none, and the chief executive chairs the board. A donor cannot check this ministry’s books from this ministry’s documents.',
+      note: 'Annual reports going back to 2022 are posted, which is more than many small ministries manage, and the president’s letter is signed. But there is no audit, the figures are marked unaudited, the categories are not GAAP and contain no program or fundraising line, the reserve movement is shown on both sides of the table, the /legal page promises downloadable 990s and provides none, and the chief executive chairs the board. A donor cannot check this ministry’s books from this ministry’s documents.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'The counts are precise to the digit — 71,112 readers, 995 teachers, 526 primers in 151 languages — and entirely undefined. "New Bible reader" is never explained: enrolled, finished the primer, or tested. The impact page carries no reporting period at all. The figures are reported up from partners LEI does not control, and LEI itself says they are a fraction of the real total. There is no completion rate, no drop-out figure and no reading assessment anywhere.',
+      note: 'The counts are precise to the digit — 71,112 readers, 995 teachers, 526 primers in 151 languages — and entirely undefined. "New Bible reader" is never explained: enrolled, finished the primer, or tested. The impact page carries no reporting period at all. The figures are reported up from partners LEI does not control, and LEI itself says they are a fraction of the real total. There is no completion rate, no drop-out figure and no reading assessment anywhere.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'Both halves sit on facing pages of one document for one year, which is why a division is possible at all. Scored low because the numerator is one American organisation’s unaudited spending and the denominator is the output of a network whose costs are nowhere published — the two are not measuring the same enterprise.',
+      note: 'Both halves sit on facing pages of one document for one year, which is why a division is possible at all. Scored low because the numerator is one American organisation’s unaudited spending and the denominator is the output of a network whose costs are nowhere published — the two are not measuring the same enterprise.',
     },
   },
   notVerified: [
@@ -185,8 +176,7 @@ export const literacyEvangelismInternational: Cause = {
       publisher: 'Literacy & Evangelism International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Carries the mission statement, the three-part strategy, the eight-article statement of faith, the core values, and the Laubach endorsement about winning souls to Christ.',
+      note: 'Carries the mission statement, the three-part strategy, the eight-article statement of faith, the core values, and the Laubach endorsement about winning souls to Christ.',
     },
     {
       id: 'lei-annual-2026',
@@ -196,8 +186,7 @@ export const literacyEvangelismInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Both halves of our division are in this PDF: the "Financial Report 2025*" page showing total expenses of $808,483 (Missionary Support $610,917, Mission Mobilization & Ministry $170,074, Management & General $52,128, Communication & Publicity $24,447, From Reserves −$49,083) marked "* Unaudited", and the impact page showing 71,112 new Bible readers and 995 teachers trained with no reporting period stated.',
+      note: 'Both halves of our division are in this PDF: the "Financial Report 2025*" page showing total expenses of $808,483 (Missionary Support $610,917, Mission Mobilization & Ministry $170,074, Management & General $52,128, Communication & Publicity $24,447, From Reserves −$49,083) marked "* Unaudited", and the impact page showing 71,112 new Bible readers and 995 teachers trained with no reporting period stated.',
     },
     {
       id: 'lei-annual-2025',
@@ -207,8 +196,7 @@ export const literacyEvangelismInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'The prior year for comparison: total expenses $959,450, 58,170 new Bible readers, 1,220 teachers trained, and the president’s statement that the Member Nation network is "now 17 in number". We did not mix these figures with the 2025 ones.',
+      note: 'The prior year for comparison: total expenses $959,450, 58,170 new Bible readers, 1,220 teachers trained, and the president’s statement that the Member Nation network is "now 17 in number". We did not mix these figures with the 2025 ones.',
     },
     {
       id: 'lei-primers',
@@ -235,8 +223,7 @@ export const literacyEvangelismInternational: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'Twelve years of total revenue and total functional expenses, used only as a scale check. It carries no program/management/fundraising split, and its Form 990 download path is blocked.',
+      note: 'Twelve years of total revenue and total functional expenses, used only as a scale check. It carries no program/management/fundraising split, and its Form 990 download path is blocked.',
     },
   ],
 };

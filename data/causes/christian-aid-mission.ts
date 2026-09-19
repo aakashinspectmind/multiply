@@ -28,14 +28,12 @@ export const christianAidMission: Cause = {
     scriptures: [
       {
         ref: 'Matthew 9:37–38',
-        text:
-          'The harvest is plentiful, but the laborers are few; therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest.',
+        text: 'The harvest is plentiful, but the laborers are few; therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest.',
       },
       { ref: 'Luke 10:7', text: 'The laborer deserves his wages.' },
       {
         ref: '3 John 5–8',
-        text:
-          'Beloved, it is a faithful thing you do in all your efforts for these brothers… You will do well to send them on their way in a manner worthy of God… so that we may be fellow workers for the truth.',
+        text: 'Beloved, it is a faithful thing you do in all your efforts for these brothers… You will do well to send them on their way in a manner worthy of God… so that we may be fellow workers for the truth.',
       },
     ],
     concerns: [
@@ -50,7 +48,10 @@ export const christianAidMission: Cause = {
   },
   ministryClaims: [],
   scores: {
-    gospelCentrality: { value: 3, note: 'Evangelism and church planting among unreached peoples is the stated purpose.' },
+    gospelCentrality: {
+      value: 3,
+      note: 'Evangelism and church planting among unreached peoples is the stated purpose.',
+    },
     localLeadership: {
       value: 3,
       note: 'The entire model is funding nationals. Structurally the strongest score in the directory on this dimension.',
@@ -59,7 +60,10 @@ export const christianAidMission: Cause = {
       value: 2,
       note: 'ECFA and Candid seals displayed; no statements, ratios or figures on the pages we read.',
     },
-    outcomeEvidence: { value: 0, note: 'No counts of ministries supported, workers funded or churches planted published on the site.' },
+    outcomeEvidence: {
+      value: 0,
+      note: 'No counts of ministries supported, workers funded or churches planted published on the site.',
+    },
     costEvidence: { value: 0, note: 'Nothing to divide.' },
   },
   notVerified: [

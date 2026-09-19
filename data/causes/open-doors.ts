@@ -18,18 +18,15 @@ export const openDoors: Cause = {
     scriptures: [
       {
         ref: 'Hebrews 13:3',
-        text:
-          'Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.',
+        text: 'Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.',
       },
       {
         ref: '1 Corinthians 12:26',
-        text:
-          'If one member suffers, all suffer together; if one member is honoured, all rejoice together.',
+        text: 'If one member suffers, all suffer together; if one member is honoured, all rejoice together.',
       },
       {
         ref: 'Matthew 25:35–36',
-        text:
-          'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
+        text: 'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
       },
     ],
     doctrine: { label: 'Statement of Faith', sourceId: 'od-sof' },
@@ -51,7 +48,8 @@ export const openDoors: Cause = {
       sourceId: 'od-how-we-help',
     },
     {
-      quote: 'In the last year, Open Doors trained 5.7 million persecuted Christians across the world.',
+      quote:
+        'In the last year, Open Doors trained 5.7 million persecuted Christians across the world.',
       sourceId: 'od-how-we-help',
     },
     {
@@ -68,28 +66,23 @@ export const openDoors: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'Open Doors describes itself in its own words as “an evangelical Christian ministry”, publishes the Apostles’ Creed, and its purpose statement is about strengthening Christians under persecution and encouraging their involvement in world evangelism. There is no ambiguity anywhere in its materials.',
+      note: 'Open Doors describes itself in its own words as “an evangelical Christian ministry”, publishes the Apostles’ Creed, and its purpose statement is about strengthening Christians under persecution and encouraging their involvement in world evangelism. There is no ambiguity anywhere in its materials.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The model is to support churches and believers already in place rather than to deploy staff, and most of the hub’s income is passed onward rather than spent in the Netherlands. Held at 2 because governance sits in a Dutch foundation, no field leader or partner organisation is named anywhere — for reasons that are legitimate — and the document does not say whether the EUR 41.5 million goes to field ministries or to the Western national offices.',
+      note: 'The model is to support churches and believers already in place rather than to deploy staff, and most of the hub’s income is passed onward rather than spent in the Netherlands. Held at 2 because governance sits in a Dutch foundation, no field leader or partner organisation is named anywhere — for reasons that are legitimate — and the document does not say whether the EUR 41.5 million goes to field ministries or to the Western national offices.',
     },
     financialTransparency: {
       value: 1,
-      note:
-        'One three-page summary, for one entity, in euros, covering a hub that does not do the fieldwork. No audited statements, no consolidated global figures, no Form 990 we could retrieve, no accreditation we could confirm, and a financial-accountability page that returns a 404. This is the weakest financial disclosure of any cause in this batch, and the size of the ministry makes it harder to excuse rather than easier.',
+      note: 'One three-page summary, for one entity, in euros, covering a hub that does not do the fieldwork. No audited statements, no consolidated global figures, no Form 990 we could retrieve, no accreditation we could confirm, and a financial-accountability page that returns a 404. This is the weakest financial disclosure of any cause in this batch, and the size of the ministry makes it harder to excuse rather than easier.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Three large counts are published — Bibles distributed, Christians trained, Christians helped — which is more than nothing. But two are dated only as “last year”, the third is 2024, none is tied to a financial statement, “trained” is never defined, and 5.7 million is an extraordinary figure to publish without a definition.',
+      note: 'Three large counts are published — Bibles distributed, Christians trained, Christians helped — which is more than nothing. But two are dated only as “last year”, the third is 2024, none is tied to a financial statement, “trained” is never defined, and 5.7 million is an extraordinary figure to publish without a definition.',
     },
     costEvidence: {
       value: 0,
-      note:
-        'There is no global spending figure in existence that a donor can read, so nothing can be divided by anything. This is a finding, not an oversight on our part.',
+      note: 'There is no global spending figure in existence that a donor can read, so nothing can be divided by anything. This is a finding, not an oversight on our part.',
     },
   },
   notVerified: [
@@ -137,8 +130,7 @@ export const openDoors: Cause = {
       publisher: 'Open Doors',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'States that Open Doors is an evangelical Christian ministry and publishes the Apostles’ Creed as its doctrinal basis.',
+      note: 'States that Open Doors is an evangelical Christian ministry and publishes the Apostles’ Creed as its doctrinal basis.',
     },
     {
       id: 'od-how-we-help',
@@ -147,8 +139,7 @@ export const openDoors: Cause = {
       publisher: 'Open Doors',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of all four outcome claims: 2.5 million Bibles and books, 5.7 million Christians trained, 535,000 helped in 2024, and national bases in 25 countries.',
+      note: 'Source of all four outcome claims: 2.5 million Bibles and books, 5.7 million Christians trained, 535,000 helped in 2024, and national bases in 25 countries.',
     },
     {
       id: 'od-history',
@@ -166,8 +157,7 @@ export const openDoors: Cause = {
       publisher: 'Open Doors',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The governance page for the Dutch foundation. States in Dutch that directors’ names are withheld because publishing them could obstruct them in carrying out their duties, and that the board is unpaid.',
+      note: 'The governance page for the Dutch foundation. States in Dutch that directors’ names are withheld because publishing them could obstruct them in carrying out their duties, and that the board is unpaid.',
     },
     {
       id: 'od-odi-ar-25',
@@ -177,8 +167,7 @@ export const openDoors: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Three pages, in euros, covering the Dutch hub only. Total support and revenue EUR 55,123,000, of which EUR 54,876,000 is contributions from Open Doors ministries worldwide; support to Open Doors ministries worldwide EUR 41,519,000; own programme expenses EUR 2,298,000; fundraising EUR 427,000; administration EUR 2,335,000; total expenses EUR 5,183,000; cash EUR 21,140,000; total fund balance EUR 21,706,000. This is the only financial document we could obtain for any Open Doors entity.',
+      note: 'Three pages, in euros, covering the Dutch hub only. Total support and revenue EUR 55,123,000, of which EUR 54,876,000 is contributions from Open Doors ministries worldwide; support to Open Doors ministries worldwide EUR 41,519,000; own programme expenses EUR 2,298,000; fundraising EUR 427,000; administration EUR 2,335,000; total expenses EUR 5,183,000; cash EUR 21,140,000; total fund balance EUR 21,706,000. This is the only financial document we could obtain for any Open Doors entity.',
     },
   ],
 };

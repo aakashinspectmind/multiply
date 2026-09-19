@@ -11,7 +11,12 @@ export const twr: Cause = {
   countries: ['Global'],
   whatTheyDo:
     'TWR has broadcast Christian radio since 1954 and now describes itself as a network of partnerships reaching 190 countries in more than 200 languages, on shortwave and AM transmitters, on satellite, online, and through local follow-up. It spent $33,190,823 on programme activity in the year to 30 September 2025. Because the IRS classifies TWR as a church it files no Form 990, so there is no public schedule of its foreign offices, staff or grants.',
-  accreditations: [{ label: 'ECFA accredited, member since 1 October 1987', sourceId: 'twr-ecfa' }],
+  accreditations: [
+    {
+      label: 'ECFA accredited, member since 1 October 1987',
+      sourceId: 'twr-ecfa',
+    },
+  ],
   verification: 'self-reported',
   biblicalAlignment: {
     mandate:
@@ -23,13 +28,11 @@ export const twr: Cause = {
       },
       {
         ref: 'Romans 10:14–15',
-        text:
-          'How are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent?',
+        text: 'How are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent?',
       },
       {
         ref: 'Isaiah 55:11',
-        text:
-          'So shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose.',
+        text: 'So shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose.',
       },
     ],
     doctrine: { label: 'Doctrine and Values', sourceId: 'twr-doctrine' },
@@ -61,28 +64,23 @@ export const twr: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A full doctrinal statement is published and closes on the Great Commission. The product is the gospel itself — there is no other programme here to weigh it against.',
+      note: 'A full doctrinal statement is published and closes on the Great Commission. The product is the gospel itself — there is no other programme here to weigh it against.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'TWR calls itself “a global network of partnerships” and says the gospel goes out “on the ground” in 190 countries. Not one partner organisation is named, and with no Form 990 there is no Schedule F, no list of foreign offices or agents, and no grant table. This score reflects what is documented, which is almost nothing — it is not a judgement on the partners themselves.',
+      note: 'TWR calls itself “a global network of partnerships” and says the gospel goes out “on the ground” in 190 countries. Not one partner organisation is named, and with no Form 990 there is no Schedule F, no list of foreign offices or agents, and no grant table. This score reflects what is documented, which is almost nothing — it is not a judgement on the partners themselves.',
     },
     financialTransparency: {
       value: 1,
-      note:
-        'ECFA publishes three years of TWR’s functional expenses, revenue, assets and liabilities, stated to be taken from the organisation’s financial statements, and TWR has been accredited since 1987. That is the whole of it. TWR’s own site posts no audit, no annual report and no filing, and the church exemption means none is required.',
+      note: 'ECFA publishes three years of TWR’s functional expenses, revenue, assets and liabilities, stated to be taken from the organisation’s financial statements, and TWR has been accredited since 1987. That is the whole of it. TWR’s own site posts no audit, no annual report and no filing, and the church exemption means none is required.',
     },
     outcomeEvidence: {
       value: 0,
-      note:
-        'Nothing delivered is counted anywhere we could find — no responses, letters, calls, app messages, programme hours or station totals for the year. This is a finding, not an absence of looking.',
+      note: 'Nothing delivered is counted anywhere we could find — no responses, letters, calls, app messages, programme hours or station totals for the year. This is a finding, not an absence of looking.',
     },
     costEvidence: {
       value: 0,
-      note:
-        'TWR advertises a price of one cent per person reached, with no basis, no year and no definition of “reached”, and publishes nothing that could be divided to check it. A published price with no arithmetic behind it is worse than no price.',
+      note: 'TWR advertises a price of one cent per person reached, with no basis, no year and no definition of “reached”, and publishes nothing that could be divided to check it. A published price with no arithmetic behind it is worse than no price.',
     },
   },
   notVerified: [
@@ -138,8 +136,7 @@ export const twr: Cause = {
       publisher: 'TWR',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The donation widget generates its message from a template — “You could reach {$total} people with this gift” — with a multiplier of 100 people per dollar and a default gift of $100, so the page displays “You could reach 10,000 people with this gift”. We read the multiplier out of the page’s own configuration; it is not printed anywhere as text, and no basis for it is given.',
+      note: 'The donation widget generates its message from a template — “You could reach {$total} people with this gift” — with a multiplier of 100 people per dollar and a default gift of $100, so the page displays “You could reach 10,000 people with this gift”. We read the multiplier out of the page’s own configuration; it is not printed anywhere as text, and no basis for it is given.',
     },
     {
       id: 'twr-partner',
@@ -157,8 +154,7 @@ export const twr: Cause = {
       documentType: 'third-party',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'The only financial figures we could obtain for TWR anywhere. ECFA states they are taken from the organisation’s financial statements, for fiscal years ended 30 September 2023, 2024 and 2025. FY2025: programme $33,190,823, administration $2,784,357, fundraising $4,470,977, total $40,446,157; revenue $37,856,064; net assets $41,335,862. The underlying statements are not public.',
+      note: 'The only financial figures we could obtain for TWR anywhere. ECFA states they are taken from the organisation’s financial statements, for fiscal years ended 30 September 2023, 2024 and 2025. FY2025: programme $33,190,823, administration $2,784,357, fundraising $4,470,977, total $40,446,157; revenue $37,856,064; net assets $41,335,862. The underlying statements are not public.',
     },
     {
       id: 'twr-ecfa-profile',
@@ -167,8 +163,7 @@ export const twr: Cause = {
       publisher: 'ECFA',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'Accredited since 1 October 1987. Founded 1952, Cary NC. Contains the “from doubt to decision to discipleship” description of the ministry.',
+      note: 'Accredited since 1 October 1987. Founded 1952, Cary NC. Contains the “from doubt to decision to discipleship” description of the ministry.',
     },
     {
       id: 'twr-propublica',
@@ -177,8 +172,7 @@ export const twr: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'No financial data. The page states that the organisation “is not required to submit tax filings because the IRS designates it as a church”.',
+      note: 'No financial data. The page states that the organisation “is not required to submit tax filings because the IRS designates it as a church”.',
     },
   ],
 };

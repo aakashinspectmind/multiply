@@ -19,18 +19,15 @@ export const joniAndFriends: Cause = {
     scriptures: [
       {
         ref: 'Luke 14:13–14',
-        text:
-          'But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you.',
+        text: 'But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you.',
       },
       {
         ref: '1 Corinthians 12:22–23',
-        text:
-          'On the contrary, the parts of the body that seem to be weaker are indispensable, and the parts that we think are less honourable we clothe with greater honour.',
+        text: 'On the contrary, the parts of the body that seem to be weaker are indispensable, and the parts that we think are less honourable we clothe with greater honour.',
       },
       {
         ref: 'Proverbs 31:8–9',
-        text:
-          'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
+        text: 'Open your mouth for the mute, for the rights of all who are destitute. Open your mouth, judge righteously, defend the rights of the poor and needy.',
       },
     ],
     doctrine: {
@@ -70,28 +67,23 @@ export const joniAndFriends: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A statement of belief is published, the programme descriptions are written in gospel terms, every wheelchair is delivered with a Bible and a church connection, and the founder’s public writing is unambiguously Christian. This is not a ministry whose faith has to be inferred.',
+      note: 'A statement of belief is published, the programme descriptions are written in gospel terms, every wheelchair is delivered with a Bible and a church connection, and the founder’s public writing is unambiguously Christian. This is not a ministry whose faith has to be inferred.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'Collection, restoration, governance and most spending are American, and the overseas distributions are done by volunteer teams travelling out from the United States rather than by local staff. Joni’s House operations are locally staffed, but they are the smallest of the three program lines.',
+      note: 'Collection, restoration, governance and most spending are American, and the overseas distributions are done by volunteer teams travelling out from the United States rather than by local staff. Joni’s House operations are locally staffed, but they are the smallest of the three program lines.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited statements and Form 990s for both legal entities are posted on the ministry’s own financial documents page for every year from 2021 through 2025, including the restatement disclosure. The documents are complete; what they do not do is reconcile to each other.',
+      note: 'Audited statements and Form 990s for both legal entities are posted on the ministry’s own financial documents page for every year from 2021 through 2025, including the restatement disclosure. The documents are complete; what they do not do is reconcile to each other.',
     },
     outcomeEvidence: {
       value: 0,
-      note:
-        'This is a finding, not an absence of effort on our part. The ministry’s largest overseas programme is counted in wheelchairs, and no annual wheelchair figure is published on the programme page, in the audited statements, in the Form 990, or anywhere else we could find. The programme page says only “thousands”.',
+      note: 'This is a finding, not an absence of effort on our part. The ministry’s largest overseas programme is counted in wheelchairs, and no annual wheelchair figure is published on the programme page, in the audited statements, in the Form 990, or anywhere else we could find. The programme page says only “thousands”.',
     },
     costEvidence: {
       value: 0,
-      note:
-        'Spending is published to the line. There is no denominator at all, so there is nothing to divide. No cost per wheelchair, per recipient or per retreat family is advertised either.',
+      note: 'Spending is published to the line. There is no denominator at all, so there is nothing to divide. No cost per wheelchair, per recipient or per retreat family is advertised either.',
     },
   },
   notVerified: [
@@ -135,8 +127,7 @@ export const joniAndFriends: Cause = {
       publisher: 'Joni and Friends',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Describes the collection, prison restoration and volunteer distribution model, and what each recipient receives. Publishes no annual wheelchair count.',
+      note: 'Describes the collection, prison restoration and volunteer distribution model, and what each recipient receives. Publishes no annual wheelchair count.',
     },
     {
       id: 'jaf-financials',
@@ -155,8 +146,7 @@ export const joniAndFriends: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Year ended 31 December 2025. Program services $54,365,860, management and administrative $6,031,130, fundraising $7,463,887. Also discloses the $1,870,483 restatement of donated wheelchair inventory.',
+      note: 'Year ended 31 December 2025. Program services $54,365,860, management and administrative $6,031,130, fundraising $7,463,887. Also discloses the $1,870,483 restatement of donated wheelchair inventory.',
     },
     {
       id: 'jaf-990-25',
@@ -166,8 +156,7 @@ export const joniAndFriends: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Part III gives the three program lines and Part III line 4e gives total program service expenses of $38,759,679 — $15.6M below the audited figure for the same year.',
+      note: 'Part III gives the three program lines and Part III line 4e gives total program service expenses of $38,759,679 — $15.6M below the audited figure for the same year.',
     },
     {
       id: 'jaf-propublica',

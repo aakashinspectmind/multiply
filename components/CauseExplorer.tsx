@@ -130,8 +130,8 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
 
         {sort === 'cost' && (
           <p className="mt-4 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
-            A Bible and a surgery are not the same purchase. This order is only meaningful inside one
-            cause type — filter first, then compare.
+            A Bible and a surgery are not the same purchase. This order is only meaningful inside
+            one cause type — filter first, then compare.
           </p>
         )}
       </div>

@@ -1,21 +1,93 @@
 import type { Cause } from '@/lib/types';
-import { cureInternational } from './cure-international';
-import { waterMission } from './water-mission';
+import { africaNewLife } from './africa-new-life';
+import { africanMissionHealthcare } from './african-mission-healthcare';
+import { amazimaMinistries } from './amazima-ministries';
+import { amgInternational } from './amg-international';
+import { asiaHarvest } from './asia-harvest';
 import { bibleLeagueInternational } from './bible-league-international';
-import { epicChurchHopeProject } from './epic-church-hope-project';
-import { voiceOfTheMartyrs } from './voice-of-the-martyrs';
+import { chalmersCenter } from './chalmers-center';
 import { christianAidMission } from './christian-aid-mission';
-import { jesusFilmProject } from './jesus-film-project';
-import { theTimothyInitiative } from './the-timothy-initiative';
-import { homeOfHopeMinistries } from './home-of-hope-ministries';
-import { the500k } from './the500k';
+import { christianHealthServiceCorps } from './christian-health-service-corps';
+import { compassionInternational } from './compassion-international';
+import { cureInternational } from './cure-international';
+import { deafBibleSociety } from './deaf-bible-society';
+import { destinyRescue } from './destiny-rescue';
+import { edify } from './edify';
+import { epicChurchHopeProject } from './epic-church-hope-project';
+import { everyHomeForChrist } from './every-home-for-christ';
+import { faithComesByHearing } from './faith-comes-by-hearing';
+import { familyLegacyMissionsInternational } from './family-legacy-missions-international';
+import { febc } from './febc';
+import { feedMyStarvingChildren } from './feed-my-starving-children';
+import { fiveTalents } from './five-talents';
+import { foodForTheHungry } from './food-for-the-hungry';
+import { freeWheelchairMission } from './free-wheelchair-mission';
+import { frontiersUsa } from './frontiers-usa';
+import { globalTrainingNetwork } from './global-training-network';
+import { growingHopeGlobally } from './growing-hope-globally';
+import { harvestBridge } from './harvest-bridge';
 import { heartForAfrica } from './heart-for-africa';
+import { holtInternational } from './holt-international';
+import { homeOfHopeMinistries } from './home-of-hope-ministries';
+import { hopeInternational } from './hope-international';
+import { hopeOfLifeInternational } from './hope-of-life-international';
+import { hopeRisesInternational } from './hope-rises-international';
+import { jaars } from './jaars';
+import { jesusFilmProject } from './jesus-film-project';
+import { joniAndFriends } from './joni-and-friends';
+import { kidsAliveInternational } from './kids-alive-international';
+import { langhamPartnership } from './langham-partnership';
+import { lemonadeInternational } from './lemonade-international';
+import { lifesongForOrphans } from './lifesong-for-orphans';
+import { literacyEvangelismInternational } from './literacy-evangelism-international';
+import { loveJusticeInternational } from './love-justice-international';
+import { lukeSociety } from './luke-society';
+import { marysMealsUsa } from './marys-meals-usa';
+import { medicalTeamsInternational } from './medical-teams-international';
+import { mercyShips } from './mercy-ships';
+import { mintsInternationalSeminary } from './mints-international-seminary';
+import { missionAviationFellowship } from './mission-aviation-fellowship';
+import { missionOfHopeHaiti } from './mission-of-hope-haiti';
+import { mustardSeedCommunities } from './mustard-seed-communities';
+import { nazareneCompassionateMinistries } from './nazarene-compassionate-ministries';
+import { newGenerations } from './new-generations';
+import { nphUsa } from './nph-usa';
+import { openDoors } from './open-doors';
+import { orphanGrainTrain } from './orphan-grain-train';
+import { paacs } from './paacs';
+import { partnersWorldwide } from './partners-worldwide';
 import { pearlHouse } from './pearl-house';
+import { plantWithPurpose } from './plant-with-purpose';
+import { prisonFellowshipInternational } from './prison-fellowship-international';
+import { reachAVillage } from './reach-a-village';
+import { reachingSoulsInternational } from './reaching-souls-international';
+import { samaritansPurse } from './samaritans-purse';
+import { sat7 } from './sat-7';
+import { seedEffect } from './seed-effect';
+import { shepherdsGlobalClassroom } from './shepherds-global-classroom';
+import { sinapis } from './sinapis';
+import { theSeedCompany } from './the-seed-company';
+import { theTimothyInitiative } from './the-timothy-initiative';
+import { the500k } from './the500k';
+import { thirdmill } from './thirdmill';
+import { trainingLeadersInternational } from './training-leaders-international';
+import { twr } from './twr';
+import { unfoldingWord } from './unfolding-word';
+import { voiceOfTheMartyrs } from './voice-of-the-martyrs';
+import { waterForGood } from './water-for-good';
+import { waterMission } from './water-mission';
+import { water4 } from './water4';
+import { worldHelp } from './world-help';
+import { worldVision } from './world-vision';
+import { wycliffeBibleTranslatorsUsa } from './wycliffe-bible-translators-usa';
+import { zoeEmpowers } from './zoe-empowers';
+import { zoeInternational } from './zoe-international';
 
 /**
  * The directory. One file per cause in this folder, assembled here.
  *
- * Read `DATA.md` before editing. The short version: every number needs a
+ * Generated by scripts/build-causes-index.mjs — add a file, run the script.
+ * Read `DATA.md` before writing one. The short version: every number needs a
  * `sourceId`, quotes are verbatim, and a gap goes in `notVerified` rather than
  * getting filled in with a guess.
  *
@@ -23,18 +95,89 @@ import { pearlHouse } from './pearl-house';
  * never by position.
  */
 export const causes: Cause[] = [
-  cureInternational,
-  waterMission,
+  africaNewLife,
+  africanMissionHealthcare,
+  amazimaMinistries,
+  amgInternational,
+  asiaHarvest,
   bibleLeagueInternational,
-  epicChurchHopeProject,
-  voiceOfTheMartyrs,
+  chalmersCenter,
   christianAidMission,
-  jesusFilmProject,
-  theTimothyInitiative,
-  homeOfHopeMinistries,
-  the500k,
+  christianHealthServiceCorps,
+  compassionInternational,
+  cureInternational,
+  deafBibleSociety,
+  destinyRescue,
+  edify,
+  epicChurchHopeProject,
+  everyHomeForChrist,
+  faithComesByHearing,
+  familyLegacyMissionsInternational,
+  febc,
+  feedMyStarvingChildren,
+  fiveTalents,
+  foodForTheHungry,
+  freeWheelchairMission,
+  frontiersUsa,
+  globalTrainingNetwork,
+  growingHopeGlobally,
+  harvestBridge,
   heartForAfrica,
+  holtInternational,
+  homeOfHopeMinistries,
+  hopeInternational,
+  hopeOfLifeInternational,
+  hopeRisesInternational,
+  jaars,
+  jesusFilmProject,
+  joniAndFriends,
+  kidsAliveInternational,
+  langhamPartnership,
+  lemonadeInternational,
+  lifesongForOrphans,
+  literacyEvangelismInternational,
+  loveJusticeInternational,
+  lukeSociety,
+  marysMealsUsa,
+  medicalTeamsInternational,
+  mercyShips,
+  mintsInternationalSeminary,
+  missionAviationFellowship,
+  missionOfHopeHaiti,
+  mustardSeedCommunities,
+  nazareneCompassionateMinistries,
+  newGenerations,
+  nphUsa,
+  openDoors,
+  orphanGrainTrain,
+  paacs,
+  partnersWorldwide,
   pearlHouse,
+  plantWithPurpose,
+  prisonFellowshipInternational,
+  reachAVillage,
+  reachingSoulsInternational,
+  samaritansPurse,
+  sat7,
+  seedEffect,
+  shepherdsGlobalClassroom,
+  sinapis,
+  theSeedCompany,
+  theTimothyInitiative,
+  the500k,
+  thirdmill,
+  trainingLeadersInternational,
+  twr,
+  unfoldingWord,
+  voiceOfTheMartyrs,
+  waterForGood,
+  waterMission,
+  water4,
+  worldHelp,
+  worldVision,
+  wycliffeBibleTranslatorsUsa,
+  zoeEmpowers,
+  zoeInternational,
 ];
 
 export function causeBySlug(slug: string): Cause {

@@ -28,18 +28,15 @@ export const zoeInternational: Cause = {
     scriptures: [
       {
         ref: 'Psalm 82:3–4',
-        text:
-          'Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked.',
+        text: 'Give justice to the weak and the fatherless; maintain the right of the afflicted and the destitute. Rescue the weak and the needy; deliver them from the hand of the wicked.',
       },
       {
         ref: 'Matthew 18:5–6',
-        text:
-          'Whoever receives one such child in my name receives me, but whoever causes one of these little ones who believe in me to sin, it would be better for him to have a great millstone fastened round his neck and to be drowned in the depth of the sea.',
+        text: 'Whoever receives one such child in my name receives me, but whoever causes one of these little ones who believe in me to sin, it would be better for him to have a great millstone fastened round his neck and to be drowned in the depth of the sea.',
       },
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
     ],
     doctrine: {
@@ -86,28 +83,23 @@ export const zoeInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The mission statement names the Good News and followers of Jesus Christ, the audited financial statements themselves open the Missions note by quoting Matthew 9:37–38, and the impact report sets Psalm 82 beside its rescue figures. There is no separate statement of faith, which is the only thing keeping this from being unambiguous on paper as well as in practice.',
+      note: 'The mission statement names the Good News and followers of Jesus Christ, the audited financial statements themselves open the Missions note by quoting Matthew 9:37–38, and the impact report sets Psalm 82 beside its rescue figures. There is no separate statement of faith, which is the only thing keeping this from being unambiguous on paper as well as in practice.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'ZOE International Foundation and ZOE Life Foundation are Thai legal entities running Thai operations with Thai government educational authorisation, which is genuine local institution-building. But the US entity holds board and economic control over all five affiliates, governance and money sit in Santa Clarita, and the Missions program line funds Americans moving to Thailand rather than nationals.',
+      note: 'ZOE International Foundation and ZOE Life Foundation are Thai legal entities running Thai operations with Thai government educational authorisation, which is genuine local institution-building. But the US entity holds board and economic control over all five affiliates, governance and money sit in Santa Clarita, and the Missions program line funds Americans moving to Thailand rather than nationals.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'This is the strongest documentation in this category. Consolidated audited statements run 2020 through 2025, they are performed under Government Auditing Standards because of the government contracts, the compliance report disclosed no material weaknesses and no instances of noncompliance, and the supplementary schedules break every figure out entity by entity and include California foster care cost and revenue reports. The draft 990 is a real blemish and it is the only one; everything the return would show, the audit shows better.',
+      note: 'This is the strongest documentation in this category. Consolidated audited statements run 2020 through 2025, they are performed under Government Auditing Standards because of the government contracts, the compliance report disclosed no material weaknesses and no instances of noncompliance, and the supplementary schedules break every figure out entity by entity and include California foster care cost and revenue reports. The draft 990 is a real blemish and it is the only one; everything the return would show, the audit shows better.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Counts are published, dated and segmented by country, which is more than many ministries manage. They are also internally inconsistent by a factor of 8.5 on the headline Thailand figure, undefined as to what is being counted, and a full year out of date relative to the accounts.',
+      note: 'Counts are published, dated and segmented by country, which is more than many ministries manage. They are also internally inconsistent by a factor of 8.5 on the headline Thailand figure, undefined as to what is being counted, and a full year out of date relative to the accounts.',
     },
     costEvidence: {
       value: 0,
-      note:
-        'A finding, not a gap in our effort. ZOE advertises no cost per child. We could not build one either: there is no published headcount for the residential programmes, and every candidate numerator covers six legal entities across five countries at wildly different price levels.',
+      note: 'A finding, not a gap in our effort. ZOE advertises no cost per child. We could not build one either: there is no published headcount for the residential programmes, and every candidate numerator covers six legal entities across five countries at wildly different price levels.',
     },
   },
   notVerified: [
@@ -155,8 +147,7 @@ export const zoeInternational: Cause = {
       publisher: 'ZOE International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the ECFA and Christian Alliance for Orphans memberships and the stewardship commitments. Posts independent auditor’s reports for 2020 through 2025, Form 990s, and full and summary impact reports for 2023 and 2024 — no 2025 impact report.',
+      note: 'Source of the ECFA and Christian Alliance for Orphans memberships and the stewardship commitments. Posts independent auditor’s reports for 2020 through 2025, Form 990s, and full and summary impact reports for 2023 and 2024 — no 2025 impact report.',
     },
     {
       id: 'zoe-audit-25',
@@ -166,8 +157,7 @@ export const zoeInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Years ended 31 December 2025 and 2024, consolidated across six entities and audited in accordance with Government Auditing Standards. Contains the mission statement and full program descriptions in Note 1, consolidating statements by entity, and the State of California Foster Care Program cost and revenue reports. The compliance report disclosed no material weaknesses and no instances of noncompliance.',
+      note: 'Years ended 31 December 2025 and 2024, consolidated across six entities and audited in accordance with Government Auditing Standards. Contains the mission statement and full program descriptions in Note 1, consolidating statements by entity, and the State of California Foster Care Program cost and revenue reports. The compliance report disclosed no material weaknesses and no instances of noncompliance.',
     },
     {
       id: 'zoe-ir-24',
@@ -177,8 +167,7 @@ export const zoeInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Source of both Thailand rescue figures and the United States figures. The country statistics are set in a designed graphic on the “2024 International Impact” spread: USA 11 children rescued, 539 arrested, 54 adults recovered, 5 traffickers arrested; Thailand 529 trafficking cases, 790 perpetrators, 1,023 victims rescued, 1,255 years in prison. The 121-children figure is printed as body text elsewhere in the report.',
+      note: 'Source of both Thailand rescue figures and the United States figures. The country statistics are set in a designed graphic on the “2024 International Impact” spread: USA 11 children rescued, 539 arrested, 54 adults recovered, 5 traffickers arrested; Thailand 529 trafficking cases, 790 perpetrators, 1,023 victims rescued, 1,255 years in prison. The 121-children figure is printed as body text elsewhere in the report.',
     },
     {
       id: 'zoe-990-25',
@@ -188,8 +177,7 @@ export const zoeInternational: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'ZOE International only, not consolidated. Every page carries a DRAFT watermark and the officer signature line is unsigned; the preparer signed 20 July 2026. Program service expenses $6,419,796, total functional expenses $7,336,427, Schedule F foreign expenditure $3,139,765 with recipient names left blank.',
+      note: 'ZOE International only, not consolidated. Every page carries a DRAFT watermark and the officer signature line is unsigned; the preparer signed 20 July 2026. Program service expenses $6,419,796, total functional expenses $7,336,427, Schedule F foreign expenditure $3,139,765 with recipient names left blank.',
     },
     {
       id: 'zoe-propublica',

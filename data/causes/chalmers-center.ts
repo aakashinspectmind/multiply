@@ -19,27 +19,24 @@ export const chalmersCenter: Cause = {
     scriptures: [
       {
         ref: 'Genesis 2:15',
-        text:
-          'The LORD God took the man and put him in the garden of Eden to work it and keep it.',
+        text: 'The LORD God took the man and put him in the garden of Eden to work it and keep it.',
       },
       {
         ref: '2 Thessalonians 3:10–12',
-        text:
-          'If anyone is not willing to work, let him not eat. For we hear that some among you walk in idleness, not busy at work, but busybodies. Now such persons we command and encourage in the Lord Jesus Christ to do their work quietly and to earn their own living.',
+        text: 'If anyone is not willing to work, let him not eat. For we hear that some among you walk in idleness, not busy at work, but busybodies. Now such persons we command and encourage in the Lord Jesus Christ to do their work quietly and to earn their own living.',
       },
       {
         ref: '2 Timothy 2:2',
-        text:
-          'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
+        text: 'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
       },
     ],
     doctrine: {
       label:
-        'Has adopted the Lausanne Covenant as its statement of belief, and lists commitments to the inerrancy and ultimate authority of the Bible, living out faith under the authority of God\'s local church, God\'s love for people in poverty, prayer, and the gifts and fruit of the Holy Spirit. The clearest doctrinal statement of any ministry in this category.',
+        "Has adopted the Lausanne Covenant as its statement of belief, and lists commitments to the inerrancy and ultimate authority of the Bible, living out faith under the authority of God's local church, God's love for people in poverty, prayer, and the gifts and fruit of the Holy Spirit. The clearest doctrinal statement of any ministry in this category.",
       sourceId: 'cc-about',
     },
     concerns: [
-      'This is the weakest geographic case in this category and we are not going to hide it. Chalmers\' own annual report names three countries outside the United States — Nigeria, Togo and the Philippines — in the entire document. Faith & Finances, Work Life and the benevolence-ministry material are for American churches, the staff and the curriculum development are in Georgia, and the cost base the donor is funding is a high-income one. The overseas leverage is real but it is second-hand: it happens when a partner like Five Talents or ICM delivers the curriculum at its own expense.',
+      "This is the weakest geographic case in this category and we are not going to hide it. Chalmers' own annual report names three countries outside the United States — Nigeria, Togo and the Philippines — in the entire document. Faith & Finances, Work Life and the benevolence-ministry material are for American churches, the staff and the curriculum development are in Georgia, and the cost base the donor is funding is a high-income one. The overseas leverage is real but it is second-hand: it happens when a partner like Five Talents or ICM delivers the curriculum at its own expense.",
       'That second-hand leverage creates a double-counting problem for a donor. Five Talents\' chief executive says in Chalmers\' own report that "almost all" of the 30,000-plus members Five Talents serves each year use RESTORE. Those members appear in Five Talents\' impact numbers and, as far as we can tell, in Chalmers\' "people reached" figure too. Give to both and you may be told about the same savings group twice.',
       'Savings-group training is one thing; the underlying model still involves members lending to each other at interest they set, and members who cannot repay owe their neighbours. The randomised evidence on credit for the poor is mixed at best. Chalmers is more careful about this than most — its whole reputation rests on arguing that badly designed help harms people — but its published material celebrates savings totals rather than reporting who fell out of a group and why.',
       'The leading numbers are lifetime totals: 3,400,000+ people reached and 16,000+ trained since 1999. A cumulative figure spanning 27 years, built from counts reported by third-party partners, is close to uncheckable.',
@@ -48,7 +45,7 @@ export const chalmersCenter: Cause = {
   roi: {
     levers: ['multiplication', 'digital-distribution', 'existing-network'],
     reason:
-      'The mechanism here is not a low local cost base — Chalmers spends its money in the United States. It is that curriculum is the cheapest thing in the world to copy. Chalmers writes RESTORE once and Five Talents runs it across eastern and central Africa on Five Talents\' budget, ICM runs it across the Philippines on ICM\'s budget, and a local church in Togo runs it with volunteers. ICM\'s figures in Chalmers\' own report are the clearest illustration we have found of what that compounding looks like in practice: 176,793 people put through RESTORE savings groups since 2014, with 5,362 groups still active and holding more than $9.8 million of their own savings. Chalmers paid for none of that $9.8 million and employed none of those facilitators. That is the honest shape of the return — and its limit, because the same structure means a donor to Chalmers cannot trace their dollar to any particular group.',
+      "The mechanism here is not a low local cost base — Chalmers spends its money in the United States. It is that curriculum is the cheapest thing in the world to copy. Chalmers writes RESTORE once and Five Talents runs it across eastern and central Africa on Five Talents' budget, ICM runs it across the Philippines on ICM's budget, and a local church in Togo runs it with volunteers. ICM's figures in Chalmers' own report are the clearest illustration we have found of what that compounding looks like in practice: 176,793 people put through RESTORE savings groups since 2014, with 5,362 groups still active and holding more than $9.8 million of their own savings. Chalmers paid for none of that $9.8 million and employed none of those facilitators. That is the honest shape of the return — and its limit, because the same structure means a donor to Chalmers cannot trace their dollar to any particular group.",
   },
   costModel: {
     outcome: 'person trained to run the material',
@@ -72,8 +69,7 @@ export const chalmersCenter: Cause = {
       {
         label: 'people reached in 2025',
         count: 290000,
-        note:
-          'The other end of the range, and about $8 a head. But this counts people reached by partner organisations delivering Chalmers material at their own cost, so it charges Chalmers\' budget with work Chalmers did not pay for. Neither this nor the training figure is the cost of anything simple.',
+        note: "The other end of the range, and about $8 a head. But this counts people reached by partner organisations delivering Chalmers material at their own cost, so it charges Chalmers' budget with work Chalmers did not pay for. Neither this nor the training figure is the cost of anything simple.",
       },
     ],
   },
@@ -89,7 +85,7 @@ export const chalmersCenter: Cause = {
     },
     {
       quote:
-        'Each year, Five Talents serves more than 30,000 members of savings groups across eastern and central Africa, and almost all members learn, earn, save and invest together thanks to Chalmers\' RESTORE curriculum.',
+        "Each year, Five Talents serves more than 30,000 members of savings groups across eastern and central Africa, and almost all members learn, earn, save and invest together thanks to Chalmers' RESTORE curriculum.",
       sourceId: 'cc-ar-25',
     },
     {
@@ -100,41 +96,36 @@ export const chalmersCenter: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The Lausanne Covenant as a statement of belief, explicit commitment to biblical inerrancy and to working under the authority of the local church, and a theology of poverty that is the organisation\'s actual product rather than a preface to it. Nothing here is implied.',
+      note: "The Lausanne Covenant as a statement of belief, explicit commitment to biblical inerrancy and to working under the authority of the local church, and a theology of poverty that is the organisation's actual product rather than a preface to it. Nothing here is implied.",
     },
     localLeadership: {
       value: 1,
-      note:
-        'Curriculum is written, staffed and governed in Georgia, and the largest programmes serve American churches. Delivery overseas is entirely by local partners, which is the right structure, but the money and the authorship sit in a high-income country and Chalmers does not publish any national leadership of its own.',
+      note: 'Curriculum is written, staffed and governed in Georgia, and the largest programmes serve American churches. Delivery overseas is entirely by local partners, which is the right structure, but the money and the authorship sit in a high-income country and Chalmers does not publish any national leadership of its own.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'ECFA accredited, with audited statements, Form 990s and a ministry report posted for every year from 2016 to 2025 — an unusually complete run. Marked down because the link labelled "2025 990" serves a file named for 2024, and the functional expense breakdown does not separate the US programmes from the international ones, which is the split a donor most needs here.',
+      note: 'ECFA accredited, with audited statements, Form 990s and a ministry report posted for every year from 2016 to 2025 — an unusually complete run. Marked down because the link labelled "2025 990" serves a file named for 2024, and the functional expense breakdown does not separate the US programmes from the international ones, which is the split a donor most needs here.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        '"People reached" is never defined, the headline totals are lifetime rather than annual, and the annual figures are published as round numbers with a plus sign — 290,000 and 1,000+ — which cannot be reconciled to anything. Most of the count is generated by third-party partners using Chalmers material, so Chalmers is reporting other organisations\' activity.',
+      note: '"People reached" is never defined, the headline totals are lifetime rather than annual, and the annual figures are published as round numbers with a plus sign — 290,000 and 1,000+ — which cannot be reconciled to anything. Most of the count is generated by third-party partners using Chalmers material, so Chalmers is reporting other organisations\' activity.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Audited program spending and an annual count both exist for the same fiscal year, which is more than most ministries manage. But the count is a floor published as "1,000+", so the quotient is only an upper bound, and the two plausible denominators are 290 times apart.',
+      note: 'Audited program spending and an annual count both exist for the same fiscal year, which is more than most ministries manage. But the count is a floor published as "1,000+", so the quotient is only an upper bound, and the two plausible denominators are 290 times apart.',
     },
   },
   notVerified: [
     'What "people reached" means. It is the number Chalmers leads with and there is no definition anywhere — whether it counts a person who attended one session, a person who completed a course, or a household member of someone who did.',
-    'How much of the $2,392,369 of program spending went to work outside the United States. The audit\'s functional breakdown does not split domestic from international, and the annual report names only Nigeria, Togo and the Philippines.',
+    "How much of the $2,392,369 of program spending went to work outside the United States. The audit's functional breakdown does not split domestic from international, and the annual report names only Nigeria, Togo and the Philippines.",
     'Whether the 1,000+ trained in 2025 are facilitators who went on to run a group. Training delivered is not a group started.',
     'The link labelled "2025 990" on the finances page points at a file named for 2024. We could not confirm which year\'s return it actually is, so the 990 is not cited as a source here.',
-    'The 176,793 people and $9.8 million in savings are International Care Ministries\' figures, quoted by Chalmers. We did not obtain ICM\'s own documents and cannot confirm either number.',
-    'Whether the people counted in Chalmers\' "reached" figure are also counted in Five Talents\' and ICM\'s published figures. We believe they are, and no ministry involved says so.',
+    "The 176,793 people and $9.8 million in savings are International Care Ministries' figures, quoted by Chalmers. We did not obtain ICM's own documents and cannot confirm either number.",
+    "Whether the people counted in Chalmers' \"reached\" figure are also counted in Five Talents' and ICM's published figures. We believe they are, and no ministry involved says so.",
     'The lifetime totals — 3,400,000+ reached, 16,000+ trained, 2,600,000+ people in poverty reached — are not reconstructible from anything published. They also appear on a designed infographic spread rather than in a financial table.',
   ],
   notes: [
-    'The $9.8 million that ICM\'s active savings groups hold is the members\' money. It was saved by poor Philippine households out of their own income; no donor bought it and it is not a return on a gift. What a donor to Chalmers arguably bought is a piece of the training that made group saving possible, delivered by ICM staff Chalmers does not pay. Both halves of that sentence matter.',
+    "The $9.8 million that ICM's active savings groups hold is the members' money. It was saved by poor Philippine households out of their own income; no donor bought it and it is not a return on a gift. What a donor to Chalmers arguably bought is a piece of the training that made group saving possible, delivered by ICM staff Chalmers does not pay. Both halves of that sentence matter.",
     'Program services were $2,392,369 of $3,571,053 total expenses in the year to June 2025, so administration and fundraising together took about 33% — the highest support ratio of the ministries in this category. For a research-and-curriculum organisation that is less damning than it sounds, but it is real.',
     'This is a supplier, not a service provider. If you want your money spent in a poor country, give to a ministry that delivers; if you want the thing they all use to be well made, give here. It is a legitimate choice and it is not the same choice.',
   ],
@@ -148,8 +139,7 @@ export const chalmersCenter: Cause = {
       publisher: 'The Chalmers Center',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the "What We Believe" statement adopting the Lausanne Covenant, and of the history back to 1999 and the 2009 publication of When Helping Hurts.',
+      note: 'Source of the "What We Believe" statement adopting the Lausanne Covenant, and of the history back to 1999 and the 2009 publication of When Helping Hurts.',
     },
     {
       id: 'cc-finance',
@@ -158,8 +148,7 @@ export const chalmersCenter: Cause = {
       publisher: 'The Chalmers Center',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Lists ministry reports, Form 990s and financial statements for 2016 through 2025, confirms ECFA accreditation and the EIN. The path is /finance, not /financials, which 404s.',
+      note: 'Lists ministry reports, Form 990s and financial statements for 2016 through 2025, confirms ECFA accreditation and the EIN. The path is /finance, not /financials, which 404s.',
     },
     {
       id: 'cc-audit-25',
@@ -169,8 +158,7 @@ export const chalmersCenter: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Program services $2,392,369, administrative $543,340, fundraising $635,344, total $3,571,053. No split between domestic and international programmes.',
+      note: 'Program services $2,392,369, administrative $543,340, fundraising $635,344, total $3,571,053. No split between domestic and international programmes.',
     },
     {
       id: 'cc-ar-25',
@@ -180,8 +168,7 @@ export const chalmersCenter: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the 2025 counts (290,000 people reached, 1,000+ people trained) and the lifetime totals, which appear on a designed infographic spread rather than in a table. Also the source of the Five Talents and International Care Ministries quotes, both of which are partner statements Chalmers reproduces.',
+      note: 'Source of the 2025 counts (290,000 people reached, 1,000+ people trained) and the lifetime totals, which appear on a designed infographic spread rather than in a table. Also the source of the Five Talents and International Care Ministries quotes, both of which are partner statements Chalmers reproduces.',
     },
   ],
 };

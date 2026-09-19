@@ -7,10 +7,10 @@ export const plantWithPurpose: Cause = {
   ein: '33-0052976',
   tagline:
     'Plants ten million trees a year with smallholder farmers, and its audited books put the cost at almost exactly the dollar it advertises.',
-  category: 'water',
+  category: 'food',
   countries: [
     'Burundi',
-    'Democratic Republic of the Congo',
+    'DR Congo',
     'Dominican Republic',
     'Ethiopia',
     'Haiti',
@@ -29,8 +29,7 @@ export const plantWithPurpose: Cause = {
     scriptures: [
       {
         ref: 'Isaiah 58:10',
-        text:
-          'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
+        text: 'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
       },
       {
         ref: 'Proverbs 22:9',
@@ -38,8 +37,7 @@ export const plantWithPurpose: Cause = {
       },
       {
         ref: 'Genesis 2:15',
-        text:
-          'The Lord God took the man and put him in the garden of Eden to work it and keep it.',
+        text: 'The Lord God took the man and put him in the garden of Eden to work it and keep it.',
       },
     ],
     concerns: [
@@ -77,6 +75,7 @@ export const plantWithPurpose: Cause = {
       quote: 'Plant a Tree for $1',
       sourceId: 'pwp-site',
       impliedCostPerOutcome: 1,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'tree planted',
     },
     {
@@ -97,28 +96,23 @@ export const plantWithPurpose: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'There is real substance — 1,464 partner churches, spiritual renewal as one of four programme quadrants, a “Restoration of Relationships” curriculum, and the statement that the work is “born from our Christian belief that all people are made in the image of God.” But the public self-description leans on faith as a useful bridge rather than a conviction, there is no statement of faith, and the ministry presents itself outwardly as an environmental nonprofit.',
+      note: 'There is real substance — 1,464 partner churches, spiritual renewal as one of four programme quadrants, a “Restoration of Relationships” curriculum, and the statement that the work is “born from our Christian belief that all people are made in the image of God.” But the public self-description leans on faith as a useful bridge rather than a conviction, there is no statement of faith, and the ministry presents itself outwardly as an environmental nonprofit.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The strongest documented case in this batch: the annual report’s own staffing table shows 471 total global and US staff of whom 48 are in the United States, so roughly nine in ten are field staff in the nine programme countries. The work runs through 1,464 local churches and 5,559 farmer-led savings groups capitalised by their own members. Governance and fundraising remain in San Diego.',
+      note: 'The strongest documented case in this batch: the annual report’s own staffing table shows 471 total global and US staff of whom 48 are in the United States, so roughly nine in ten are field staff in the nine programme countries. The work runs through 1,464 local churches and 5,559 farmer-led savings groups capitalised by their own members. Governance and fundraising remain in San Diego.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited financial statements, the Form 990 and the annual report for the year to June 2025 are all posted on the ministry’s own transparency page, with functional expenses split between overseas programmes and US learning and action. Note the page is at /trust-transparency/, not /financials/.',
+      note: 'Audited financial statements, the Form 990 and the annual report for the year to June 2025 are all posted on the ministry’s own transparency page, with functional expenses split between overseas programmes and US learning and action. Note the page is at /trust-transparency/, not /financials/.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The tree count is broken out country by country and the nine figures sum exactly to the published headline, which is a real discipline and the reason we trusted it as a denominator. Against that: no survival rate, and the per-country “people served” figures are a cumulative stock that does not reconcile to the ministry’s own cumulative total.',
+      note: 'The tree count is broken out country by country and the nine figures sum exactly to the published headline, which is a real discipline and the reason we trusted it as a denominator. Against that: no survival rate, and the per-country “people served” figures are a cumulative stock that does not reconcile to the ministry’s own cumulative total.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'The only cause in this batch where our arithmetic on audited figures independently lands on the ministry’s own advertised unit price — $1.01 against a published $1. That is what this site exists to do. The caution is that the price may have been set from the arithmetic in the first place rather than tested against it, in which case the agreement is a tautology rather than a confirmation.',
+      note: 'The only cause in this batch where our arithmetic on audited figures independently lands on the ministry’s own advertised unit price — $1.01 against a published $1. That is what this site exists to do. The caution is that the price may have been set from the arithmetic in the first place rather than tested against it, in which case the agreement is a tautology rather than a confirmation.',
     },
   },
   notVerified: [
@@ -157,8 +151,7 @@ export const plantWithPurpose: Cause = {
       publisher: 'Plant With Purpose',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the faith-as-a-bridge statement and “born from our Christian belief that all people are made in the image of God”.',
+      note: 'Source of the faith-as-a-bridge statement and “born from our Christian belief that all people are made in the image of God”.',
     },
     {
       id: 'pwp-tree',
@@ -185,8 +178,7 @@ export const plantWithPurpose: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Audited by CapinCrouse LLP. Total program activities $10,310,929 (overseas programs $9,531,497 plus learning and action $779,430), fundraising $2,622,920, management and general $1,173,917, total expenses $14,107,766.',
+      note: 'Audited by CapinCrouse LLP. Total program activities $10,310,929 (overseas programs $9,531,497 plus learning and action $779,430), fundraising $2,622,920, management and general $1,173,917, total expenses $14,107,766.',
     },
     {
       id: 'pwp-990-25',
@@ -205,8 +197,7 @@ export const plantWithPurpose: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the 10,227,457 trees and the nine per-country tree figures that sum to it, the THRIVE 25 five-year table (staff, savings equity, participants, partner churches), and the six-to-ten-year watershed statement. Figures are set in graphics; we rendered the pages as images and read them rather than extracting text.',
+      note: 'Source of the 10,227,457 trees and the nine per-country tree figures that sum to it, the THRIVE 25 five-year table (staff, savings equity, participants, partner churches), and the six-to-ten-year watershed statement. Figures are set in graphics; we rendered the pages as images and read them rather than extracting text.',
     },
   ],
 };

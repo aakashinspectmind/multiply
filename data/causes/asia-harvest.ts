@@ -31,18 +31,15 @@ export const asiaHarvest: Cause = {
     scriptures: [
       {
         ref: 'Romans 10:14–15',
-        text:
-          'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent?',
+        text: 'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard? And how are they to hear without someone preaching? And how are they to preach unless they are sent?',
       },
       {
         ref: '1 Corinthians 9:14',
-        text:
-          'In the same way, the Lord commanded that those who proclaim the gospel should get their living by the gospel.',
+        text: 'In the same way, the Lord commanded that those who proclaim the gospel should get their living by the gospel.',
       },
       {
         ref: 'Matthew 28:19',
-        text:
-          'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.',
+        text: 'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.',
       },
     ],
     doctrine: { label: 'Doctrinal Statement', sourceId: 'ah-doctrine' },
@@ -65,7 +62,7 @@ export const asiaHarvest: Cause = {
       benchmarkSourceId: 'fr-audit-25',
       multiple: 77,
       caveat:
-        'These are not the same job and the multiple is not a verdict. Frontiers sends workers to places where there is no indigenous church to support an evangelist, which is precisely the situation Asia Harvest\'s model cannot address; someone has to go first. The $832.99 is also only what Asia Harvest sends, not the worker\'s total income — he may have other support or other work, and they do not say. The $64,227.91 includes recruiting and training workers not yet sent, so it overstates the marginal cost of one more sent worker. Read the ratio as the reason both models exist, not as an argument for one.',
+        "These are not the same job and the multiple is not a verdict. Frontiers sends workers to places where there is no indigenous church to support an evangelist, which is precisely the situation Asia Harvest's model cannot address; someone has to go first. The $832.99 is also only what Asia Harvest sends, not the worker's total income — he may have other support or other work, and they do not say. The $64,227.91 includes recruiting and training workers not yet sent, so it overstates the marginal cost of one more sent worker — while Frontiers' audit also notes that some of its workers are self-supporting tentmakers whose costs never enter its statements, which pushes the other way. Read the ratio as the reason both models exist, not as an argument for one.",
     },
   },
   costModel: {
@@ -85,13 +82,12 @@ export const asiaHarvest: Cause = {
     },
     attribution: 'single-program-line',
     caveat:
-      'This divides one audited program line, Evangelism, by the number of evangelists supported in the same year, so it does not carry Bible printing or humanitarian aid. It still over-attributes: Asia Harvest\'s own project table shows the Evangelism line covering both the Asian Workers\' Fund and a Ministry Training Fund, so some of this $1,635,165 trained workers rather than supported the 1,963. It also excludes every dollar of the $695,480 general and administrative cost that made the grants possible, so it is not the full cost to Asia Harvest of one supported evangelist-year.',
+      "This divides one audited program line, Evangelism, by the number of evangelists supported in the same year, so it does not carry Bible printing or humanitarian aid. It still over-attributes: Asia Harvest's own project table shows the Evangelism line covering both the Asian Workers' Fund and a Ministry Training Fund, so some of this $1,635,165 trained workers rather than supported the 1,963. It also excludes every dollar of the $695,480 general and administrative cost that made the grants possible, so it is not the full cost to Asia Harvest of one supported evangelist-year.",
     alternates: [
       {
         label: 'all program spending, across evangelists, Bibles and aid',
         count: 1963,
-        note:
-          'Charging the whole $4,131,500 program figure to the evangelists gives $2,104.69 each, which is the honest upper bound if you think the Bibles and the aid exist to make the evangelism work.',
+        note: 'Charging the whole $4,131,500 program figure to the evangelists gives $2,104.69 each, which is the honest upper bound if you think the Bibles and the aid exist to make the evangelism work.',
       },
     ],
   },
@@ -116,34 +112,29 @@ export const asiaHarvest: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A doctrinal statement on the site, and the three programme lines are Bibles, evangelists and aid to Christians. There is no version of this ministry that is not explicitly Christian.',
+      note: 'A doctrinal statement on the site, and the three programme lines are Bibles, evangelists and aid to Christians. There is no version of this ministry that is not explicitly Christian.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'Every funded worker is an Asian believer working among Asian peoples, and the audit records all program spending as grants and assistance rather than staff cost. The board and office are American.',
+      note: 'Every funded worker is an Asian believer working among Asian peoples, and the audit records all program spending as grants and assistance rather than staff cost. The board and office are American.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Full audited statements with a three-way functional breakdown are posted, plus an ECFA member profile. Marked down because the project table on their own financials page does not reconcile to itself, and because the page directs readers to an audit page that does not contain what it says it contains.',
+      note: 'Full audited statements with a three-way functional breakdown are posted, plus an ECFA member profile. Marked down because the project table on their own financials page does not reconcile to itself, and because the page directs readers to an audit page that does not contain what it says it contains.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'The evangelist count is published for the same year as the audit, which is enough to divide. Nothing else is: the count is reported up from the networks being funded, there is no definition of what support level makes someone one of the 1,963, and the accompanying figures are conversions and Bibles rather than anything independently checkable.',
+      note: 'The evangelist count is published for the same year as the audit, which is enough to divide. Nothing else is: the count is reported up from the networks being funded, there is no definition of what support level makes someone one of the 1,963, and the accompanying figures are conversions and Bibles rather than anything independently checkable.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves come from the ministry for the same fiscal year, and the numerator is an audited line rather than a total. Not a 3 because the count sits in a marketing document rather than in the audited statements, and because the Evangelism line demonstrably funds more than the 1,963 workers.',
+      note: 'Both halves come from the ministry for the same fiscal year, and the numerator is an audited line rather than a total. Not a 3 because the count sits in a marketing document rather than in the audited statements, and because the Evangelism line demonstrably funds more than the 1,963 workers.',
     },
   },
   notVerified: [
     'What "supported" means. A donor reading 1,963 evangelists will assume full-time support; the figure divides to $832.99 a year, which in several of these countries is a supplement rather than a wage. Asia Harvest publishes no support level, no definition and no statement of whether a worker receiving one month of support counts the same as one receiving twelve.',
     'Whether the 1,963 evangelists plant churches that last. Asia Harvest publishes no church count, no retention figure and no self-sustainability figure. Nothing on the page tells you what happens to the work when the monthly support stops.',
-    'The 248,000 people led to Christ and the 530,000 families strengthened. These are quoted as the ministry\'s claims and are excluded from every calculation here. We do not treat a profession of faith as a delivered unit, and neither figure has a stated method behind it.',
+    "The 248,000 people led to Christ and the 530,000 families strengthened. These are quoted as the ministry's claims and are excluded from every calculation here. We do not treat a profession of faith as a delivered unit, and neither figure has a stated method behind it.",
     'The reconciliation of their own project table. Rows sum to $3,473,655 received and $4,137,815 sent; the totals row says $3,687,083 and $3,382,260. We could not make the published 91.7% pass-through figure come out of any combination of these numbers.',
     'How $4,137,815 of project money was sent out of $4,131,500 of audited program spending while cash rose. The audit shows $6,980,562 of cash and cash equivalents at year end, so restricted balances carried from prior years are the likely explanation, but the documents do not spell it out.',
     'Where fundraising cost sits. The audit reports $0.00 of fundraising expense against $4.2m of contributions.',
@@ -152,10 +143,10 @@ export const asiaHarvest: Cause = {
   ],
   notes: [
     'The audited functional split for the year ended 31 December 2025 is program $4,131,500, general and administrative $695,480, fundraising $0, total $4,826,980 — 85.59% to programme. Every program dollar is classified as "Grants and Assistance".',
-    'The project table on their financial statements page shows $1,099,610 sent through the Asian Workers\' Fund, which looks like the natural numerator for an evangelist cost. We did not use it: that table is not in the audit, and the audit page it cites does not contain it. The audited Evangelism line of $1,635,165 is the closest figure that an auditor has actually looked at, and it approximately equals the Asian Workers\' Fund plus the Ministry Training Fund.',
+    "The project table on their financial statements page shows $1,099,610 sent through the Asian Workers' Fund, which looks like the natural numerator for an evangelist cost. We did not use it: that table is not in the audit, and the audit page it cites does not contain it. The audited Evangelism line of $1,635,165 is the closest figure that an auditor has actually looked at, and it approximately equals the Asian Workers' Fund plus the Ministry Training Fund.",
     'The 2025 audit is a scanned document with no text layer. Every figure on this page was read off page images rendered at 150 dpi, cross-checked against a second rendering read directly rather than through OCR.',
-    'Restricted contributions were $3,473,655 of the year\'s giving, which is exactly the sum of the project table rows. That is the one place where their marketing and their audit agree to the dollar.',
-    'The comparison figure on this page comes from another ministry\'s audit, cited in full below. We put it here rather than only on the Frontiers page because the sending-versus-supporting question is the whole argument for this category, and a donor should see both numbers in one place.',
+    "Restricted contributions were $3,473,655 of the year's giving, which is exactly the sum of the project table rows. That is the one place where their marketing and their audit agree to the dollar.",
+    "The comparison figure on this page comes from another ministry's audit, cited in full below. We put it here rather than only on the Frontiers page because the sending-versus-supporting question is the whole argument for this category, and a donor should see both numbers in one place.",
   ],
   siteUrl: 'https://asiaharvest.org/',
   giveUrl: 'https://asiaharvest.org/projects-donations',
@@ -175,8 +166,7 @@ export const asiaHarvest: Cause = {
       publisher: 'Asia Harvest',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Carries the $3.00 per Bible claim and lists the eleven countries used as this cause\'s country list.',
+      note: "Carries the $3.00 per Bible claim and lists the eleven countries used as this cause's country list.",
     },
     {
       id: 'ah-doctrine',
@@ -193,8 +183,7 @@ export const asiaHarvest: Cause = {
       publisher: 'Asia Harvest',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the "100% as designated" claim and of the project table whose totals row does not match its own rows. Also the page that points readers at the wrong page of the audit.',
+      note: 'Source of the "100% as designated" claim and of the project table whose totals row does not match its own rows. Also the page that points readers at the wrong page of the audit.',
     },
     {
       id: 'ah-awf',
@@ -213,8 +202,7 @@ export const asiaHarvest: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Scanned with no text layer. Figures were read from page images rendered at 150 dpi, not from extracted text: Bible Printing $1,463,990, Evangelism $1,635,165, Humanitarian Aid $1,032,345, general and administrative $695,480, fundraising $0. Linked from the financial statements page.',
+      note: 'Scanned with no text layer. Figures were read from page images rendered at 150 dpi, not from extracted text: Bible Printing $1,463,990, Evangelism $1,635,165, Humanitarian Aid $1,032,345, general and administrative $695,480, fundraising $0. Linked from the financial statements page.',
     },
     {
       id: 'ah-review-25',
@@ -224,8 +212,7 @@ export const asiaHarvest: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the 1,963 evangelists. The headline figures are set in a designed graphic, so the page was rendered and read as an image rather than OCR\'d.',
+      note: "Source of the 1,963 evangelists. The headline figures are set in a designed graphic, so the page was rendered and read as an image rather than OCR'd.",
     },
     {
       id: 'ah-ecfa',
@@ -234,7 +221,7 @@ export const asiaHarvest: Cause = {
       publisher: 'Evangelical Council for Financial Accountability',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note: 'Confirms current accreditation and restates the year\'s revenue and expense totals.',
+      note: "Confirms current accreditation and restates the year's revenue and expense totals.",
     },
     {
       id: 'ah-propublica',
@@ -253,8 +240,7 @@ export const asiaHarvest: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Cited here only as the benchmark for the sending comparison: $36,931,047 of program spending against 575 long-term workers sent from the United States and on the field.',
+      note: 'Cited here only as the benchmark for the sending comparison: $36,931,047 of program spending against 575 long-term workers sent from the United States and on the field.',
     },
   ],
 };

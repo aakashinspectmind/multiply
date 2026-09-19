@@ -1,35 +1,52 @@
 # Multiply
 
-A directory of Christian ministries where cost per outcome is divided out in public — the
-ministry's own audited spending over its own reported outcome count, with both halves linked to the
-document they came from, and left blank when those numbers do not exist.
+Name an amount. See the furthest it goes, and the arithmetic that got there.
 
-Live pages: the cause list (`/`), one page per cause (`/causes/[slug]`), and the method
+A directory of Christian ministries where cost per outcome is divided out in public — the ministry's
+own audited spending over its own reported outcome count, both halves linked to the document they
+came from, and left blank when those numbers do not exist.
+
+Live pages: the directory and gift board (`/`), one page per cause (`/causes/[slug]`), and the method
 (`/methodology`).
 
 ## Why it is built this way
 
-The premise — "see what $20 does" — cannot be sourced from ministry marketing. Of twelve
-ministries researched on 18 September 2026, **four** advertise something resembling a cost per
-outcome, and only **two** of those survive contact with their own financials. One advertises a
-figure about 4× cheaper than its own annual report implies — 8× if you divide by the Bibles it
-actually reports placing. Another publishes a program-spending share 20 points *lower* than its own
-Form 990 supports. The gap between what ministries advertise and what their financial statements
-support is the thing worth building around.
+"See what $20 does" cannot be sourced from ministry marketing. Run `npm run stats` for the current
+count; as of 19 September 2026, of 83 ministries researched:
+
+- **54** publish a spending figure and an outcome count from the same year that can be divided into
+  each other. **29** do not, and those pages say so instead of estimating.
+- **32** advertise a cost per outcome. Only **16** of those advertise it per the same unit we can
+  divide out — and of those 16, **6** advertise a figure at least twice as cheap as their own books
+  support. Christian Health Service Corps advertises "less than $100 per surgery"; its own programme
+  budget over its own surgical count is $4,098.
+- The remaining 16 advertise a figure about something else entirely. Asia Harvest advertises $3.00
+  per Bible printed and we divide out $833 per evangelist supported for a year. Both are true and
+  neither checks the other, so the site refuses to compare them. That refusal is a design decision
+  with a flag behind it — see `sameUnitAsCostModel` in `lib/types.ts`.
+
+Some of what turns up is worse than optimistic. Shepherds Global Classroom's only published outcome
+measure is a download counter on its homepage, and the page ships a JavaScript function named
+`fakeSeed()` that synthesises the opening value from the hours elapsed since 1 January plus a random
+offset, with a comment instructing it to keep the synthesised number rather than display a zero.
 
 So the product is not a payment platform. It is the arithmetic, shown:
 
 - **Every figure has a source.** No number renders without a `sourceId` pointing at an audited
   statement, annual report, Form 990 or ministry page, with the date it was read.
-- **No figure is invented.** A cause with no published spending-and-count pair shows
-  "nothing here to divide" rather than a guess. Six of twelve currently do.
+- **No figure is invented.** A cause with no published spending-and-count pair shows "nothing here
+  to divide" rather than a guess.
 - **Any amount, from $1 to $1,000,000.** Below the cost of one outcome the site says how many gifts
   of that size it takes rather than rounding up to one — the pooling that makes small gifts add up,
   stated accurately.
+- **Furthest is not best, and the site says so.** The gift board shows the furthest-going ministry
+  _per kind of work_, never one global winner, because a single ranking hands first place to the
+  cheapest unit and the cheapest unit is a meal, not a heart operation. Cost per outcome only
+  compares between ministries doing the same kind of thing.
 - **Every cause says why it is the church's work, and why a dollar goes further.** The biblical
   mandate with the passages quoted, plus the mechanism behind the leverage — local wages, a durable
   asset, multiplication — and the one number that is sourceable everywhere: World Bank national
-  income per person against the United States. 148× lower in Malawi, 79× in Uganda.
+  income per person against the United States. 370× lower in Burundi, 148× in Malawi, 79× in Uganda.
 - **We never touch the money.** Give buttons go to the ministry's own donation page. No custody, no
   cut, no international-transfer or tax-receipt exposure.
 
@@ -42,24 +59,34 @@ npm run typecheck                # tsc --noEmit
 npm test                         # arithmetic + directory integrity
 npm run check:sources            # fetch every source, donate and site URL (serial per host)
 npm run check:sources:offline    # same integrity rules, no network
+npm run stats                    # what the directory holds, and where claims and books disagree
 npm run build
 ```
 
-`check:sources` is the one that matters. If a ministry moves a PDF, the page that cites it is
-lying until the link is fixed.
+`check:sources` is the one that matters. If a ministry moves a PDF, the page that cites it is lying
+until the link is fixed.
+
+Two data files are generated — never hand-edit them:
+
+```bash
+npm run causes:index             # data/causes/index.ts, from the files in data/causes
+npm run cost-base                # data/cost-base.ts, from the World Bank API (207 countries)
+```
 
 ## Layout
 
-| Path | What |
-| --- | --- |
-| `data/causes/` | The directory. One file per cause — every figure, every source. Assembled in `index.ts`. |
-| `data/cost-base.ts` | World Bank income per person, and the region names that deliberately have none. |
-| `data/site.ts` | Name, tagline, money policy. Rename the project here. |
-| `lib/types.ts` | The data contract, including what each verification level is allowed to mean. |
-| `lib/impact.ts` | The arithmetic: cost per outcome, gift impact, pooling, sorting. |
-| `lib/roi.ts` | Cost-base ratios against the benchmark country. |
-| `scripts/check-sources.mjs` | Integrity and link checks. |
-| `app/methodology/page.tsx` | Scoring rubric and the limits we state out loud. |
+| Path                        | What                                                                                        |
+| --------------------------- | ------------------------------------------------------------------------------------------- |
+| `data/causes/`              | The directory. One file per cause — every figure, every source.                             |
+| `data/causes/index.ts`      | Generated manifest. `npm run causes:index` after adding a file.                             |
+| `data/cost-base.ts`         | Generated. World Bank income per person, plus the region names that deliberately have none. |
+| `data/site.ts`              | Name, tagline, money policy. Rename the project here.                                       |
+| `lib/types.ts`              | The data contract, including what each verification level is allowed to mean.               |
+| `lib/impact.ts`             | The arithmetic: cost per outcome, gift impact, pooling, ranking, sorting.                   |
+| `lib/roi.ts`                | Cost-base ratios against the benchmark country.                                             |
+| `components/GiftBoard.tsx`  | The furthest an amount goes, one line per kind of work.                                     |
+| `scripts/check-sources.mjs` | Integrity and link checks.                                                                  |
+| `app/methodology/page.tsx`  | Scoring rubric and the limits we state out loud.                                            |
 
 Adding or editing a cause: read `DATA.md` first.
 
@@ -71,17 +98,18 @@ Adding or editing a cause: read `DATA.md` first.
   behind them.
 - **No accounts, no database.** The dataset is a TypeScript file, reviewed like code.
 - **No claims about spiritual fruit.** Money and delivery are measurable; the harvest is God's.
+- **No global "best cause" ranking.** See above. The arithmetic is not the discernment.
 
 ## Next, in order
 
-1. **Close the three reconciliations already flagged** — CURE's annual report vs its Form 990, Bible
-   League's $2.50 Bible claim, and whether TTI publishes audited financials anywhere at all.
-2. **Ask each ministry to define its outcome unit in writing.** "People engaged in God's Word" and
-   "people served" are the load-bearing words, and neither is defined by the ministry that
-   publishes it.
-3. **Add the ministries this version is missing** — small indigenous ministries with the lowest
-   costs and the least documentation. They are the reason a directory like this needs a human
-   operator, not a scraper.
+1. **Close the reconciliations already flagged** — CURE's annual report vs its Form 990, Bible
+   League's $2.50 Bible claim against its own materials count, and whether The Timothy Initiative
+   publishes audited financials anywhere at all. These need phone calls, not more searching.
+2. **Ask each ministry to define its outcome unit in writing.** "People engaged in God's Word",
+   "students impacted", "active language engagement" and "people reached" are the load-bearing
+   words, and not one of them is defined by the ministry that publishes it.
+3. **Get one number field-verified.** Nothing in the directory is above `documents-reviewed`, and
+   nothing reaches `field-verified` from a desk.
 4. **Then, and only then, consider taking gifts.**
 
 Deploy is a stock Next.js build (Vercel, Amplify, anywhere). Nothing to configure — there are no

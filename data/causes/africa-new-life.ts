@@ -7,13 +7,19 @@ export const africaNewLife: Cause = {
   ein: '48-1291935',
   tagline:
     'Rwandan-founded and Rwandan-staffed: pays the school fees of 12,326 students and publishes the count.',
-  category: 'children',
+  category: 'education',
   countries: ['Rwanda'],
   whatTheyDo:
     'Africa New Life pays for Rwandan children to stay in school — fees, uniform, scholastic materials, basic medical care outside the national insurance scheme, a monthly meal and an annual camp — and commits to a student until they finish secondary school or a vocational equivalent, with no age cut-off. It also runs its own schools under the New Life Christian Academy name, university and vocational scholarships, the Dream Medical Center hospital, Africa College of Theology, a women’s vocational sewing programme, church planting and a school feeding programme. Founded in 2001 by Dr. Charles and Pastor Florence Mugisha, Rwandans who returned after the 1994 genocide; the Portland office exists to raise the money.',
   accreditations: [
-    { label: 'Evangelical Council for Financial Accountability (ECFA)', sourceId: 'anl-financials' },
-    { label: 'Candid (GuideStar) platinum seal, 2026', sourceId: 'anl-financials' },
+    {
+      label: 'Evangelical Council for Financial Accountability (ECFA)',
+      sourceId: 'anl-financials',
+    },
+    {
+      label: 'Candid (GuideStar) platinum seal, 2026',
+      sourceId: 'anl-financials',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -22,8 +28,7 @@ export const africaNewLife: Cause = {
     scriptures: [
       {
         ref: 'Deuteronomy 6:6–7',
-        text:
-          'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
+        text: 'And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise.',
       },
       {
         ref: 'Proverbs 22:6',
@@ -31,8 +36,7 @@ export const africaNewLife: Cause = {
       },
       {
         ref: 'Matthew 19:14',
-        text:
-          'Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven.',
+        text: 'Let the little children come to me and do not hinder them, for to such belongs the kingdom of heaven.',
       },
     ],
     doctrine: {
@@ -74,14 +78,12 @@ export const africaNewLife: Cause = {
       {
         label: 'students sponsored in K-12 education only',
         count: 10500,
-        note:
-          'The educational sponsorship page says "We sponsor more than 10,500 students", so this is a floor rather than a count — it excludes the 900-plus post-secondary students, who are the most expensive students in the programme.',
+        note: 'The educational sponsorship page says "We sponsor more than 10,500 students", so this is a floor rather than a count — it excludes the 900-plus post-secondary students, who are the most expensive students in the programme.',
       },
       {
         label: 'students who finished Senior 6 (12th grade) in 2025',
         count: 693,
-        note:
-          'Completion rather than enrolment, and the only number here that represents a finished education. Dividing by it charges one year of ministry-wide spending to one year’s graduating class, which vastly overstates the cost of a graduate.',
+        note: 'Completion rather than enrolment, and the only number here that represents a finished education. Dividing by it charges one year of ministry-wide spending to one year’s graduating class, which vastly overstates the cost of a graduate.',
       },
     ],
   },
@@ -91,6 +93,7 @@ export const africaNewLife: Cause = {
         'When you sponsor a child in Rwanda for just $43 a month, you help their family by assisting them with school fees so they can pay for other expenses.',
       sourceId: 'anl-sponsorship',
       impliedCostPerOutcome: 516,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'a year of school fees, a uniform and scholastic materials for one student',
     },
     {
@@ -110,28 +113,23 @@ export const africaNewLife: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The mission statement leads with Christ and names the point — "to communicate the message of Jesus Christ in word and deed" and "belief in Jesus as Savior" — and the ministry plants churches, runs a theology college and puts discipleship inside the sponsorship programme rather than beside it. Marked at 3 despite there being no formal statement of faith, because the doctrinal content is explicit in the mission itself.',
+      note: 'The mission statement leads with Christ and names the point — "to communicate the message of Jesus Christ in word and deed" and "belief in Jesus as Savior" — and the ministry plants churches, runs a theology college and puts discipleship inside the sponsorship programme rather than beside it. Marked at 3 despite there being no formal statement of faith, because the doctrinal content is explicit in the mission itself.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'Founded by Rwandans who went home, led in country by a Rwandan executive director, and staffed at a claimed 96% by local East Africans — more than 700 people against 26 in the United States. The US entity raises money and does not run programmes. This is the strongest local-leadership case in this directory.',
+      note: 'Founded by Rwandans who went home, led in country by a Rwandan executive director, and staffed at a claimed 96% by local East Africans — more than 700 people against 26 in the United States. The US entity raises money and does not run programmes. This is the strongest local-leadership case in this directory.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'ECFA accredited, twelve consecutive annual updates posted back to 2015, and the functional split published to the cent. Marked down because the current year’s figures are explicitly unaudited, the audited statements are promised for a later date rather than posted, and the Form 990 is only available by writing to the Portland office and paying a $9 fee — the one document a donor most wants is the one behind a counter.',
+      note: 'ECFA accredited, twelve consecutive annual updates posted back to 2015, and the functional split published to the cent. Marked down because the current year’s figures are explicitly unaudited, the audited statements are promised for a later date rather than posted, and the Form 990 is only available by writing to the Portland office and paying a $9 fee — the one document a donor most wants is the one behind a counter.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'A precise statistics report: 12,326 students sponsored, 693 Senior 6 graduates, 93.4% national exam pass rate, 5,775,546 meals, 10,023 welfare officer home visits. The units are defined well enough to divide. Marked down because the headline number is programme enrolment rather than attendance or completion, nothing reports how many students left the programme during the year, and the same table counts professions of faith as impact.',
+      note: 'A precise statistics report: 12,326 students sponsored, 693 Senior 6 graduates, 93.4% national exam pass rate, 5,775,546 meals, 10,023 welfare officer home visits. The units are defined well enough to divide. Marked down because the headline number is programme enrolment rather than attendance or completion, nothing reports how many students left the programme during the year, and the same table counts professions of faith as impact.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Both halves of the division are printed in the same document for the same year, and the ministry separately advertises a per-student price we can hold our figure against. The gap between the two is large and interesting, which is the point.',
+      note: 'Both halves of the division are printed in the same document for the same year, and the ministry separately advertises a per-student price we can hold our figure against. The gap between the two is large and interesting, which is the point.',
     },
   },
   notVerified: [
@@ -168,8 +166,7 @@ export const africaNewLife: Cause = {
       publisher: 'Africa New Life Ministries',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the ECFA and Candid accreditations, the 86.72% program figure, and the statement that 26 US staff support more than 700 team members in Rwanda. Links annual updates back to 2015.',
+      note: 'Source of the ECFA and Candid accreditations, the 86.72% program figure, and the statement that 26 US staff support more than 700 team members in Rwanda. Links annual updates back to 2015.',
     },
     {
       id: 'anl-annual-26',
@@ -179,8 +176,7 @@ export const africaNewLife: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'A 17-page designed PDF. Both halves of our division are printed in it: program expenses of $13,445,758 (86.72% of $15,504,010 total) on the financials page, and 12,326 students sponsored in the 2025 statistics report. The document states the 2025 figures are unaudited as of press time.',
+      note: 'A 17-page designed PDF. Both halves of our division are printed in it: program expenses of $13,445,758 (86.72% of $15,504,010 total) on the financials page, and 12,326 students sponsored in the 2025 statistics report. The document states the 2025 figures are unaudited as of press time.',
     },
     {
       id: 'anl-annual-page',
@@ -207,8 +203,7 @@ export const africaNewLife: Cause = {
       publisher: 'Africa New Life Ministries',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Explains that sponsorship money is pooled rather than passed to a family, and that secondary students need two sponsors.',
+      note: 'Explains that sponsorship money is pooled rather than passed to a family, and that secondary students need two sponsors.',
     },
     {
       id: 'anl-education',
@@ -226,8 +221,7 @@ export const africaNewLife: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'Structured IRS data for tax years 2019–2023, used only as a scale check. ProPublica blocks automated PDF downloads, so we read the extracted figures rather than the returns.',
+      note: 'Structured IRS data for tax years 2019–2023, used only as a scale check. ProPublica blocks automated PDF downloads, so we read the extracted figures rather than the returns.',
     },
   ],
 };

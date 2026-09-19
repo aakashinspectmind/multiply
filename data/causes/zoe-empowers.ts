@@ -25,7 +25,10 @@ export const zoeEmpowers: Cause = {
   whatTheyDo:
     'Zoe Empowers organises orphaned and vulnerable young people — most of them heads of their own households, caring for younger siblings — into groups of 60 to 100 and walks with each group for exactly three years. The group receives micro grants, business and agricultural training, life skills, health and rights education, and help getting birth certificates and school places; it elects its own leaders and decides together who gets the next grant. At the end of three years the funding stops and the group continues on its own. The empowerment model was designed in 2007 by Epiphanie Mujawimana, a Rwandan social worker, after three years of conventional relief work; a Global South office now runs the programme from Africa. The ministry is explicit that it is not an orphanage and not a handout: "We are not an orphanage or a handout program—we are a movement equipping the most vulnerable youth with the knowledge, resources, and community support needed to rise out of extreme poverty and thrive."',
   accreditations: [
-    { label: 'Candid Platinum seal of transparency', sourceId: 'zoe-financials' },
+    {
+      label: 'Candid Platinum seal of transparency',
+      sourceId: 'zoe-financials',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -34,23 +37,19 @@ export const zoeEmpowers: Cause = {
     scriptures: [
       {
         ref: 'James 1:27',
-        text:
-          'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        text: 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
       },
       {
         ref: 'Psalm 68:5–6',
-        text:
-          'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
+        text: 'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
       },
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
       {
         ref: '1 Thessalonians 4:11–12',
-        text:
-          'Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.',
+        text: 'Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.',
       },
     ],
     concerns: [
@@ -86,14 +85,12 @@ export const zoeEmpowers: Cause = {
       {
         label: 'empowerment groups served in 2025',
         count: 973,
-        note:
-          'The group, not the individual, is the unit Zoe actually funds — grants go to the group and the group allocates them. Dividing by groups gives about $8,888 per group-year and is arguably the more honest denominator, but it is not what a donor is being asked to picture.',
+        note: 'The group, not the individual, is the unit Zoe actually funds — grants go to the group and the group allocates them. Dividing by groups gives about $8,888 per group-year and is arguably the more honest denominator, but it is not what a donor is being asked to picture.',
       },
       {
         label: 'young people helped since the programme began, cumulative to the end of 2025',
         count: 245000,
-        note:
-          'Zoe states it "has helped more than 245,000 young people" since inception. Dividing one year of spending by twenty years of participants would produce a number that means nothing; it is here only to show the scale the ministry claims over its whole history.',
+        note: 'Zoe states it "has helped more than 245,000 young people" since inception. Dividing one year of spending by twenty years of participants would produce a number that means nothing; it is here only to show the scale the ministry claims over its whole history.',
       },
     ],
   },
@@ -102,12 +99,14 @@ export const zoeEmpowers: Cause = {
       quote: 'In 2025, the average cost per child in the program was $9.56 per month.',
       sourceId: 'zoe-review-25',
       impliedCostPerOutcome: 114.72,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'year in the empowerment programme for one young person',
     },
     {
       quote: 'Give $10 a month to empower one orphaned youth out of poverty.',
       sourceId: 'zoe-give-monthly',
       impliedCostPerOutcome: 120,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'year in the empowerment programme for one young person',
     },
     {
@@ -124,28 +123,23 @@ export const zoeEmpowers: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'Zoe names itself a Christian organisation in its own words and states that participants "experience the gospel in both action and words in ways that are never coercive," which is more than most ministries of this size will commit to in print. No statement of faith, no doctrinal position and no church partnership is published, and the programme is described as religiously non-restrictive, so the gospel is named but not doctrinally located.',
+      note: 'Zoe names itself a Christian organisation in its own words and states that participants "experience the gospel in both action and words in ways that are never coercive," which is more than most ministries of this size will commit to in print. No statement of faith, no doctrinal position and no church partnership is published, and the programme is described as religiously non-restrictive, so the gospel is named but not doctrinally located.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The strongest case in this category we have seen. The empowerment model was designed by Epiphanie Mujawimana, a Rwandan social worker who still manages the Rwanda programme; Reegan Kaberia is chief executive of Zoe Empowers Global South, a co-equal office established in 2025; each country has a national country manager. The American entity raises money and audits it. The programme itself is designed, run and evaluated by Africans.',
+      note: 'The strongest case in this category we have seen. The empowerment model was designed by Epiphanie Mujawimana, a Rwandan social worker who still manages the Rwanda programme; Reegan Kaberia is chief executive of Zoe Empowers Global South, a co-equal office established in 2025; each country has a national country manager. The American entity raises money and audits it. The programme itself is designed, run and evaluated by Africans.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited statements and Form 990s posted on the ministry’s own site for every year from 2014 to 2025, a Candid Platinum seal, and — unusually — a country-by-country breakdown of program spending inside the audit that sums exactly to the published program total. A donor can see where the money landed without asking.',
+      note: 'Audited statements and Form 990s posted on the ministry’s own site for every year from 2014 to 2025, a Candid Platinum seal, and — unusually — a country-by-country breakdown of program spending inside the audit that sums exactly to the published program total. A donor can see where the money landed without asking.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Counts are published per country and per group, and the survey methodology is disclosed: about 20% of households randomly sampled since 2018, with the 2025 figures describing households that entered in 2022 and graduated in 2025. Marked down because the headline unit, "Youth served in 2025," is never defined — the footnote on the same page explains the cost figure but not the count — and it does not reconcile cleanly with the 80,000 the chief executive describes as actively enrolled.',
+      note: 'Counts are published per country and per group, and the survey methodology is disclosed: about 20% of households randomly sampled since 2018, with the 2025 figures describing households that entered in 2022 and graduated in 2025. Marked down because the headline unit, "Youth served in 2025," is never defined — the footnote on the same page explains the cost figure but not the count — and it does not reconcile cleanly with the 80,000 the chief executive describes as actively enrolled.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Both halves of the division are published by the ministry in the same year, and Zoe publishes its own cost per youth — monthly, annual and three-year — so our arithmetic can be checked against theirs rather than standing alone. Almost nothing else in this directory can be cross-checked that way.',
+      note: 'Both halves of the division are published by the ministry in the same year, and Zoe publishes its own cost per youth — monthly, annual and three-year — so our arithmetic can be checked against theirs rather than standing alone. Almost nothing else in this directory can be cross-checked that way.',
     },
   },
   notVerified: [
@@ -181,8 +175,7 @@ export const zoeEmpowers: Cause = {
       publisher: 'Zoe Empowers',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the mission statement and of "We are not an orphanage or a handout program—we are a movement equipping the most vulnerable youth...".',
+      note: 'Source of the mission statement and of "We are not an orphanage or a handout program—we are a movement equipping the most vulnerable youth...".',
     },
     {
       id: 'zoe-our-story',
@@ -200,8 +193,7 @@ export const zoeEmpowers: Cause = {
       publisher: 'Zoe Empowers',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of both statements on religion: that the programme is open to all regardless of belief, and that youth experience the gospel invitingly but never coercively.',
+      note: 'Source of both statements on religion: that the programme is open to all regardless of belief, and that youth experience the gospel invitingly but never coercively.',
     },
     {
       id: 'zoe-outcomes',
@@ -210,8 +202,7 @@ export const zoeEmpowers: Cause = {
       publisher: 'Zoe Empowers',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Describes the survey methodology, the sampling rate and the cohort. Also the source of the "I feel that God loves me" figure, which we do not treat as an outcome.',
+      note: 'Describes the survey methodology, the sampling rate and the cohort. Also the source of the "I feel that God loves me" figure, which we do not treat as an outcome.',
     },
     {
       id: 'zoe-give-monthly',
@@ -229,8 +220,7 @@ export const zoeEmpowers: Cause = {
       publisher: 'Zoe Empowers',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Audits, Form 990s and annual reviews for 2014 through 2025, and the statement "Zoe Empowers is a Candid Platinum-rated charity (formerly GuideStar)."',
+      note: 'Audits, Form 990s and annual reviews for 2014 through 2025, and the statement "Zoe Empowers is a Candid Platinum-rated charity (formerly GuideStar)."',
     },
     {
       id: 'zoe-audit-25',
@@ -240,8 +230,7 @@ export const zoeEmpowers: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Year ended 31 December 2025. Program expenses $8,648,133, administrative $345,188, fundraising $433,590, total $9,426,911, with program spending broken out by country.',
+      note: 'Year ended 31 December 2025. Program expenses $8,648,133, administrative $345,188, fundraising $433,590, total $9,426,911, with program spending broken out by country.',
     },
     {
       id: 'zoe-990-25',
@@ -260,8 +249,7 @@ export const zoeEmpowers: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Designed report. The 83,908 youth served, 973 groups, $9.56 monthly and $344 three-year cost figures are set in a graphic stats block and were read from the rendered page rather than from extracted text. The chief executive’s letter and the Radiant Global Insights summary are printed text.',
+      note: 'Designed report. The 83,908 youth served, 973 groups, $9.56 monthly and $344 three-year cost figures are set in a graphic stats block and were read from the rendered page rather than from extracted text. The chief executive’s letter and the Radiant Global Insights summary are printed text.',
     },
   ],
 };

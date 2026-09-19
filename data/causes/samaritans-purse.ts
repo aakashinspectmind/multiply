@@ -7,7 +7,7 @@ export const samaritansPurse: Cause = {
   ein: '58-1437002',
   tagline:
     'Flies field hospitals and food into war and famine zones, and runs the world’s largest shoebox gift programme.',
-  category: 'children',
+  category: 'relief',
   countries: ['Global', 'Sudan', 'Ukraine', 'Myanmar', 'Jamaica'],
   whatTheyDo:
     'Samaritan’s Purse runs two very different operations out of one budget. The first is emergency relief: airdropping food into Sudan, deploying its own Emergency Field Hospital, flying relief aircraft into the Middle East and Myanmar, and working through Ukrainian church partners on the frontlines. The second is Operation Christmas Child, which collects shoebox gifts packed by individuals — mostly in the United States — and distributes them through local churches in roughly 100 countries alongside a gospel presentation. It also funds medical ministry, Christian education and children’s programmes. Franklin Graham has led it since 1979.',
@@ -19,18 +19,15 @@ export const samaritansPurse: Cause = {
     scriptures: [
       {
         ref: 'Luke 10:33–35',
-        text:
-          'But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, “Take care of him, and whatever more you spend, I will repay you when I come back.”',
+        text: 'But a Samaritan, as he journeyed, came to where he was, and when he saw him, he had compassion. He went to him and bound up his wounds, pouring on oil and wine. Then he set him on his own animal and brought him to an inn and took care of him. And the next day he took out two denarii and gave them to the innkeeper, saying, “Take care of him, and whatever more you spend, I will repay you when I come back.”',
       },
       {
         ref: 'Matthew 25:35–36',
-        text:
-          'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
+        text: 'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me, I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
       },
       {
         ref: 'Isaiah 58:7',
-        text:
-          'Is it not to share your bread with the hungry and bring the homeless poor into your house; when you see the naked, to cover him, and not to hide yourself from your own flesh?',
+        text: 'Is it not to share your bread with the hungry and bring the homeless poor into your house; when you see the naked, to cover him, and not to hide yourself from your own flesh?',
       },
     ],
     doctrine: {
@@ -72,17 +69,16 @@ export const samaritansPurse: Cause = {
       {
         label: 'shoebox gifts the annual report says were packed in 2025',
         count: 12200000,
-        note:
-          'The 2025 Annual Ministry Report says “In 2025, 12.2 million shoebox gifts were prayerfully packed” while the 2025 audit says the project collected approximately 10,900,000 boxes. Neither document reconciles the two, and we did not guess at the reason. We used the audited figure because it is the one the $30.89 valuation is applied to.',
+        note: 'The 2025 Annual Ministry Report says “In 2025, 12.2 million shoebox gifts were prayerfully packed” while the 2025 audit says the project collected approximately 10,900,000 boxes. Neither document reconciles the two, and we did not guess at the reason. We used the audited figure because it is the one the $30.89 valuation is applied to.',
       },
     ],
   },
   ministryClaims: [
     {
-      quote:
-        'The estimated value per gift box was $30.89 for 2025 and $29.27 for 2024.',
+      quote: 'The estimated value per gift box was $30.89 for 2025 and $29.27 for 2024.',
       sourceId: 'sp-audit-25',
       impliedCostPerOutcome: 30.89,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'shoebox gift',
     },
     {
@@ -99,28 +95,23 @@ export const samaritansPurse: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'As explicit as it gets. The audited financial statements themselves — not the marketing — set out the substitutionary atonement, the resurrection and a prayer a reader can pray, and the corporate purpose is “sharing God’s love through His Son, Jesus Christ.” A separate statement of faith is published on the site.',
+      note: 'As explicit as it gets. The audited financial statements themselves — not the marketing — set out the substitutionary atonement, the resurrection and a prayer a reader can pray, and the corporate purpose is “sharing God’s love through His Son, Jesus Christ.” A separate statement of faith is published on the site.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Schedule F reports 28 foreign offices and 4,065 employees, agents and contractors working in-region, 2,188 of them in Sub-Saharan Africa, and the Ukraine work runs through Ukrainian church partners. But governance, fundraising and the flagship programme’s supply chain all sit in North Carolina, the disaster model deploys US teams and aircraft, and the board is a single family’s.',
+      note: 'Schedule F reports 28 foreign offices and 4,065 employees, agents and contractors working in-region, 2,188 of them in Sub-Saharan Africa, and the Ukraine work runs through Ukrainian church partners. But governance, fundraising and the flagship programme’s supply chain all sit in North Carolina, the disaster model deploys US teams and aircraft, and the board is a single family’s.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited consolidated statements, the full Form 990 and an annual ministry report are all posted on the ministry’s own site, and the audit goes further than most: a consolidating schedule breaks contributed goods out by programme line, which is what let us separate cash from donated goods. Marked at 3 despite that being where the hardest questions are, because the ministry published the data that raises them.',
+      note: 'Audited consolidated statements, the full Form 990 and an annual ministry report are all posted on the ministry’s own site, and the audit goes further than most: a consolidating schedule breaks contributed goods out by programme line, which is what let us separate cash from donated goods. Marked at 3 despite that being where the hardest questions are, because the ministry published the data that raises them.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'The shoebox count is audited and precise. Emergency relief — $480,206,414, the largest programme — has no published annual total of any kind, only per-crisis vignettes. The organisation counts its cheapest-to-count product well and its most important product not at all.',
+      note: 'The shoebox count is audited and precise. Emergency relief — $480,206,414, the largest programme — has no published annual total of any kind, only per-crisis vignettes. The organisation counts its cheapest-to-count product well and its most important product not at all.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves of one division are published in the same audited document for the same year, which is rare. But that division is the shoebox programme, and the programme a relief donor is giving to has a numerator and no denominator.',
+      note: 'Both halves of one division are published in the same audited document for the same year, which is rare. But that division is the shoebox programme, and the programme a relief donor is giving to has a numerator and no denominator.',
     },
   },
   notVerified: [
@@ -166,8 +157,7 @@ export const samaritansPurse: Cause = {
       publisher: 'Samaritan’s Purse',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Links the audit, the Form 990 and the annual ministry report, and states the policy that designated gifts may be assessed up to 10 percent for administration.',
+      note: 'Links the audit, the Form 990 and the annual ministry report, and states the policy that designated gifts may be assessed up to 10 percent for administration.',
     },
     {
       id: 'sp-audit-25',
@@ -177,8 +167,7 @@ export const samaritansPurse: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Audited by Forvis Mazars. Source of every financial figure on this page, including the consolidating schedule that splits contributed goods by programme line and Note 11 on how each class of donated good is valued.',
+      note: 'Audited by Forvis Mazars. Source of every financial figure on this page, including the consolidating schedule that splits contributed goods by programme line and Note 11 on how each class of donated good is valued.',
     },
     {
       id: 'sp-990-25',
@@ -188,8 +177,7 @@ export const samaritansPurse: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Schedule F gives 28 foreign offices, 4,065 in-region employees and agents and $622,566,909 of foreign expenditure; Schedule L lists the related-party payroll; Part VII gives officer compensation.',
+      note: 'Schedule F gives 28 foreign offices, 4,065 in-region employees and agents and $622,566,909 of foreign expenditure; Schedule L lists the related-party payroll; Part VII gives officer compensation.',
     },
     {
       id: 'sp-annual-25',
@@ -199,8 +187,7 @@ export const samaritansPurse: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'A designed report. The per-crisis relief figures and the 12.2 million shoebox figure quoted here were read off rendered pages rather than extracted text, because the layout puts the numbers in graphics.',
+      note: 'A designed report. The per-crisis relief figures and the 12.2 million shoebox figure quoted here were read off rendered pages rather than extracted text, because the layout puts the numbers in graphics.',
     },
   ],
 };

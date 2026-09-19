@@ -7,7 +7,7 @@ export const thirdmill: Cause = {
   ein: '31-1598585',
   tagline:
     'Gives away a full seminary curriculum in 28 languages, taught by local leaders through 651 partner organisations.',
-  category: 'scripture',
+  category: 'training',
   countries: ['Global', 'Mongolia', 'Zambia'],
   whatTheyDo:
     'Thirdmill writes and films a complete seminary-level theological curriculum — Old and New Testament, systematic theology, hermeneutics, ministry skills — and gives it away. Nothing is sold and nothing is charged to the student. The material is produced in English and translated into 28 languages, distributed online and packaged for offline use where internet access is absent or censored, and handed to whoever will teach it: denominational training arms, Bible colleges, local churches and independent ministries, which Thirdmill calls the Thirdmill Global Network. Its own Thirdmill Institute runs a structured three-certificate pathway on top of the same material, supervised by local leaders, ending in a Diploma in Christian Ministry. A separately named partner, Thirdmill Seminary, offers accredited degrees. The ministry has been doing this since 1997 and is run from Casselberry, Florida.',
@@ -24,13 +24,11 @@ export const thirdmill: Cause = {
     scriptures: [
       {
         ref: '2 Timothy 2:2',
-        text:
-          'And what you have heard from me in the presence of many witnesses entrust to faithful men who will be able to teach others also.',
+        text: 'And what you have heard from me in the presence of many witnesses entrust to faithful men who will be able to teach others also.',
       },
       {
         ref: 'Titus 1:9',
-        text:
-          'He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it.',
+        text: 'He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it.',
       },
       {
         ref: 'Hosea 4:6',
@@ -38,8 +36,7 @@ export const thirdmill: Cause = {
       },
       {
         ref: 'Ephesians 4:11–12',
-        text:
-          'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.',
+        text: 'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.',
       },
     ],
     doctrine: {
@@ -80,14 +77,12 @@ export const thirdmill: Cause = {
       {
         label: 'students served by the Thirdmill Institute in its first two years',
         count: 9034,
-        note:
-          'The Institute is the only pathway where students are enrolled, supervised by local leaders and working toward a named certificate, so it is the denominator closest to an actual trained leader. It is cumulative over two years rather than one, and dividing a single year of spending by it puts the figure near $720.',
+        note: 'The Institute is the only pathway where students are enrolled, supervised by local leaders and working toward a named certificate, so it is the denominator closest to an actual trained leader. It is cumulative over two years rather than one, and dividing a single year of spending by it puts the figure near $720.',
       },
       {
         label: 'certificates and diplomas the Thirdmill Institute had awarded in total',
         count: 429,
-        note:
-          'The strictest defensible denominator: 347 Foundations, 62 Biblical Studies and 20 Theological Studies certificates, plus 20 complete Diplomas in Christian Ministry. Cumulative since the Institute began, and a certificate is one of three stages rather than a finished qualification. It puts the figure above $15,000, which is the honest ceiling of the range.',
+        note: 'The strictest defensible denominator: 347 Foundations, 62 Biblical Studies and 20 Theological Studies certificates, plus 20 complete Diplomas in Christian Ministry. Cumulative since the Institute began, and a certificate is one of three stages rather than a finished qualification. It puts the figure above $15,000, which is the honest ceiling of the range.',
       },
     ],
   },
@@ -120,28 +115,23 @@ export const thirdmill: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The product is theology. The statement of faith affirms the inerrancy of Scripture, the Trinity, the full deity and humanity of Christ, his substitutionary atonement and bodily resurrection, the regenerating work of the Spirit and a final judgement to eternal punishment or eternal life, and names the Westminster Confession as its fuller doctrinal standard. There is no ambiguity to score down.',
+      note: 'The product is theology. The statement of faith affirms the inerrancy of Scripture, the Trinity, the full deity and humanity of Christ, his substitutionary atonement and bodily resurrection, the regenerating work of the Spirit and a final judgement to eternal punishment or eternal life, and names the Westminster Confession as its fuller doctrinal standard. There is no ambiguity to score down.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Teaching happens through 651 partner organisations in the countries themselves, and the Institute states that all students learn under the supervision of local leaders — the Mongolian translation work in the 2023-2024 report was done by a Mongolian translator and his team. But the curriculum is written, filmed and governed from Florida, and the decisions about what the world’s pastors are taught are made there.',
+      note: 'Teaching happens through 651 partner organisations in the countries themselves, and the Institute states that all students learn under the supervision of local leaders — the Mongolian translation work in the 2023-2024 report was done by a Mongolian translator and his team. But the curriculum is written, filmed and governed from Florida, and the decisions about what the world’s pastors are taught are made there.',
     },
     financialTransparency: {
       value: 1,
-      note:
-        'ECFA membership is real and the Form 990 is public through the IRS. But Thirdmill’s own site posts no audited statements, no 990 and no dollar figures at all — only a percentage in the annual report and an email address to request financial information. An outsider cannot check the 84% claim against anything the ministry published.',
+      note: 'ECFA membership is real and the Form 990 is public through the IRS. But Thirdmill’s own site posts no audited statements, no 990 and no dollar figures at all — only a percentage in the annual report and an email address to request financial information. An outsider cannot check the 84% claim against anything the ministry published.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'The headline number is large, annual and explicitly labelled "reported" — Thirdmill is counting what its partners told it, and nothing defines what a reported student did. The Institute’s own figures are much better: enrolments, languages, offline learners and certificates awarded are all counted precisely. They are also cumulative, and they cover about 5% of the headline.',
+      note: 'The headline number is large, annual and explicitly labelled "reported" — Thirdmill is counting what its partners told it, and nothing defines what a reported student did. The Institute’s own figures are much better: enrolments, languages, offline learners and certificates awarded are all counted precisely. They are also cumulative, and they cover about 5% of the headline.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'Both halves of a division exist, which is why this cause has a cost model at all, but only one of them came from Thirdmill. The spending is a Form 990 total transcribed by a third party and the count is a marketing figure from a designed annual report, and the two documents never appear together. Thirdmill publishes no cost per student of its own for us to check ours against.',
+      note: 'Both halves of a division exist, which is why this cause has a cost model at all, but only one of them came from Thirdmill. The spending is a Form 990 total transcribed by a third party and the count is a marketing figure from a designed annual report, and the two documents never appear together. Thirdmill publishes no cost per student of its own for us to check ours against.',
     },
   },
   notVerified: [
@@ -180,8 +170,7 @@ export const thirdmill: Cause = {
       publisher: 'Thirdmill',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Five paragraphs of historic evangelical doctrine, with the Westminster Confession of Faith named as the fuller doctrinal standard.',
+      note: 'Five paragraphs of historic evangelical doctrine, with the Westminster Confession of Faith named as the fuller doctrinal standard.',
     },
     {
       id: 'tm-annual-reports',
@@ -190,8 +179,7 @@ export const thirdmill: Cause = {
       publisher: 'Thirdmill',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The only financial disclosure on the site. Links the annual report PDFs; no audited statements or Form 990s are posted.',
+      note: 'The only financial disclosure on the site. Links the annual report PDFs; no audited statements or Form 990s are posted.',
     },
     {
       id: 'tm-ar-2223',
@@ -201,8 +189,7 @@ export const thirdmill: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2022-2023',
-      note:
-        'Source of the 172,265 reported students added, the 9,034 Institute students in 103 countries, the 429 certificates and diplomas awarded, and the 84% program-spending claim. The certificate counts and the donation-source percentages are set as graphics; we read them from the rendered page rather than from extracted text.',
+      note: 'Source of the 172,265 reported students added, the 9,034 Institute students in 103 countries, the 429 certificates and diplomas awarded, and the 84% program-spending claim. The certificate counts and the donation-source percentages are set as graphics; we read them from the rendered page rather than from extracted text.',
     },
     {
       id: 'tm-ar-2324',
@@ -212,8 +199,7 @@ export const thirdmill: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2023-2024',
-      note:
-        'Source of the 651 educational partners, the 178 countries and 28 languages, the "more than two million students (cumulatively)" claim, the Mongolia and Zambia accounts, the DEAC accreditation of Thirdmill Seminary and the 80% program-spending figure for that year. Contains no annual student count.',
+      note: 'Source of the 651 educational partners, the 178 countries and 28 languages, the "more than two million students (cumulatively)" claim, the Mongolia and Zambia accounts, the DEAC accreditation of Thirdmill Seminary and the 80% program-spending figure for that year. Contains no annual student count.',
     },
     {
       id: 'tm-propublica',
@@ -223,8 +209,7 @@ export const thirdmill: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2022-2023',
-      note:
-        'Total functional expenses of $6,499,734 on revenue of $7,074,250 for the tax period ending June 2023, plus the earlier years quoted above. ProPublica transcribes the filed Form 990; Thirdmill does not post the return itself, so this is a third-party rendering of a primary document rather than the document as the ministry published it.',
+      note: 'Total functional expenses of $6,499,734 on revenue of $7,074,250 for the tax period ending June 2023, plus the earlier years quoted above. ProPublica transcribes the filed Form 990; Thirdmill does not post the return itself, so this is a third-party rendering of a primary document rather than the document as the ministry published it.',
     },
     {
       id: 'tm-ecfa',

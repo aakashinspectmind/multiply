@@ -18,18 +18,15 @@ export const the500k: Cause = {
     scriptures: [
       {
         ref: 'Matthew 9:37–38',
-        text:
-          'The harvest is plentiful, but the labourers are few; therefore pray earnestly to the Lord of the harvest to send out labourers into his harvest.',
+        text: 'The harvest is plentiful, but the labourers are few; therefore pray earnestly to the Lord of the harvest to send out labourers into his harvest.',
       },
       {
         ref: '2 Corinthians 8:13–14',
-        text:
-          'I do not mean that others should be eased and you burdened, but that there should be fairness. Your abundance at the present time should supply their need.',
+        text: 'I do not mean that others should be eased and you burdened, but that there should be fairness. Your abundance at the present time should supply their need.',
       },
       {
         ref: '1 Corinthians 9:14',
-        text:
-          'In the same way, the Lord commanded that those who proclaim the gospel should get their living by the gospel.',
+        text: 'In the same way, the Lord commanded that those who proclaim the gospel should get their living by the gospel.',
       },
     ],
     concerns: [
@@ -59,8 +56,7 @@ export const the500k: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'Funding evangelists is as direct as gospel work gets, but the site never names Christ and publishes no statement of faith, so we are taking the category on trust.',
+      note: 'Funding evangelists is as direct as gospel work gets, but the site never names Christ and publishes no statement of faith, so we are taking the category on trust.',
     },
     localLeadership: {
       value: 3,
@@ -68,8 +64,7 @@ export const the500k: Cause = {
     },
     financialTransparency: {
       value: 1,
-      note:
-        'IRS filings are public through ProPublica, which is how we know the size of the ministry. Nothing is published on the site itself — no annual report, no audit, no accreditation, no named board.',
+      note: 'IRS filings are public through ProPublica, which is how we know the size of the ministry. Nothing is published on the site itself — no annual report, no audit, no accreditation, no named board.',
     },
     outcomeEvidence: {
       value: 0,
@@ -111,8 +106,7 @@ export const the500k: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-18',
-      note:
-        'Structured IRS data for tax years 2019–2023. ProPublica blocks automated PDF downloads, so we read the extracted figures rather than the returns themselves.',
+      note: 'Structured IRS data for tax years 2019–2023. ProPublica blocks automated PDF downloads, so we read the extracted figures rather than the returns themselves.',
     },
   ],
 };

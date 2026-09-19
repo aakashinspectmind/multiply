@@ -3,7 +3,8 @@ import type { Cause } from '@/lib/types';
 export const voiceOfTheMartyrs: Cause = {
   slug: 'voice-of-the-martyrs',
   name: 'The Voice of the Martyrs',
-  tagline: 'Bibles, aid and front-line worker support for Christians under persecution in 50+ nations.',
+  tagline:
+    'Bibles, aid and front-line worker support for Christians under persecution in 50+ nations.',
   category: 'persecuted-church',
   // Named examples only. VOM reports work in 50+ nations and does not list them.
   countries: ['Ethiopia', 'Iran', 'Nigeria', 'Syria'],
@@ -12,7 +13,10 @@ export const voiceOfTheMartyrs: Cause = {
   ein: '73-1395057',
   accreditations: [
     { label: 'ECFA member', sourceId: 'vom-site' },
-    { label: 'International Christian Association affiliate', sourceId: 'vom-site' },
+    {
+      label: 'International Christian Association affiliate',
+      sourceId: 'vom-site',
+    },
   ],
   verification: 'self-reported',
   biblicalAlignment: {
@@ -21,18 +25,15 @@ export const voiceOfTheMartyrs: Cause = {
     scriptures: [
       {
         ref: 'Hebrews 13:3',
-        text:
-          'Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.',
+        text: 'Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.',
       },
       {
         ref: '1 Corinthians 12:26',
-        text:
-          'If one member suffers, all suffer together; if one member is honored, all rejoice together.',
+        text: 'If one member suffers, all suffer together; if one member is honored, all rejoice together.',
       },
       {
         ref: '2 Timothy 3:12',
-        text:
-          'Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.',
+        text: 'Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.',
       },
     ],
     concerns: [
@@ -52,8 +53,7 @@ export const voiceOfTheMartyrs: Cause = {
     },
     localLeadership: {
       value: 2,
-      note:
-        'Work is carried out by front-line believers inside each country. Unverifiable from outside, partly by design.',
+      note: 'Work is carried out by front-line believers inside each country. Unverifiable from outside, partly by design.',
     },
     financialTransparency: {
       value: 2,
@@ -61,8 +61,7 @@ export const voiceOfTheMartyrs: Cause = {
     },
     outcomeEvidence: {
       value: 0,
-      note:
-        'No counts published on the site — not Bibles delivered, families supported, or workers funded.',
+      note: 'No counts published on the site — not Bibles delivered, families supported, or workers funded.',
     },
     costEvidence: {
       value: 0,

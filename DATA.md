@@ -1,6 +1,6 @@
 # Adding or changing a cause
 
-`data/causes/` is the product — one file per cause, assembled in `data/causes/index.ts`. Treat an edit to it like an edit to a financial statement.
+`data/causes/` is the product — one file per cause, with `data/causes/index.ts` generated from the folder. Treat an edit to it like an edit to a financial statement.
 
 ## Rules
 
@@ -14,15 +14,21 @@
    are the most valuable part of the page.
 4. **`costModel` requires a `caveat`.** Say what the division over-attributes. Every cost per
    outcome built from all program spending is an upper bound, and the page must say so.
-5. **Verification level is earned, not assigned.**
+5. **Only set `sameUnitAsCostModel` when the units really are the same.** The site sets an
+   advertised figure against our own division only when that flag is present, because Asia Harvest
+   advertises $3.00 per Bible printed while we divide out $833 per evangelist supported for a year —
+   both true, neither a check on the other. Without the flag the page prints the advertised figure
+   and says plainly that the two do not check each other. Leaving it off costs a comparison; setting
+   it wrongly accuses a ministry of an overstatement it never made.
+6. **Verification level is earned, not assigned.**
    - `self-reported` — you read the ministry's pages. No division shown.
    - `documents-reviewed` — you pulled spending and counts out of an annual report, audited
      statement or Form 990 yourself.
    - `field-verified` — someone independent of the ministry counted a sample of the outcome. No
      cause has reached this. Do not use it without naming who verified and how.
-6. **Scores are a desk review.** 0–3 per dimension with a note explaining the number. If you did not
+7. **Scores are a desk review.** 0–3 per dimension with a note explaining the number. If you did not
    look, use `null`, not `0`. `0` is a finding; `null` is an absence.
-7. **`retrieved` is the date you actually opened the document**, `YYYY-MM-DD`.
+8. **`retrieved` is the date you actually opened the document**, `YYYY-MM-DD`.
 
 ## Adding one
 
@@ -32,6 +38,7 @@
 # 2. Find a count of what was delivered in the same fiscal year.
 # 3. If both exist, add a costModel and set verification to documents-reviewed.
 #    If not, leave costModel out and list what is missing in notVerified.
+npm run causes:index            # wire the new file into the directory
 npm run check:sources:offline   # structural rules
 npm test                        # every sourceId resolves, arithmetic holds
 npm run check:sources           # every URL still answers

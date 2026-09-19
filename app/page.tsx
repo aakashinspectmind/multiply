@@ -13,8 +13,8 @@ export default function HomePage() {
         </h1>
         <p className="mt-5 text-lg text-gray-700">
           Christian ministries advertise impact in round numbers. This directory takes their audited
-          spending, divides it by the outcomes they report, and prints both halves of the sum next to
-          the document they came from. Where a ministry has not published the numbers, the space
+          spending, divides it by the outcomes they report, and prints both halves of the sum next
+          to the document they came from. Where a ministry has not published the numbers, the space
           stays empty instead of getting filled with a guess.
         </p>
         <p className="mt-4 text-lg text-gray-700">
@@ -31,8 +31,8 @@ export default function HomePage() {
         <h2 className="text-2xl font-semibold tracking-tight">Small gifts, added up honestly</h2>
         <p className="mt-3 text-lg text-gray-700">
           A small gift rarely buys a whole outcome, so the cards say how many gifts that size it
-          takes instead of rounding up to one. That is the widow’s two coins arithmetic: individually
-          small, jointly decisive, and worth counting accurately.
+          takes instead of rounding up to one. That is the widow’s two coins arithmetic:
+          individually small, jointly decisive, and worth counting accurately.
         </p>
         <p className="mt-3 text-lg text-gray-700">
           And the furthest-going dollar is not automatically the best one. Cheap outcomes are cheap

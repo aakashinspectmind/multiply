@@ -34,8 +34,14 @@ export const christianHealthServiceCorps: Cause = {
     'Christian Health Service Corps recruits, supports and places healthcare professionals as long-term medical missionaries — a minimum three-year commitment — inside mission hospitals it does not own, and supports those hospitals with equipment, residency training and quality-improvement work. A separate Reserve Corps handles short deployments of two weeks to a year. Since 2024 it has also begun directly employing African surgeons graduating from residency so that rural hospitals which cannot afford a board-certified surgeon can have one.',
   accreditations: [
     { label: 'ECFA accredited', sourceId: 'chsc-financials' },
-    { label: 'Candid Gold Transparency (seal displayed reads 2022)', sourceId: 'chsc-financials' },
-    { label: 'Excellence in Giving certified transparent', sourceId: 'chsc-financials' },
+    {
+      label: 'Candid Gold Transparency (seal displayed reads 2022)',
+      sourceId: 'chsc-financials',
+    },
+    {
+      label: 'Excellence in Giving certified transparent',
+      sourceId: 'chsc-financials',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -44,21 +50,21 @@ export const christianHealthServiceCorps: Cause = {
     scriptures: [
       {
         ref: 'Luke 10:1–2',
-        text:
-          'After this the Lord appointed seventy-two others and sent them on ahead of him, two by two, into every town and place where he himself was about to go. And he said to them, “The harvest is plentiful, but the labourers are few. Therefore pray earnestly to the Lord of the harvest to send out labourers into his harvest.”',
+        text: 'After this the Lord appointed seventy-two others and sent them on ahead of him, two by two, into every town and place where he himself was about to go. And he said to them, “The harvest is plentiful, but the labourers are few. Therefore pray earnestly to the Lord of the harvest to send out labourers into his harvest.”',
       },
       {
         ref: 'Matthew 10:1',
-        text:
-          'And he called to him his twelve disciples and gave them authority over unclean spirits, to cast them out, and to heal every disease and every affliction.',
+        text: 'And he called to him his twelve disciples and gave them authority over unclean spirits, to cast them out, and to heal every disease and every affliction.',
       },
       {
         ref: 'Galatians 6:9',
-        text:
-          'And let us not grow weary of doing good, for in due season we will reap, if we do not give up.',
+        text: 'And let us not grow weary of doing good, for in due season we will reap, if we do not give up.',
       },
     ],
-    doctrine: { label: "Holds the Apostles' Creed as its statement of faith", sourceId: 'chsc-application' },
+    doctrine: {
+      label: "Holds the Apostles' Creed as its statement of faith",
+      sourceId: 'chsc-application',
+    },
     concerns: [
       'Short-term medical trips are genuinely contested among Christian health professionals, and the objections are serious: a two-week surgical visit leaves the follow-up to someone else, a visiting team can displace the local clinician whose livelihood depends on those patients, and operating outside your normal supervision and equipment raises the risk to the patient. To Christian Health Service Corps’ credit, its model answers most of that — long-term placement of at least three years is the headline programme and the Reserve Corps is explicitly framed as "short-term medical missions that support long-term development and emphasize quality of care", attached to a long-term worker already in post. That is close to the best version of short-term service. A donor who wants none of it should still know the Reserve Corps exists and that deployments run from two weeks.',
       'Governance is concentrated in one family. The founder Gregory Seager is president and chief executive at $75,000 and his wife Candi Seager is vice-president at $45,000, both reporting 60-hour weeks; they are the only compensated officers. The Form 990 reports 11 voting members of whom 8 are independent and answers "Yes" to whether officers or directors have a family or business relationship with each other, referring the reader to Schedule O — and Schedule O is not in the copy posted on the site.',
@@ -94,8 +100,7 @@ export const christianHealthServiceCorps: Cause = {
       {
         label: 'surgeries at the partner hospitals CHSC assisted',
         count: 44661,
-        note:
-          'This is the number on the front of the annual report, and dividing by it gives about $104 per surgery — which would make this the cheapest surgery in the directory by a factor of four hundred. It is not a cost Christian Health Service Corps paid. These are 30 independent hospitals’ own operating theatres, staff and budgets; CHSC assisted them. Treat $104 as a measure of how much hospital capacity a placed missionary sits on top of, not as a price.',
+        note: 'This is the number on the front of the annual report, and dividing by it gives about $104 per surgery — which would make this the cheapest surgery in the directory by a factor of four hundred. It is not a cost Christian Health Service Corps paid. These are 30 independent hospitals’ own operating theatres, staff and budgets; CHSC assisted them. Treat $104 as a measure of how much hospital capacity a placed missionary sits on top of, not as a price.',
       },
       {
         label: 'C-sections at partner hospitals',
@@ -105,8 +110,7 @@ export const christianHealthServiceCorps: Cause = {
       {
         label: 'patients served',
         count: 1227946,
-        note:
-          'Under $4 a head. This is the broadest figure the ministry publishes and it is mostly outpatient visits — the single most inflatable denominator in global health. We list it to show what happens to a cost per outcome when the unit is allowed to slide.',
+        note: 'Under $4 a head. This is the broadest figure the ministry publishes and it is mostly outpatient visits — the single most inflatable denominator in global health. We list it to show what happens to a cost per outcome when the unit is allowed to slide.',
       },
     ],
   },
@@ -115,6 +119,7 @@ export const christianHealthServiceCorps: Cause = {
       quote: '$200 Can Help Provide Lifesaving Surgery for a Child',
       sourceId: 'chsc-catalogue',
       impliedCostPerOutcome: 200,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'surgery for a child',
     },
     {
@@ -122,6 +127,7 @@ export const christianHealthServiceCorps: Cause = {
         'In 2025 CHSC National Physicians performed 1,131 patient surgeries. More than 600 of which were for children at a cost of less than $100 per surgery.',
       sourceId: 'chsc-ar-25',
       impliedCostPerOutcome: 100,
+      sameUnitAsCostModel: true,
       impliedOutcome: "child's surgery by a CHSC national physician",
     },
     {
@@ -138,28 +144,23 @@ export const christianHealthServiceCorps: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'Missionary service requires being "a true disciple of Jesus" and the ministry holds the Apostles’ Creed, which is a historic confession rather than a modern evangelical statement of faith. Spiritual work is a named programme — 54 hospital and community chaplains supported and 574 Bible studies facilitated in 2025. Marked down because there is no statement-of-faith page on the site: the creed is disclosed inside an application form and an FAQ.',
+      note: 'Missionary service requires being "a true disciple of Jesus" and the ministry holds the Apostles’ Creed, which is a historic confession rather than a modern evangelical statement of faith. Spiritual work is a named programme — 54 hospital and community chaplains supported and 574 Bible studies facilitated in 2025. Marked down because there is no statement-of-faith page on the site: the creed is disclosed inside an application form and an FAQ.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The historic model is sending North American professionals, which is the opposite of local leadership, and the hospitals are owned by African and Asian churches rather than by CHSC. But the direction of travel is clear and recent: residency training in seven countries, 3,138 local healthcare professionals trained in 2025, and a new policy of directly employing board-certified national surgeons as they graduate.',
+      note: 'The historic model is sending North American professionals, which is the opposite of local leadership, and the hospitals are owned by African and Asian churches rather than by CHSC. But the direction of travel is clear and recent: residency training in seven countries, 3,138 local healthcare professionals trained in 2025, and a new policy of directly employing board-certified national surgeons as they graduate.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Audited consolidated statements for four years and three Form 990s are posted, and the audit’s functional matrix matches the annual report’s finance panel exactly, which is rarer than it should be. Marked down because the most recent Form 990 on the site is a year behind the audit, the posted return omits the Schedule O that its own Part VI points to, an older finance page with 2020-era figures is still live, and the Candid seal on every page reads 2022.',
+      note: 'Audited consolidated statements for four years and three Form 990s are posted, and the audit’s functional matrix matches the annual report’s finance panel exactly, which is rarer than it should be. Marked down because the most recent Form 990 on the site is a year behind the audit, the posted return omits the Schedule O that its own Part VI points to, an older finance page with 2020-era figures is still live, and the Candid seal on every page reads 2022.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'A long list of specific counts is published for 2025. Marked down to 1 because the counts contradict each other between pages of the same report — 4,035 against 3,138 professionals trained, 4,776 against 3,041 against 1,735 malnutrition cases, 245 against 40 fistula repairs — because "surgeries" and "patients" are used interchangeably for the same 44,661, and because nearly all of it is partner-hospital throughput rather than CHSC output.',
+      note: 'A long list of specific counts is published for 2025. Marked down to 1 because the counts contradict each other between pages of the same report — 4,035 against 3,138 professionals trained, 4,776 against 3,041 against 1,735 malnutrition cases, 245 against 40 fistula repairs — because "surgeries" and "patients" are used interchangeably for the same 44,661, and because nearly all of it is partner-hospital throughput rather than CHSC output.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'Both halves of a division exist in audited documents, and the ministry publishes per-item prices, which is more than most. Marked down to 1 because those prices are between twenty and forty times below programme spending per surgery with no explanation of what they include, and because the fiscal year of the spending and the calendar year of the counts do not match.',
+      note: 'Both halves of a division exist in audited documents, and the ministry publishes per-item prices, which is more than most. Marked down to 1 because those prices are between twenty and forty times below programme spending per surgery with no explanation of what they include, and because the fiscal year of the spending and the calendar year of the counts do not match.',
     },
   },
   notVerified: [
@@ -205,8 +206,7 @@ export const christianHealthServiceCorps: Cause = {
       publisher: 'Christian Health Service Corps',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'There is no statement-of-faith page. The Apostles’ Creed and the requirement to be a disciple of Jesus are disclosed in the "Faith Questions" step of this form, and repeated in the Reserve Corps FAQ.',
+      note: 'There is no statement-of-faith page. The Apostles’ Creed and the requirement to be a disciple of Jesus are disclosed in the "Faith Questions" step of this form, and repeated in the Reserve Corps FAQ.',
     },
     {
       id: 'chsc-longterm',
@@ -261,8 +261,7 @@ export const christianHealthServiceCorps: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: 'FYE September 2025',
-      note:
-        'Programme services $4,634,991 of $5,293,625 total, with a functional expense statement. Consolidated with CHSC Holding Company, SA, a Honduran land-holding subsidiary. The filename says FY-2024; the statements inside are for the year ended 30 September 2025.',
+      note: 'Programme services $4,634,991 of $5,293,625 total, with a functional expense statement. Consolidated with CHSC Holding Company, SA, a Honduran land-holding subsidiary. The filename says FY-2024; the statements inside are for the year ended 30 September 2025.',
     },
     {
       id: 'chsc-990-24',
@@ -272,8 +271,7 @@ export const christianHealthServiceCorps: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: 'FYE September 2024',
-      note:
-        'The most recent return posted, a year behind the audit. Source of the governance and Schedule F facts quoted here. Part VI line 2 refers the reader to Schedule O, which is not included in this PDF.',
+      note: 'The most recent return posted, a year behind the audit. Source of the governance and Schedule F facts quoted here. Part VI line 2 refers the reader to Schedule O, which is not included in this PDF.',
     },
     {
       id: 'chsc-ar-25',
@@ -283,8 +281,7 @@ export const christianHealthServiceCorps: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Counts are introduced on page 3 as "In 2025, CHSC assisted our partner hospitals with" and reappear on later pages as unqualified numerals. The finance panel on page 25 reproduces the audited FY2025 figures. Several counts contradict each other between pages.',
+      note: 'Counts are introduced on page 3 as "In 2025, CHSC assisted our partner hospitals with" and reappear on later pages as unqualified numerals. The finance panel on page 25 reproduces the audited FY2025 figures. Several counts contradict each other between pages.',
     },
     {
       id: 'chsc-propublica',

@@ -91,18 +91,29 @@ for (const cause of causes) {
   }
 }
 
+/**
+ * A ministry's own server timing out is not a broken citation, and a check that
+ * cries wolf is a check nobody reads. So a network failure or timeout gets one
+ * more try with longer patience — while an HTTP status is taken at its word the
+ * first time, because a 404 does not become a 200 by asking twice.
+ */
 async function fetchOk(target) {
-  try {
-    const response = await fetch(target.url, {
-      method: 'GET',
-      headers: { 'user-agent': 'multiply-source-check' },
-      signal: AbortSignal.timeout(30_000),
-    });
-    if (!response.ok) {
-      problems.push(`${target.cause}: ${target.what} → HTTP ${response.status} ${target.url}`);
+  for (const timeout of [30_000, 60_000]) {
+    try {
+      const response = await fetch(target.url, {
+        method: 'GET',
+        headers: { 'user-agent': 'multiply-source-check' },
+        signal: AbortSignal.timeout(timeout),
+      });
+      if (!response.ok) {
+        problems.push(`${target.cause}: ${target.what} → HTTP ${response.status} ${target.url}`);
+      }
+      return;
+    } catch (error) {
+      if (timeout === 60_000) {
+        problems.push(`${target.cause}: ${target.what} → ${error.message} ${target.url}`);
+      }
     }
-  } catch (error) {
-    problems.push(`${target.cause}: ${target.what} → ${error.message} ${target.url}`);
   }
 }
 

@@ -22,18 +22,15 @@ export const waterForGood: Cause = {
     scriptures: [
       {
         ref: 'Matthew 25:35',
-        text:
-          'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
+        text: 'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
       },
       {
         ref: 'Matthew 10:42',
-        text:
-          'And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward.',
+        text: 'And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward.',
       },
       {
         ref: 'Isaiah 58:10',
-        text:
-          'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
+        text: 'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness and your gloom be as the noonday.',
       },
     ],
     doctrine: {
@@ -73,14 +70,12 @@ export const waterForGood: Cause = {
       {
         label: 'water points Water for Good was maintaining in the Central African Republic',
         count: 2500,
-        note:
-          'Published as “2,500+”, so this is the floor of their own figure. Dividing by water points kept in service rather than newly built gives about $4,400 — a different question, and arguably the more useful one, since a well that keeps working for ten years delivers far more than one that is merely drilled.',
+        note: 'Published as “2,500+”, so this is the floor of their own figure. Dividing by water points kept in service rather than newly built gives about $4,400 — a different question, and arguably the more useful one, since a well that keeps working for ten years delivers far more than one that is merely drilled.',
       },
       {
         label: 'people Water for Good reports being served',
         count: 1167067,
-        note:
-          'Their headline number, and it gives about $9 a person. We do not lead with it because it is a cumulative stock — everyone drinking from any water point in the maintenance network — not people who gained access in 2024.',
+        note: 'Their headline number, and it gives about $9 a person. We do not lead with it because it is a cumulative stock — everyone drinking from any water point in the maintenance network — not people who gained access in 2024.',
       },
     ],
   },
@@ -104,28 +99,23 @@ export const waterForGood: Cause = {
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'The faith page states beliefs summarised in the Apostles’ Creed, quotes Matthew 25:35 directly, and says “We serve Jesus when we serve those who are thirsty, hungry, poor and oppressed.” Marked down from 3 because the ministry says it cannot openly evangelise in many of the places it works and delegates that to church partners, and because every programme dollar buys water, sanitation or hygiene rather than proclamation.',
+      note: 'The faith page states beliefs summarised in the Apostles’ Creed, quotes Matthew 25:35 directly, and says “We serve Jesus when we serve those who are thirsty, hungry, poor and oppressed.” Marked down from 3 because the ministry says it cannot openly evangelise in many of the places it works and delegates that to church partners, and because every programme dollar buys water, sanitation or hygiene rather than proclamation.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Country directors are nationals — the Central African Republic team is led by Emmanuel Agouna Guissil — and the maintenance technicians and hygiene trainers are local salaried staff, which is the bulk of the workforce. The CEO, the board and the fundraising sit in Indiana.',
+      note: 'Country directors are nationals — the Central African Republic team is led by Emmanuel Agouna Guissil — and the maintenance technicians and hygiene trainers are local salaried staff, which is the bulk of the workforce. The CEO, the board and the fundraising sit in Indiana.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Consolidated audited statements and Form 990s for 2019 through 2024 are posted on the ministry’s own financials page, and the annual impact reports add a functional expense breakdown. Very few ministries this size publish six consecutive years of both.',
+      note: 'Consolidated audited statements and Form 990s for 2019 through 2024 are posted on the ministry’s own financials page, and the annual impact reports add a functional expense breakdown. Very few ministries this size publish six consecutive years of both.',
     },
     outcomeEvidence: {
       value: 3,
-      note:
-        'The best in this directory. Water for Good publishes a water point functionality rate — 91% in the Central African Republic, 96% in Tanzania — which almost no water ministry does, plus a planned-versus-accomplished table for seven milestones that reports a miss as readily as a hit, and per-country counts. The definition of functionality is not published, and “people being served” is a cumulative figure, which is why this is a 3 and not more.',
+      note: 'The best in this directory. Water for Good publishes a water point functionality rate — 91% in the Central African Republic, 96% in Tanzania — which almost no water ministry does, plus a planned-versus-accomplished table for seven milestones that reports a miss as readily as a hit, and per-country counts. The definition of functionality is not published, and “people being served” is a cumulative figure, which is why this is a 3 and not more.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves of the division exist, sourced, for the same year, one of them from an audit. Marked down because the ministry publishes no cost per water point of its own to check ours against, and the 2025 expense split exists only as cash-basis figures rounded to the nearest $0.1 million.',
+      note: 'Both halves of the division exist, sourced, for the same year, one of them from an audit. Marked down because the ministry publishes no cost per water point of its own to check ours against, and the 2025 expense split exists only as cash-basis figures rounded to the nearest $0.1 million.',
     },
   },
   notVerified: [
@@ -164,8 +154,7 @@ export const waterForGood: Cause = {
       publisher: 'Water for Good',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of “Water for Good is a Christian, faith-based organization”, the Apostles’ Creed statement, and the Matthew 25:35 quotation.',
+      note: 'Source of “Water for Good is a Christian, faith-based organization”, the Apostles’ Creed statement, and the Matthew 25:35 quotation.',
     },
     {
       id: 'wfg-merger',
@@ -183,8 +172,7 @@ export const waterForGood: Cause = {
       publisher: 'Water for Good',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Links audits and Form 990s for 2019 through 2024, and is where the Charity Navigator, GuideStar and Excellence in Giving recognitions are named.',
+      note: 'Links audits and Form 990s for 2019 through 2024, and is where the Charity Navigator, GuideStar and Excellence in Giving recognitions are named.',
     },
     {
       id: 'wfg-endorsements',
@@ -202,8 +190,7 @@ export const waterForGood: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Program services $10,994,227, management and general $840,666, fundraising $2,308,518, total expenses $14,143,411 for the year ended 31 December 2024. Also contains the audit note recording that Water for Good acquired the assets, liabilities, net assets and operations of Lifewater International on 1 January 2024.',
+      note: 'Program services $10,994,227, management and general $840,666, fundraising $2,308,518, total expenses $14,143,411 for the year ended 31 December 2024. Also contains the audit note recording that Water for Good acquired the assets, liabilities, net assets and operations of Lifewater International on 1 January 2024.',
     },
     {
       id: 'wfg-990-24',
@@ -222,8 +209,7 @@ export const waterForGood: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Source of the 223 water points installed, the 1,167,067 people being served, the 91% functionality rate, the planned-versus-accomplished milestone table and the rounded cash-basis expense pie. The headline figures are set in graphics; we read them off the rendered pages rather than from extracted text.',
+      note: 'Source of the 223 water points installed, the 1,167,067 people being served, the 91% functionality rate, the planned-versus-accomplished milestone table and the rounded cash-basis expense pie. The headline figures are set in graphics; we read them off the rendered pages rather than from extracted text.',
     },
     {
       id: 'wfg-impact-25',
@@ -233,8 +219,7 @@ export const waterForGood: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the 2025 cash-basis financial overview, the 90% Central African Republic functionality figure, the per-country water point counts, and the statement about not being able to evangelise openly.',
+      note: 'Source of the 2025 cash-basis financial overview, the 90% Central African Republic functionality figure, the per-country water point counts, and the statement about not being able to evangelise openly.',
     },
   ],
 };

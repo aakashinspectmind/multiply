@@ -35,23 +35,19 @@ export const holtInternational: Cause = {
     scriptures: [
       {
         ref: 'Psalm 68:5–6',
-        text:
-          'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
+        text: 'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home; he leads out the prisoners to prosperity.',
       },
       {
         ref: 'James 1:27',
-        text:
-          'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        text: 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
       },
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
       {
         ref: '1 Timothy 5:8',
-        text:
-          'But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever.',
+        text: 'But if anyone does not provide for his relatives, and especially for members of his household, he has denied the faith and is worse than an unbeliever.',
       },
     ],
     concerns: [
@@ -89,8 +85,7 @@ export const holtInternational: Cause = {
       {
         label: 'children who remained with or were reunited with their families',
         count: 40235,
-        note:
-          'The family strengthening and reunification count, and the outcome closest to the ministry’s stated purpose. Larger than the sponsorship roster, so it produces a lower cost per child — about $445 on the same numerator.',
+        note: 'The family strengthening and reunification count, and the outcome closest to the ministry’s stated purpose. Larger than the sponsorship roster, so it produces a lower cost per child — about $445 on the same numerator.',
       },
       {
         label: 'children and young adults who could attend school',
@@ -100,14 +95,12 @@ export const holtInternational: Cause = {
       {
         label: 'children and families whose critical medical needs were met',
         count: 255944,
-        note:
-          'Much broader, and the unit is a need met rather than a person supported for a year. Included to show how far the cost per outcome moves depending on which of Holt’s own counts you pick.',
+        note: 'Much broader, and the unit is a need met rather than a person supported for a year. Included to show how far the cost per outcome moves depending on which of Holt’s own counts you pick.',
       },
       {
         label: 'children and families whose lives were improved in 2025',
         count: 1114231,
-        note:
-          'The widest figure Holt publishes — "we reached over one million children and families," given precisely as 1,114,231 on its locations page. Almost certainly counts one-off contact alongside years of care. We would not divide by it and we show it so you can see the range the ministry’s own reporting spans.',
+        note: 'The widest figure Holt publishes — "we reached over one million children and families," given precisely as 1,114,231 on its locations page. Almost certainly counts one-off contact alongside years of care. We would not divide by it and we show it so you can see the range the ministry’s own reporting spans.',
       },
     ],
   },
@@ -117,6 +110,7 @@ export const holtInternational: Cause = {
         'Your $43 monthly gift provides education, nutrition and more for your sponsored child — helping them rise above poverty.',
       sourceId: 'holt-sponsorship',
       impliedCostPerOutcome: 516,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'year of sponsorship for one child',
     },
     {
@@ -138,28 +132,23 @@ export const holtInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 1,
-      note:
-        'One sentence, on the homepage, calling Holt a Christian organisation. No statement of faith, no doctrinal position, no church partnership, no faith content in any programme page we read. The founding story is deeply Christian and the current public materials are not.',
+      note: 'One sentence, on the homepage, calling Holt a Christian organisation. No statement of faith, no doctrinal position, no church partnership, no faith content in any programme page we read. The founding story is deeply Christian and the current public materials are not.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Programmes run in 17 countries through in-country offices and partners, and Note 15 shows the money reaching them, so delivery is local. Marked down because Holt does not publish who leads those programmes, $6,988,395 of programme salaries sit with the US organisation, and adoption services are by their nature run from the receiving country.',
+      note: 'Programmes run in 17 countries through in-country offices and partners, and Note 15 shows the money reaching them, so delivery is local. Marked down because Holt does not publish who leads those programmes, $6,988,395 of programme salaries sit with the US organisation, and adoption services are by their nature run from the receiving country.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited consolidated statements, the full Form 990 and an annual report all posted on its own site, with a country-by-country breakdown of international programme support and a joint-cost allocation note that discloses how much of a mailing was charged to programmes rather than fundraising. Holt shows you the number most ministries hope you will not ask for.',
+      note: 'Audited consolidated statements, the full Form 990 and an annual report all posted on its own site, with a country-by-country breakdown of international programme support and a joint-cost allocation note that discloses how much of a mailing was charged to programmes rather than fundraising. Holt shows you the number most ministries hope you will not ask for.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'Six or seven distinct counts are published for the year and most are precisely defined — 15,974 sponsored, 40,235 with families, 26,647 in school, 181 adoptions, 2,322,066 meals. Marked down because they overlap in unstated ways, and because the headline "over one million children and families" is a reach figure with no definition attached to it.',
+      note: 'Six or seven distinct counts are published for the year and most are precisely defined — 15,974 sponsored, 40,235 with families, 26,647 in school, 181 adoptions, 2,322,066 meals. Marked down because they overlap in unstated ways, and because the headline "over one million children and families" is a reach figure with no definition attached to it.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves are published for the same fiscal year and Holt advertises its own $43 monthly figure, so the division can be compared. Marked down because the numerator covers three programmes and two continents while the denominator covers one programme, and the resulting figure is about double what the ministry itself asks per child.',
+      note: 'Both halves are published for the same fiscal year and Holt advertises its own $43 monthly figure, so the division can be compared. Marked down because the numerator covers three programmes and two continents while the denominator covers one programme, and the resulting figure is about double what the ministry itself asks per child.',
     },
   },
   notVerified: [
@@ -188,8 +177,7 @@ export const holtInternational: Cause = {
       publisher: 'Holt International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The only place we found Christian identity stated, and the source of the family-first statement and the description of what a sponsorship provides.',
+      note: 'The only place we found Christian identity stated, and the source of the family-first statement and the description of what a sponsorship provides.',
     },
     {
       id: 'holt-sponsorship',
@@ -207,8 +195,7 @@ export const holtInternational: Cause = {
       publisher: 'Holt International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Lists the 17 countries and territories, including Taiwan, Hong Kong and the United States, and gives the 2025 reach figure as 1,114,231 children and families.',
+      note: 'Lists the 17 countries and territories, including Taiwan, Hong Kong and the United States, and gives the 2025 reach figure as 1,114,231 children and families.',
     },
     {
       id: 'holt-family-strengthening',
@@ -236,8 +223,7 @@ export const holtInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Year ended 30 September 2025, consolidated with a related organisation. Programme and support $17,897,033 of $23,949,073 total expenses. Note 15 gives international programme support by country; Note 16 gives the joint cost allocation.',
+      note: 'Year ended 30 September 2025, consolidated with a related organisation. Programme and support $17,897,033 of $23,949,073 total expenses. Note 15 gives international programme support by country; Note 16 gives the joint cost allocation.',
     },
     {
       id: 'holt-990-25',
@@ -256,8 +242,7 @@ export const holtInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of every count on this page: 15,974 sponsored children, 40,235 who remained with or were reunited with their families, 26,647 in school, 255,944 medical needs met, 2,322,066 meals and 181 adoptions. The counts are set in a designed spread and were read from the rendered pages.',
+      note: 'Source of every count on this page: 15,974 sponsored children, 40,235 who remained with or were reunited with their families, 26,647 in school, 255,944 medical needs met, 2,322,066 meals and 181 adoptions. The counts are set in a designed spread and were read from the rendered pages.',
     },
   ],
 };

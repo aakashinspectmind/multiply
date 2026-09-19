@@ -15,6 +15,7 @@
  * as a right one. Split a category as soon as it starts holding two units.
  */
 export const CATEGORIES = [
+  'translation',
   'scripture',
   'church-planting',
   'evangelism',
@@ -28,6 +29,7 @@ export const CATEGORIES = [
   'livelihood',
   'justice',
   'relief',
+  'logistics',
   'media',
   'children',
   'church-fund',
@@ -35,6 +37,7 @@ export const CATEGORIES = [
 export type Category = (typeof CATEGORIES)[number];
 
 export const CATEGORY_LABELS: Record<Category, string> = {
+  translation: 'Bible translation',
   scripture: 'Scripture & discipleship',
   'church-planting': 'Church planting',
   evangelism: 'Evangelism & sending',
@@ -48,6 +51,7 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   livelihood: 'Work & livelihoods',
   justice: 'Justice & anti-trafficking',
   relief: 'Disaster & displacement',
+  logistics: 'Aviation & logistics',
   media: 'Gospel media',
   children: 'Children & families',
   'church-fund': 'Church-led fund',
@@ -83,11 +87,7 @@ export const VERIFICATION_MEANING: Record<VerificationLevel, string> = {
 };
 
 export type DocumentType =
-  | 'audited-financials'
-  | 'annual-report'
-  | 'form-990'
-  | 'ministry-website'
-  | 'third-party';
+  'audited-financials' | 'annual-report' | 'form-990' | 'ministry-website' | 'third-party';
 
 export type Source = {
   id: string;
@@ -157,6 +157,18 @@ export type MinistryClaim = {
    * documented outcome name to fall back on.
    */
   impliedOutcome?: string;
+  /**
+   * Set only when the advertised figure is per the same unit the cost model
+   * divides out, so the two can honestly be set against each other.
+   *
+   * Opt-in, and deliberately so. Asia Harvest advertises $3.00 per Bible printed
+   * and we divide out $833 per evangelist supported for a year. Both are true,
+   * and neither says anything at all about the other — so a site that compared
+   * every advertised figure by default would print "278× the advertised figure"
+   * beside a ministry that had not overstated anything. A forgotten flag costs
+   * us a comparison. A wrong comparison costs a ministry its reputation.
+   */
+  sameUnitAsCostModel?: boolean;
 };
 
 export const SCORE_DIMENSIONS = [
@@ -179,10 +191,8 @@ export const SCORE_DIMENSION_LABELS: Record<ScoreDimension, string> = {
 export const SCORE_DIMENSION_QUESTIONS: Record<ScoreDimension, string> = {
   gospelCentrality:
     'Is the gospel named and central, rather than implied by the ministry’s history?',
-  localLeadership:
-    'Is the work led and staffed by believers from the place it serves?',
-  financialTransparency:
-    'Can an outsider find audited statements, a Form 990, and accreditation?',
+  localLeadership: 'Is the work led and staffed by believers from the place it serves?',
+  financialTransparency: 'Can an outsider find audited statements, a Form 990, and accreditation?',
   outcomeEvidence:
     'Does the ministry publish counts of what was delivered, defined clearly enough to check?',
   costEvidence:

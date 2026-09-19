@@ -10,8 +10,14 @@ export const jesusFilmProject: Cause = {
     'A ministry of Cru that produces and translates film and short-form video about Jesus, and puts it in the hands of local churches and field teams to show in person and online.',
   ein: '95-6006173',
   accreditations: [
-    { label: 'Abides by ECFA standards; Cru is a charter member', sourceId: 'jf-site' },
-    { label: 'Excellence in Giving — 175 operating data points submitted', sourceId: 'jf-site' },
+    {
+      label: 'Abides by ECFA standards; Cru is a charter member',
+      sourceId: 'jf-site',
+    },
+    {
+      label: 'Excellence in Giving — 175 operating data points submitted',
+      sourceId: 'jf-site',
+    },
   ],
   verification: 'self-reported',
   biblicalAlignment: {
@@ -20,8 +26,7 @@ export const jesusFilmProject: Cause = {
     scriptures: [
       {
         ref: 'Matthew 28:19–20',
-        text:
-          'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.',
+        text: 'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.',
       },
       {
         ref: 'Acts 2:8',
@@ -60,8 +65,7 @@ export const jesusFilmProject: Cause = {
     },
     outcomeEvidence: {
       value: 0,
-      note:
-        'The giving page states a faith goal of 3 billion people reached. A goal is not a result, and no current reach figure appears.',
+      note: 'The giving page states a faith goal of 3 billion people reached. A goal is not a result, and no current reach figure appears.',
     },
     costEvidence: { value: 0, note: 'No outcome count to divide spending by.' },
   },

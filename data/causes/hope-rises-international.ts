@@ -26,7 +26,10 @@ export const hopeRisesInternational: Cause = {
     'Founded in 1906 as the American Mission to Lepers, this is the oldest leprosy ministry in the United States; it renamed itself Hope Rises International in 2025. It funds partner hospitals, clinics and government programmes that screen for leprosy, Buruli ulcer and lymphatic filariasis, treat them, perform reconstructive surgery on hands, feet and eyelids after nerve damage, supply prosthetics and protective footwear, and train health workers and local pastors to spot cases and reduce the stigma that keeps people hidden.',
   accreditations: [
     { label: 'ECFA accredited', sourceId: 'hri-financials' },
-    { label: 'BBB Wise Giving Alliance accredited charity', sourceId: 'hri-financials' },
+    {
+      label: 'BBB Wise Giving Alliance accredited charity',
+      sourceId: 'hri-financials',
+    },
     { label: 'Candid Platinum Transparency', sourceId: 'hri-financials' },
   ],
   verification: 'documents-reviewed',
@@ -36,18 +39,15 @@ export const hopeRisesInternational: Cause = {
     scriptures: [
       {
         ref: 'Matthew 8:2–3',
-        text:
-          'And behold, a leper came to him and knelt before him, saying, “Lord, if you will, you can make me clean.” And Jesus stretched out his hand and touched him, saying, “I will; be clean.” And immediately his leprosy was cleansed.',
+        text: 'And behold, a leper came to him and knelt before him, saying, “Lord, if you will, you can make me clean.” And Jesus stretched out his hand and touched him, saying, “I will; be clean.” And immediately his leprosy was cleansed.',
       },
       {
         ref: 'Leviticus 13:45–46',
-        text:
-          'The leprous person who has the disease shall wear torn clothes and let the hair of his head hang loose, and he shall cover his upper lip and cry out, “Unclean, unclean.” He shall remain unclean as long as he has the disease. He is unclean. He shall live alone. His dwelling shall be outside the camp.',
+        text: 'The leprous person who has the disease shall wear torn clothes and let the hair of his head hang loose, and he shall cover his upper lip and cry out, “Unclean, unclean.” He shall remain unclean as long as he has the disease. He is unclean. He shall live alone. His dwelling shall be outside the camp.',
       },
       {
         ref: 'Luke 17:15–16',
-        text:
-          'Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus’ feet, giving him thanks. Now he was a Samaritan.',
+        text: 'Then one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus’ feet, giving him thanks. Now he was a Samaritan.',
       },
     ],
     doctrine: {
@@ -78,7 +78,8 @@ export const hopeRisesInternational: Cause = {
     },
     count: {
       amount: 9963,
-      label: 'patients admitted, leprosy consults, and/or people receiving care for neglected tropical diseases',
+      label:
+        'patients admitted, leprosy consults, and/or people receiving care for neglected tropical diseases',
       fiscalYear: 'FY2025',
       sourceId: 'hri-ar-25',
     },
@@ -87,16 +88,15 @@ export const hopeRisesInternational: Cause = {
       'An upper bound with two specific problems. First, the unit: the ministry’s own label is “patients admitted, leprosy consults, and/or people receiving care” — an admission, a consultation and a course of treatment counted in one figure with an “and/or” in the middle of it, which means we cannot tell whether 9,963 is 9,963 people. Second, the numerator: $6,624,623 of that programme spending — 51% of it — is donated medicines and supplies that no donor’s cash paid for. A gift of dollars buys about half of what this figure implies. The same programme total also covers 61,635 screenings, 3,873 health workers trained and 3,539 disability aids, none of which are in the denominator.',
     alternates: [
       {
-        label: 'life-changing surgeries performed for individuals affected by NTD-related complications',
+        label:
+          'life-changing surgeries performed for individuals affected by NTD-related complications',
         count: 437,
-        note:
-          'The narrowest and best-defined unit the ministry publishes, and it produces about $29,700 per surgery — which tells you that reconstructive surgery is a small part of this ministry rather than that its surgery is expensive. Do not compare it with a surgical ministry’s cost per operation.',
+        note: 'The narrowest and best-defined unit the ministry publishes, and it produces about $29,700 per surgery — which tells you that reconstructive surgery is a small part of this ministry rather than that its surgery is expensive. Do not compare it with a surgical ministry’s cost per operation.',
       },
       {
         label: 'suspected NTD cases screened',
         count: 61635,
-        note:
-          'The broadest unit, at about $210 each. A screening is a few minutes of a trained health worker’s attention and most of them find nothing, which is the point of screening.',
+        note: 'The broadest unit, at about $210 each. A screening is a few minutes of a trained health worker’s attention and most of them find nothing, which is the point of screening.',
       },
     ],
   },
@@ -120,30 +120,25 @@ export const hopeRisesInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A seven-clause statement of faith with Scripture references, which the board can only change by unanimous written consent, and a mission statement that puts proclaiming the gospel first. The programme model deliberately recruits local pastors as case-finders. This is as explicit as it gets in medical mission.',
+      note: 'A seven-clause statement of faith with Scripture references, which the board can only change by unanimous written consent, and a mission statement that puts proclaiming the gospel first. The programme model deliberately recruits local pastors as case-finders. This is as explicit as it gets in medical mission.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'Every screening, surgery and training happens through national partners and government programmes, and the named clinicians in the annual report are Congolese and Beninese. But this is a US organisation granting money out of Greenville, South Carolina; no field entity is consolidated into the audit and no partner is named in it.',
+      note: 'Every screening, surgery and training happens through national partners and government programmes, and the named clinicians in the annual report are Congolese and Beninese. But this is a US organisation granting money out of Greenville, South Carolina; no field entity is consolidated into the audit and no partner is named in it.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'Audited statements with a full functional-expense matrix, the complete Form 990, and a finance panel inside the annual report are all posted on the site, plus ECFA, BBB and Candid accreditation. The functional matrix is what made it possible to separate the donated supplies from the cash, which most ministries this size do not let you do.',
+      note: 'Audited statements with a full functional-expense matrix, the complete Form 990, and a finance panel inside the annual report are all posted on the site, plus ECFA, BBB and Candid accreditation. The functional matrix is what made it possible to separate the donated supplies from the cash, which most ministries this size do not let you do.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Six counts are published for FY2025 and all six are specific numbers. Marked down hard because the primary one is a three-way composite joined by “and/or”, because none of the units are defined, and because every figure originates with a partner organisation that is not named.',
+      note: 'Six counts are published for FY2025 and all six are specific numbers. Marked down hard because the primary one is a three-way composite joined by “and/or”, because none of the units are defined, and because every figure originates with a partner organisation that is not named.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'Both halves of a division exist in audited documents for the same fiscal year, which is why there is a cost model at all. But the ministry publishes no cost per outcome of any kind, half the numerator is donated goods, and the denominator’s unit is undefined.',
+      note: 'Both halves of a division exist in audited documents for the same fiscal year, which is why there is a cost model at all. But the ministry publishes no cost per outcome of any kind, half the numerator is donated goods, and the denominator’s unit is undefined.',
     },
-  ],
+  },
   notVerified: [
     'The program expense ratio the ministry advertises — 75% for FY2025 — counts $6,624,623 of donated medicines and supplies as programme spending. Strip the gifts-in-kind out of both sides and programme cash of $6,347,165 against total cash expenses of $10,593,575 is 59.9%: below the 65% BBB standard the ministry’s own FAQ quotes. Both figures are arithmetic on the same audited statements. Neither document mentions the second one.',
     'The audited statements and the Form 990 for the same fiscal year do not agree on the total. The audit says $17,218,198 of expenses with $1,076,247 of management and general; the 990 says $17,277,499 and $1,135,548. Programme and fundraising are identical in both, so the entire $59,301 difference sits in management and general, and neither document explains it.',
@@ -221,8 +216,7 @@ export const hopeRisesInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: 'FYE June 2025',
-      note:
-        'Programme services $12,971,788, fundraising $3,170,163, management and general $1,076,247, total $17,218,198. Note 9 lists grants by country; the functional matrix is what separates the $6,624,623 of gifts-in-kind from the cash.',
+      note: 'Programme services $12,971,788, fundraising $3,170,163, management and general $1,076,247, total $17,218,198. Note 9 lists grants by country; the functional matrix is what separates the $6,624,623 of gifts-in-kind from the cash.',
     },
     {
       id: 'hri-990-25',
@@ -232,8 +226,7 @@ export const hopeRisesInternational: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: 'FYE June 2025',
-      note:
-        'Part III carries the same six FY2025 counts as the annual report. Part IX line 25 totals $17,277,499, which does not match the audit.',
+      note: 'Part III carries the same six FY2025 counts as the annual report. Part IX line 25 totals $17,277,499, which does not match the audit.',
     },
     {
       id: 'hri-ar-25',
@@ -243,8 +236,7 @@ export const hopeRisesInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: 'FY2025',
-      note:
-        'The six impact figures are set as large graphics with their labels beneath them; we read them from the page rather than from extracted text. The finance panel reproduces the audited figures, and the map of about thirty countries is a graphic with no accompanying list.',
+      note: 'The six impact figures are set as large graphics with their labels beneath them; we read them from the page rather than from extracted text. The finance panel reproduces the audited figures, and the map of about thirty countries is a graphic with no accompanying list.',
     },
     {
       id: 'hri-propublica',

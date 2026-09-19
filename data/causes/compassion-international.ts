@@ -39,8 +39,14 @@ export const compassionInternational: Cause = {
   whatTheyDo:
     'Compassion does not operate programmes. It funds local churches to do so, and that is the whole architecture: more than 9,000 Frontline Church Partners in 26 countries register children from their own neighbourhoods, run the child development centres, deliver the nutrition, medical checks, tutoring, skills training and mentoring, and hold the relationship with the family. Compassion audits them, trains them, and moves the money. The programme runs from pregnancy — a survival strand for mothers and babies — through school to youth development, and in the year we reviewed it spent $1,021,646,000 on 2,420,924 registered participants. The mission is stated in five words: "Releasing children from poverty in Jesus’ name."',
   accreditations: [
-    { label: 'Founding member, Evangelical Council for Financial Accountability', sourceId: 'ci-financial-integrity' },
-    { label: 'BBB Wise Giving Alliance accredited charity', sourceId: 'ci-financial-integrity' },
+    {
+      label: 'Founding member, Evangelical Council for Financial Accountability',
+      sourceId: 'ci-financial-integrity',
+    },
+    {
+      label: 'BBB Wise Giving Alliance accredited charity',
+      sourceId: 'ci-financial-integrity',
+    },
   ],
   verification: 'documents-reviewed',
   biblicalAlignment: {
@@ -49,8 +55,7 @@ export const compassionInternational: Cause = {
     scriptures: [
       {
         ref: 'Isaiah 1:17',
-        text:
-          'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
+        text: 'Learn to do good; seek justice, correct oppression; bring justice to the fatherless, plead the widow’s cause.',
       },
       {
         ref: 'Matthew 18:5',
@@ -58,16 +63,17 @@ export const compassionInternational: Cause = {
       },
       {
         ref: 'James 1:27',
-        text:
-          'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        text: 'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
       },
       {
         ref: 'Galatians 6:10',
-        text:
-          'So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith.',
+        text: 'So then, as we have opportunity, let us do good to everyone, and especially to those who are of the household of faith.',
       },
     ],
-    doctrine: { label: 'Statement of Faith, following the World Evangelical Alliance', sourceId: 'ci-faith' },
+    doctrine: {
+      label: 'Statement of Faith, following the World Evangelical Alliance',
+      sourceId: 'ci-faith',
+    },
     concerns: [
       'Compassion states that "every child in our program hears the gospel" and publishes a frequently asked question titled "Do children have to become Christians to continue receiving help from Compassion?" The answer is no, and the question exists because the concern is real. When food, medicine and school fees come through a church, a poor family has a material reason to give the church the answer it wants. Compassion addresses this directly, which is to its credit, and no ministry can eliminate the dynamic by policy.',
       'Compassion’s own headline outcome claim will not bear its own weight. Its about page displays "97% of Compassion children were released from poverty in Jesus’ name" with the attribution "From a survey of 99 Compassion alumni in the Dominican Republic." Ninety-nine alumni in one of twenty-six countries cannot support a claim about 2.4 million children, and presenting it as a headline percentage rather than as a small local study is the weakest thing we found in an otherwise unusually well-documented ministry.',
@@ -102,14 +108,12 @@ export const compassionInternational: Cause = {
       {
         label: 'children Compassion says it has heard from directly',
         count: 400000,
-        note:
-          'The accountability report says "we have heard directly from more than 400,000 children in Compassion’s program." It is the only count in the report of a two-way interaction rather than a registration, and dividing by it would give a figure five times higher. We show it because the gap between being registered and being heard from is the honest measure of how much a headcount tells you.',
+        note: 'The accountability report says "we have heard directly from more than 400,000 children in Compassion’s program." It is the only count in the report of a two-way interaction rather than a registration, and dividing by it would give a figure five times higher. We show it because the gap between being registered and being heard from is the honest measure of how much a headcount tells you.',
       },
       {
         label: 'registered participants at the end of the previous year',
         count: 2372768,
-        note:
-          'The prior-year figure, for scale: the programme grew by about 48,000 participants while grant spending fell 6.5%. Not a denominator we would use, but it shows the count is maintained consistently year to year.',
+        note: 'The prior-year figure, for scale: the programme grew by about 48,000 participants while grant spending fell 6.5%. Not a denominator we would use, but it shows the count is maintained consistently year to year.',
       },
     ],
   },
@@ -118,6 +122,7 @@ export const compassionInternational: Cause = {
       quote: 'Sponsor a child for $43/month to provide',
       sourceId: 'ci-sponsor',
       impliedCostPerOutcome: 516,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'year of child development for one sponsored child',
     },
     {
@@ -139,28 +144,23 @@ export const compassionInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The mission statement names Jesus. The statement of faith is the World Evangelical Alliance’s, published in full. Delivery is through local evangelical congregations rather than Compassion’s own staff, so the gospel is not an add-on to the programme — the church running the programme is the programme.',
+      note: 'The mission statement names Jesus. The statement of faith is the World Evangelical Alliance’s, published in full. Delivery is through local evangelical congregations rather than Compassion’s own staff, so the gospel is not an add-on to the programme — the church running the programme is the programme.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'More than 9,000 Frontline Church Partners select the children, run the centres and hold the relationships. Compassion’s role is funding, training and audit. Governance and fundraising are American and the Global Partner Alliance contributed $215,299,000 of the year’s revenue from other national offices, but the work itself is done by believers who live where the children live.',
+      note: 'More than 9,000 Frontline Church Partners select the children, run the centres and hold the relationships. Compassion’s role is funding, training and audit. Governance and fundraising are American and the Global Partner Alliance contributed $215,299,000 of the year’s revenue from other national offices, but the work itself is done by believers who live where the children live.',
     },
     financialTransparency: {
       value: 3,
-      note:
-        'A KPMG audit of consolidated statements posted on its own site, plus an accountability report that publishes the programme ratio, fundraising efficiency, grant growth rate and participant counts, and explains a 6.5% fall in grants by naming the one-time items behind it. Founding member of ECFA, BBB Wise Giving Alliance accredited. Very little is left for an outsider to guess at on the money side.',
+      note: 'A KPMG audit of consolidated statements posted on its own site, plus an accountability report that publishes the programme ratio, fundraising efficiency, grant growth rate and participant counts, and explains a 6.5% fall in grants by naming the one-time items behind it. Founding member of ECFA, BBB Wise Giving Alliance accredited. Very little is left for an outsider to guess at on the money side.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The participant count is precisely defined, maintained year to year and auditable — but registration is an input, not a result, and Compassion publishes no comparable count of what was delivered. The one outcome percentage it does headline, 97% released from poverty, rests on 99 alumni in a single country. Credit for the count; none for the claim.',
+      note: 'The participant count is precisely defined, maintained year to year and auditable — but registration is an input, not a result, and Compassion publishes no comparable count of what was delivered. The one outcome percentage it does headline, 97% released from poverty, rests on 99 alumni in a single country. Credit for the count; none for the claim.',
     },
     costEvidence: {
       value: 3,
-      note:
-        'Spending and count for the same fiscal year, in documents Compassion publishes itself, with the programme ratio disclosed so the division can be sanity-checked. Its own $43 monthly ask gives a second reference point. Both halves exist and neither had to be estimated.',
+      note: 'Spending and count for the same fiscal year, in documents Compassion publishes itself, with the programme ratio disclosed so the division can be sanity-checked. Its own $43 monthly ask gives a second reference point. Both halves exist and neither had to be estimated.',
     },
   },
   notVerified: [
@@ -189,8 +189,7 @@ export const compassionInternational: Cause = {
       publisher: 'Compassion International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Displays "97% of Compassion children were released from poverty in Jesus’ name" attributed to a survey of 99 alumni in the Dominican Republic, and the statement that every child in the programme hears the gospel.',
+      note: 'Displays "97% of Compassion children were released from poverty in Jesus’ name" attributed to a survey of 99 alumni in the Dominican Republic, and the statement that every child in the programme hears the gospel.',
     },
     {
       id: 'ci-where',
@@ -199,8 +198,7 @@ export const compassionInternational: Cause = {
       publisher: 'Compassion International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Lists 26 current programme countries plus three "Upcoming Countries" — Malawi, Myanmar and Zambia — which together make the 29 quoted elsewhere.',
+      note: 'Lists 26 current programme countries plus three "Upcoming Countries" — Malawi, Myanmar and Zambia — which together make the 29 quoted elsewhere.',
     },
     {
       id: 'ci-faith',
@@ -218,8 +216,7 @@ export const compassionInternational: Cause = {
       publisher: 'Compassion International',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'The $43 monthly ask, followed by a list of what it provides: malnutrition monitoring, medical checkups, mentorship, education and skills training, and contact with the sponsor.',
+      note: 'The $43 monthly ask, followed by a list of what it provides: malnutrition monitoring, medical checkups, mentorship, education and skills training, and contact with the sponsor.',
     },
     {
       id: 'ci-donate-faq',
@@ -246,8 +243,7 @@ export const compassionInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Year ended 30 June 2025, amounts in thousands. Child development programs $1,021,646, fundraising $161,584, management and general $100,425, total $1,283,655. The PDF is image-only from page five onward, so the functional expense statement was read from pages rendered at 110 dpi rather than from extracted text.',
+      note: 'Year ended 30 June 2025, amounts in thousands. Child development programs $1,021,646, fundraising $161,584, management and general $100,425, total $1,283,655. The PDF is image-only from page five onward, so the functional expense statement was read from pages rendered at 110 dpi rather than from extracted text.',
     },
     {
       id: 'ci-accountability-25',
@@ -257,8 +253,7 @@ export const compassionInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of Total Ending Registered Participants 2,420,924 (prior year 2,372,768), the 80% programme ratio, the 8.1 fundraising efficiency ratio, and the explanation of the 6.5% fall in grants.',
+      note: 'Source of Total Ending Registered Participants 2,420,924 (prior year 2,372,768), the 80% programme ratio, the 8.1 fundraising efficiency ratio, and the explanation of the 6.5% fall in grants.',
     },
   ],
 };

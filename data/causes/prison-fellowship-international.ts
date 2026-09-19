@@ -24,18 +24,15 @@ export const prisonFellowshipInternational: Cause = {
     scriptures: [
       {
         ref: 'Matthew 25:36',
-        text:
-          'I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
+        text: 'I was naked and you clothed me, I was sick and you visited me, I was in prison and you came to me.',
       },
       {
         ref: 'Luke 4:18',
-        text:
-          'The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed.',
+        text: 'The Spirit of the Lord is upon me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim liberty to the captives and recovering of sight to the blind, to set at liberty those who are oppressed.',
       },
       {
         ref: 'Hebrews 13:3',
-        text:
-          'Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.',
+        text: 'Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.',
       },
     ],
     concerns: [
@@ -72,14 +69,12 @@ export const prisonFellowshipInternational: Cause = {
       {
         label: 'prisoners invited to The Prisoner’s Journey',
         count: 211000,
-        note:
-          'The report’s wider figure for the same programme. It gives $48.20, but an invitation is a much weaker unit than a completed seven-week course.',
+        note: 'The report’s wider figure for the same programme. It gives $48.20, but an invitation is a much weaker unit than a completed seven-week course.',
       },
       {
         label: 'graduates of The Listener’s Way',
         count: 56400,
-        note:
-          'A separate audio-and-visual Scripture programme with its own FY2025 count across 327 prison sites in 30 countries. Included to show the scale of the second programme, not because the same spending bought both counts.',
+        note: 'A separate audio-and-visual Scripture programme with its own FY2025 count across 327 prison sites in 30 countries. Included to show the scale of the second programme, not because the same spending bought both counts.',
       },
     ],
   },
@@ -98,28 +93,23 @@ export const prisonFellowshipInternational: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The core product is a seven-week introduction to Christ delivered from Scripture, the programme descriptions are written in explicitly Christian terms, and the ministry is an ECFA member, which requires a doctrinal standard. There is no separate statement of faith on the site that we found.',
+      note: 'The core product is a seven-week introduction to Christ delivered from Scripture, the programme descriptions are written in explicitly Christian terms, and the ministry is an ECFA member, which requires a doctrinal standard. There is no separate statement of faith on the site that we found.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'Delivery is by national ministries and their volunteers in 35 countries; PFI’s own payroll is a fifth of program spending and 45% of the program total is granted out. The programme design, brand and money sit in Virginia.',
+      note: 'Delivery is by national ministries and their volunteers in 35 countries; PFI’s own payroll is a fifth of program spending and 45% of the program total is granted out. The programme design, brand and money sit in Virginia.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Consolidated audited statements are posted on the ministry’s own site for every year from 2010 to 2025, which is better than most. Marked down hard for two things in the FY2025 statements that the audit does not explain: the $4,048,556 “Change in donor intent” and the $3,980,033 “Other Programs” column.',
+      note: 'Consolidated audited statements are posted on the ministry’s own site for every year from 2010 to 2025, which is better than most. Marked down hard for two things in the FY2025 statements that the audit does not explain: the $4,048,556 “Change in donor intent” and the $3,980,033 “Other Programs” column.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Counts are published per programme with prison sites and countries attached, which is real. But every headline figure is rounded to the nearest thousand and set in a curved graphic rather than printed as text, no programme defines its unit, and nothing states whether a prisoner who takes two courses is counted twice.',
+      note: 'Counts are published per programme with prison sites and countries attached, which is real. But every headline figure is rounded to the nearest thousand and set in a curved graphic rather than printed as text, no programme defines its unit, and nothing states whether a prisoner who takes two courses is counted twice.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves exist and both are sourced, one from a consolidated audit. Marked down because the ministry publishes no cost per graduate of its own to check ours against, and because a numerator with a $3,980,033 unexplained column makes any division approximate by construction.',
+      note: 'Both halves exist and both are sourced, one from a consolidated audit. Marked down because the ministry publishes no cost per graduate of its own to check ours against, and because a numerator with a $3,980,033 unexplained column makes any division approximate by construction.',
     },
   },
   notVerified: [
@@ -166,8 +156,7 @@ export const prisonFellowshipInternational: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Year ended 30 June 2025, consolidated with affiliates. Program services $10,169,700 across five columns: Prison Programs $3,032,442, Children’s Programs $1,449,935, Capacity Building $1,005,801, Other Programs $3,980,033, Communications and Education $701,489.',
+      note: 'Year ended 30 June 2025, consolidated with affiliates. Program services $10,169,700 across five columns: Prison Programs $3,032,442, Children’s Programs $1,449,935, Capacity Building $1,005,801, Other Programs $3,980,033, Communications and Education $701,489.',
     },
     {
       id: 'pfi-ar-25',
@@ -177,8 +166,7 @@ export const prisonFellowshipInternational: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'The programme statistics are set in curved display type rather than printed text; we rendered pages 10, 14 and 18 as images and read the figures off them. Page 10 gives 87K disciples, 113K graduates, 211K invited, 856 prison sites and 35 countries for The Prisoner’s Journey; page 14 gives 2K volunteers, 56.4K graduates, 5.1K listening groups, 327 prison sites and 30 countries for The Listener’s Way; page 18 gives 4,376 children served in 9 countries for PromisePath.',
+      note: 'The programme statistics are set in curved display type rather than printed text; we rendered pages 10, 14 and 18 as images and read the figures off them. Page 10 gives 87K disciples, 113K graduates, 211K invited, 856 prison sites and 35 countries for The Prisoner’s Journey; page 14 gives 2K volunteers, 56.4K graduates, 5.1K listening groups, 327 prison sites and 30 countries for The Listener’s Way; page 18 gives 4,376 children served in 9 countries for PromisePath.',
     },
     {
       id: 'pfi-ecfa',

@@ -19,13 +19,11 @@ export const water4: Cause = {
     scriptures: [
       {
         ref: 'Matthew 25:35',
-        text:
-          'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
+        text: 'For I was hungry and you gave me food, I was thirsty and you gave me drink, I was a stranger and you welcomed me.',
       },
       {
         ref: 'Matthew 10:42',
-        text:
-          'And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward.',
+        text: 'And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward.',
       },
       {
         ref: 'Proverbs 22:9',
@@ -69,8 +67,7 @@ export const water4: Cause = {
       {
         label: 'new water systems built',
         count: 92,
-        note:
-          'The capital asset itself — borehole, tower, pipe network — rather than the tap at the end of it. About $70,000 each, which is what building a small piped utility actually costs, and a fairer way to think about this ministry than a per-person figure. Also our sum of the four country lines.',
+        note: 'The capital asset itself — borehole, tower, pipe network — rather than the tap at the end of it. About $70,000 each, which is what building a small piped utility actually costs, and a fairer way to think about this ministry than a per-person figure. Also our sum of the four country lines.',
       },
     ],
   },
@@ -98,28 +95,23 @@ export const water4: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'Water4 commits in writing to “the foundational truths of the Christian faith as articulated in the Apostles’ Creed and upholding historically orthodox positions of Christian belief, identity, and conduct”, names Jesus repeatedly in its programme descriptions, and runs a discipleship movement through the water points. It is one of the most explicitly Christian ministries in this directory — which is also why the concern above matters.',
+      note: 'Water4 commits in writing to “the foundational truths of the Christian faith as articulated in the Apostles’ Creed and upholding historically orthodox positions of Christian belief, identity, and conduct”, names Jesus repeatedly in its programme descriptions, and runs a discipleship movement through the water points. It is one of the most explicitly Christian ministries in this directory — which is also why the concern above matters.',
     },
     localLeadership: {
       value: 2,
-      note:
-        'The operating model is genuinely local: each country runs a water business with local staff selling to local customers, and Water4 says the salaries depend on those customers. But the capital, the governance, the officers and the chief executive are in Oklahoma City, and we found no national board representation disclosed in the return.',
+      note: 'The operating model is genuinely local: each country runs a water business with local staff selling to local customers, and Water4 says the salaries depend on those customers. But the capital, the governance, the officers and the chief executive are in Oklahoma City, and we found no national board representation disclosed in the return.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Form 990s are posted on the ministry’s own financials page and it is ECFA accredited, which requires annual financial review. Marked down because we found no audited financial statements published anywhere on the site, and because the financials page carries two different documents both labelled 2024 — one the calendar-year return, one a short-period return — with nothing explaining the difference.',
+      note: 'Form 990s are posted on the ministry’s own financials page and it is ECFA accredited, which requires annual financial review. Marked down because we found no audited financial statements published anywhere on the site, and because the financials page carries two different documents both labelled 2024 — one the calendar-year return, one a short-period return — with nothing explaining the difference.',
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'The programme descriptions in the 990 are far more detailed than most ministries volunteer: new systems, towers, household connections, kilometres of pipeline and people trained, broken out by country and summing exactly to reported program expenses. What is missing is the number that matters most in water — nothing is published on how many of the systems built in prior years are still delivering water today.',
+      note: 'The programme descriptions in the 990 are far more detailed than most ministries volunteer: new systems, towers, household connections, kilometres of pipeline and people trained, broken out by country and summing exactly to reported program expenses. What is missing is the number that matters most in water — nothing is published on how many of the systems built in prior years are still delivering water today.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Numerator and denominator are in the same audited-adjacent document for the same year, which is rare. Marked down because the denominator is our addition of four country lines rather than a published total, and because Water4 advertises no unit cost of its own for us to test.',
+      note: 'Numerator and denominator are in the same audited-adjacent document for the same year, which is rare. Marked down because the denominator is our addition of four country lines rather than a published total, and because Water4 advertises no unit cost of its own for us to test.',
     },
   },
   notVerified: [
@@ -157,8 +149,7 @@ export const water4: Cause = {
       publisher: 'Water4',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the Apostles’ Creed statement, the $2/day customer claim, and “We want to put ourselves as a non-profit out of business.”',
+      note: 'Source of the Apostles’ Creed statement, the $2/day customer claim, and “We want to put ourselves as a non-profit out of business.”',
     },
     {
       id: 'w4-approach',
@@ -167,8 +158,7 @@ export const water4: Cause = {
       publisher: 'Water4',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the “hand up” and dependency language, the description of NUMA as customer-reliant, and the “kingdom outpost” statement.',
+      note: 'Source of the “hand up” and dependency language, the description of NUMA as customer-reliant, and the “kingdom outpost” statement.',
     },
     {
       id: 'w4-impact',
@@ -185,8 +175,7 @@ export const water4: Cause = {
       publisher: 'Water4',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Where the ECFA accreditation is stated and where the returns are hosted. It carries two documents both labelled 2024 with no explanation; one is the calendar-2024 return, the other a short-period return to 30 June 2025.',
+      note: 'Where the ECFA accreditation is stated and where the returns are hosted. It carries two documents both labelled 2024 with no explanation; one is the calendar-2024 return, the other a short-period return to 30 June 2025.',
     },
     {
       id: 'w4-990-24',
@@ -196,8 +185,7 @@ export const water4: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Part IX line 25: total functional expenses $8,488,712, program services $6,411,216, management and general $617,310, fundraising $1,460,186. Part III and Schedule O give the per-country counts of water systems, towers, household connections, pipeline and people trained that the cost model is built from.',
+      note: 'Part IX line 25: total functional expenses $8,488,712, program services $6,411,216, management and general $617,310, fundraising $1,460,186. Part III and Schedule O give the per-country counts of water systems, towers, household connections, pipeline and people trained that the cost model is built from.',
     },
     {
       id: 'w4-990-short',
@@ -207,8 +195,7 @@ export const water4: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Filed for the six months to 30 June 2025 following a change of financial year end. Total expenses $4,015,409, program services $3,074,067. Labelled “2024” on the ministry’s financials page.',
+      note: 'Filed for the six months to 30 June 2025 following a change of financial year end. Total expenses $4,015,409, program services $3,074,067. Labelled “2024” on the ministry’s financials page.',
     },
   ],
 };

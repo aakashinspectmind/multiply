@@ -7,7 +7,7 @@ export const langhamPartnership: Cause = {
   ein: '23-7417198',
   tagline:
     'Three programs for Majority World pastors: preaching seminars, doctoral scholarships, and evangelical books in their own languages.',
-  category: 'scripture',
+  category: 'training',
   countries: ['Global', 'Madagascar', 'Liberia', 'Peru', 'India'],
   whatTheyDo:
     'Langham states its mission as strengthening the ministry of the Word of God through three things, and it has run the same three for decades. Langham Preaching starts and supports national movements that teach local pastors to preach a Bible passage faithfully — seminars, then local preaching clubs, run by national coordinators. Langham Scholars funds doctorates for evangelical leaders from the Majority World on the understanding that they go home to teach; the 2025 report counts 103 PhD students from 46 countries and more than 350 graduates now serving. Langham Literature writes, publishes, translates and distributes evangelical books by Majority World authors, and sends books to Bible colleges that have none. The US entity, formerly John Stott Ministries, is one of eight national offices funding a single federation governed by an international council; it supplied about 40% of the federation’s income in the year to June 2025.',
@@ -28,18 +28,15 @@ export const langhamPartnership: Cause = {
     scriptures: [
       {
         ref: 'Ephesians 4:11–13',
-        text:
-          'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God.',
+        text: 'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ, until we all attain to the unity of the faith and of the knowledge of the Son of God.',
       },
       {
         ref: '2 Timothy 2:2',
-        text:
-          'And what you have heard from me in the presence of many witnesses entrust to faithful men who will be able to teach others also.',
+        text: 'And what you have heard from me in the presence of many witnesses entrust to faithful men who will be able to teach others also.',
       },
       {
         ref: 'Titus 1:9',
-        text:
-          'He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it.',
+        text: 'He must hold firm to the trustworthy word as taught, so that he may be able to give instruction in sound doctrine and also to rebuke those who contradict it.',
       },
       {
         ref: 'Hosea 4:6',
@@ -102,28 +99,23 @@ export const langhamPartnership: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'The mission is the ministry of the Word and nothing else. The values page commits the ministry to exalt the name and glory of the Lord Jesus Christ and to promote the gospel of his grace, affirms the supreme authority of the Bible, calls for theological education to re-centre Scripture as the core discipline, and specifies "qualified evangelical teachers" in the mission statement itself. Marked at 3 despite the absence of a formal statement of faith because the doctrinal commitment is explicit rather than implied.',
+      note: 'The mission is the ministry of the Word and nothing else. The values page commits the ministry to exalt the name and glory of the Lord Jesus Christ and to promote the gospel of his grace, affirms the supreme authority of the Bible, calls for theological education to re-centre Scripture as the core discipline, and specifies "qualified evangelical teachers" in the mission statement itself. Marked at 3 despite the absence of a formal statement of faith because the doctrinal commitment is explicit rather than implied.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The values page says programs are undertaken "only at the invitation of local and national church leaders, in consultation with them, and wherever possible under local leadership," and the rest of the report is consistent with it: the international council’s members represent Kenya, India, the Philippines, Israel, Singapore, Austria, Australia, New Zealand, Canada and the UK; the preaching movements named are run by nationals; scholarships are for Majority World leaders who return home; the books are by Majority World authors. The US board, which governs the entity a US donor gives to, is entirely US-based.',
+      note: 'The values page says programs are undertaken "only at the invitation of local and national church leaders, in consultation with them, and wherever possible under local leadership," and the rest of the report is consistent with it: the international council’s members represent Kenya, India, the Philippines, Israel, Singapore, Austria, Australia, New Zealand, Canada and the UK; the preaching movements named are run by nationals; scholarships are for Majority World leaders who return home; the books are by Majority World authors. The US board, which governs the entity a US donor gives to, is entirely US-based.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Eight consecutive years of audited statements, Form 990s and annual reports are posted on its own site, and the annual report breaks program spending into five lines for the US entity and the global federation side by side — better disclosure than almost anything else in this directory. Marked down to 2 because the annual report’s own table does not tie to the audit it sits beside: program expenses $5,167,044 against $5,166,580, fundraising $1,287,910 against $1,273,019, total expenses $6,965,227 against $6,949,871, none of it explained.',
+      note: 'Eight consecutive years of audited statements, Form 990s and annual reports are posted on its own site, and the annual report breaks program spending into five lines for the US entity and the global federation side by side — better disclosure than almost anything else in this directory. Marked down to 2 because the annual report’s own table does not tie to the audit it sits beside: program expenses $5,167,044 against $5,166,580, fundraising $1,287,910 against $1,273,019, total expenses $6,965,227 against $6,949,871, none of it explained.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'Langham publishes more counts than most ministries and they are less usable. One spread mixes a standing roster ("350+ Langham Scholars now serving"), an unchanged two-year snapshot (103 PhD students in both 2024 and 2025), an explicitly annual figure ("119,990 Bible students were taught by Langham Scholars last year") and the 16,819 preachers, all under a single year heading and a single ten-year footnote. Nothing defines what "equipped" required of a preacher.',
+      note: 'Langham publishes more counts than most ministries and they are less usable. One spread mixes a standing roster ("350+ Langham Scholars now serving"), an unchanged two-year snapshot (103 PhD students in both 2024 and 2025), an explicitly annual figure ("119,990 Bible students were taught by Langham Scholars last year") and the 16,819 preachers, all under a single year heading and a single ten-year footnote. Nothing defines what "equipped" required of a preacher.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'Both halves appear to exist, which is the frustration. Spending is audited and broken out by program line for two entities; counts are published in quantity. They still cannot be divided, because the count’s period is unknowable and its scope is the whole federation while the audited numerator is the US office alone.',
+      note: 'Both halves appear to exist, which is the frustration. Spending is audited and broken out by program line for two entities; counts are published in quantity. They still cannot be divided, because the count’s period is unknowable and its scope is the whole federation while the audited numerator is the US office alone.',
     },
   },
   notVerified: [
@@ -163,8 +155,7 @@ export const langhamPartnership: Cause = {
       publisher: 'Langham Partnership USA',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Source of the three-part mission statement and of the doctrinal commitments: the supreme authority of the Bible, the endorsement of The Cape Town Commitment, and the requirement that programs run under local leadership wherever possible.',
+      note: 'Source of the three-part mission statement and of the doctrinal commitments: the supreme authority of the Bible, the endorsement of The Cape Town Commitment, and the requirement that programs run under local leadership wherever possible.',
     },
     {
       id: 'lang-financials',
@@ -173,8 +164,7 @@ export const langhamPartnership: Cause = {
       publisher: 'Langham Partnership USA',
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
-      note:
-        'Links audited statements, Form 990s and annual reports for 2018 through 2025, and states the ECFA membership and the Excellence in Giving recognition.',
+      note: 'Links audited statements, Form 990s and annual reports for 2018 through 2025, and states the ECFA membership and the Excellence in Giving recognition.',
     },
     {
       id: 'lang-audit-25',
@@ -184,8 +174,7 @@ export const langhamPartnership: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Program services $5,166,580, management and general $510,272, fundraising $1,273,019, total functional expenses $6,949,871 on total support and revenue of $5,543,595. Net assets fell from $5,708,051 to $4,301,775; net cash used in operating activities $673,744. Prior-year comparatives for the year to June 2024 are in the same statements.',
+      note: 'Program services $5,166,580, management and general $510,272, fundraising $1,273,019, total functional expenses $6,949,871 on total support and revenue of $5,543,595. Net assets fell from $5,708,051 to $4,301,775; net cash used in operating activities $673,744. Prior-year comparatives for the year to June 2024 are in the same statements.',
     },
     {
       id: 'lang-990-25',
@@ -195,8 +184,7 @@ export const langhamPartnership: Cause = {
       documentType: 'form-990',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the EIN and the fiscal year boundaries. The return contains no count of preachers trained, scholars supported or books distributed.',
+      note: 'Source of the EIN and the fiscal year boundaries. The return contains no count of preachers trained, scholars supported or books distributed.',
     },
     {
       id: 'lang-ar-2025',
@@ -206,8 +194,7 @@ export const langhamPartnership: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2025',
-      note:
-        'Source of the 2025 Key Statistics and of the fiscal year 2025 income and expense table comparing the US entity with the global federation. The key statistics are set as graphics; we rendered the page and read the figures from the image rather than from extracted text, which is also how we caught that the Radiant Global Insights footnote sits on the same spread as the headline.',
+      note: 'Source of the 2025 Key Statistics and of the fiscal year 2025 income and expense table comparing the US entity with the global federation. The key statistics are set as graphics; we rendered the page and read the figures from the image rather than from extracted text, which is also how we caught that the Radiant Global Insights footnote sits on the same spread as the headline.',
     },
     {
       id: 'lang-ar-2024',
@@ -217,8 +204,7 @@ export const langhamPartnership: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-18',
       fiscalYear: '2024',
-      note:
-        'Read only to date the impact figures. Its "2024 Impact Numbers" block gives 13,951 preachers and church leaders trained, 1,116,080 people who sat under a Langham-trained pastor, 115,730 Bible students taught by Langham Scholars, 343 graduated scholars and 103 scholars currently in a PhD program, footnoted "All impact data from outside agency Excellence in Giving, 2015-2024".',
+      note: 'Read only to date the impact figures. Its "2024 Impact Numbers" block gives 13,951 preachers and church leaders trained, 1,116,080 people who sat under a Langham-trained pastor, 115,730 Bible students taught by Langham Scholars, 343 graduated scholars and 103 scholars currently in a PhD program, footnoted "All impact data from outside agency Excellence in Giving, 2015-2024".',
     },
   ],
 };

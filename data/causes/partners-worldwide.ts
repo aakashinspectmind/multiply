@@ -14,27 +14,27 @@ export const partnersWorldwide: Cause = {
   accreditations: [
     { label: 'ECFA accredited', sourceId: 'pw-financials' },
     { label: 'Charity Navigator four-star rating', sourceId: 'pw-financials' },
-    { label: 'Certified Transparent, Excellence in Giving', sourceId: 'pw-financials' },
+    {
+      label: 'Certified Transparent, Excellence in Giving',
+      sourceId: 'pw-financials',
+    },
   ],
   verification: 'self-reported',
   biblicalAlignment: {
     mandate:
-      'Paul\'s instruction to the Thessalonians was to work with their hands so that they would be dependent on no one — the goal of the work is not the income alone but the end of dependency, which is exactly what a job does and a handout does not. Colossians tells the worker whose labour that is really for, which is what turns a market stall into a vocation. And Leviticus aims the same law at the employer: pay the hired man the same day, because he is counting on it. A ministry about jobs is standing in all three places at once.',
+      "Paul's instruction to the Thessalonians was to work with their hands so that they would be dependent on no one — the goal of the work is not the income alone but the end of dependency, which is exactly what a job does and a handout does not. Colossians tells the worker whose labour that is really for, which is what turns a market stall into a vocation. And Leviticus aims the same law at the employer: pay the hired man the same day, because he is counting on it. A ministry about jobs is standing in all three places at once.",
     scriptures: [
       {
         ref: '1 Thessalonians 4:11–12',
-        text:
-          'Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.',
+        text: 'Aspire to live quietly, and to mind your own affairs, and to work with your hands, as we instructed you, so that you may walk properly before outsiders and be dependent on no one.',
       },
       {
         ref: 'Colossians 3:23–24',
-        text:
-          'Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ.',
+        text: 'Whatever you do, work heartily, as for the Lord and not for men, knowing that from the Lord you will receive the inheritance as your reward. You are serving the Lord Christ.',
       },
       {
         ref: 'Leviticus 19:13',
-        text:
-          'You shall not oppress your neighbour or rob him. The wages of a hired worker shall not remain with you all night until the morning.',
+        text: 'You shall not oppress your neighbour or rob him. The wages of a hired worker shall not remain with you all night until the morning.',
       },
     ],
     doctrine: {
@@ -47,13 +47,13 @@ export const partnersWorldwide: Cause = {
       'The institution count does not agree with itself. The impact page says 107 Local Community Institutions, the about page says "over 90 ... in 30 countries", and the where-we-work page says 97 partnerships. These are small differences and they are exactly the kind that make a reader wonder who is checking.',
       'Four of the five headline counts reconcile exactly when you add up the five regional pages; the training figure does not. Businesses, jobs created and volunteers all sum precisely to the global totals. Graduates sum to 6,948 against a published global figure of 37,903. One of those two numbers is measuring something else and the site does not say which.',
       'The whole model depends on money and credit flowing through independent institutions Partners Worldwide does not control and does not consolidate in its accounts. That is the right way to do locally led development and it is also the structure in which a donor can verify nothing about what happened at the far end.',
-      'Microcredit is part of the package — $27.4 million of loans disbursed through the network — and the randomised evidence for credit raising poor households\' incomes is weak. Partners Worldwide reports disbursement, not repayment, and publishes no loan-loss figure at all.',
+      "Microcredit is part of the package — $27.4 million of loans disbursed through the network — and the randomised evidence for credit raising poor households' incomes is weak. Partners Worldwide reports disbursement, not repayment, and publishes no loan-loss figure at all.",
     ],
   },
   roi: {
     levers: ['local-workers', 'local-cost-base', 'existing-network', 'volunteer-leverage'],
     reason:
-      'Almost everything here happens outside the high-income world and the regional figures show how lopsidedly: of 337,115 client businesses in the network, 302,214 are in Africa and 47 are in the United States. The delivery organisations are locally incorporated and locally governed, Partners Worldwide\'s own field staff are nationals living in the countries they cover, and the training is delivered inside institutions that already exist rather than through offices Partners Worldwide would have to build. The fourth lever is the volunteer network: 1,349 volunteers contributing 8,707 hours of business mentoring against a $6.5 million budget, which is a small amount of paid coordination putting unpaid expertise to work. What none of this tells you is the price of anything, because the counts have no period.',
+      "Almost everything here happens outside the high-income world and the regional figures show how lopsidedly: of 337,115 client businesses in the network, 302,214 are in Africa and 47 are in the United States. The delivery organisations are locally incorporated and locally governed, Partners Worldwide's own field staff are nationals living in the countries they cover, and the training is delivered inside institutions that already exist rather than through offices Partners Worldwide would have to build. The fourth lever is the volunteer network: 1,349 volunteers contributing 8,707 hours of business mentoring against a $6.5 million budget, which is a small amount of paid coordination putting unpaid expertise to work. What none of this tells you is the price of anything, because the counts have no period.",
   },
   ministryClaims: [
     {
@@ -73,44 +73,40 @@ export const partnersWorldwide: Cause = {
     },
     {
       quote:
-        'Today, more than 337,000 businesspeople are leading redemptive businesses, supported by a global network that\'s stronger than ever.',
+        "Today, more than 337,000 businesspeople are leading redemptive businesses, supported by a global network that's stronger than ever.",
       sourceId: 'pw-ar-25',
     },
     {
       quote:
-        'Looking ahead, we\'re on track to reaching our Vista 2030 goals: one million redemptive business owners creating three million jobs and lifting 15 million people out of poverty.',
+        "Looking ahead, we're on track to reaching our Vista 2030 goals: one million redemptive business owners creating three million jobs and lifting 15 million people out of poverty.",
       sourceId: 'pw-ar-25',
     },
     {
-      quote: 'Poverty is not God\'s design. We work to see people experience the abundant life God desires for us.',
+      quote:
+        "Poverty is not God's design. We work to see people experience the abundant life God desires for us.",
       sourceId: 'pw-about',
     },
   ],
   scores: {
     gospelCentrality: {
       value: 2,
-      note:
-        'Describes itself as a global community of Christians and a Christian network, and its theology-of-poverty page argues from Scripture and names Jesus repeatedly. There is no statement of faith, no doctrinal position, and the programme itself is business training — the gospel is the reason given for the work rather than part of the work.',
+      note: 'Describes itself as a global community of Christians and a Christian network, and its theology-of-poverty page argues from Scripture and names Jesus repeatedly. There is no statement of faith, no doctrinal position, and the programme itself is business training — the gospel is the reason given for the work rather than part of the work.',
     },
     localLeadership: {
       value: 3,
-      note:
-        'The model is locally led by design: independent Local Community Institutions with their own governance do the delivering, and Partners Worldwide\'s partnership managers are nationals based in the countries they serve — Nairobi, Abuja, Accra, Monrovia, Chimoio, Lusaka, Tegucigalpa, Port-au-Prince, Jakarta, Phnom Penh, Manila, Kathmandu, Colombo. The chief executive, the board and the Africa team leader are in Grand Rapids.',
+      note: "The model is locally led by design: independent Local Community Institutions with their own governance do the delivering, and Partners Worldwide's partnership managers are nationals based in the countries they serve — Nairobi, Abuja, Accra, Monrovia, Chimoio, Lusaka, Tegucigalpa, Port-au-Prince, Jakarta, Phnom Penh, Manila, Kathmandu, Colombo. The chief executive, the board and the Africa team leader are in Grand Rapids.",
     },
     financialTransparency: {
       value: 2,
-      note:
-        'Audited statements are posted and the year to June 2025 is broken out by function — program services $5,356,728 of $6,497,549 — alongside ECFA accreditation, a Charity Navigator four-star rating and Excellence in Giving certification. Marked down because only 2023 and 2024 Form 990s are posted, and because the accounts cover only the US organisation while every published outcome belongs to a network of institutions that are not consolidated.',
+      note: 'Audited statements are posted and the year to June 2025 is broken out by function — program services $5,356,728 of $6,497,549 — alongside ECFA accreditation, a Charity Navigator four-star rating and Excellence in Giving certification. Marked down because only 2023 and 2024 Form 990s are posted, and because the accounts cover only the US organisation while every published outcome belongs to a network of institutions that are not consolidated.',
     },
     outcomeEvidence: {
       value: 1,
-      note:
-        'There is no shortage of numbers. There is no period on any of them, no definition of a "job sustained", and one of the five headline figures cannot be reconciled with the ministry\'s own regional pages. Counts this large with this little specification are marketing, not evidence, however real the underlying work is.',
+      note: 'There is no shortage of numbers. There is no period on any of them, no definition of a "job sustained", and one of the five headline figures cannot be reconciled with the ministry\'s own regional pages. Counts this large with this little specification are marketing, not evidence, however real the underlying work is.',
     },
     costEvidence: {
       value: 1,
-      note:
-        'The numerator is audited and clean. There is no denominator with a fiscal year attached, so nothing can honestly be divided. A finding, not an absence — we looked hard.',
+      note: 'The numerator is audited and clean. There is no denominator with a fiscal year attached, so nothing can honestly be divided. A finding, not an absence — we looked hard.',
     },
   },
   notVerified: [

@@ -57,8 +57,8 @@ export const bibleLeagueInternational: Cause = {
       'Printing, shipping and distribution all happen inside the receiving country, and the last mile runs through partner churches and trained volunteers who were already there. Paid coordination is small relative to the unpaid hours it puts to work, so the marginal cost of one more Scripture set is genuinely low — about $21 per Bible actually reported placed, on our arithmetic.',
   },
   costModel: {
-    outcome: 'person engaged in God’s Word',
-    outcomePlural: 'people engaged in God’s Word',
+    outcome: 'Bible placed in someone’s hands',
+    outcomePlural: 'Bibles placed in people’s hands',
     spend: {
       amount: 20887869,
       basis: 'program-services',
@@ -66,24 +66,29 @@ export const bibleLeagueInternational: Cause = {
       sourceId: 'bl-ar25',
     },
     count: {
-      amount: 2015577,
-      label: 'people who studied God’s Word',
+      amount: 984197,
+      label: 'Bibles shared',
       fiscalYear: 'FY2025',
       sourceId: 'bl-ar25',
     },
     attribution: 'all-program-spend',
     caveat:
-      'The same program dollars trained 91,622 leaders, supported 1,736 new churches and funded literacy and translation work. "Engaged in God’s Word" is also undefined in the report — it may count a person once, or once per study.',
+      'We do not divide by the number Bible League leads with. Its headline is 2,015,577 people who studied God’s Word, which against this budget would read $10.36 — but "engaged in God’s Word" is undefined in the report, and nothing says whether a person is counted once or once per study, so the figure may be a count of attendances rather than of people. Of the 4,094,825 items Bible League reports sharing, 984,197 were Bibles, and a Bible placed is the one unit here that is countable and unambiguous, so that is the denominator. It is a high ceiling: the same program dollars also trained 91,622 leaders, supported 1,736 new churches and funded literacy and translation work, and every one of those dollars is charged to the Bible count. It is also the arithmetic that will not reconcile with the ministry’s own advertised price of $2.50 a Bible — even dividing by all 4,094,825 items shared gives about $5.10 each. And a Bible placed is not a Bible read.',
     alternates: [
       {
-        label: 'new churches planted (1,736)',
-        count: 1736,
-        note: 'About $12,000 per new church on the same all-program-spend basis.',
+        label: 'people who studied God’s Word (2,015,577)',
+        count: 2015577,
+        note: 'About $10.36, and the figure the ministry leads with. Undefined in the report, and it may count a person once or once per study, so it is the floor of the range rather than a price.',
       },
       {
         label: 'Bibles and study, literacy and training materials shared (4,094,825)',
         count: 4094825,
-        note: 'About $5.10 per item. Counting only the 984,197 items that were Bibles gives about $21 per Bible.',
+        note: 'About $5.10 per item. The wider count puts study guides, literacy primers and training materials alongside the 984,197 Bibles, which is why it is not the figure above.',
+      },
+      {
+        label: 'new churches planted (1,736)',
+        count: 1736,
+        note: 'About $12,000 per new church on the same all-program-spend basis.',
       },
     ],
   },
@@ -92,6 +97,7 @@ export const bibleLeagueInternational: Cause = {
       quote: '$5 sends Bibles to TWO believers waiting for God’s Word.',
       sourceId: 'bl-site',
       impliedCostPerOutcome: 2.5,
+      sameUnitAsCostModel: true,
       impliedOutcome: 'believer receiving Scripture',
     },
   ],
@@ -110,7 +116,7 @@ export const bibleLeagueInternational: Cause = {
     },
     outcomeEvidence: {
       value: 1,
-      note: 'Counts are large, round and self-reported, and the headline unit — people "engaged" — is not defined. Materials shipped is an output, not evidence that anyone read them.',
+      note: 'Counts are large, round and self-reported, and the unit the ministry leads with — people "engaged" — is not defined, which is why the figure on this page is built on Bibles instead. Materials shipped is an output, not evidence that anyone read them.',
     },
     costEvidence: {
       value: 2,

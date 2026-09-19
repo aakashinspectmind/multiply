@@ -66,37 +66,41 @@ export const africanMissionHealthcare: Cause = {
       'The hospital already exists, the surgeon is already there, and in most cases both were paid for by a century of other people’s mission giving. African Mission Healthcare buys the marginal operation on top of that sunk base, at African salary and supply costs, which is why its own sponsorship price is in the hundreds of dollars rather than the thousands. The second lever is equipment: 2025 investments in equipment and infrastructure “totaled $2.7 million” and the ministry expects them to make more than 2.8 million lifetime patient visits possible, which is capacity that keeps producing after the gift. The third is training — 558 health workers in 2025 — in a continent the ministry says has 24% of the world’s illness and 3% of its health workers.',
   },
   costModel: {
-    outcome: 'surgery',
-    outcomePlural: 'surgeries',
+    outcome: 'surgery sponsored through the SAFE programme',
+    outcomePlural: 'surgeries sponsored through the SAFE programme',
     spend: {
-      amount: 11660370,
+      amount: 1404561,
       basis: 'program-services',
       fiscalYear: '2025',
       sourceId: 'amh-990-25',
     },
     count: {
-      amount: 5942,
-      label: 'surgeries',
+      amount: 3294,
+      label: 'surgeries sponsored through SAFE',
       fiscalYear: '2025',
-      sourceId: 'amh-highlights-25',
+      sourceId: 'amh-990-25',
     },
-    attribution: 'all-program-spend',
+    attribution: 'single-program-line',
     caveat:
-      'This one over-attributes twice, and the second way is the important one. First, the same programme budget paid for 384,679 clinical visits, 3,606 cataract procedures, 1,663 deliveries, 558 trainees and $2.7 million of equipment that will still be working in ten years — none of that is a surgery. Second, and more fundamentally: African Mission Healthcare gave away 96% of this money as grants to hospitals that have their own budgets, their own donors and their own surgeons. Those 5,942 surgeries were not paid for by this $11.7 million alone. Read the figure as the cost of African Mission Healthcare’s whole programme divided by the surgeries it counted, which is a long way above what it pays per operation — the ministry’s own SAFE price is $430.',
+      'This is the one division on this site where a ministry’s advertised price and its own tax filing agree, and it is worth saying why we built it this way. Both halves come out of the same 2025 Form 990: Part III reports $1,404,561 for the SAFE surgical sponsorship programme, and Schedule O reports the 3,294 surgeries that programme sponsored. We deliberately do not divide the whole $11,660,370 programme budget by the 5,942 surgeries the highlights book leads with, which reads $1,962 and would print as 4.6 times the advertised price — because 96% of that budget is grants to hospitals with their own buildings, their own surgeons and their own donors, so the gap between the two figures is the hospital’s subsidy rather than an overstatement by the funder. Three things still make $426 a ceiling and not a price. SAFE’s $1,404,561 also sponsored 432 normal deliveries at about $30 each, charged here to the surgeries, which overstates by roughly 1%. Both numbers come from a Form 990 rather than from audited statements, which this ministry does not make downloadable. And a sponsorship payment is not the cost of an operation: the theatre, the sterilising equipment and the surgeon’s training were paid for by somebody else, often decades ago, and nothing published says what a surgery at these hospitals actually costs.',
     alternates: [
       {
-        label: 'surgical and corrective procedures reported on the Form 990',
+        label: 'all 5,942 surgeries counted at partner hospitals, against all programme spending',
+        count: 5942,
+        spend: 11660370,
+        note: 'About $1,962, and the pairing the ministry’s own highlights book invites. It charges every grant dollar to the surgeries alone, when the same budget also paid for 384,679 clinical visits, 3,606 cataract procedures, 1,663 deliveries, 558 trainees and $2.7 million of equipment still working in ten years — and it credits African Mission Healthcare with surgeries the hospitals largely paid for themselves.',
+      },
+      {
+        label:
+          'the 6,726 “surgical and corrective procedures” on the Form 990, against all programme spending',
         count: 6726,
-        note: 'The 990 says 6,726 “surgical and corrective procedures” for the same calendar year in which the highlights book says 5,942 surgeries and 3,606 cataract procedures. Neither document defines its unit and the two do not reconcile.',
+        spend: 11660370,
+        note: 'About $1,734. The 990 says 6,726 for the same calendar year in which the highlights book says 5,942 surgeries and 3,606 cataract procedures. Neither document defines its unit and the two do not reconcile.',
       },
       {
-        label: 'surgeries African Mission Healthcare directly sponsored through SAFE',
-        count: 3294,
-        note: 'The narrowest count, and the only one tied to a named programme line. SAFE itself spent $1,404,561 — dividing all programme spending by SAFE’s surgeries mixes a small numerator’s output with the whole budget.',
-      },
-      {
-        label: 'clinical visits',
+        label: 'clinical visits, against all programme spending',
         count: 384679,
+        spend: 11660370,
         note: 'The broadest unit published, at about $30 each. An outpatient visit and a laparotomy are not the same event and this denominator should never be compared with a cost per surgery.',
       },
     ],
@@ -144,12 +148,12 @@ export const africanMissionHealthcare: Cause = {
       note: 'Counts are specific and unusually varied: surgeries, cataract procedures, deliveries, C-sections, trainees, clinical visits. Marked down because the 990 and the highlights book give different numbers for the same year and neither defines its unit, and because every count is produced by a grantee hospital rather than by African Mission Healthcare.',
     },
     costEvidence: {
-      value: 2,
-      note: 'Rare and creditable: the ministry publishes an average cost per sponsored surgery, and $430 × 3,294 plus $30 × 432 comes to $1,429,380 against the $1,404,561 the 990 reports for the SAFE programme — agreement within 1.8%, which is the best internal check in this category. Marked down because that price covers one small programme line and is nowhere reconciled with the other $10.3 million.',
+      value: 3,
+      note: 'The best in the directory, and the only case where a ministry’s advertised price survives contact with its own filing: $430 × 3,294 surgeries plus $30 × 432 deliveries comes to $1,429,380 against the $1,404,561 the Form 990 reports for the SAFE programme, agreement within 1.8%, with the spending line and the surgery count printed in the same return. The limit is scope rather than quality — SAFE is $1.4 million of a $11.7 million programme, and the other $10.3 million of hospital support has no denominator anywhere.',
     },
   },
   notVerified: [
-    'What the $430 includes. It is a sponsorship payment to a hospital, not the cost of a surgery: the theatre, the surgeon’s salary, the building and the sterilising equipment were paid for by someone else, often decades ago. Dividing all programme spending by all surgeries gives about $1,962 — 4.6 times the advertised price — and the gap between those two numbers is the hospital’s own subsidy, not an inefficiency. Neither figure is the full cost of an operation, and nothing published states what that is.',
+    'What the $430 includes. It is a sponsorship payment to a hospital, not the cost of a surgery: the theatre, the surgeon’s salary, the building and the sterilising equipment were paid for by someone else, often decades ago. Dividing all programme spending by all surgeries gives about $1,962 instead — and the gap between those two numbers is the hospital’s own subsidy, not an inefficiency, which is why this page divides the SAFE line by the SAFE surgeries rather than setting the two against each other. Neither figure is the full cost of an operation, and nothing published states what that is.',
     'The Form 990 reports 6,726 “surgical and corrective procedures” in 2025. The highlights book for the same year reports 5,942 surgeries plus 3,606 cataract procedures. The 990 reports “approximately 474,841 direct patient visits”; the highlights book reports 384,679 clinical visits. Two documents from the same ministry about the same twelve months, and we cannot reconcile either pair.',
     'The 2025 audited financial statements are not downloadable. The financial accountability page links to a page for them, and that page contains no file. Everything financial here comes from the Form 990.',
     'Who counted the surgeries. African Mission Healthcare performs none of them; each number originates with a grantee hospital, and no independent verification of any partner’s count is published.',
@@ -161,7 +165,7 @@ export const africanMissionHealthcare: Cause = {
   notes: [
     '2025 totals from the Form 990: $13,288,857 of expenses, of which $11,660,370 programme, $627,876 management and general, $1,000,611 fundraising. Grants made up $11,209,194 of the programme figure.',
     'The administrative ratio is genuinely low, and the ministry explains why: “Your portion of our administrative and fundraising costs remains below 4% due to the generosity of donors who voluntarily underwrite these expenses.” The overhead is real and someone else is paying it. A donor comparing this ratio with other ministries is not comparing like with like.',
-    'For a comparison inside this directory: CURE International, which owns and staffs its own children’s hospitals, spends about $1,900 of programme money per surgery. African Mission Healthcare, which owns nothing, lands at about $1,962 on the same arithmetic. The similarity is a coincidence of two very different models and should not be read as either one being validated by the other.',
+    'For a comparison inside this directory: CURE International, which owns and staffs its own children’s hospitals, spends about $1,900 of programme money per surgery. African Mission Healthcare, which owns nothing, lands at about $1,962 if you charge its whole programme to surgeries the same way — the first of the alternates above, not the figure on this page. The similarity is a coincidence of two very different models and should not be read as either one being validated by the other.',
     'The 2025 figures come from a calendar-year Form 990 filed in 2026 and a highlights book published in 2026 covering 2025. Both are the ministry’s most recent.',
   ],
   siteUrl: 'https://africanmissionhealthcare.org/',

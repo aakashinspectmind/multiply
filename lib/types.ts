@@ -142,7 +142,25 @@ export type CostModel = {
   /** Required. The reason this number is an estimate and not a price. */
   caveat: string;
   /** Other defensible denominators, so the reader can see the range. */
-  alternates?: { label: string; count: number; note: string }[];
+  alternates?: {
+    label: string;
+    count: number;
+    note: string;
+    /**
+     * The numerator this denominator belongs with, when it is not the primary
+     * one.
+     *
+     * Needed because the primary figure is not always built on all program
+     * spending. African Mission Healthcare divides a single named grant line by
+     * the surgeries that line sponsored; its wider counts — every surgery at
+     * every partner hospital, every clinical visit — belong with the whole
+     * programme budget instead. Without this the page would silently divide the
+     * small numerator by the large count and print a figure eight times too
+     * cheap, in the "other defensible denominators" list, under a heading
+     * promising the reader the range.
+     */
+    spend?: number;
+  }[];
 };
 
 /** A cost-per-outcome figure the ministry itself advertises. */

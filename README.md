@@ -17,11 +17,15 @@ documents:
 
 - **57** publish a spending figure and an outcome count from the same year that can be divided into
   each other. **32** do not, and those pages say so instead of estimating.
-- **32** advertise a cost per outcome. Only **16** of those advertise it per the same unit we can
-  divide out — and of those 16, **6** advertise a figure at least twice as cheap as their own books
+- **32** advertise a cost per outcome. Only **17** of those advertise it per the same unit we can
+  divide out — and of those 17, **6** advertise a figure at least twice as cheap as their own books
   support. Christian Health Service Corps advertises "less than $100 per surgery"; its own programme
   budget over its own surgical count is $4,098.
-- The remaining 16 advertise a figure about something else entirely. Asia Harvest advertises $3.00
+- Exactly **one** advertised price survives contact with the ministry's own filing. African Mission
+  Healthcare publishes $430 per sponsored surgery; its Form 990 reports $1,404,561 for the programme
+  and 3,294 surgeries in the same return, which is $426. Nothing else in the directory reconciles
+  like that.
+- The remaining 15 advertise a figure about something else entirely. Asia Harvest advertises $3.00
   per Bible printed and we divide out $833 per evangelist supported for a year. Both are true and
   neither checks the other, so the site refuses to compare them. That refusal is a design decision
   with a flag behind it — see `sameUnitAsCostModel` in `lib/types.ts`.
@@ -34,15 +38,24 @@ offset, with a comment instructing it to keep the synthesised number rather than
 The harder problem is subtler, and it is ours rather than the ministries'. A ministry's headline count
 is almost always its softest — reach, not delivery — and the gift board picks the cheapest unit in
 each category, so a soft denominator does not sit quietly on one cause page. It heads the category.
-Five cost models have been rebuilt for this reason: Literacy & Evangelism International was $11.37
+Eight cost models have been rebuilt for this reason. Literacy & Evangelism International was $11.37
 per new reader taught by partner organisations whose budgets are nowhere in the numerator, and is now
-$813 per teacher it trained itself; AMG was $40.42 per undefined "student impacted" and is now $72 per
-child in a Bible Club it runs; Thirdmill was $37.73 per student a partner said was watching, and is
-now $1,341 per student enrolled in its own Institute; Medical Teams was $11.15 per person with
-_access_ to a clinic, and is now $703 per child actually treated for malnutrition; Every Home for
-Christ was $0.19 per doorstep and is now $7.68 per Bible. Every displaced headline is still on its
-page as a sourced alternate, so the range stays visible — and `npm run board` prints what the front
-page currently claims, which is the check that found all five.
+$813 per teacher it trained itself. AMG was $40.42 per undefined "student impacted" and is now $72 per
+child in a Bible Club it runs. Thirdmill was $37.73 per student a partner said was watching, and is
+now $1,341 per student enrolled in its own Institute. Medical Teams was $11.15 per person with
+_access_ to a clinic, and is now $703 per child actually treated for malnutrition. Also: Every Home
+for Christ, Bible League, Growing Hope Globally and African Mission Healthcare. Every displaced
+headline is still on its page as a sourced alternate, so the range stays visible — and
+`npm run board` prints what the front page currently claims, which is the check that found all eight.
+
+African Mission Healthcare is the one that ran the other way, and it is the reason the rule is about
+pairing rather than about ministries being optimistic. The page used to divide all $11.7 million of
+programme spending by all 5,942 surgeries, print $1,962, and flag the ministry's advertised $430 as
+"4.6× cheaper than its own books" — while its own `notVerified` list explained that the gap is the
+partner hospital's century-old subsidy and not an overstatement. Ninety-six percent of that budget is
+grants to hospitals with their own surgeons and their own donors. Dividing the named SAFE line by the
+SAFE surgeries instead gives $426, which agrees with the advertised price to within 1%. We were the
+ones getting it wrong.
 
 So the product is not a payment platform. It is the arithmetic, shown:
 
@@ -127,14 +140,26 @@ Adding or editing a cause: read `DATA.md` first.
 2. **Ask each ministry to define its outcome unit in writing.** "People engaged in God's Word",
    "students impacted", "active language engagement" and "people reached" are the load-bearing
    words, and not one of them is defined by the ministry that publishes it.
-3. **Type the denominator.** Rule 5 in `DATA.md` is currently enforced by reading `npm run board` and
-   thinking, which is how the five soft headlines got in. A required
+3. **Two known rule-5 violations with no fix available from the documents.** Food for the Hungry
+   publishes three counts — 1,754,292 "reached", 10,222,078 "served", 1,117,833 with "better access
+   to" — and not one is a thing delivered. Lifesong for Orphans has only two undated website
+   counters, and its own page says they cannot be combined. Neither page can be fixed by choosing a
+   different number already on it; both need the ministry to answer. Until then they are the two
+   cost models on the site that the site's own rule disallows.
+4. **A judgement call for a human: "active language engagement."** The Seed Company and Wycliffe USA
+   both divide by it, and it is undefined. It counts translation projects their money funds for a
+   year, which is the same shape as "evangelist-year" or "missionary-year" — units this directory
+   accepts throughout — so they were left alone. But the word "engagement" is the same word the rule
+   was written against, and the Bible-translation board line moves roughly 18× depending on the
+   answer ($49,316 per engagement, or $906,700 per first Scripture completed). Decide it on purpose.
+5. **Type the denominator.** Rule 5 in `DATA.md` is currently enforced by reading `npm run board` and
+   thinking, which is how the eight soft headlines got in. A required
    `denominator: 'delivered' | 'reach'` on `CostModel` would let a test refuse a `reach` unit as a
    primary figure outright. It means revisiting all 57 cost models, so it is a deliberate next step
    rather than a patch.
-4. **Get one number field-verified.** Nothing in the directory is above `documents-reviewed`, and
+6. **Get one number field-verified.** Nothing in the directory is above `documents-reviewed`, and
    nothing reaches `field-verified` from a desk.
-5. **Then, and only then, consider taking gifts.**
+7. **Then, and only then, consider taking gifts.**
 
 Deploy is a stock Next.js build (Vercel, Amplify, anywhere). Nothing to configure — there are no
 environment variables and no external services.

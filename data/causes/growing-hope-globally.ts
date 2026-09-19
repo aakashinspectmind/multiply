@@ -51,8 +51,8 @@ export const growingHopeGlobally: Cause = {
       'This is the cheap-technique case rather than the cheap-asset case. A farmer who learns to space his maize properly, compost, save seed or terrace a slope applies that knowledge again every season at no further cost, and teaches his neighbour at no cost at all — the spending buys a practice, and practices replicate for free. The training is delivered in Malawi, Zambia, Kenya, Bolivia, Bangladesh and Guatemala at local wage levels. And a share of the income arrives with almost no fundraising cost attached: 102 volunteer Growing Projects donate the land, the inputs and the labour, and hand over the value of a harvest.',
   },
   costModel: {
-    outcome: 'person reached',
-    outcomePlural: 'people reached',
+    outcome: 'agricultural development programme funded for a year',
+    outcomePlural: 'agricultural development programmes funded for a year',
     spend: {
       amount: 2652477,
       basis: 'program-services',
@@ -60,14 +60,21 @@ export const growingHopeGlobally: Cause = {
       sourceId: 'ghg-audit-26',
     },
     count: {
-      amount: 263350,
-      label: 'people helped to find lasting solutions to hunger',
+      amount: 51,
+      label: 'agricultural development programmes funded in 30 countries',
       fiscalYear: '2026',
       sourceId: 'ghg-ar-26',
     },
     attribution: 'all-program-spend',
     caveat:
-      'Read this one carefully, because it cuts both ways. As an upper bound on what Growing Hope Globally itself spent per person it is loose in the usual way: the same $2.65 million includes $454,458 spent in the United States running the Growing Project network, which reached nobody overseas. But as the cost of the programmes those people received it is a floor, not a ceiling — the ministry’s own sentence says its projects “joined together with other funders” to support the 51 programmes, so somebody else paid a share of every one of them and this figure is only Growing Hope Globally’s contribution. It is the one cause on this site where the real cost per person is higher than our arithmetic, not lower, and we cannot say by how much.',
+      'We do not divide by the number Growing Hope Globally leads with. Its headline is 263,350 people helped to find lasting solutions to hunger, which against this budget would read $10.07 — but nothing defines what being helped consists of, the count arrives from grantees the ministry does not name, and its own sentence says the Growing Projects “joined together with other funders” to support the 51 programmes, so somebody else paid a share of every person in it. What this ministry’s money demonstrably bought is a year of those 51 programmes, so that is the denominator, and it cuts both ways too. As an upper bound it is loose in the usual way: the same $2.65 million includes $454,458 spent in the United States running the Growing Project network, which reached nobody overseas. But as the cost of a programme it is a floor, not a ceiling — the co-funding share is nowhere disclosed, so read $52,009 as Growing Hope Globally’s average contribution to one programme rather than what a programme costs to run. It is the one cause on this site where the real cost is higher than our arithmetic, not lower, and we cannot say by how much.',
+    alternates: [
+      {
+        label: 'people helped to find lasting solutions to hunger (263,350)',
+        count: 263350,
+        note: 'About $10.07, and the figure the ministry leads with. Undefined, reported by grantees it does not name, and part-paid by other funders, so it is the floor of the range rather than a price.',
+      },
+    ],
   },
   ministryClaims: [
     {
@@ -115,11 +122,11 @@ export const growingHopeGlobally: Cause = {
     },
     costEvidence: {
       value: 1,
-      note: 'The numerator is audited and exact. The denominator is an undefined unit that other funders also paid for, which makes the quotient hard to interpret in either direction, and the ministry publishes no cost per person of its own. Both halves exist, which is why there is a cost model at all, but this is the weakest arithmetic on any page we built.',
+      note: 'The numerator is audited and exact. The denominator is at least countable now that it is programmes rather than an undefined “people helped”, but other funders paid a share of those programmes too, which makes the quotient hard to interpret in either direction, and the ministry publishes no cost per programme or per person of its own. Both halves exist, which is why there is a cost model at all, but this is the weakest arithmetic on any page we built.',
     },
   },
   notVerified: [
-    'How much of each programme Growing Hope Globally actually paid for. Its own report says the Growing Projects “joined together with other funders”, and nothing discloses the co-funding share. Without it, $10.07 a person is a number whose meaning we cannot pin down — it is the ministry’s slice of a bill, not the bill.',
+    'How much of each programme Growing Hope Globally actually paid for. Its own report says the Growing Projects “joined together with other funders”, and nothing discloses the co-funding share. Without it, neither $52,009 a programme nor $10.07 a person is a number whose meaning we can pin down — each is the ministry’s slice of a bill, not the bill.',
     'What “helping 263,350 people find lasting solutions to hunger” means. No definition, no unit, no baseline, no breakdown across the 51 programmes or 30 countries, and no statement of whether a household is counted once or per member.',
     'Who the grantees are. $1,998,855 of grants left the organisation in one year and no recipient is named in the audit or the annual report, so we cannot tell whether the implementer is an in-country organisation, a US denominational relief agency, or a mix.',
     'Whether any of the 263,350 people were still better off a year later. For a ministry whose stated product is “lasting solutions”, no durability, follow-up or graduation evidence is published — the same gap that makes “people reached with water” a weak number elsewhere on this site.',
@@ -129,7 +136,7 @@ export const growingHopeGlobally: Cause = {
     'What share of the Growing Project income is the value of donated land, seed, fuel and labour rather than cash. The model’s appeal rests on volunteer farmers absorbing real costs, and none of that in-kind value is quantified in what we read.',
   ],
   notes: [
-    'The directory has no category for food and farming, so this cause sits under health. That is an imperfect fit and worth saying plainly: the work is agricultural development against hunger, and hunger is the health problem it addresses.',
+    'The work is agricultural training rather than food distribution, so it sits under food and farming alongside the feeding ministries; the unit is not comparable with a meal. That is an imperfect fit and worth saying plainly: the work is agricultural development against hunger, and hunger is the health problem it addresses.',
     'Growing Hope Globally is on this site substantially because of a sentence in its own founding story, which is the most honest thing any ministry in this batch says about aid dependency: two Ohio farmers started by shipping corn from their fields to developing countries, and “They quickly learned shipping was too costly – nearly 15 times the cost of the grain itself – and would wreak havoc on local farmers and markets.” A ministry that abandoned its founding method because it would damage the people it meant to help has already answered the hardest question a donor can ask it. Read it alongside Feed My Starving Children, which does ship food, and decide what you think.',
     'Growing Hope Globally reports working in 30 countries: Bangladesh, Bolivia, Burkina Faso, Burundi, Cambodia, Cameroon, Colombia, Guatemala, Haiti, Honduras, India, Kenya, Lebanon, Liberia, Malawi, Mexico, Myanmar, Nepal, Nicaragua, Palestine, Paraguay, Peru, Rwanda, Senegal, Sierra Leone, Tanzania, Timor-Leste, Uganda, West Africa and Zambia. We list six of them on this page so the income comparison stays readable; the spending is spread across all of them, and the cost per person is not specific to the six.',
     'Overseas programme spending was $2,198,019 of the $2,652,477 programme total, and $1,998,855 of that was grants. This is a grant-maker with a volunteer fundraising network attached, not a field operation.',

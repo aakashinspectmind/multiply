@@ -176,8 +176,8 @@ export function ImpactSection({ cause, amount }: { cause: Cause; amount: number 
             {model.alternates.map((alternate) => (
               <li key={alternate.label} className="text-base text-gray-800">
                 <span className="font-medium">
-                  {formatMoney(model.spend.amount / alternate.count)} each, dividing by{' '}
-                  {alternate.label}
+                  {formatMoney((alternate.spend ?? model.spend.amount) / alternate.count)} each,
+                  dividing by {alternate.label}
                 </span>{' '}
                 — {alternate.note}
               </li>

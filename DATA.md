@@ -14,21 +14,32 @@
    are the most valuable part of the page.
 4. **`costModel` requires a `caveat`.** Say what the division over-attributes. Every cost per
    outcome built from all program spending is an upper bound, and the page must say so.
-5. **Only set `sameUnitAsCostModel` when the units really are the same.** The site sets an
+5. **The denominator must be something the ministry's own money delivered.** Not a reach estimate, not
+   a number produced by partners whose budgets are not in the numerator. This is the rule that is
+   easiest to break by accident, because a ministry's headline count is usually its softest one and
+   the front-page board picks the cheapest unit per category — so a soft denominator does not sit
+   quietly on one page, it heads the category. Literacy & Evangelism International reports 71,112 new
+   readers taught by seventeen autonomous organisations and 400-plus partners; we divide by the 995
+   teachers it trained itself. AMG reports 255,078 "students impacted" with no definition; we divide
+   by the 143,000 in Bible Clubs it runs. Every Home for Christ reports 261 million gospel
+   presentations; we divide by 6.3 million Bibles. In each case put the headline count in
+   `alternates` with its own figure, so the range stays visible and nothing is hidden — and say in
+   the `caveat`, in those words, that we do not divide by the number the ministry leads with.
+6. **Only set `sameUnitAsCostModel` when the units really are the same.** The site sets an
    advertised figure against our own division only when that flag is present, because Asia Harvest
    advertises $3.00 per Bible printed while we divide out $833 per evangelist supported for a year —
    both true, neither a check on the other. Without the flag the page prints the advertised figure
    and says plainly that the two do not check each other. Leaving it off costs a comparison; setting
    it wrongly accuses a ministry of an overstatement it never made.
-6. **Verification level is earned, not assigned.**
+7. **Verification level is earned, not assigned.**
    - `self-reported` — you read the ministry's pages. No division shown.
    - `documents-reviewed` — you pulled spending and counts out of an annual report, audited
      statement or Form 990 yourself.
    - `field-verified` — someone independent of the ministry counted a sample of the outcome. No
      cause has reached this. Do not use it without naming who verified and how.
-7. **Scores are a desk review.** 0–3 per dimension with a note explaining the number. If you did not
+8. **Scores are a desk review.** 0–3 per dimension with a note explaining the number. If you did not
    look, use `null`, not `0`. `0` is a finding; `null` is an absence.
-8. **`retrieved` is the date you actually opened the document**, `YYYY-MM-DD`.
+9. **`retrieved` is the date you actually opened the document**, `YYYY-MM-DD`.
 
 ## Adding one
 

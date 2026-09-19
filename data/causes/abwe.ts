@@ -11,9 +11,7 @@ export const abwe: Cause = {
   countries: ['Global', 'Liberia', 'Togo', 'Bangladesh', 'Papua New Guinea', 'Romania'],
   whatTheyDo:
     'ABWE recruits, screens, trains and sends career missionaries from Baptist churches in the United States and Canada, and it funds the institutions those missionaries work in — Hôpital Baptiste Biblique and the Hospital of Hope in Togo, Memorial Christian Hospital in Bangladesh, clinics and church-planting projects in Liberia, Papua New Guinea and South Asia, and a ministry centre in Bucharest. In the year to 31 December 2025 it spent $55,369,791 on programme activities, of which $30,907,098 was wages and benefits and $9,234,373 was grants, and it reported 923 missionaries reaching 92 countries.',
-  accreditations: [
-    { label: 'ECFA accredited', sourceId: 'abwe-stewardship' },
-  ],
+  accreditations: [{ label: 'ECFA accredited', sourceId: 'abwe-stewardship' }],
   verification: 'documents-reviewed',
   biblicalAlignment: {
     mandate:
@@ -21,18 +19,15 @@ export const abwe: Cause = {
     scriptures: [
       {
         ref: 'Matthew 28:19–20',
-        text:
-          'Go therefore and make disciples of all nations, baptising them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.',
+        text: 'Go therefore and make disciples of all nations, baptising them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.',
       },
       {
         ref: 'Acts 13:2–3',
-        text:
-          'While they were worshipping the Lord and fasting, the Holy Spirit said, “Set apart for me Barnabas and Saul for the work to which I have called them.” Then after fasting and praying they laid their hands on them and sent them off.',
+        text: 'While they were worshipping the Lord and fasting, the Holy Spirit said, “Set apart for me Barnabas and Saul for the work to which I have called them.” Then after fasting and praying they laid their hands on them and sent them off.',
       },
       {
         ref: '3 John 5–8',
-        text:
-          'Beloved, it is a faithful thing you do in all your efforts for these brothers, strangers as they are, who testified to your love before the church. You will do well to send them on their journey in a manner worthy of God. For they have gone out for the sake of the name, accepting nothing from the Gentiles. Therefore we ought to support people like these, that we may be fellow workers for the truth.',
+        text: 'Beloved, it is a faithful thing you do in all your efforts for these brothers, strangers as they are, who testified to your love before the church. You will do well to send them on their journey in a manner worthy of God. For they have gone out for the sake of the name, accepting nothing from the Gentiles. Therefore we ought to support people like these, that we may be fellow workers for the truth.',
       },
     ],
     doctrine: { label: 'Statement of Faith', sourceId: 'abwe-faith' },
@@ -48,7 +43,7 @@ export const abwe: Cause = {
   roi: {
     levers: ['durable-asset', 'multiplication'],
     reason:
-      'Read the cost-base table on this page carefully, because it does not describe the missionaries. Liberia, Togo, Bangladesh and Papua New Guinea are where ABWE\'s hospitals, clinics and church-planting projects are, and a dollar genuinely does go further there — that is the durable-asset lever, and $9,234,373 of programme grants and eight named featured projects are what it buys. The 923 missionaries are a different matter: they are supported American and Canadian families, and they cost what American and Canadian families cost. There is no local cost base underneath them and we do not claim one. The second lever ABWE argues for is multiplication — it reports 17 churches planting churches for the first time this year, which is the right thing to count and far too small a number to carry a $55 million programme budget on its own.',
+      "Read the cost-base table on this page carefully, because it does not describe the missionaries. Liberia, Togo, Bangladesh and Papua New Guinea are where ABWE's hospitals, clinics and church-planting projects are, and a dollar genuinely does go further there — that is the durable-asset lever, and $9,234,373 of programme grants and eight named featured projects are what it buys. The 923 missionaries are a different matter: they are supported American and Canadian families, and they cost what American and Canadian families cost. There is no local cost base underneath them and we do not claim one. The second lever ABWE argues for is multiplication — it reports 17 churches planting churches for the first time this year, which is the right thing to count and far too small a number to carry a $55 million programme budget on its own.",
   },
   costModel: {
     outcome: 'missionary-year on the field',
@@ -67,19 +62,17 @@ export const abwe: Cause = {
     },
     attribution: 'all-program-spend',
     caveat:
-      'An upper bound on the cost of a missionary, and a poor description of what the money bought. It over-attributes in three ways: $9,234,373 of the programme total is grants to other bodies, not missionary support; $3,206,836 is Global Neighbors, LLC, a consolidated affiliate whose work is not described in the annual report; and the hospitals, clinics, translation projects and training that delivered 148,137 healthcare visits and 2,667 students in training are paid for out of the same line and are largely staffed by nationals ABWE does not count. It also sits against two different worker counts in the same annual report — 923 in the highlights, approximately 1,000 in the president\'s letter. Read this as what it costs ABWE to run a sending organisation for a year divided by the missionaries it had out, not as one family\'s support budget and not as the price of adding another.',
+      "An upper bound on the cost of a missionary, and a poor description of what the money bought. It over-attributes in three ways: $9,234,373 of the programme total is grants to other bodies, not missionary support; $3,206,836 is Global Neighbors, LLC, a consolidated affiliate whose work is not described in the annual report; and the hospitals, clinics, translation projects and training that delivered 148,137 healthcare visits and 2,667 students in training are paid for out of the same line and are largely staffed by nationals ABWE does not count. It also sits against two different worker counts in the same annual report — 923 in the highlights, approximately 1,000 in the president's letter. Read this as what it costs ABWE to run a sending organisation for a year divided by the missionaries it had out, not as one family's support budget and not as the price of adding another.",
     alternates: [
       {
-        label: 'workers, on the president\'s count',
+        label: "workers, on the president's count",
         count: 1000,
-        note:
-          '$55,369.79. The same annual report describes "approximately 1,000 workers touching more than 90 nations in 2025" a page away from the 923 figure. Neither number is defined, and the difference between them is 8% of the denominator.',
+        note: '$55,369.79. The same annual report describes "approximately 1,000 workers touching more than 90 nations in 2025" a page away from the 923 figure. Neither number is defined, and the difference between them is 8% of the denominator.',
       },
       {
         label: 'missionaries, against every dollar ABWE spent',
         count: 923,
-        note:
-          'Dividing total expenses of $67,555,316 rather than programme spending gives $73,191.02 per missionary-year. That is the fully loaded figure including the 10.0% management and 8.0% fundraising ABWE reports, and it is the honest upper bound.',
+        note: 'Dividing total expenses of $67,555,316 rather than programme spending gives $73,191.02 per missionary-year. That is the fully loaded figure including the 10.0% management and 8.0% fundraising ABWE reports, and it is the honest upper bound.',
       },
     ],
   },
@@ -112,33 +105,28 @@ export const abwe: Cause = {
   scores: {
     gospelCentrality: {
       value: 3,
-      note:
-        'A long doctrinal statement that every serving worker signs, committed in its own words to "historic, creedal orthodoxy, conservative Protestantism, historic evangelicalism, and Baptist identity", with a stated distinction between first- and second-order doctrine. The whole organisation exists to preach and plant churches.',
+      note: 'A long doctrinal statement that every serving worker signs, committed in its own words to "historic, creedal orthodoxy, conservative Protestantism, historic evangelicalism, and Baptist identity", with a stated distinction between first- and second-order doctrine. The whole organisation exists to preach and plant churches.',
     },
     localLeadership: {
       value: 1,
-      note:
-        'The field force ABWE funds and counts is 923 sent North Americans, and $30,907,098 of programme spending is wages and benefits. The stewardship commitment promises national leadership and ownership from the inception of each church-planting programme, which earns real credit, but no count of national leaders, national staff or handed-over churches is published to check it against. The 2,667 students in training and 148,137 healthcare visits are almost certainly delivered mostly by nationals; their number is not published.',
+      note: 'The field force ABWE funds and counts is 923 sent North Americans, and $30,907,098 of programme spending is wages and benefits. The stewardship commitment promises national leadership and ownership from the inception of each church-planting programme, which earns real credit, but no count of national leaders, national staff or handed-over churches is published to check it against. The 2,667 students in training and 148,137 healthcare visits are almost certainly delivered mostly by nationals; their number is not published.',
     },
     financialTransparency: {
       value: 2,
-      note:
-        'A full consolidated audit is posted on ABWE\'s own site with an eleven-line functional expense table, both years side by side, and a consolidating schedule showing each of the three entities. Held at 2 because no Form 990 exists — the IRS record for the EIN carries no return data at all — so there is no public executive compensation, no grantee list for $9,234,373 of programme grants, and no Schedule F.',
+      note: "A full consolidated audit is posted on ABWE's own site with an eleven-line functional expense table, both years side by side, and a consolidating schedule showing each of the three entities. Held at 2 because no Form 990 exists — the IRS record for the EIN carries no return data at all — so there is no public executive compensation, no grantee list for $9,234,373 of programme grants, and no Schedule F.",
     },
     outcomeEvidence: {
       value: 2,
-      note:
-        'ABWE publishes more countable delivery than most sending agencies: 148,137 people given healthcare, 2,667 students in ongoing training, 90 translation projects underway or completed, 17 churches planting churches for the first time. Held at 2 because the headline figures are baptisms and church plants, which we do not count, because "initiated, strengthened, or established" collapses three different things into 432, and because the numbers are set in report graphics with no definitions attached.',
+      note: 'ABWE publishes more countable delivery than most sending agencies: 148,137 people given healthcare, 2,667 students in ongoing training, 90 translation projects underway or completed, 17 churches planting churches for the first time. Held at 2 because the headline figures are baptisms and church plants, which we do not count, because "initiated, strengthened, or established" collapses three different things into 432, and because the numbers are set in report graphics with no definitions attached.',
     },
     costEvidence: {
       value: 2,
-      note:
-        'Both halves are published by ABWE for the same calendar year — spending in an audit, the count in an annual report — so the division is legitimate. Held at 2 because the denominator is a headcount of staff rather than anything delivered, and because the same report gives two different headcounts.',
+      note: 'Both halves are published by ABWE for the same calendar year — spending in an audit, the count in an annual report — so the division is legitimate. Held at 2 because the denominator is a headcount of staff rather than anything delivered, and because the same report gives two different headcounts.',
     },
   },
   notVerified: [
     'What an undesignated gift funds. ABWE\'s own donor breakdown is Missionaries 78.1%, Projects 20.5% and the Global Gospel Fund 1.4% — so roughly 98.6% of support arrives pointed at a person or a project chosen by the donor. The audit states that designated gifts are nonetheless "under the full control of ABWE" and are accounted for as board designated. What we could not establish is what share of the $55,369,791 ABWE actually directed itself, or what a gift to the Global Gospel Fund buys that a designated gift does not. This is the single most important thing we could not verify.',
-    'Which worker count is right. 923 with 92 countries in the highlights, approximately 1,000 with more than 90 nations in the president\'s letter, same report. Neither says whether spouses, children, short-term workers or the staff of the consolidated affiliates are inside the number.',
+    "Which worker count is right. 923 with 92 countries in the highlights, approximately 1,000 with more than 90 nations in the president's letter, same report. Neither says whether spouses, children, short-term workers or the staff of the consolidated affiliates are inside the number.",
     'Who receives the $9,234,373 of programme grants — 16.7% of programme spending. With no Form 990 there is no Schedule F, and the audit names no recipient or region.',
     'What the "experience" behind the child safety page was, and whether an independent review of it was ever published. We found a policy and a response team, and no report.',
     'ABWE holds $32,288,419 in funds held in missionary accounts, a liability on the balance sheet — money already given that has not yet been spent. Nothing published says how long a gift typically sits there before reaching the field.',
@@ -173,8 +161,7 @@ export const abwe: Cause = {
       publisher: 'ABWE',
       documentType: 'ministry-website',
       retrieved: '2026-09-19',
-      note:
-        'States that everyone serving with ABWE voluntarily signs the doctrinal statement, and distinguishes first-order from second-order doctrine.',
+      note: 'States that everyone serving with ABWE voluntarily signs the doctrinal statement, and distinguishes first-order from second-order doctrine.',
     },
     {
       id: 'abwe-stewardship',
@@ -183,8 +170,7 @@ export const abwe: Cause = {
       publisher: 'ABWE',
       documentType: 'ministry-website',
       retrieved: '2026-09-19',
-      note:
-        'Source of the ECFA accreditation and of the seventeen-point stewardship commitment, including the national leadership and ownership clause quoted above.',
+      note: 'Source of the ECFA accreditation and of the seventeen-point stewardship commitment, including the national leadership and ownership clause quoted above.',
     },
     {
       id: 'abwe-financials',
@@ -203,8 +189,7 @@ export const abwe: Cause = {
       documentType: 'audited-financials',
       retrieved: '2026-09-19',
       fiscalYear: '2025',
-      note:
-        'Consolidates ABWE Inc, ABWE Foundation, LLC and Global Neighbors, LLC. Source of the functional expense table, the $32,288,419 held in missionary accounts, the contributions-control note, and the consolidating schedule.',
+      note: 'Consolidates ABWE Inc, ABWE Foundation, LLC and Global Neighbors, LLC. Source of the functional expense table, the $32,288,419 held in missionary accounts, the contributions-control note, and the consolidating schedule.',
     },
     {
       id: 'abwe-ar-25',
@@ -214,8 +199,7 @@ export const abwe: Cause = {
       documentType: 'annual-report',
       retrieved: '2026-09-19',
       fiscalYear: '2025',
-      note:
-        'The ministry highlights, funding tables and donor percentages are set as designed graphics rather than printed text, so we read the rendered pages to get them. Source of 923 missionaries in 92 countries, the president\'s approximately 1,000 workers, 148,137 healthcare visits, 2,667 students, 90 translation projects, 17 churches planting churches, 709 baptisms, 432 church plants, and the eight featured project totals.',
+      note: "The ministry highlights, funding tables and donor percentages are set as designed graphics rather than printed text, so we read the rendered pages to get them. Source of 923 missionaries in 92 countries, the president's approximately 1,000 workers, 148,137 healthcare visits, 2,667 students, 90 translation projects, 17 churches planting churches, 709 baptisms, 432 church plants, and the eight featured project totals.",
     },
     {
       id: 'abwe-childsafety',
@@ -224,8 +208,7 @@ export const abwe: Cause = {
       publisher: 'ABWE',
       documentType: 'ministry-website',
       retrieved: '2026-09-19',
-      note:
-        'Describes a six-member Child Safety Response Team and links to ABWE\'s child protection policy. It refers to "experience" without naming it and publishes no independent investigation or review.',
+      note: 'Describes a six-member Child Safety Response Team and links to ABWE\'s child protection policy. It refers to "experience" without naming it and publishes no independent investigation or review.',
     },
     {
       id: 'abwe-propublica',
@@ -234,8 +217,7 @@ export const abwe: Cause = {
       publisher: 'ProPublica Nonprofit Explorer',
       documentType: 'third-party',
       retrieved: '2026-09-19',
-      note:
-        'Confirms the EIN and the legal name. The record contains no filings with data and no filings without data — ABWE files no public Form 990, which is normal for an agency treated as a religious organisation and is why the audit is the only document on this page.',
+      note: 'Confirms the EIN and the legal name. The record contains no filings with data and no filings without data — ABWE files no public Form 990, which is normal for an agency treated as a religious organisation and is why the audit is the only document on this page.',
     },
   ],
 };

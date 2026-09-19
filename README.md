@@ -12,10 +12,11 @@ Live pages: the directory and gift board (`/`), one page per cause (`/causes/[sl
 ## Why it is built this way
 
 "See what $20 does" cannot be sourced from ministry marketing. Run `npm run stats` for the current
-count; as of 19 September 2026, of 83 ministries researched:
+count; as of 19 September 2026, of 89 ministries researched across 125 countries, on 599 cited
+documents:
 
-- **54** publish a spending figure and an outcome count from the same year that can be divided into
-  each other. **29** do not, and those pages say so instead of estimating.
+- **57** publish a spending figure and an outcome count from the same year that can be divided into
+  each other. **32** do not, and those pages say so instead of estimating.
 - **32** advertise a cost per outcome. Only **16** of those advertise it per the same unit we can
   divide out — and of those 16, **6** advertise a figure at least twice as cheap as their own books
   support. Christian Health Service Corps advertises "less than $100 per surgery"; its own programme
@@ -29,6 +30,19 @@ Some of what turns up is worse than optimistic. Shepherds Global Classroom's onl
 measure is a download counter on its homepage, and the page ships a JavaScript function named
 `fakeSeed()` that synthesises the opening value from the hours elapsed since 1 January plus a random
 offset, with a comment instructing it to keep the synthesised number rather than display a zero.
+
+The harder problem is subtler, and it is ours rather than the ministries'. A ministry's headline count
+is almost always its softest — reach, not delivery — and the gift board picks the cheapest unit in
+each category, so a soft denominator does not sit quietly on one cause page. It heads the category.
+Five cost models have been rebuilt for this reason: Literacy & Evangelism International was $11.37
+per new reader taught by partner organisations whose budgets are nowhere in the numerator, and is now
+$813 per teacher it trained itself; AMG was $40.42 per undefined "student impacted" and is now $72 per
+child in a Bible Club it runs; Thirdmill was $37.73 per student a partner said was watching, and is
+now $1,341 per student enrolled in its own Institute; Medical Teams was $11.15 per person with
+_access_ to a clinic, and is now $703 per child actually treated for malnutrition; Every Home for
+Christ was $0.19 per doorstep and is now $7.68 per Bible. Every displaced headline is still on its
+page as a sourced alternate, so the range stays visible — and `npm run board` prints what the front
+page currently claims, which is the check that found all five.
 
 So the product is not a payment platform. It is the arithmetic, shown:
 
@@ -60,6 +74,7 @@ npm test                         # arithmetic + directory integrity
 npm run check:sources            # fetch every source, donate and site URL (serial per host)
 npm run check:sources:offline    # same integrity rules, no network
 npm run stats                    # what the directory holds, and where claims and books disagree
+npm run board                    # what the front page claims: cheapest unit per kind of work
 npm run build
 ```
 
@@ -112,9 +127,14 @@ Adding or editing a cause: read `DATA.md` first.
 2. **Ask each ministry to define its outcome unit in writing.** "People engaged in God's Word",
    "students impacted", "active language engagement" and "people reached" are the load-bearing
    words, and not one of them is defined by the ministry that publishes it.
-3. **Get one number field-verified.** Nothing in the directory is above `documents-reviewed`, and
+3. **Type the denominator.** Rule 5 in `DATA.md` is currently enforced by reading `npm run board` and
+   thinking, which is how the five soft headlines got in. A required
+   `denominator: 'delivered' | 'reach'` on `CostModel` would let a test refuse a `reach` unit as a
+   primary figure outright. It means revisiting all 57 cost models, so it is a deliberate next step
+   rather than a patch.
+4. **Get one number field-verified.** Nothing in the directory is above `documents-reviewed`, and
    nothing reaches `field-verified` from a desk.
-4. **Then, and only then, consider taking gifts.**
+5. **Then, and only then, consider taking gifts.**
 
 Deploy is a stock Next.js build (Vercel, Amplify, anywhere). Nothing to configure — there are no
 environment variables and no external services.

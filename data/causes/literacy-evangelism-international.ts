@@ -67,8 +67,8 @@ export const literacyEvangelismInternational: Cause = {
       'The teaching is free. Classes are run by volunteer tutors in local churches, so the largest cost of education anywhere — a teacher’s time — is donated rather than purchased, and LEI pays for the primer and the training rather than the class. The training compounds: 995 teachers trained in 2025 go on teaching for years after the workshop ends. Distribution is close to costless, because 526 primers in 151 languages sit on the website as free PDFs and were pulled from 152 countries in 2025 without LEI shipping anything. And the channel already exists: seventeen autonomous national organisations and more than 400 partner bodies run the classes inside churches that are already gathered.',
   },
   costModel: {
-    outcome: 'new Bible reader reported by LEI and its partners',
-    outcomePlural: 'new Bible readers reported by LEI and its partners',
+    outcome: 'teacher trained to run a literacy class',
+    outcomePlural: 'teachers trained to run literacy classes',
     spend: {
       amount: 808483,
       basis: 'total-expenses',
@@ -76,19 +76,19 @@ export const literacyEvangelismInternational: Cause = {
       sourceId: 'lei-annual-2026',
     },
     count: {
-      amount: 71112,
-      label: 'new Bible readers',
+      amount: 995,
+      label: 'teachers trained',
       fiscalYear: '2025',
       sourceId: 'lei-annual-2026',
     },
     attribution: 'all-program-spend',
     caveat:
-      'Distorted in both directions, and the second direction is the larger. Upwards: the numerator is everything LEI-US spent, including primer development for languages that will not produce a reader for years, English-as-a-second-language work in the United States, a refugee programme, publicity and management. Downwards, and more importantly: the 71,112 readers were taught by seventeen autonomous national organisations and more than 400 partner bodies with their own budgets, their own classrooms and their own volunteer tutors, none of which appear in this numerator and none of which LEI consolidates or publishes. Nobody anywhere publishes what one new reader actually costs. This figure is the cost of LEI-US’s share of the work, not the cost of teaching a person to read. The financials are the ministry’s own and explicitly unaudited, "new Bible reader" is nowhere defined, and LEI states its own statistics "represent a fraction" of the true total.',
+      'We do not divide by the number LEI leads with. Its headline is 71,112 new Bible readers, which against this budget would read $11.37 a reader — but those readers were taught by seventeen autonomous national organisations and more than 400 partner bodies with their own budgets, their own classrooms and their own volunteer tutors, none of which appear in this numerator and none of which LEI consolidates or publishes. Dividing LEI-US’s spending by other people’s output is not a cost per reader; nobody anywhere publishes what one new reader actually costs. A trained teacher is the unit LEI itself performs and pays for, so that is the denominator here, and it is an upper bound: the same $808,483 also developed primers in languages that will not produce a reader for years, ran English-as-a-second-language and refugee work in the United States, and paid for publicity and management. It also understates the teacher, who keeps running classes long after the workshop. The financials are the ministry’s own and explicitly unaudited, "new Bible reader" is nowhere defined, and LEI states its own statistics "represent a fraction" of the true total.',
     alternates: [
       {
-        label: 'teachers trained',
-        count: 995,
-        note: 'About $813 per teacher trained, which is the unit of work LEI actually performs and pays for. It also multiplies — a trained tutor keeps teaching classes after the workshop — so this overstates the cost of the last reader and understates the value of the first teacher.',
+        label: 'new Bible readers reported by LEI and its partners (71,112)',
+        count: 71112,
+        note: 'About $11.37, and the figure the ministry leads with. The floor of the range rather than a price, because the partner organisations that taught these readers carry costs that are nowhere in the numerator.',
       },
     ],
   },

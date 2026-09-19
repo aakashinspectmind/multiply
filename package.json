@@ -13,6 +13,7 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test lib/*.test.ts",
     "stats": "tsx scripts/stats.ts",
+    "board": "tsx scripts/board-audit.ts",
     "causes:index": "node scripts/build-causes-index.mjs",
     "cost-base": "node scripts/build-cost-base.mjs",
     "check:sources": "tsx scripts/check-sources.mjs",

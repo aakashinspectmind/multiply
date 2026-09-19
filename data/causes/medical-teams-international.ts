@@ -51,8 +51,8 @@ export const medicalTeamsInternational: Cause = {
       'The 2025 report names a country director for each programme — Ethiopia, Sudan, Tanzania, Uganda and Ukraine — rather than a regional expatriate team, and the stated model is “restoring health facilities and equipping local health workers so quality care continues long after the crisis has passed”. That is the structural saving in relief: not flying in a parallel health system, but repairing the one that is already there and paying the people who already live there to run it. In relief, though, cost per outcome is not really the right question. When a cholera outbreak starts in a refugee settlement, what matters is whether anyone is there in the first week; the unit price is a second-order question, and we have not pretended otherwise by dressing the division below up as a price.',
   },
   costModel: {
-    outcome: 'person given access to life-saving care',
-    outcomePlural: 'people given access to life-saving care',
+    outcome: 'child under five treated for acute malnutrition',
+    outcomePlural: 'children under five treated for acute malnutrition',
     spend: {
       amount: 70267948,
       basis: 'program-services',
@@ -60,24 +60,24 @@ export const medicalTeamsInternational: Cause = {
       sourceId: 'mti-annual-25',
     },
     count: {
-      amount: 6303942,
-      label: 'people with access to life-saving care',
+      amount: 100000,
+      label: 'children under five treated for moderate or severe acute malnutrition',
       fiscalYear: '2025',
       sourceId: 'mti-annual-25',
     },
     attribution: 'all-program-spend',
     caveat:
-      'An upper bound built on the loosest unit in this directory, and both halves need reading carefully. The numerator is every programme dollar the 2025 report publishes — international programmes $66,217,208 plus domestic programmes $4,050,740 — charged to one count, so refugee primary care, maternal and newborn services, malnutrition treatment, outbreak response, health-facility rehabilitation and a mobile dental programme in Oregon all sit on top of the same denominator. The denominator is “access to life-saving care”, which is not treatment received: a person inside a clinic’s catchment area has access whether or not they ever walked in. Medical Teams’ own narrower figures for the same year are far smaller — someone treated “every 12 seconds”, and “100,000+ children” under five treated for acute malnutrition. And the whole division comes from an unaudited annual report: no FY2025 audit is published, and the previous year’s report was contradicted by its own audit. Treat this as an order of magnitude, not a price.',
+      'We do not divide by the number Medical Teams leads with. Its headline is 6,303,942 people “with access to life-saving care”, which against this budget would read $11.15 — but access is not treatment received: a person inside a clinic’s catchment area has access whether or not they ever walked in, and it is the loosest unit in this directory. The narrowest count in the same report is a child actually treated for acute malnutrition, 93% of whom are reported as recovering, so that is the denominator here — and the resulting figure is a very high ceiling rather than a price, in three separate ways. The numerator is every programme dollar the report publishes, international $66,217,208 plus domestic $4,050,740, so refugee primary care, maternal and newborn services, outbreak response, health-facility rehabilitation and a mobile dental programme in Oregon are all charged to the malnutrition count; malnutrition treatment is one service among many and nothing published costs it on its own. The count is printed as “100,000+”, a floor rather than a figure, which pushes the division further up again. And the whole thing comes from an unaudited annual report: no FY2025 audit is published, and the previous year’s report was contradicted by its own audit. Read it as an order of magnitude with a known direction of error.',
     alternates: [
+      {
+        label: 'people with access to life-saving care (6,303,942)',
+        count: 6303942,
+        note: 'About $11.15, and the figure the ministry leads with. It counts reach rather than care delivered, so it is the floor of the range rather than a price.',
+      },
       {
         label: 'the report’s own six country figures added together',
         count: 5387055,
         note: 'Ethiopia 2,078,043 plus Sudan 1,020,964 plus Tanzania 211,814 plus Uganda 1,811,124 plus Ukraine 260,700 plus 4,410 in the United States comes to 5,387,055 — which is $13.04 a person, and 916,887 short of the 6,303,942 the same report puts on its opening page. The report does not reconcile the two. Notably, the 2024 report credited a Colombia programme with 916,000-plus people and Colombia appears nowhere in 2025, but we could not establish that this is the explanation and we are not going to guess.',
-      },
-      {
-        label: 'children under five treated for moderate or severe acute malnutrition',
-        count: 100000,
-        note: 'This is the narrowest clinical count the report publishes and by far the most meaningful — a child treated, with 93% reported as recovering. Against all programme spending it is $702.68 a child, which is obviously far too high, because malnutrition treatment is one service among many. It is also published as “100,000+”, a floor rather than a count, which is why the cost model is not built on it.',
       },
     ],
   },
@@ -117,7 +117,7 @@ export const medicalTeamsInternational: Cause = {
     },
     costEvidence: {
       value: 2,
-      note: 'Both halves are published in the same document for the same year, which is what makes a division possible at all. Marked down because the numerator is unaudited, the denominator is an access figure rather than a service delivered, and programme spending is split only into “international” and “domestic” so no single service can be costed.',
+      note: 'Both halves are published in the same document for the same year, which is what makes a division possible at all. Marked down because the numerator is unaudited, the denominator is published as “100,000+” rather than as a count, and programme spending is split only into “international” and “domestic” — so the one service narrow enough to be worth costing is the one service that cannot be costed on its own.',
     },
   },
   notVerified: [

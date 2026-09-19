@@ -69,6 +69,21 @@ export default function MethodologyPage() {
           </li>
         </ul>
         <p className="mt-4 text-lg text-gray-800">
+          The denominator is often not the number the ministry leads with, and when it is not, the
+          page says so in those words. A headline count is usually the broadest one available —
+          people reached, students impacted, presentations made — and dividing a ministry’s budget
+          by work that other people paid for produces a flattering figure that is not a price. So
+          the denominator we use has to be something the ministry’s own money delivered. Literacy
+          &amp; Evangelism International reports 71,112 new readers, taught in classrooms run by
+          seventeen autonomous organisations whose budgets are nowhere in its accounts; we divide by
+          the 995 teachers it trained itself, and the figure goes from $11 to $813. Medical Teams
+          International reports 6.3 million people with access to care, which counts a person inside
+          a clinic’s catchment area whether or not they ever walked in; we divide by the children it
+          treated for malnutrition, and the figure goes from $11 to $703. In every such case the
+          ministry’s own headline stays on the page as an alternate, with its own arithmetic, so you
+          can see the whole range rather than our choice within it.
+        </p>
+        <p className="mt-4 text-lg text-gray-800">
           Where a ministry advertises a price but publishes nothing to divide, we quote the price
           and say so in those words. The figure stays on the page because it is what the ministry is
           asking you to believe; it is labelled as unchecked because that is what it is. We do not

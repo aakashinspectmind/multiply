@@ -67,8 +67,8 @@ export const amgInternational: Cause = {
       'AMG buys almost nothing in dollars. $7,895,925 of its $8,848,324 programme total is a single line called "Field ministries" — money spent where the children are — and it carries no foreign payroll at all, because the work is done by national missionaries, 188 partner organisations and volunteer club leaders paid at local rates. The Bible Clubs ride on infrastructure that already exists and costs AMG nothing: government schools with teachers, classrooms and enrolled pupils already in them. In Liberia and Sierra Leone income per person is about $830 against $88,810 in the United States, so a national worker’s salary is a rounding error on an American one.',
   },
   costModel: {
-    outcome: 'student counted as impacted by an AMG programme in a year',
-    outcomePlural: 'students counted as impacted by AMG programmes in a year',
+    outcome: 'child attending a weekly AMG Bible Club for a year',
+    outcomePlural: 'children attending a weekly AMG Bible Club for a year',
     spend: {
       amount: 10310493,
       basis: 'total-expenses',
@@ -76,19 +76,19 @@ export const amgInternational: Cause = {
       sourceId: 'amg-audit-2025',
     },
     count: {
-      amount: 255078,
-      label: 'total students impacted by all AMG programs',
+      amount: 143000,
+      label: 'students in 551 Bible Clubs across Africa',
       fiscalYear: '2025',
       sourceId: 'amg-impact-2025',
     },
     attribution: 'all-program-spend',
     caveat:
-      'An upper bound on a soft unit. The numerator is every dollar AMG spent, including pastor training, 100 church plants, media evangelism, 21 disaster responses and medical work — and it is simultaneously incomplete, because the audited entity excludes the hospital and the publishing company AMG owns. The denominator is the ministry’s own headline, printed under a "Child & Youth Development" heading but captioned "total students impacted by all AMG programs", and AMG never says whether it counts enrolment, attendance or contact. Roughly 143,000 of it is attendance at a weekly Bible Club inside a government school that AMG does not run, does not staff and does not pay for: that child’s teacher, classroom and schooling are funded by their own government, so this is not the cost of a year of school. For comparison, AMG asks $36 a month — $432 a year — to sponsor one child, ten times this figure, which is the measure of how far a "student impacted" sits from a child whose education AMG actually funds. AMG publishes no count of sponsored children at all.',
+      'We do not divide by the number AMG leads with. Its headline is 255,078 "students impacted", which against this budget would read $40.42 — but that figure is printed under a "Child & Youth Development" heading and captioned "total students impacted by all AMG programs", the two cannot both be right, and AMG never says whether it counts enrolment, attendance or contact. The Bible Clubs are the most concrete count in the report and the one AMG describes doing itself, so they are the denominator here, and it is an upper bound in the ordinary way: the numerator is every dollar AMG spent, including pastor training, 100 church plants, media evangelism, 21 disaster responses and medical work. It is also not the cost of a year of school. The club meets inside a government school AMG does not run, does not staff and does not pay for — that child’s teacher and classroom are funded by their own government — and AMG’s own figure is prefaced "approximately". For scale, AMG asks $36 a month, $432 a year, to sponsor one child, six times this figure, which is the distance between a club attendee and a child whose education AMG actually funds. Finally, the numerator is incomplete in the other direction: the audited entity excludes the hospital and the publishing company AMG owns.',
     alternates: [
       {
-        label: 'students reached through AMG Bible Clubs in 551 African schools',
-        count: 143000,
-        note: 'About $72 each, and printed by AMG as "approximately 143,000". The most concrete count in the report, but it is a weekly club rather than schooling, and charging the whole organisation to it ignores everything else AMG did.',
+        label: 'total students impacted by all AMG programs (255,078)',
+        count: 255078,
+        note: 'About $40.42, and the figure the ministry leads with. Undefined, uncaptioned consistently, and the floor of the range rather than a price.',
       },
       {
         label: 'pastors and church leaders trained',

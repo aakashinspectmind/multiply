@@ -7,6 +7,7 @@ import { amgInternational } from './amg-international';
 import { asiaHarvest } from './asia-harvest';
 import { bibleLeagueInternational } from './bible-league-international';
 import { chalmersCenter } from './chalmers-center';
+import { christar } from './christar';
 import { christianAidMission } from './christian-aid-mission';
 import { christianHealthServiceCorps } from './christian-health-service-corps';
 import { compassionInternational } from './compassion-international';
@@ -23,8 +24,10 @@ import { feedMyStarvingChildren } from './feed-my-starving-children';
 import { fiveTalents } from './five-talents';
 import { foodForTheHungry } from './food-for-the-hungry';
 import { freeWheelchairMission } from './free-wheelchair-mission';
+import { friendsOfCasaBernabe } from './friends-of-casa-bernabe';
 import { frontiersUsa } from './frontiers-usa';
 import { globalTrainingNetwork } from './global-training-network';
+import { greaterEuropeMission } from './greater-europe-mission';
 import { growingHopeGlobally } from './growing-hope-globally';
 import { harvestBridge } from './harvest-bridge';
 import { heartForAfrica } from './heart-for-africa';
@@ -68,6 +71,7 @@ import { seedEffect } from './seed-effect';
 import { serge } from './serge';
 import { shepherdsGlobalClassroom } from './shepherds-global-classroom';
 import { sinapis } from './sinapis';
+import { team } from './team';
 import { theSeedCompany } from './the-seed-company';
 import { theTimothyInitiative } from './the-timothy-initiative';
 import { the500k } from './the500k';
@@ -105,6 +109,7 @@ export const causes: Cause[] = [
   asiaHarvest,
   bibleLeagueInternational,
   chalmersCenter,
+  christar,
   christianAidMission,
   christianHealthServiceCorps,
   compassionInternational,
@@ -121,8 +126,10 @@ export const causes: Cause[] = [
   fiveTalents,
   foodForTheHungry,
   freeWheelchairMission,
+  friendsOfCasaBernabe,
   frontiersUsa,
   globalTrainingNetwork,
+  greaterEuropeMission,
   growingHopeGlobally,
   harvestBridge,
   heartForAfrica,
@@ -166,6 +173,7 @@ export const causes: Cause[] = [
   serge,
   shepherdsGlobalClassroom,
   sinapis,
+  team,
   theSeedCompany,
   theTimothyInitiative,
   the500k,

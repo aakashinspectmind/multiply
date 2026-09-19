@@ -1,6 +1,9 @@
 import Link from 'next/link';
 import { causes } from '@/data/causes';
+import { unpricedCategories } from '@/lib/impact';
 import {
+  CATEGORY_LABELS,
+  type Category,
   SCORE_DIMENSIONS,
   SCORE_DIMENSION_LABELS,
   SCORE_DIMENSION_QUESTIONS,
@@ -14,7 +17,50 @@ export const metadata = {
   title: 'How we score — and what we refuse to score',
 };
 
+const NUMBER_WORDS = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'];
+
+function numberWord(n: number): string {
+  return NUMBER_WORDS[n] ?? String(n);
+}
+
+function capitalize(word: string): string {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+
+function joinWithAnd(parts: string[]): string {
+  if (parts.length < 2) return parts.join('');
+  return `${parts.slice(0, -1).join(', ')} and ${parts[parts.length - 1]}`;
+}
+
+/**
+ * The shape of the front-page board, in words.
+ *
+ * "Twelve ministries, two rows, two kinds of work" reads better hand-written and
+ * would have been wrong the next time a cost model landed. A sentence about our
+ * own data is a claim like any other, and this is the one kind of claim that goes
+ * stale without anybody editing it — so it is derived, and the paragraph
+ * disappears entirely once nothing is left to disclose.
+ */
+function boardShape() {
+  const priced = new Map<Category, number>();
+  for (const cause of causes) {
+    if (cause.costModel) priced.set(cause.category, (priced.get(cause.category) ?? 0) + 1);
+  }
+  const soleRows = [...priced.values()].filter((count) => count === 1).length;
+  const unpriced = unpricedCategories(causes).map((category) =>
+    CATEGORY_LABELS[category].toLowerCase(),
+  );
+  return {
+    worthSaying: soleRows > 0 || unpriced.length > 0,
+    widestContest: Math.max(...priced.values()),
+    soleRows,
+    unpriced,
+  };
+}
+
 export default function MethodologyPage() {
+  const board = boardShape();
+
   return (
     <div className="mx-auto w-full max-w-3xl space-y-10 px-5 py-10">
       <header>
@@ -105,6 +151,28 @@ export default function MethodologyPage() {
           single list would be topped by whichever unit is cheapest to count, every time, at every
           amount.
         </p>
+        {board.worthSaying && (
+          <p className="mt-4 text-lg text-gray-800">
+            Which makes the size of each contest worth knowing, so the board states it. Its widest
+            row is picked out of {board.widestContest} ministries whose numbers divide.{' '}
+            {board.soleRows > 0 && (
+              <>
+                {capitalize(numberWord(board.soleRows))}{' '}
+                {board.soleRows === 1 ? 'row is' : 'rows are'} picked out of one, and{' '}
+                {board.soleRows === 1 ? 'says' : 'say'} so on the row.{' '}
+              </>
+            )}
+            {board.unpriced.length > 0 && (
+              <>
+                And {numberWord(board.unpriced.length)} kind
+                {board.unpriced.length === 1 ? '' : 's'} of work in this directory{' '}
+                {board.unpriced.length === 1 ? 'has' : 'have'} no row at all:{' '}
+                {joinWithAnd(board.unpriced)}. Those ministries are still listed, and the absence is
+                of a number rather than of a need.
+              </>
+            )}
+          </p>
+        )}
       </section>
 
       <section>

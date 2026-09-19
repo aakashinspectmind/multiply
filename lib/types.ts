@@ -6,14 +6,28 @@
  * and anything we could not verify is written down explicitly in `notVerified`.
  */
 
+/**
+ * The kinds of work, and the unit of comparison on the home page.
+ *
+ * Cost per outcome only means something between ministries doing the same kind
+ * of thing, so a category that lumps a microloan in with a trafficking
+ * interception is not a labelling problem — it is a wrong comparison presented
+ * as a right one. Split a category as soon as it starts holding two units.
+ */
 export const CATEGORIES = [
   'scripture',
   'church-planting',
   'evangelism',
+  'training',
   'persecuted-church',
   'health',
+  'disability',
   'water',
+  'food',
+  'education',
+  'livelihood',
   'justice',
+  'relief',
   'media',
   'children',
   'church-fund',
@@ -24,10 +38,16 @@ export const CATEGORY_LABELS: Record<Category, string> = {
   scripture: 'Scripture & discipleship',
   'church-planting': 'Church planting',
   evangelism: 'Evangelism & sending',
+  training: 'Pastors & theological training',
   'persecuted-church': 'Persecuted church',
   health: 'Health & surgery',
+  disability: 'Disability',
   water: 'Safe water',
+  food: 'Food & farming',
+  education: 'Schools & literacy',
+  livelihood: 'Work & livelihoods',
   justice: 'Justice & anti-trafficking',
+  relief: 'Disaster & displacement',
   media: 'Gospel media',
   children: 'Children & families',
   'church-fund': 'Church-led fund',

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
-import { BENCHMARK_COUNTRY, COST_BASE, REGIONS } from '../data/cost-base';
+import { BENCHMARK_COUNTRY, COST_BASE } from '../data/cost-base';
 import { causes } from '../data/causes';
 import { costBaseHeadline, costBaseRows, formatMultiple } from './roi';
 
@@ -39,12 +39,9 @@ test('multiples read to one decimal below ten and whole above', () => {
 
 test('every country in the directory has a cost base or is a known region', () => {
   for (const cause of causes) {
-    for (const country of cause.countries) {
-      assert.ok(
-        COST_BASE[country] || REGIONS.has(country),
-        `${cause.slug}: "${country}" has no cost base and is not listed as a region`,
-      );
-    }
+    // Through the real lookup, aliases and all — a country that only resolves in
+    // a test is a country that throws on the page.
+    assert.doesNotThrow(() => costBaseRows(cause.countries), `${cause.slug}`);
   }
 });
 

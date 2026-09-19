@@ -1,4 +1,4 @@
-import { BENCHMARK_COUNTRY, COST_BASE, REGIONS } from '@/data/cost-base';
+import { BENCHMARK_COUNTRY, COST_BASE, COUNTRY_ALIASES, REGIONS } from '@/data/cost-base';
 
 export type CostBaseRow = {
   country: string;
@@ -27,7 +27,10 @@ export function costBaseRows(countries: string[]): CostBaseRow[] {
 
   for (const country of countries) {
     if (REGIONS.has(country)) continue;
-    const entry = COST_BASE[country];
+    // A cause keeps the ministry's own wording ("England"); the World Bank
+    // reports the country it sits inside. The alias table is the whole bridge,
+    // and an unlisted name still throws.
+    const entry = COST_BASE[COUNTRY_ALIASES[country] ?? country];
     if (!entry) {
       throw new Error(
         `No cost base for "${country}". Add it to data/cost-base.ts, or to REGIONS if it is not a country.`,

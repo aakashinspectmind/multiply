@@ -9,6 +9,7 @@
 export const CATEGORIES = [
   'scripture',
   'church-planting',
+  'evangelism',
   'persecuted-church',
   'health',
   'water',
@@ -22,6 +23,7 @@ export type Category = (typeof CATEGORIES)[number];
 export const CATEGORY_LABELS: Record<Category, string> = {
   scripture: 'Scripture & discipleship',
   'church-planting': 'Church planting',
+  evangelism: 'Evangelism & sending',
   'persecuted-church': 'Persecuted church',
   health: 'Health & surgery',
   water: 'Safe water',
@@ -129,6 +131,11 @@ export type MinistryClaim = {
   sourceId: string;
   /** Dollars per outcome implied by the quote, when it implies one. */
   impliedCostPerOutcome?: number;
+  /**
+   * What the advertised figure buys. Required alongside
+   * `impliedCostPerOutcome` on a cause with no cost model, where there is no
+   * documented outcome name to fall back on.
+   */
   impliedOutcome?: string;
 };
 

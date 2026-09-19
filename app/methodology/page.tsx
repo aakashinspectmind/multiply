@@ -69,6 +69,12 @@ export default function MethodologyPage() {
           </li>
         </ul>
         <p className="mt-4 text-lg text-gray-800">
+          Where a ministry advertises a price but publishes nothing to divide, we quote the price and
+          say so in those words. The figure stays on the page because it is what the ministry is
+          asking you to believe; it is labelled as unchecked because that is what it is. We do not
+          turn a marketing number into a denominator and hand it back to you as arithmetic.
+        </p>
+        <p className="mt-4 text-lg text-gray-800">
           Cost per outcome is also not comparable across different kinds of work. A Bible placed and
           a spinal surgery are not competing purchases, and ranking them against each other would be
           arithmetic doing the work of discernment.

@@ -1,7 +1,6 @@
-import Link from 'next/link';
+import { AmountPicker } from './AmountPicker';
 import { SourceLink } from './SourceLink';
 import {
-  GIFT_AMOUNTS,
   costPerOutcome,
   formatCount,
   formatMoney,
@@ -10,22 +9,70 @@ import {
 } from '@/lib/impact';
 import { SPEND_BASIS_LABELS, type Cause } from '@/lib/types';
 
-function AmountPicker({ cause, amount }: { cause: Cause; amount: number }) {
+/**
+ * What the ministry advertises. Rendered whether or not we have a cost model —
+ * on a cause with nothing to divide, the advertised figure is often the only
+ * number in play, and it still deserves to be quoted and sourced.
+ */
+function MinistryClaims({
+  cause,
+  perOutcome,
+  fallbackOutcome,
+}: {
+  cause: Cause;
+  perOutcome: number | null;
+  fallbackOutcome?: string;
+}) {
+  if (cause.ministryClaims.length === 0) return null;
+
   return (
-    <div className="flex flex-wrap items-center gap-2">
-      {GIFT_AMOUNTS.map((value) => (
-        <Link
-          key={value}
-          href={{ pathname: `/causes/${cause.slug}`, query: { amount: value } }}
-          className={`min-h-[44px] rounded-lg px-5 pt-2.5 text-lg font-medium ring-1 ${
-            value === amount
-              ? 'bg-accent text-white ring-accent'
-              : 'bg-white text-ink ring-black/15 hover:ring-accent'
-          }`}
-        >
-          ${value}
-        </Link>
-      ))}
+    <div className="mt-6 border-t border-black/10 pt-5">
+      <h3 className="text-lg font-semibold">What the ministry advertises</h3>
+      <ul className="mt-3 space-y-4">
+        {cause.ministryClaims.map((claim) => {
+          const implied = claim.impliedCostPerOutcome;
+          const factor = implied && perOutcome !== null ? perOutcome / implied : null;
+          const outcome = claim.impliedOutcome ?? fallbackOutcome;
+          if (implied && !outcome) {
+            throw new Error(
+              `Cause "${cause.slug}" advertises a cost per outcome with no outcome named`,
+            );
+          }
+          return (
+            <li key={claim.quote}>
+              <blockquote className="border-l-2 border-accent/40 pl-4 text-lg text-gray-800">
+                “{claim.quote}”
+              </blockquote>
+              <p className="mt-2 text-base text-gray-700">
+                <SourceLink cause={cause} id={claim.sourceId} />
+              </p>
+              {implied && perOutcome !== null && factor !== null && (
+                <p
+                  className={`mt-2 rounded-lg px-4 py-3 text-base ${
+                    factor >= 1.5 || factor <= 0.67
+                      ? 'bg-flag-soft text-flag'
+                      : 'bg-accent-soft text-accent'
+                  }`}
+                >
+                  Advertised: {formatMoney(implied)} per {outcome}. Documented:{' '}
+                  {formatMoney(perOutcome)}.{' '}
+                  {factor >= 1.5
+                    ? `The documents imply about ${factor.toFixed(1)}× the advertised figure.`
+                    : factor <= 0.67
+                      ? `The documents imply less than the advertised figure.`
+                      : `The two agree within ${Math.round(Math.abs(factor - 1) * 100)}%.`}
+                </p>
+              )}
+              {implied && factor === null && (
+                <p className="mt-2 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
+                  That works out to {formatMoney(implied)} per {outcome}, on the ministry’s own
+                  figure. We have nothing to check it against — see what is missing below.
+                </p>
+              )}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
@@ -44,6 +91,10 @@ export function ImpactSection({ cause, amount }: { cause: Cause; amount: number 
           into each other. Any number we printed would be invented, so there is none. The specific
           documents we looked for are listed further down.
         </p>
+        <div className="mt-4">
+          <AmountPicker slug={cause.slug} amount={amount} />
+        </div>
+        <MinistryClaims cause={cause} perOutcome={null} />
       </section>
     );
   }
@@ -55,7 +106,7 @@ export function ImpactSection({ cause, amount }: { cause: Cause; amount: number 
     <section className="rounded-xl border border-black/10 bg-white p-6">
       <h2 className="text-2xl font-semibold tracking-tight">Your gift</h2>
       <div className="mt-4">
-        <AmountPicker cause={cause} amount={amount} />
+        <AmountPicker slug={cause.slug} amount={amount} />
       </div>
 
       <p className="mt-5 text-2xl font-semibold text-accent">
@@ -122,44 +173,7 @@ export function ImpactSection({ cause, amount }: { cause: Cause; amount: number 
         </div>
       )}
 
-      {cause.ministryClaims.length > 0 && (
-        <div className="mt-6 border-t border-black/10 pt-5">
-          <h3 className="text-lg font-semibold">What the ministry advertises</h3>
-          <ul className="mt-3 space-y-4">
-            {cause.ministryClaims.map((claim) => {
-              const implied = claim.impliedCostPerOutcome;
-              const factor = implied ? perOutcome / implied : null;
-              return (
-                <li key={claim.quote}>
-                  <blockquote className="border-l-2 border-accent/40 pl-4 text-lg text-gray-800">
-                    “{claim.quote}”
-                  </blockquote>
-                  <p className="mt-2 text-base text-gray-700">
-                    <SourceLink cause={cause} id={claim.sourceId} />
-                  </p>
-                  {implied && factor !== null && (
-                    <p
-                      className={`mt-2 rounded-lg px-4 py-3 text-base ${
-                        factor >= 1.5 || factor <= 0.67
-                          ? 'bg-flag-soft text-flag'
-                          : 'bg-accent-soft text-accent'
-                      }`}
-                    >
-                      Advertised: {formatMoney(implied)} per {claim.impliedOutcome ?? model.outcome}.
-                      Documented: {formatMoney(perOutcome)}.{' '}
-                      {factor >= 1.5
-                        ? `The documents imply about ${factor.toFixed(1)}× the advertised figure.`
-                        : factor <= 0.67
-                          ? `The documents imply less than the advertised figure.`
-                          : `The two agree within ${Math.round(Math.abs(factor - 1) * 100)}%.`}
-                    </p>
-                  )}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
+      <MinistryClaims cause={cause} perOutcome={perOutcome} fallbackOutcome={model.outcome} />
     </section>
   );
 }

@@ -51,6 +51,17 @@ for (const cause of causes) {
     problems.push(`${cause.slug}: no cost model and no gaps listed — say what is missing`);
   }
 
+  for (const claim of cause.ministryClaims) {
+    if (!claim.quote.trim()) problems.push(`${cause.slug}: a ministry claim has no quote`);
+    // With no cost model there is no documented outcome name to fall back on,
+    // so an advertised figure has to name what it buys.
+    if (claim.impliedCostPerOutcome && !cause.costModel && !claim.impliedOutcome) {
+      problems.push(
+        `${cause.slug}: claim "${claim.quote.slice(0, 40)}…" implies a unit cost but names no outcome`,
+      );
+    }
+  }
+
   const { mandate, scriptures } = cause.biblicalAlignment;
   if (!mandate.trim()) problems.push(`${cause.slug}: biblicalAlignment needs a mandate`);
   if (scriptures.length === 0) {

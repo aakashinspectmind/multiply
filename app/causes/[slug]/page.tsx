@@ -6,7 +6,7 @@ import { RoiSection } from '@/components/RoiSection';
 import { Scorecard } from '@/components/Scorecard';
 import { VerificationBadge } from '@/components/VerificationBadge';
 import { causes } from '@/data/causes';
-import { DEFAULT_AMOUNT } from '@/lib/impact';
+import { clampAmount } from '@/lib/impact';
 import { CATEGORY_LABELS, VERIFICATION_MEANING, type Cause } from '@/lib/types';
 
 const DOCUMENT_LABELS = {
@@ -29,9 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 function parseAmount(raw: string | string[] | undefined): number {
-  const value = Number(Array.isArray(raw) ? raw[0] : raw);
-  if (!Number.isFinite(value) || value <= 0) return DEFAULT_AMOUNT;
-  return Math.min(value, 1_000_000);
+  return clampAmount(Number(Array.isArray(raw) ? raw[0] : raw));
 }
 
 function Sources({ cause }: { cause: Cause }) {

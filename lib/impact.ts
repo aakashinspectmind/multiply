@@ -1,8 +1,20 @@
 import type { Cause, CostModel, ScoreDimension, Source } from './types';
 import { SCORE_DIMENSIONS, VERIFICATION_LEVELS } from './types';
 
-export const GIFT_AMOUNTS = [20, 50, 100, 500] as const;
+export const GIFT_AMOUNTS = [1, 5, 10, 50, 100, 500] as const;
 export const DEFAULT_AMOUNT = 50;
+/** Any amount is allowed up to this. A dollar and a million both have to work. */
+export const MAX_AMOUNT = 1_000_000;
+
+/**
+ * The one place a gift amount becomes trustworthy. Whole dollars only, because
+ * every figure downstream is an average and cents imply a precision the
+ * underlying documents do not have.
+ */
+export function clampAmount(value: number): number {
+  if (!Number.isFinite(value) || value <= 0) return DEFAULT_AMOUNT;
+  return Math.min(Math.floor(value), MAX_AMOUNT);
+}
 
 export function sourceById(cause: Cause, id: string): Source {
   const source = cause.sources.find((s) => s.id === id);

@@ -2,7 +2,15 @@
 
 import { useMemo, useState } from 'react';
 import { CauseCard } from './CauseCard';
-import { DEFAULT_AMOUNT, GIFT_AMOUNTS, sortCauses, type SortKey } from '@/lib/impact';
+import {
+  DEFAULT_AMOUNT,
+  GIFT_AMOUNTS,
+  MAX_AMOUNT,
+  clampAmount,
+  formatMoney,
+  sortCauses,
+  type SortKey,
+} from '@/lib/impact';
 import { CATEGORY_LABELS, type Cause, type Category } from '@/lib/types';
 
 const SORT_LABELS: Record<SortKey, string> = {
@@ -52,24 +60,34 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
                 ${value}
               </button>
             ))}
-            <label className="flex min-h-[44px] items-center gap-2 rounded-lg px-3 ring-1 ring-black/15 focus-within:ring-accent">
+            <label
+              className={`flex min-h-[44px] items-center gap-2 rounded-lg px-3 ring-1 ${
+                custom === '' ? 'ring-black/15' : 'ring-accent'
+              } focus-within:ring-accent`}
+            >
               <span className="text-lg text-gray-700">$</span>
               <input
                 type="number"
                 min={1}
+                max={MAX_AMOUNT}
+                step={1}
                 inputMode="numeric"
                 value={custom}
                 placeholder="other"
                 onChange={(event) => {
                   const next = event.target.value;
                   setCustom(next);
-                  const parsed = Number(next);
-                  if (Number.isFinite(parsed) && parsed > 0) setAmount(parsed);
+                  setAmount(clampAmount(Number(next)));
                 }}
-                className="w-24 bg-transparent text-lg outline-none"
+                className="w-28 bg-transparent text-lg outline-none"
               />
             </label>
           </div>
+          {custom !== '' && clampAmount(Number(custom)) !== Number(custom) && (
+            <p className="mt-3 text-base text-gray-700">
+              Showing {formatMoney(amount)} — whole dollars, up to {formatMoney(MAX_AMOUNT)}.
+            </p>
+          )}
         </fieldset>
 
         <div className="mt-5 flex flex-wrap gap-6">

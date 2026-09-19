@@ -1,4 +1,6 @@
 import assert from 'node:assert/strict';
+import { readdirSync } from 'node:fs';
+import path from 'node:path';
 import { test } from 'node:test';
 import { causes } from '../data/causes';
 import {
@@ -64,6 +66,26 @@ test('money formatting keeps cents only where cents matter', () => {
   assert.equal(formatMoney(1896.42), '$1,896');
   assert.equal(formatMoney(24.44), '$24.44');
   assert.equal(formatMoney(2.5), '$2.50');
+});
+
+/**
+ * index.ts is written by hand so the directory has a reviewable manifest, which
+ * means a new cause file can be researched, committed, and silently never shown.
+ * This is the check that a file on disk is actually in the product.
+ */
+test('every cause file on disk is wired into the directory', () => {
+  const dir = path.join(import.meta.dirname, '..', 'data', 'causes');
+  const onDisk = readdirSync(dir)
+    .filter((file) => file.endsWith('.ts') && file !== 'index.ts')
+    .map((file) => file.replace(/\.ts$/, ''))
+    .sort();
+  const exported = causes.map((cause) => cause.slug).sort();
+  assert.deepEqual(exported, onDisk);
+});
+
+test('slugs are unique', () => {
+  const slugs = causes.map((cause) => cause.slug);
+  assert.equal(new Set(slugs).size, slugs.length);
 });
 
 test('every sourceId in the directory resolves', () => {

@@ -39,7 +39,7 @@ export const twr: Cause = {
     concerns: [
       'TWR’s donation page tells a donor what their gift buys, and the number is one cent per person. Enter the default $100 and the page reads “You could reach 10,000 people with this gift”. Nothing published anywhere explains it. Run it against TWR’s own audited spending and it implies that $40,446,157 of expenses reached roughly four billion people in one year — about half the population of the earth. The arithmetic is almost certainly a transmitter’s potential coverage area, which is not a count of anyone. A ministry with this much real work behind it does not need a number like that on its giving page, and we would not divide anything by it.',
       'There is no financial document on twr.org. We tried eight plausible paths — financials, annual report, accountability, stewardship, transparency and others — and every one returned a 404. Because the IRS designates TWR a church it is not required to file a Form 990 and does not, so there is no Schedule F either. Everything a donor can check about a $40 million ministry comes from a third party, ECFA, summarising statements the public never sees.',
-      'TWR publishes no count of anything it has done. No letters, no calls, no app messages, no baptisms, no listener responses of any kind, no station or programme hours for the year. The only quantity offered to a donor is the one in the giving widget.',
+      'TWR does publish counts — on a page headed “Measuring Our Impact in 2025” — and they are the wrong shape to price. The global figures are “2.4+ million engagements with people via letters, calls, emails, text and messaging apps”, “156,000+ radios, media players, Bibles, discipleship materials, and other items distributed” and “106+ million social media interactions”. Every one is a rounded floor at one or two significant figures. Every one is attributed to the international network, while the only spending figure in existence anywhere is the US entity’s. None is defined: nothing says whether an engagement is a letter a listener sent or a message TWR pushed. And the two units a radio ministry could count exactly — programme hours produced and broadcast hours aired — still appear nowhere.',
       'ECFA’s description of the ministry says it works to “help lead people from doubt to decision to discipleship”. We quote that as their aim and we do not treat decisions or discipleship as measurable outcomes; nobody can count them, TWR does not claim to, and a directory that priced them would be lying.',
     ],
   },
@@ -60,6 +60,21 @@ export const twr: Cause = {
         'Broadcasting since 1954, we are a global network of partnerships using media to take God’s Word to nations, tongues and tribes around the world. Now, the gospel speaks 200+ languages on air, online and on the ground in 190 countries thanks to the Lord’s work in our ministry!',
       sourceId: 'twr-about',
     },
+    {
+      quote:
+        '2.4+ million engagements with people via letters, calls, emails, text and messaging apps',
+      sourceId: 'twr-impact',
+    },
+    {
+      quote:
+        '156,000+ radios, media players, Bibles, discipleship materials, and other items distributed',
+      sourceId: 'twr-impact',
+    },
+    {
+      quote:
+        'In 2025, more than 3 million people from around the world visited TWR360 — watching, listening, and engaging nearly 58 million times.',
+      sourceId: 'twr-impact',
+    },
   ],
   scores: {
     gospelCentrality: {
@@ -68,24 +83,29 @@ export const twr: Cause = {
     },
     localLeadership: {
       value: 1,
-      note: 'TWR calls itself “a global network of partnerships” and says the gospel goes out “on the ground” in 190 countries. Not one partner organisation is named, and with no Form 990 there is no Schedule F, no list of foreign offices or agents, and no grant table. This score reflects what is documented, which is almost nothing — it is not a judgement on the partners themselves.',
+      note: 'TWR calls itself “a global network of partnerships” and says the gospel goes out “on the ground” in 190 countries. The about page carries a National Partners directory, but it is script-populated: served as HTML it reads “0 National Partners” for every region and “Page 1 of 10”, so no partner is readable. With no Form 990 there is also no Schedule F, no list of foreign offices or agents, and no grant table. This score reflects what is documented, which is almost nothing — it is not a judgement on the partners themselves.',
     },
     financialTransparency: {
       value: 1,
       note: 'ECFA publishes three years of TWR’s functional expenses, revenue, assets and liabilities, stated to be taken from the organisation’s financial statements, and TWR has been accredited since 1987. That is the whole of it. TWR’s own site posts no audit, no annual report and no filing, and the church exemption means none is required.',
     },
     outcomeEvidence: {
-      value: 0,
-      note: 'Nothing delivered is counted anywhere we could find — no responses, letters, calls, app messages, programme hours or station totals for the year. This is a finding, not an absence of looking.',
+      value: 1,
+      note: 'TWR counts something, which is the difference between a 1 and a 0: engagements, items distributed, social interactions and TWR360 visits for 2025, with regional breakdowns for the Arabic ministry, Central Asia, Africa, Honduras and Ukraine. Not one figure is exact — they are all “+” floors at one or two significant figures — none is defined, and all are attributed to the international network rather than to the entity whose accounts exist. Programme hours produced and broadcast hours aired, the two things a broadcaster can count precisely, are still absent.',
     },
     costEvidence: {
-      value: 0,
-      note: 'TWR advertises a price of one cent per person reached, with no basis, no year and no definition of “reached”, and publishes nothing that could be divided to check it. A published price with no arithmetic behind it is worse than no price.',
+      value: 1,
+      note: 'TWR advertises a price of one cent per person reached, with no basis, no year and no definition of “reached”. The impact page does now publish counts that could in principle sit under a division, which is why this is no longer a zero, but none of them shares a scope or a period with the only spending figure in existence — ECFA’s summary of statements the public cannot read, for a year ended 30 September. A published price with no arithmetic behind it is still worse than no price.',
     },
   },
   notVerified: [
+    'What an “engagement” is. The 2.4 million figure puts “letters, calls, emails, text and messaging apps” in one total. Nothing says whether it counts contacts that came in from listeners or messages TWR sent out, whether an automated push notification qualifies, or whether one person writing four times is one engagement or four. The unit that would be divisible — a listener response that somebody answered — is buried inside that number and cannot be separated from it.',
+    'Whose work the 2025 figures describe. The page presents them as TWR’s global impact and breaks out the Arabic ministry, Central Asia, Africa, Honduras and Ukraine, so they belong to the international network. The only financial figure that exists anywhere is Trans World Radio’s, the US entity, in ECFA’s summary. No consolidated statement for the network is published, so there is no numerator that matches these counts and no honest way to construct one.',
+    'Whether the counts and the money cover the same twelve months. The impact page is explicitly calendar 2025. TWR’s fiscal year ends 30 September. The periods overlap by nine months and neither document acknowledges the other.',
+    'What the 156,000 items were. Radios, media players, Bibles, discipleship materials “and other items” are added into one total, and the total is a floor. A solar radio and a tract are not the same gift, and no split is published.',
+    'How the 2025 impact figures were compiled. The page gives no methodology, no definitions, no source systems and no comparison with any earlier year, and the figures appear nowhere in a financial document.',
     'Whether anyone is reached. “People reached” in broadcasting is a coverage estimate — how many people live inside a signal footprint — not a count of listeners. We will not build a cost model on potential audience, at any price. A fraction-of-a-cent cost per person would look like the best value in this directory and would mean nothing, and a number like that discredits every honest figure standing next to it.',
-    'What is behind the one-cent figure. TWR does not say whether it comes from population data, a listener survey, a media-research estimate or an internal rule of thumb, or what year it refers to.',
+    'What is behind the one-cent figure. TWR does not say whether it comes from population data, a listener survey, a media-research estimate or an internal rule of thumb, or what year it refers to. The same widget sits on the impact page under the words “See Calculation in:”, which turns out to be a currency selector — 100 people per dollar, 111 per euro, 77 per Singapore dollar, 68 per Australian dollar, 6 per rand — and not a link to any calculation. The closest thing to an explanation TWR offers explains nothing.',
     'Where the money goes. $33,190,823 of programme spending is a single line in ECFA’s summary. Nothing splits it between US operations, transmitter costs, satellite capacity and payments to national partners.',
     'What the audited statements actually say. ECFA reports figures “per the organization’s financial statements”; those statements are not published, so we are reading a third party’s summary of a document we cannot open.',
     'What $12,290,148 of “other revenue” is. It is a third of TWR’s FY2025 income of $37,856,064 and nothing explains it — earned income, contributions from affiliated national offices, gains on assets, and grants would all be reported this way.',
@@ -94,7 +114,7 @@ export const twr: Cause = {
     'Who receives TWR money overseas, and whether those organisations are audited. TWR withholds this, and for broadcasting into closed countries that withholding may well be right — see the note below.',
   ],
   notes: [
-    'We deliberately did not build a cost per outcome. There is no denominator here that describes anything that happened. The only available division would be spending over potential audience, which is the calculation we exist to refuse.',
+    'We did not build a cost per outcome, and the reason is narrower than it used to be. TWR does count things it did — 2.4 million engagements by letter, call, email and messaging app, 156,000 items distributed — and some of those are exactly the kind of delivered unit this directory wants in the media category. What is missing is the other half. The counts belong to the global network and to calendar 2025; the only money figure in existence belongs to the US entity, for a fiscal year ended 30 September, and reaches us through ECFA’s summary of statements the public cannot read. Dividing one by the other would credit a gift in Cary, North Carolina with work the national offices paid for, and would divide a rounded floor by an unconsolidated numerator. The other available division — spending over potential audience — is the calculation we exist to refuse.',
     'Two kinds of silence are being confused on this page, and they are not equally defensible. TWR broadcasts into countries where a named local partner could be arrested, so not publishing partners, locations or photographs is a reasonable security posture and we do not hold it against them. Not publishing audited financial statements is a separate decision with no security rationale — the numbers would be aggregate and the organisation is in Cary, North Carolina. Security explains the first silence; nothing explains the second.',
     'The church exemption is legitimate and widely used by broadcast ministries, but a donor should understand its effect: no Form 990 means no public functional expense breakdown, no executive compensation disclosure, no foreign-grant schedule, and no independent index like ProPublica holding a copy. ProPublica’s page for the EIN says only that the organisation “is not required to submit tax filings because the IRS designates it as a church”.',
     'For scale across three years, from ECFA: programme spending was $34,503,888 in FY2023, $32,112,013 in FY2024 and $33,190,823 in FY2025. Total expenses were $41,165,600, $38,696,870 and $40,446,157. The FY2025 split is 82.1% programme, 6.9% administration and 11.1% fundraising, which is a respectable ratio by any standard.',
@@ -137,6 +157,16 @@ export const twr: Cause = {
       documentType: 'ministry-website',
       retrieved: '2026-09-18',
       note: 'The donation widget generates its message from a template — “You could reach {$total} people with this gift” — with a multiplier of 100 people per dollar and a default gift of $100, so the page displays “You could reach 10,000 people with this gift”. We read the multiplier out of the page’s own configuration; it is not printed anywhere as text, and no basis for it is given.',
+    },
+    {
+      id: 'twr-impact',
+      label: 'Measuring Our Impact in 2025',
+      url: 'https://twr.org/our-impact',
+      publisher: 'TWR',
+      documentType: 'ministry-website',
+      retrieved: '2026-09-19',
+      fiscalYear: '2025',
+      note: 'The only page on twr.org that counts anything. Global totals for calendar 2025: “2.4+ million engagements with people via letters, calls, emails, text and messaging apps”, “156,000+ radios, media players, Bibles, discipleship materials, and other items distributed”, “106+ million social media interactions”, and “In 2025, more than 3 million people from around the world visited TWR360 — watching, listening, and engaging nearly 58 million times.” Regional figures follow: 342,000+ plays of Arabic video and audio streams and 421,000+ Arabic web and app engagements; more than 7 million Instagram engagements, 21 million TikTok interactions and 407,000 Telegram messages in Central Asia; more than 315,000 texts, 108,000 in-person visits and 165,000 WhatsApp interactions in Africa; more than 50,000 phone calls, 30,000 audience visits and 250,000 WhatsApp connections in Honduras; 3.7 million YouTube views and 189,000+ direct messages, letters, calls and emails in Ukraine. The page splits each figure across separate elements for the digits and the magnitude — “2.4” then “+ million” — and we have joined them as they read on screen and changed nothing else. No money appears on the page, no methodology is given, and no figure is attributed to a legal entity.',
     },
     {
       id: 'twr-partner',

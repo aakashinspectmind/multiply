@@ -4,7 +4,9 @@ import { africaNewLife } from './africa-new-life';
 import { africanMissionHealthcare } from './african-mission-healthcare';
 import { amazimaMinistries } from './amazima-ministries';
 import { amgInternational } from './amg-international';
+import { anglicanReliefDevelopmentFund } from './anglican-relief-development-fund';
 import { asiaHarvest } from './asia-harvest';
+import { beRichNorthPoint } from './be-rich-north-point';
 import { bibleLeagueInternational } from './bible-league-international';
 import { chalmersCenter } from './chalmers-center';
 import { christar } from './christar';
@@ -26,16 +28,19 @@ import { foodForTheHungry } from './food-for-the-hungry';
 import { freeWheelchairMission } from './free-wheelchair-mission';
 import { friendsOfCasaBernabe } from './friends-of-casa-bernabe';
 import { frontiersUsa } from './frontiers-usa';
+import { globalChristianRelief } from './global-christian-relief';
 import { globalTrainingNetwork } from './global-training-network';
 import { greaterEuropeMission } from './greater-europe-mission';
 import { growingHopeGlobally } from './growing-hope-globally';
 import { harvestBridge } from './harvest-bridge';
 import { heartForAfrica } from './heart-for-africa';
+import { helpThePersecuted } from './help-the-persecuted';
 import { holtInternational } from './holt-international';
 import { homeOfHopeMinistries } from './home-of-hope-ministries';
 import { hopeInternational } from './hope-international';
 import { hopeOfLifeInternational } from './hope-of-life-international';
 import { hopeRisesInternational } from './hope-rises-international';
+import { internationalChristianConcern } from './international-christian-concern';
 import { jaars } from './jaars';
 import { jesusFilmProject } from './jesus-film-project';
 import { joniAndFriends } from './joni-and-friends';
@@ -106,7 +111,9 @@ export const causes: Cause[] = [
   africanMissionHealthcare,
   amazimaMinistries,
   amgInternational,
+  anglicanReliefDevelopmentFund,
   asiaHarvest,
+  beRichNorthPoint,
   bibleLeagueInternational,
   chalmersCenter,
   christar,
@@ -128,16 +135,19 @@ export const causes: Cause[] = [
   freeWheelchairMission,
   friendsOfCasaBernabe,
   frontiersUsa,
+  globalChristianRelief,
   globalTrainingNetwork,
   greaterEuropeMission,
   growingHopeGlobally,
   harvestBridge,
   heartForAfrica,
+  helpThePersecuted,
   holtInternational,
   homeOfHopeMinistries,
   hopeInternational,
   hopeOfLifeInternational,
   hopeRisesInternational,
+  internationalChristianConcern,
   jaars,
   jesusFilmProject,
   joniAndFriends,

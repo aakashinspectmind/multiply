@@ -12,12 +12,12 @@ Live pages: the directory and gift board (`/`), one page per cause (`/causes/[sl
 ## Why it is built this way
 
 "See what $20 does" cannot be sourced from ministry marketing. Run `npm run stats` for the current
-count; as of 19 September 2026, of 89 ministries researched across 125 countries, on 599 cited
+count; as of 19 September 2026, of 94 ministries researched across 131 countries, on 668 cited
 documents:
 
-- **57** publish a spending figure and an outcome count from the same year that can be divided into
-  each other. **32** do not, and those pages say so instead of estimating.
-- **32** advertise a cost per outcome. Only **17** of those advertise it per the same unit we can
+- **66** publish a spending figure and an outcome count from the same year that can be divided into
+  each other. **28** do not, and those pages say so instead of estimating.
+- **33** advertise a cost per outcome. Only **17** of those advertise it per the same unit we can
   divide out — and of those 17, **6** advertise a figure at least twice as cheap as their own books
   support. Christian Health Service Corps advertises "less than $100 per surgery"; its own programme
   budget over its own surgical count is $4,098.
@@ -25,7 +25,7 @@ documents:
   Healthcare publishes $430 per sponsored surgery; its Form 990 reports $1,404,561 for the programme
   and 3,294 surgeries in the same return, which is $426. Nothing else in the directory reconciles
   like that.
-- The remaining 15 advertise a figure about something else entirely. Asia Harvest advertises $3.00
+- The remaining 16 advertise a figure about something else entirely. Asia Harvest advertises $3.00
   per Bible printed and we divide out $833 per evangelist supported for a year. Both are true and
   neither checks the other, so the site refuses to compare them. That refusal is a design decision
   with a flag behind it — see `sameUnitAsCostModel` in `lib/types.ts`.
@@ -34,6 +34,15 @@ Some of what turns up is worse than optimistic. Shepherds Global Classroom's onl
 measure is a download counter on its homepage, and the page ships a JavaScript function named
 `fakeSeed()` that synthesises the opening value from the hours elapsed since 1 January plus a random
 offset, with a comment instructing it to keep the synthesised number rather than display a zero.
+
+International Christian Concern's annual report prints its 2025 functional expenses as programme
+$3,598,260.87, general and administrative $388,448.62 and fundraising $102,223.32. Those are exactly
+88.000%, 9.500% and 2.500% of the $4,088,932.81 total, to the cent, and they sum to it exactly.
+Measured expenses do not land on three round percentages at once — that is a total apportioned by
+target ratio and presented as measurement, and ECFA's audited splits for the same ministry are not
+round in any year (programme was 80.9% in 2024). So this page divides by total expenses rather than
+the programme line it publishes, which is the less flattering of the two, and the programme-based
+figure sits in the alternates where the reader can see both.
 
 The harder problem is subtler, and it is ours rather than the ministries'. A ministry's headline count
 is almost always its softest — reach, not delivery — and the gift board picks the cheapest unit in
@@ -56,6 +65,24 @@ partner hospital's century-old subsidy and not an overstatement. Ninety-six perc
 grants to hospitals with their own surgeons and their own donors. Dividing the named SAFE line by the
 SAFE surgeries instead gives $426, which agrees with the advertised price to within 1%. We were the
 ones getting it wrong.
+
+Two more of our own errors, found by re-reading pages rather than by adding new ones. This repo told
+you for months that TWR publishes no outcome counts; it publishes them at `twr.org/our-impact`, and
+the page now quotes three of them and says instead why they still cannot be divided — the counts are
+the global network's, the only financial figure that exists is the US entity's, and the years do not
+line up. And the page for The 500K said the name was a goal of 500,000 full-time workers. It is not:
+the only page on the site that explains the name says there are "as many as 500,000 villages in India
+with no Christian presence… 500,000 Churches. One for each of the nation's unreached villages." A
+directory that exists to check other people's numbers has to check its own claims about them too.
+
+All eighteen kinds of work now price at least two ministries, which was not true earlier and is worth
+recording as a property of the board rather than a milestone. Two categories used to print no row at
+all — the persecuted church and church-led funds — and two more called a single entrant the furthest
+its money goes. The board says both things out loud when they are true, in `unpricedCategories` and
+`soleCandidateCategories`, and the methodology page derives its counts from the directory rather than
+stating them in prose. All three admissions currently render nothing. They are kept because the
+condition they describe is the normal state of a growing directory, not an anomaly that has now been
+fixed, and a disclosure that has to be remembered is a disclosure that will be forgotten.
 
 So the product is not a payment platform. It is the arithmetic, shown:
 
@@ -131,12 +158,24 @@ Adding or editing a cause: read `DATA.md` first.
 - **No accounts, no database.** The dataset is a TypeScript file, reviewed like code.
 - **No claims about spiritual fruit.** Money and delivery are measurable; the harvest is God's.
 - **No global "best cause" ranking.** See above. The arithmetic is not the discernment.
+- **No ministries whose own case is not that a dollar goes further.** Hope For New York was
+  researched, written and then dropped, and it is the useful precedent. Its evidence was the best in
+  the church-led fund category — Schedule I of its FY2025 return names all 46 grantees with cash and
+  non-cash amounts summing exactly to $2,230,008 — and its own page said why it did not belong:
+  "there is no multiplier to claim and one reason for it: all of this money is spent in New York City,
+  where a dollar buys less than almost anywhere on earth." A directory organised around cost per
+  outcome would have listed it as a place to send money for cost reasons it does not claim. Good
+  documents are not the admission criterion.
 
 ## Next, in order
 
 1. **Close the reconciliations already flagged** — CURE's annual report vs its Form 990, Bible
    League's $2.50 Bible claim against its own materials count, and whether The Timothy Initiative
-   publishes audited financials anywhere at all. These need phone calls, not more searching.
+   publishes audited financials anywhere at all. These need phone calls, not more searching. Add to
+   the list: ask International Christian Concern how three functional-expense figures came to be
+   exactly 88.000%, 9.500% and 2.500% of the total, and ask Global Training Network for the count of
+   pastors trained in 2025 in something other than a fundraising letter — it is the only source for a
+   number that now heads a category, and it is a rounded floor.
 2. **Ask each ministry to define its outcome unit in writing.** "People engaged in God's Word",
    "students impacted", "active language engagement" and "people reached" are the load-bearing
    words, and not one of them is defined by the ministry that publishes it.
@@ -155,7 +194,7 @@ Adding or editing a cause: read `DATA.md` first.
 5. **Type the denominator.** Rule 5 in `DATA.md` is currently enforced by reading `npm run board` and
    thinking, which is how the eight soft headlines got in. A required
    `denominator: 'delivered' | 'reach'` on `CostModel` would let a test refuse a `reach` unit as a
-   primary figure outright. It means revisiting all 57 cost models, so it is a deliberate next step
+   primary figure outright. It means revisiting all 66 cost models, so it is a deliberate next step
    rather than a patch.
 6. **Get one number field-verified.** Nothing in the directory is above `documents-reviewed`, and
    nothing reaches `field-verified` from a desk.

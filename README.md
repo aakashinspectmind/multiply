@@ -1,10 +1,17 @@
 # Multiply
 
-Name an amount. See the furthest it goes, and the arithmetic that got there.
+**Worship him with your money.** That is the mission. Everything below is the instrument.
 
 A directory of Christian ministries where cost per outcome is divided out in public — the ministry's
 own audited spending over its own reported outcome count, both halves linked to the document they
-came from, and left blank when those numbers do not exist.
+came from, and left blank when those numbers do not exist. Giving is worship, worship deserves care,
+and care here means arithmetic a giver can check.
+
+Which cuts both ways, and the second way is the one to keep hold of when editing: the board ranks
+cost per outcome, so it is permanently one careless sentence away from implying that a cheaper
+outcome is a holier gift. It is not. Nothing computed here can weigh what a gift costs the person
+giving it, and that was the only quantity Jesus was counting in Mark 12:41–44. Copy that blurs this
+is a bug, not a tone question.
 
 Live pages: the directory and gift board (`/`), one page per cause (`/causes/[slug]`), and the method
 (`/methodology`).

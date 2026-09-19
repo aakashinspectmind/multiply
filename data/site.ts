@@ -7,5 +7,6 @@ export const site = {
   /** Stated plainly on every page: we never hold anyone’s money. */
   moneyPolicy:
     'Multiply never receives your gift. Every button sends you to the ministry’s own donation page, so 100% of what you give goes where you sent it and we take no cut.',
-  contact: 'hello@example.org',
+  /** Where a correction or a missing document should be sent. */
+  contact: 'aakash@inspectmind.ai',
 } as const;

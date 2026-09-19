@@ -165,8 +165,12 @@ export default function MethodologyPage() {
           several are listed precisely because their numbers are missing.
         </p>
         <p className="mt-3 text-lg text-gray-800">
-          If you are a ministry and a figure here is wrong or out of date, send the document. A
-          correction that comes with a source gets published.
+          If you are a ministry and a figure here is wrong or out of date, send the document to{' '}
+          <a href={`mailto:${site.contact}`} className="text-accent underline">
+            {site.contact}
+          </a>
+          . A correction that comes with a source gets published, and so is the fact that it was
+          corrected.
         </p>
       </section>
 

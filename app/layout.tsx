@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Link from 'next/link';
 import './globals.css';
+import { causes } from '@/data/causes';
 import { site } from '@/data/site';
 
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
@@ -42,8 +43,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
           <div className="mx-auto w-full max-w-5xl space-y-3 px-5 py-8 text-base text-gray-700">
             <p className="font-medium text-ink">{site.moneyPolicy}</p>
             <p>
-              Eight causes, researched from public documents on 18 September 2026. No site visits and
-              no calls yet, so nothing here is more than a desk review — read{' '}
+              {causes.length} causes, researched from public documents on 18 September 2026. No site
+              visits and no calls yet, so nothing here is more than a desk review — read{' '}
               <Link href="/methodology" className="text-accent underline">
                 how we score
               </Link>{' '}
@@ -52,6 +53,13 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
             <p>
               Whatever the arithmetic says, God gives the growth. These pages measure money and
               delivery, not spiritual fruit.
+            </p>
+            <p>
+              A figure here wrong, or a ministry missing?{' '}
+              <a href={`mailto:${site.contact}`} className="text-accent underline">
+                {site.contact}
+              </a>{' '}
+              — a correction that comes with a source gets published.
             </p>
           </div>
         </footer>

@@ -13,9 +13,16 @@ export default function HomePage() {
         </h1>
         <p className="mt-5 text-lg text-gray-700">
           Christian ministries advertise impact in round numbers. This directory takes their audited
-          spending, divides it by the outcomes they report, and prints both halves of the sum next
-          to the document they came from. Where a ministry has not published the numbers, the space
-          stays empty instead of getting filled with a guess.
+          spending, divides it by what they actually delivered, and prints both halves of the sum
+          next to the document they came from. Where a ministry has not published the numbers, the
+          space stays empty instead of getting filled with a guess.
+        </p>
+        <p className="mt-4 text-lg text-gray-700">
+          Delivered, not reached — and those are usually different numbers. A ministry’s headline
+          count is normally its broadest one, so where the figure it leads with counts people it
+          reached rather than work its own money paid for, the page divides by the narrower number
+          and says plainly that it has done so. The headline stays alongside, with its own
+          arithmetic, so you see the whole range rather than our choice inside it.
         </p>
         <p className="mt-4 text-lg text-gray-700">
           {withCostModel} of {causes.length} causes here have both halves published. That ratio is

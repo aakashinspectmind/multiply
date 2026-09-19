@@ -11,9 +11,9 @@ Live pages: the cause list (`/`), one page per cause (`/causes/[slug]`), and the
 
 The premise — "see what $20 does" — cannot be sourced from ministry marketing. Of eight
 well-known ministries researched on 18 September 2026, **two** published anything resembling a cost
-per outcome, and one of those two advertises a figure about 8× cheaper than its own annual report
-implies. The gap between what ministries advertise and what their financial statements support is
-the thing worth building around.
+per outcome, and one of those two advertises a figure about 4× cheaper than its own annual report
+implies — 8× if you divide by the Bibles it actually reports placing. The gap between what
+ministries advertise and what their financial statements support is the thing worth building around.
 
 So the product is not a payment platform. It is the arithmetic, shown:
 

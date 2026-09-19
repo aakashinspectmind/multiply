@@ -96,9 +96,13 @@ export default async function CausePage({
         {!cause.legalName && cause.ein && (
           <p className="mt-1 text-base text-gray-700">EIN {cause.ein}</p>
         )}
-        <p className="mt-3 text-lg text-gray-800">{cause.whatTheyDo}</p>
-        <p className="mt-3 text-base text-gray-700">{cause.countries.join(' · ')}</p>
-        <p className="mt-4 text-base text-gray-800">{VERIFICATION_MEANING[cause.verification]}</p>
+        <div className="longform mt-3">
+          <p>{cause.whatTheyDo}</p>
+        </div>
+        <p className="measure mt-3 text-base text-gray-700">{cause.countries.join(' · ')}</p>
+        <p className="measure mt-4 text-base text-gray-700">
+          {VERIFICATION_MEANING[cause.verification]}
+        </p>
 
         <div className="mt-5 flex flex-wrap items-center gap-4">
           <a
@@ -132,13 +136,13 @@ export default async function CausePage({
         <h2 className="text-2xl font-semibold tracking-tight text-flag">
           What we have not verified
         </h2>
-        <ul className="mt-4 list-disc space-y-3 pl-5">
-          {cause.notVerified.map((item) => (
-            <li key={item} className="text-base text-gray-800">
-              {item}
-            </li>
-          ))}
-        </ul>
+        <div className="longform mt-4">
+          <ul className="list-disc pl-5">
+            {cause.notVerified.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </section>
 
       {cause.accreditations.length > 0 && (
@@ -161,13 +165,13 @@ export default async function CausePage({
       {cause.notes && cause.notes.length > 0 && (
         <section className="rounded-xl border border-black/10 bg-white p-6">
           <h2 className="text-2xl font-semibold tracking-tight">Worth knowing</h2>
-          <ul className="mt-3 list-disc space-y-3 pl-5">
-            {cause.notes.map((note) => (
-              <li key={note} className="text-base text-gray-800">
-                {note}
-              </li>
-            ))}
-          </ul>
+          <div className="longform mt-3">
+            <ul className="list-disc pl-5">
+              {cause.notes.map((note) => (
+                <li key={note}>{note}</li>
+              ))}
+            </ul>
+          </div>
         </section>
       )}
 

@@ -7,11 +7,86 @@
   --color-accent-soft: #e9f1ed;
   --color-flag: #8a4b12;
   --color-flag-soft: #fdf2e4;
+  /*
+   * Running-prose ink, the same value as gray-800. Declared here rather than
+   * read as var(--color-gray-800), because Tailwind only emits the theme
+   * variables it sees used — so the moment the last `text-gray-800` utility left
+   * the codebase, that reference would resolve to nothing, the declaration would
+   * be dropped, and every paragraph on the site would quietly change colour.
+   */
+  --color-prose: oklch(27.8% 0.033 256.848);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-source-serif);
 }
 
 body {
   background: var(--color-paper);
   color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * Three typefaces, one rule each, so the page says which kind of thing you are
+ * reading before you read it.
+ *
+ *   serif — the argument: headings and running prose.
+ *   sans  — the instruments: nav, buttons, labels, table rows, badges.
+ *   mono  — the figures, wherever a number is meant to be checked.
+ *
+ * Headings are set globally because every heading on this site is editorial.
+ * Anything that is a control rather than a title keeps the sans it inherits.
+ */
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  /*
+   * Long-form argument. Applied to the section rather than the paragraph, so
+   * prose stops carrying an identical utility string on every block and every
+   * paragraph on the site gets the same measure and the same rhythm.
+   *
+   * 68ch is the measure. Before this the widest paragraph ran to 123 characters
+   * a line, which is roughly twice what the eye tracks without losing its place.
+   */
+  .longform {
+    font-family: var(--font-serif);
+    font-size: 1.1875rem;
+    line-height: 1.7;
+    color: var(--color-prose);
+  }
+
+  .longform > * + * {
+    margin-top: 1rem;
+  }
+
+  .longform p,
+  .longform li {
+    max-width: 68ch;
+  }
+
+  .longform li + li {
+    margin-top: 0.625rem;
+  }
+
+  .longform a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-color: rgb(31 90 75 / 0.4);
+    text-underline-offset: 2px;
+  }
+
+  .longform a:hover {
+    text-decoration-color: rgb(31 90 75);
+  }
+
+  /* A single comfortable measure for prose that is not inside a .longform. */
+  .measure {
+    max-width: 68ch;
+  }
 }

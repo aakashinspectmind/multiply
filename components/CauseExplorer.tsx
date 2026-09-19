@@ -40,7 +40,12 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
 
   return (
     <div>
-      <div className="rounded-xl border border-black/10 bg-white p-5">
+      {/*
+       * The one card on the page. The filter row below used to be its visual
+       * twin, so the surface a reader is meant to touch first looked like
+       * furniture.
+       */}
+      <div className="rounded-xl border border-black/10 bg-white p-6 shadow-sm sm:p-7">
         <fieldset>
           <legend className="text-lg font-semibold">I want to give</legend>
           <div className="mt-3 flex flex-wrap gap-2">
@@ -94,7 +99,7 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
         <GiftBoard causes={causes} amount={amount} />
       </div>
 
-      <div className="mt-6 rounded-xl border border-black/10 bg-white p-5">
+      <div className="mt-10 border-b border-black/10 pb-4">
         <div className="flex flex-wrap gap-6">
           <label className="text-base text-gray-700">
             <span className="mr-2">Cause</span>
@@ -129,9 +134,9 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
         </div>
 
         {sort === 'cost' && (
-          <p className="mt-4 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
-            A Bible and a surgery are not the same purchase. This order is only meaningful inside
-            one cause type — filter first, then compare.
+          <p className="measure mt-4 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
+            A Bible and a surgery are not the same purchase. This order is only meaningful inside one
+            cause type — filter first, then compare.
           </p>
         )}
       </div>

@@ -1,5 +1,6 @@
 import { AmountPicker } from './AmountPicker';
 import { SourceLink } from './SourceLink';
+import { StatementLine } from './StatementLine';
 import {
   costPerOutcome,
   formatCount,
@@ -46,7 +47,7 @@ function MinistryClaims({
           }
           return (
             <li key={claim.quote}>
-              <blockquote className="border-l-2 border-accent/40 pl-4 text-lg text-gray-800">
+              <blockquote className="measure border-l-2 border-accent/40 pl-4 font-serif text-lg leading-relaxed text-gray-800">
                 “{claim.quote}”
               </blockquote>
               <p className="mt-2 text-base text-gray-700">
@@ -54,7 +55,7 @@ function MinistryClaims({
               </p>
               {implied && perOutcome !== null && factor !== null && (
                 <p
-                  className={`mt-2 rounded-lg px-4 py-3 text-base ${
+                  className={`measure mt-3 rounded-lg px-4 py-3 text-base ${
                     factor >= 1.5 || factor <= 0.67
                       ? 'bg-flag-soft text-flag'
                       : 'bg-accent-soft text-accent'
@@ -70,13 +71,13 @@ function MinistryClaims({
                 </p>
               )}
               {implied && factor === null && perOutcome === null && (
-                <p className="mt-2 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
+                <p className="measure mt-3 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
                   That works out to {formatMoney(implied)} per {outcome}, on the ministry’s own
                   figure. We have nothing to check it against — see what is missing below.
                 </p>
               )}
               {implied && factor === null && perOutcome !== null && (
-                <p className="mt-2 rounded-lg bg-paper px-4 py-3 text-base text-gray-800">
+                <p className="measure mt-3 rounded-lg bg-paper px-4 py-3 text-base text-gray-800">
                   That works out to {formatMoney(implied)} per {outcome}, on the ministry’s own
                   figure. It is a different unit from the one divided out above — {fallbackOutcome}{' '}
                   — so the two numbers do not check each other, and we do not pretend they do.
@@ -99,11 +100,13 @@ export function ImpactSection({ cause, amount }: { cause: Cause; amount: number 
         <h2 className="text-2xl font-semibold tracking-tight text-flag">
           We cannot tell you what {formatMoney(amount)} buys here
         </h2>
-        <p className="mt-3 text-lg text-gray-800">
-          {cause.name} has not published a spending figure and an outcome count that can be divided
-          into each other. Any number we printed would be invented, so there is none. The specific
-          documents we looked for are listed further down.
-        </p>
+        <div className="longform mt-3">
+          <p>
+            {cause.name} has not published a spending figure and an outcome count that can be divided
+            into each other. Any number we printed would be invented, so there is none. The specific
+            documents we looked for are listed further down.
+          </p>
+        </div>
         <div className="mt-4">
           <AmountPicker slug={cause.slug} amount={amount} />
         </div>
@@ -134,55 +137,48 @@ export function ImpactSection({ cause, amount }: { cause: Cause; amount: number 
 
       <div className="mt-6 rounded-lg bg-paper p-5">
         <h3 className="text-lg font-semibold">The division</h3>
-        <dl className="mt-3 space-y-3">
-          <div className="flex flex-wrap items-baseline gap-x-3">
-            <dt className="text-base text-gray-700">
-              {model.spend.fiscalYear} {SPEND_BASIS_LABELS[model.spend.basis]}
-            </dt>
-            <dd className="font-mono text-lg">${formatCount(model.spend.amount)}</dd>
-            <dd className="basis-full sm:basis-auto">
-              <SourceLink cause={cause} id={model.spend.sourceId} />
-            </dd>
-          </div>
-          <div className="flex flex-wrap items-baseline gap-x-3">
-            <dt className="text-base text-gray-700">
-              divided by {model.count.label}, {model.count.fiscalYear}
-            </dt>
-            <dd className="font-mono text-lg">{formatCount(model.count.amount)}</dd>
-            <dd className="basis-full sm:basis-auto">
-              <SourceLink cause={cause} id={model.count.sourceId} />
-            </dd>
-          </div>
-          <div className="flex flex-wrap items-baseline gap-x-3 border-t border-black/10 pt-3">
-            <dt className="text-base font-medium text-ink">per {model.outcome}</dt>
-            <dd className="font-mono text-lg font-semibold">{formatMoney(perOutcome)}</dd>
-          </div>
+        <dl className="mt-4">
+          <StatementLine
+            label={`${model.spend.fiscalYear} ${SPEND_BASIS_LABELS[model.spend.basis]}`}
+            figure={`$${formatCount(model.spend.amount)}`}
+            source={<SourceLink cause={cause} id={model.spend.sourceId} />}
+          />
+          <StatementLine
+            label={`divided by ${model.count.label}, ${model.count.fiscalYear}`}
+            figure={formatCount(model.count.amount)}
+            source={<SourceLink cause={cause} id={model.count.sourceId} />}
+          />
+          <StatementLine label={`per ${model.outcome}`} figure={formatMoney(perOutcome)} total />
         </dl>
 
-        <p className="mt-4 text-base text-gray-800">
-          <span className="font-medium">
-            {model.attribution === 'all-program-spend'
-              ? 'Every program dollar is charged to this one outcome. '
-              : 'Only the spending on this program line is counted. '}
-          </span>
-          {model.caveat}
-        </p>
+        <div className="longform mt-5">
+          <p>
+            <span className="font-semibold">
+              {model.attribution === 'all-program-spend'
+                ? 'Every program dollar is charged to this one outcome. '
+                : 'Only the spending on this program line is counted. '}
+            </span>
+            {model.caveat}
+          </p>
+        </div>
       </div>
 
       {model.alternates && model.alternates.length > 0 && (
-        <div className="mt-5">
+        <div className="mt-6">
           <h3 className="text-lg font-semibold">Other defensible denominators</h3>
-          <ul className="mt-2 space-y-3">
-            {model.alternates.map((alternate) => (
-              <li key={alternate.label} className="text-base text-gray-800">
-                <span className="font-medium">
-                  {formatMoney((alternate.spend ?? model.spend.amount) / alternate.count)} each,
-                  dividing by {alternate.label}
-                </span>{' '}
-                — {alternate.note}
-              </li>
-            ))}
-          </ul>
+          <div className="longform mt-2">
+            <ul>
+              {model.alternates.map((alternate) => (
+                <li key={alternate.label}>
+                  <span className="font-semibold">
+                    {formatMoney((alternate.spend ?? model.spend.amount) / alternate.count)} each,
+                    dividing by {alternate.label}
+                  </span>{' '}
+                  — {alternate.note}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       )}
 

@@ -9,6 +9,16 @@ import {
 } from '@/lib/impact';
 import { CATEGORY_LABELS, type Cause } from '@/lib/types';
 
+/**
+ * One template, used by every row, so the columns cannot drift apart.
+ *
+ * Kind of work · what the gift does · ministry · the rate. Below `sm` the row
+ * stacks and the last two share a line, which is what `sm:contents` on their
+ * wrapper is for: on a phone it is a flex row, and at `sm` it dissolves so its
+ * children become grid cells in columns three and four.
+ */
+const COLUMNS = 'sm:grid-cols-[11rem_minmax(0,1fr)_13rem_auto]';
+
 function Row({
   line,
   amount,
@@ -20,21 +30,39 @@ function Row({
   sole: boolean;
 }) {
   return (
-    <li className="flex flex-wrap items-baseline gap-x-3 gap-y-1 py-3">
-      <span className="w-52 shrink-0 text-base text-gray-700">
+    <li className={`grid grid-cols-1 gap-x-5 gap-y-1 py-3.5 sm:items-baseline ${COLUMNS}`}>
+      <span className="text-base text-gray-600 sm:text-gray-700">
         {CATEGORY_LABELS[line.cause.category]}
       </span>
-      <span className="text-lg font-semibold text-accent">{buysPhrase(line)}</span>
-      <Link
-        href={{ pathname: `/causes/${line.cause.slug}`, query: { amount } }}
-        className="text-base text-gray-700 underline decoration-gray-400 hover:text-ink"
-      >
-        {line.cause.name}
-      </Link>
-      <span className="text-base text-gray-700">
-        {formatMoney(line.perOutcome)} per {line.model.outcome}
+
+      <span className="text-lg leading-snug font-semibold text-accent">
+        {buysPhrase(line)}
+        {sole && (
+          <span className="block text-base font-normal text-gray-600">
+            the only one in this kind of work we can price
+          </span>
+        )}
       </span>
-      {sole && <span className="text-base text-gray-600">— the only one we can price</span>}
+
+      <div className="flex items-baseline justify-between gap-3 sm:contents">
+        <Link
+          href={{ pathname: `/causes/${line.cause.slug}`, query: { amount } }}
+          className="text-base text-gray-700 underline decoration-gray-400 hover:text-ink"
+        >
+          {line.cause.name}
+        </Link>
+        {/*
+         * "each" rather than a column header, and rather than repeating the
+         * outcome. Every row used to name its outcome twice — "16% of one
+         * Emergency Relief Kit delivered to a persecuted family" and then
+         * "$322 per Emergency Relief Kit delivered to a persecuted family".
+         * The noun is already in the cell to the left.
+         */}
+        <span className="shrink-0 font-mono text-base text-gray-700 tabular-nums sm:text-right">
+          {formatMoney(line.perOutcome)}
+          <span className="font-sans text-gray-600"> each</span>
+        </span>
+      </div>
     </li>
   );
 }
@@ -56,11 +84,11 @@ export function GiftBoard({ causes, amount }: { causes: Cause[]; amount: number 
   if (lines.length === 0) return null;
 
   return (
-    <section className="mt-6 border-t border-black/10 pt-5">
-      <h2 className="text-xl font-semibold tracking-tight">
+    <section className="mt-6 border-t border-black/10 pt-6">
+      <h2 className="text-2xl font-semibold tracking-tight">
         The most {formatMoney(amount)} does, by kind of work
       </h2>
-      <ul className="mt-1 divide-y divide-black/5">
+      <ul className="mt-3 divide-y divide-black/5">
         {lines.map((line) => (
           <Row
             key={line.cause.slug}
@@ -70,23 +98,25 @@ export function GiftBoard({ causes, amount }: { causes: Cause[]; amount: number 
           />
         ))}
       </ul>
-      <p className="mt-3 text-base text-gray-700">
-        Furthest means most units per dollar, from each ministry&rsquo;s own published spending and
-        counts. It is an average, not a price, and a cheap outcome is not a better one.
-      </p>
-      {unpriced.length > 0 && (
-        <p className="mt-2 text-base text-gray-700">
-          No line above for{' '}
-          {unpriced.map((category, index) => (
-            <span key={category}>
-              {index > 0 && (index === unpriced.length - 1 ? ' or ' : ', ')}
-              <span className="text-ink">{CATEGORY_LABELS[category].toLowerCase()}</span>
-            </span>
-          ))}
-          . Those ministries are in the directory and none of them publishes numbers that divide, so
-          there is nothing to put here rather than nothing to give to.
+      <div className="measure mt-5 space-y-2 text-base text-gray-700">
+        <p>
+          Furthest means most units per dollar, from each ministry&rsquo;s own published spending and
+          counts. It is an average, not a price, and a cheap outcome is not a better one.
         </p>
-      )}
+        {unpriced.length > 0 && (
+          <p>
+            No line above for{' '}
+            {unpriced.map((category, index) => (
+              <span key={category}>
+                {index > 0 && (index === unpriced.length - 1 ? ' or ' : ', ')}
+                <span className="text-ink">{CATEGORY_LABELS[category].toLowerCase()}</span>
+              </span>
+            ))}
+            . Those ministries are in the directory and none of them publishes numbers that divide,
+            so there is nothing to put here rather than nothing to give to.
+          </p>
+        )}
+      </div>
     </section>
   );
 }

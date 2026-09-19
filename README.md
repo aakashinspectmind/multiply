@@ -144,10 +144,36 @@ repo invisible to every visitor.
 | `lib/impact.ts`             | The arithmetic: cost per outcome, gift impact, pooling, ranking, sorting.                   |
 | `lib/roi.ts`                | Cost-base ratios against the benchmark country.                                             |
 | `components/GiftBoard.tsx`  | The furthest an amount goes, one line per kind of work.                                     |
+| `components/StatementLine.tsx` | One label-and-figure line of a division. Shared so columns of money cannot drift apart.  |
+| `app/globals.css`           | The type system. Read the next section before changing prose styling.                        |
 | `scripts/check-sources.mjs` | Integrity and link checks.                                                                  |
 | `app/methodology/page.tsx`  | Scoring rubric and the limits we state out loud.                                            |
 
 Adding or editing a cause: read `DATA.md` first.
+
+## Type and layout
+
+Three typefaces, one job each, so a page says what kind of thing you are reading before you read
+it. Serif is the argument — headings and running prose. Sans is the instruments — nav, buttons,
+labels, table rows, badges. Mono is the figures, wherever a number is meant to be checked.
+
+Two classes carry it, both in `app/globals.css`:
+
+- **`.longform`** on a wrapper, not a paragraph. Sets the reading face, 19px, and a 68ch measure on
+  every `p` and `li` inside. Use it for any block of argument. It replaced about twenty-five copies
+  of the same utility string, and it is why prose is consistent.
+- **`.measure`** for prose that is not inside a `.longform` — the 68ch limit alone.
+
+Three things that will bite:
+
+- **Do not put `.measure` on an element that already has a `max-w-*` utility.** Tailwind 4 orders
+  utilities after components, so the utility wins and the measure silently does nothing. Nest a div.
+- **Body text floors are load-bearing, not taste.** Readers are largely older church and
+  construction professionals. Never below `text-base` for anything read, never lighter than
+  `text-gray-600` for secondary prose. `/tmp` audit aside, the rule is in `CLAUDE.md`.
+- **Prose colour is `--color-prose`, not `var(--color-gray-800)`.** Tailwind 4 only emits the theme
+  variables it sees used, so reading a Tailwind grey from CSS breaks the moment the last utility
+  using it leaves the codebase — and an undefined var drops the whole declaration with no error.
 
 ## What is deliberately not here
 

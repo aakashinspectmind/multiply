@@ -83,7 +83,7 @@ function ImpactLine({ cause, amount }: { cause: Cause; amount: number }) {
 
 export function CauseCard({ cause, amount }: { cause: Cause; amount: number }) {
   return (
-    <article className="rounded-xl border border-black/10 bg-white p-6 shadow-sm">
+    <article className="flex flex-col rounded-xl border border-black/10 bg-white p-6 shadow-sm">
       <div className="flex flex-wrap items-center gap-3">
         <span className="text-base font-medium text-gray-700">
           {CATEGORY_LABELS[cause.category]}
@@ -110,7 +110,9 @@ export function CauseCard({ cause, amount }: { cause: Cause; amount: number }) {
         <ImpactLine cause={cause} amount={amount} />
       </div>
 
-      <div className="mt-4 flex flex-wrap items-center gap-4">
+      {/* Cards in a row stretch to the tallest, so the actions sit at a common
+          baseline rather than floating wherever the prose happened to end. */}
+      <div className="mt-auto flex flex-wrap items-center gap-4 pt-4">
         <Link
           href={{ pathname: `/causes/${cause.slug}`, query: { amount } }}
           className="text-base font-medium text-accent underline decoration-accent/40 hover:decoration-accent"

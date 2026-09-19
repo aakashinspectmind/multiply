@@ -1,4 +1,5 @@
 import { SourceLink } from './SourceLink';
+import { StatementLine } from './StatementLine';
 import { BENCHMARK_COUNTRY, COST_BASE_SOURCE } from '@/data/cost-base';
 import { formatCount } from '@/lib/impact';
 import { costBaseHeadline, costBaseRows, formatMultiple } from '@/lib/roi';
@@ -20,43 +21,43 @@ export function RoiSection({ cause }: { cause: Cause }) {
         </p>
       )}
 
-      <p className="mt-3 text-lg text-gray-800">{roi.reason}</p>
+      <div className="longform mt-3">
+        <p>{roi.reason}</p>
+      </div>
 
       <div className="mt-6">
         <h3 className="text-lg font-semibold">What creates the leverage</h3>
-        <ul className="mt-3 space-y-3">
-          {roi.levers.map((lever) => (
-            <li key={lever} className="text-base text-gray-800">
-              <span className="font-medium">{ROI_LEVER_LABELS[lever]}</span> —{' '}
-              {ROI_LEVER_EXPLANATIONS[lever]}
-            </li>
-          ))}
-        </ul>
+        <div className="longform mt-3">
+          <ul>
+            {roi.levers.map((lever) => (
+              <li key={lever}>
+                <span className="font-semibold">{ROI_LEVER_LABELS[lever]}</span> —{' '}
+                {ROI_LEVER_EXPLANATIONS[lever]}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       {roi.comparison && (
         <div className="mt-6 rounded-lg bg-white p-5">
           <h3 className="text-lg font-semibold">Against the high-cost equivalent</h3>
-          <dl className="mt-3 space-y-2">
-            <div className="flex flex-wrap items-baseline gap-x-3">
-              <dt className="text-base text-gray-700">Here</dt>
-              <dd className="font-mono text-lg">{roi.comparison.here}</dd>
-            </div>
-            <div className="flex flex-wrap items-baseline gap-x-3">
-              <dt className="text-base text-gray-700">{BENCHMARK_COUNTRY}</dt>
-              <dd className="font-mono text-lg">{roi.comparison.benchmark}</dd>
-              <dd className="basis-full sm:basis-auto">
-                <SourceLink cause={cause} id={roi.comparison.benchmarkSourceId} />
-              </dd>
-            </div>
-            <div className="flex flex-wrap items-baseline gap-x-3 border-t border-black/10 pt-2">
-              <dt className="text-base font-medium text-ink">Difference</dt>
-              <dd className="font-mono text-lg font-semibold">
-                about {formatMultiple(roi.comparison.multiple)}
-              </dd>
-            </div>
+          <dl className="mt-4">
+            <StatementLine label="Here" figure={roi.comparison.here} />
+            <StatementLine
+              label={BENCHMARK_COUNTRY}
+              figure={roi.comparison.benchmark}
+              source={<SourceLink cause={cause} id={roi.comparison.benchmarkSourceId} />}
+            />
+            <StatementLine
+              label="Difference"
+              figure={`about ${formatMultiple(roi.comparison.multiple)}`}
+              total
+            />
           </dl>
-          <p className="mt-3 text-base text-gray-800">{roi.comparison.caveat}</p>
+          <div className="longform mt-4">
+            <p>{roi.comparison.caveat}</p>
+          </div>
         </div>
       )}
 
@@ -91,7 +92,7 @@ export function RoiSection({ cause }: { cause: Cause }) {
                 ))}
               </tbody>
             </table>
-            <p className="mt-3 text-base text-gray-700">
+            <p className="measure mt-3 text-base text-gray-700">
               GNI per capita, Atlas method, current US dollars ·{' '}
               <a
                 href={COST_BASE_SOURCE.url}
@@ -103,10 +104,10 @@ export function RoiSection({ cause }: { cause: Cause }) {
               </a>{' '}
               · read {COST_BASE_SOURCE.retrieved}
             </p>
-            <p className="mt-2 text-base text-gray-700">
-              This is a cost-of-living ratio, not a measure of how well the ministry spends. It
-              tells you what a local wage or a bag of cement costs, and nothing about whether the
-              work is any good — the rest of this page is for that.
+            <p className="measure mt-2 text-base text-gray-700">
+              This is a cost-of-living ratio, not a measure of how well the ministry spends. It tells
+              you what a local wage or a bag of cement costs, and nothing about whether the work is
+              any good — the rest of this page is for that.
             </p>
           </>
         ) : (

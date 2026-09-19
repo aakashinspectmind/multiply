@@ -27,11 +27,11 @@ export function Scorecard({ cause }: { cause: Cause }) {
     <section className="rounded-xl border border-black/10 bg-white p-6">
       <div className="flex flex-wrap items-baseline justify-between gap-3">
         <h2 className="text-2xl font-semibold tracking-tight">Desk review</h2>
-        <p className="text-lg text-gray-700">
+        <p className="font-mono text-lg tracking-tight text-gray-700 tabular-nums">
           {scoreTotal(cause)} of {MAX_SCORE}
         </p>
       </div>
-      <dl className="mt-5 space-y-5">
+      <dl className="mt-5 space-y-6">
         {SCORE_DIMENSIONS.map((dimension) => {
           const score = cause.scores[dimension];
           return (
@@ -40,8 +40,10 @@ export function Scorecard({ cause }: { cause: Cause }) {
                 <span className="text-lg font-medium">{SCORE_DIMENSION_LABELS[dimension]}</span>
                 <Pips value={score.value} />
               </dt>
-              <dd className="mt-1 text-base text-gray-800">{score.note}</dd>
-              <dd className="mt-1 text-base text-gray-700">
+              {/* Our reading of this ministry first, in the reading face; the generic
+                  question the score answers second, and quieter. */}
+              <dd className="longform mt-1">{score.note}</dd>
+              <dd className="measure mt-1 text-base text-gray-600">
                 {SCORE_DIMENSION_QUESTIONS[dimension]}
               </dd>
             </div>

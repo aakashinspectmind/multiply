@@ -40,7 +40,7 @@ npm install
 npm run dev                      # http://localhost:3000
 npm run typecheck                # tsc --noEmit
 npm test                         # arithmetic + directory integrity
-npm run check:sources            # fetch every source, donate and site URL (~60 requests, serial)
+npm run check:sources            # fetch every source, donate and site URL (serial per host)
 npm run check:sources:offline    # same integrity rules, no network
 npm run build
 ```

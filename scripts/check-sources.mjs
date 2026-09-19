@@ -116,8 +116,24 @@ if (!offline) {
     ]),
   ];
 
-  // Serial on purpose: a few dozen links, and hammering ministry sites is rude.
-  for (const target of targets) await fetchOk(target);
+  // Serial per host, parallel across hosts. Hammering one ministry's server is
+  // rude and gets us rate-limited into false failures; waiting out several
+  // hundred links one at a time means nobody runs the check.
+  const byHost = new Map();
+  for (const target of targets) {
+    const host = new URL(target.url).hostname;
+    const queue = byHost.get(host);
+    if (queue) queue.push(target);
+    else byHost.set(host, [target]);
+  }
+
+  const queues = [...byHost.values()];
+  const workers = Array.from({ length: Math.min(8, queues.length) }, async () => {
+    for (let queue = queues.pop(); queue; queue = queues.pop()) {
+      for (const target of queue) await fetchOk(target);
+    }
+  });
+  await Promise.all(workers);
 }
 
 if (problems.length > 0) {

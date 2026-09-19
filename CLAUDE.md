@@ -21,7 +21,7 @@ npm run build
 ## Rules that are not negotiable
 
 - **No figure without a source.** Every number shown to a donor resolves to a `Source` in
-  `data/causes.ts`. See `DATA.md` before touching the data.
+  `data/causes/`. See `DATA.md` before touching the data.
 - **No invented numbers, no fallbacks.** A missing denominator renders as "nothing here to divide".
   Do not estimate, interpolate, or carry a figure over from a prior year.
 - **Caveats ship with the figure.** `costModel.caveat` is required and is rendered, not hidden

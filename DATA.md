@@ -1,6 +1,6 @@
 # Adding or changing a cause
 
-`data/causes.ts` is the product. Treat an edit to it like an edit to a financial statement.
+`data/causes/` is the product — one file per cause, assembled in `data/causes/index.ts`. Treat an edit to it like an edit to a financial statement.
 
 ## Rules
 

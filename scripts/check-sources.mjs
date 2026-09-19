@@ -9,7 +9,7 @@
  *
  * Run: npm run check:sources        (add --offline to skip the network)
  */
-import { causes } from '../data/causes.ts';
+import { causes } from '../data/causes/index.ts';
 import { COST_BASE_SOURCE } from '../data/cost-base.ts';
 import { ROI_LEVERS } from '../lib/types.ts';
 import { costBaseRows } from '../lib/roi.ts';

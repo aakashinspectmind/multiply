@@ -52,7 +52,7 @@ lying until the link is fixed.
 
 | Path | What |
 | --- | --- |
-| `data/causes.ts` | The directory. Every cause, every figure, every source. |
+| `data/causes/` | The directory. One file per cause — every figure, every source. Assembled in `index.ts`. |
 | `data/cost-base.ts` | World Bank income per person, and the region names that deliberately have none. |
 | `data/site.ts` | Name, tagline, money policy. Rename the project here. |
 | `lib/types.ts` | The data contract, including what each verification level is allowed to mean. |

@@ -1,7 +1,7 @@
 import type { Cause } from '@/lib/types';
 
 /**
- * The starter directory. Eight entries, researched 2026-09-18 from public
+ * The starter directory. Nine entries, researched 2026-09-18 from public
  * documents only — no site visits, no calls, no relationships yet.
  *
  * Read `DATA.md` before editing. The short version: every number needs a
@@ -35,6 +35,36 @@ export const causes: Cause[] = [
       { label: 'Excellence in Giving certified transparent', sourceId: 'cure-site' },
     ],
     verification: 'documents-reviewed',
+    biblicalAlignment: {
+      mandate:
+        'Healing the sick was how Jesus made the kingdom visible, and he sent his disciples out to do the same. A child with an untreated clubfoot in Niger is precisely the person the gospel puts at the front of the queue.',
+      scriptures: [
+        {
+          ref: 'Matthew 9:35',
+          text:
+            'And Jesus went throughout all the cities and villages, teaching in their synagogues and proclaiming the gospel of the kingdom and healing every disease and every affliction.',
+        },
+        {
+          ref: 'Luke 14:13–14',
+          text:
+            'But when you give a feast, invite the poor, the crippled, the lame, the blind, and you will be blessed, because they cannot repay you.',
+        },
+        {
+          ref: 'Matthew 25:40',
+          text:
+            'Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.',
+        },
+      ],
+      doctrine: { label: '“We share Jesus” is one of five stated distinctives', sourceId: 'cure-site' },
+      concerns: [
+        'Medical mission carries a permanent risk that care becomes the price of a hearing. CURE treats children regardless of their family’s faith, which is the right answer, but we have not read a written policy on how chaplains handle consent.',
+      ],
+    },
+    roi: {
+      levers: ['local-cost-base', 'local-workers', 'durable-asset', 'multiplication'],
+      reason:
+        'The operations happen in eight low-income countries, in CURE’s own hospitals, increasingly by surgeons from those countries. About $1,900 covers a whole surgical episode — theatre, implant, ward stay, casting and rehabilitation — because every input except the imported hardware is priced locally. Training national surgeons is the part that compounds: the FY25 report follows an Ethiopian surgeon trained at CURE Kenya now leading Ethiopia’s first paediatric spine programme.',
+    },
     costModel: {
       outcome: 'surgery for a child',
       outcomePlural: 'surgeries for children',
@@ -165,6 +195,34 @@ export const causes: Cause[] = [
       { label: 'Candid Platinum Transparency 2025', sourceId: 'wm-site' },
     ],
     verification: 'documents-reviewed',
+    biblicalAlignment: {
+      mandate:
+        'A cup of water given to the thirsty is the one act Jesus promises will not go unrewarded, and the one he names when he describes people meeting him without knowing it. Water is also the image he chose for himself, which is why this work sits so naturally alongside preaching.',
+      scriptures: [
+        {
+          ref: 'Matthew 25:35',
+          text: 'For I was hungry and you gave me food, I was thirsty and you gave me drink.',
+        },
+        {
+          ref: 'Matthew 10:42',
+          text:
+            'And whoever gives one of these little ones even a cup of cold water because he is a disciple, truly, I say to you, he will by no means lose his reward.',
+        },
+        {
+          ref: 'Isaiah 58:10–11',
+          text:
+            'If you pour yourself out for the hungry and satisfy the desire of the afflicted, then shall your light rise in the darkness… and you shall be like a spring of water, whose waters do not fail.',
+        },
+      ],
+      concerns: [
+        'Safe water is wanted by everyone, which makes it an easy vehicle for pressure. We have not read Water Mission’s policy on whether access is ever conditioned on attendance at anything.',
+      ],
+    },
+    roi: {
+      levers: ['durable-asset', 'local-cost-base', 'local-workers'],
+      reason:
+        'A treatment system is capital, not consumption. Once installed it keeps producing safe water for years, so the true cost per person falls the longer it runs — which is why the number that matters is not people reached this year but people with ongoing access. Water Mission reports both, separately, and the gap between them is large and honest: 1.75 million reached against 770,000 with ongoing access.',
+    },
     costModel: {
       outcome: 'person served with safe water for a year',
       outcomePlural: 'people served with safe water for a year',
@@ -308,6 +366,36 @@ export const causes: Cause[] = [
       { label: 'Excellence in Giving certified transparent', sourceId: 'bl-site' },
     ],
     verification: 'documents-reviewed',
+    biblicalAlignment: {
+      mandate:
+        'Scripture in a language someone actually reads is the instrument God says he uses. Paul’s argument is a chain of dependencies — no preacher, no hearing; no hearing, no faith — and a Bible in the hands of a believer who has never owned one closes a link in it.',
+      scriptures: [
+        {
+          ref: 'Romans 10:14, 17',
+          text:
+            'How then will they call on him in whom they have not believed? And how are they to believe in him of whom they have never heard?… So faith comes from hearing, and hearing through the word of Christ.',
+        },
+        {
+          ref: 'Isaiah 55:11',
+          text:
+            'So shall my word be that goes out from my mouth; it shall not return to me empty, but it shall accomplish that which I purpose.',
+        },
+        {
+          ref: '2 Timothy 3:16–17',
+          text:
+            'All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness.',
+        },
+      ],
+      concerns: [
+        'The $5-for-two-Bibles figure does not reconcile with the ministry’s own annual report — see the comparison below. A ministry that advertises a unit cost it cannot support from its financials is a ministry to ask questions of before giving at scale.',
+        'A Bible placed is not a Bible read. “People engaged in God’s Word” is Bible League’s phrase and Bible League does not define it.',
+      ],
+    },
+    roi: {
+      levers: ['local-cost-base', 'existing-network', 'volunteer-leverage'],
+      reason:
+        'Printing, shipping and distribution all happen inside the receiving country, and the last mile runs through partner churches and trained volunteers who were already there. Paid coordination is small relative to the unpaid hours it puts to work, so the marginal cost of one more Scripture set is genuinely low — about $21 per Bible actually reported placed, on our arithmetic.',
+    },
     costModel: {
       outcome: 'person engaged in God’s Word',
       outcomePlural: 'people engaged in God’s Word',
@@ -429,6 +517,32 @@ export const causes: Cause[] = [
       'Once a year Epic Church raises a single offering and distributes it across partners it already knows — church plants, a girls’ school in Ghana, an orphan home in Eswatini, persecuted pastors in North India, and a dozen organisations working in San Francisco’s Tenderloin and SoMa. Relationships come first: partners are chosen because people from the church serve with them.',
     accreditations: [],
     verification: 'self-reported',
+    biblicalAlignment: {
+      mandate:
+        'This is the Antioch pattern: a local congregation prays, sets money aside, and sends it to work it knows by name. The New Testament’s fundraising is churches supporting churches, with named people carrying the gift.',
+      scriptures: [
+        {
+          ref: 'Acts 13:2–3',
+          text:
+            'While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for me Barnabas and Saul for the work to which I have called them.” Then after fasting and praying they laid their hands on them and sent them off.',
+        },
+        {
+          ref: '2 Corinthians 8:3–4',
+          text:
+            'For they gave according to their means, as I can testify, and beyond their means, of their own accord, begging us earnestly for the favor of taking part in the relief of the saints.',
+        },
+        { ref: 'Galatians 2:10', text: 'Only, they asked us to remember the poor.' },
+      ],
+      concerns: [
+        'Giving to a fund means delegating your diligence to Epic. That is a reasonable thing to do if you know the church, and an unexamined leap if you do not.',
+        'We have not seen Epic’s written criteria for adding or dropping a partner, and no breakdown of how much of the $600,000 goal reaches partners rather than covering the campaign.',
+      ],
+    },
+    roi: {
+      levers: ['existing-network', 'local-workers', 'local-cost-base'],
+      reason:
+        'Every partner is already operating and locally led, so the gift creates no new organisation and no new overhead — it buys more of something already running. The catch is the mirror image: 23 partners across ten countries, from Eswatini to the Tenderloin, cannot share a cost per outcome. Roughly half the roster is in San Francisco, where a dollar buys the least of anywhere on this site, and Epic chose that deliberately.',
+    },
     ministryClaims: [
       {
         quote:
@@ -530,7 +644,8 @@ export const causes: Cause[] = [
     name: 'The Voice of the Martyrs',
     tagline: 'Bibles, aid and front-line worker support for Christians under persecution in 50+ nations.',
     category: 'persecuted-church',
-    countries: ['Ethiopia', 'Iran', 'Nigeria', 'Syria', 'And 50+ nations'],
+    // Named examples only. VOM reports work in 50+ nations and does not list them.
+    countries: ['Ethiopia', 'Iran', 'Nigeria', 'Syria'],
     whatTheyDo:
       'VOM serves Christians in places where following Christ is dangerous: Bible and literature distribution into restricted nations, support for front-line workers, emergency aid to persecuted families, and mobilising prayer.',
     ein: '73-1395057',
@@ -539,6 +654,35 @@ export const causes: Cause[] = [
       { label: 'International Christian Association affiliate', sourceId: 'vom-site' },
     ],
     verification: 'self-reported',
+    biblicalAlignment: {
+      mandate:
+        'Hebrews gives this one as a command, not a suggestion, and gives the reason: the imprisoned believer is not someone else’s problem but your own body. Supporting a widow in Nigeria whose husband was killed for his faith is the plainest reading of it.',
+      scriptures: [
+        {
+          ref: 'Hebrews 13:3',
+          text:
+            'Remember those who are in prison, as though in prison with them, and those who are mistreated, since you also are in the body.',
+        },
+        {
+          ref: '1 Corinthians 12:26',
+          text:
+            'If one member suffers, all suffer together; if one member is honored, all rejoice together.',
+        },
+        {
+          ref: '2 Timothy 3:12',
+          text:
+            'Indeed, all who desire to live a godly life in Christ Jesus will be persecuted.',
+        },
+      ],
+      concerns: [
+        'Work in closed countries cannot be reported in detail without endangering people. That is a real constraint and not an excuse — but it means nothing here is checkable by us or by you, and the trust has to rest on the ministry’s reputation instead of its numbers.',
+      ],
+    },
+    roi: {
+      levers: ['local-workers', 'local-cost-base', 'existing-network'],
+      reason:
+        'Aid goes to believers already in place, through networks already built, in countries where a family’s monthly needs are a small fraction of the Western equivalent — Nigeria and Ethiopia sit near the bottom of the cost-base table below. The same structure that makes the money go far makes it impossible to audit: no cost per outcome is published, and we would be suspicious of one that was.',
+    },
     ministryClaims: [],
     scores: {
       gospelCentrality: {
@@ -609,6 +753,32 @@ export const causes: Cause[] = [
       { label: 'Candid seal 2026', sourceId: 'cam-site' },
     ],
     verification: 'self-reported',
+    biblicalAlignment: {
+      mandate:
+        'Jesus’ diagnosis of the problem is a shortage of workers, not a shortage of harvest, and his instruction is to pray for labourers to be sent into it. John commends supporting travelling workers so that the supporter becomes a fellow worker in the truth — the New Testament’s clearest warrant for funding someone else’s ministry rather than running your own.',
+      scriptures: [
+        {
+          ref: 'Matthew 9:37–38',
+          text:
+            'The harvest is plentiful, but the laborers are few; therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest.',
+        },
+        { ref: 'Luke 10:7', text: 'The laborer deserves his wages.' },
+        {
+          ref: '3 John 5–8',
+          text:
+            'Beloved, it is a faithful thing you do in all your efforts for these brothers… You will do well to send them on their way in a manner worthy of God… so that we may be fellow workers for the truth.',
+        },
+      ],
+      concerns: [
+        'Christian Aid Mission funds indigenous ministries it does not control and mostly does not name, for security reasons. The model’s strength — local autonomy — is also the reason a donor cannot inspect the work.',
+        'We found no audited statements and no cost per worker on the site, so the efficiency argument here is structural rather than demonstrated.',
+      ],
+    },
+    roi: {
+      levers: ['local-workers', 'local-cost-base', 'multiplication'],
+      reason:
+        'This is the single largest structural multiplier in the directory, and the reason the whole “a dollar goes further” idea holds up. An indigenous missionary already speaks the language, already understands the culture, needs no visa, no relocation, no furlough and no home-country cost of living — and is paid against a local cost base that in South Asia and much of Africa is 30 to 150 times below the United States. A Western worker in the same field carries all of those costs and still has to learn the language. Nothing published lets us turn that into a per-worker figure.',
+    },
     ministryClaims: [],
     scores: {
       gospelCentrality: { value: 3, note: 'Evangelism and church planting among unreached peoples is the stated purpose.' },
@@ -656,6 +826,34 @@ export const causes: Cause[] = [
       { label: 'Excellence in Giving — 175 operating data points submitted', sourceId: 'jf-site' },
     ],
     verification: 'self-reported',
+    biblicalAlignment: {
+      mandate:
+        'The commission is to every nation, and at Pentecost each person heard in the language he was born speaking. A gospel film dubbed into two thousand languages is a modern attempt at the same thing: the message arriving in the hearer’s own tongue rather than in the missionary’s.',
+      scriptures: [
+        {
+          ref: 'Matthew 28:19–20',
+          text:
+            'Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit.',
+        },
+        {
+          ref: 'Acts 2:8',
+          text: 'And how is it that we hear, each of us in his own native language?',
+        },
+        {
+          ref: 'Romans 10:14',
+          text: 'And how are they to hear without someone preaching?',
+        },
+      ],
+      concerns: [
+        'A view is not a hearing and a hearing is not a conversion. Media ministries count the cheapest thing to count, and the number that results is the easiest number in Christian philanthropy to inflate.',
+        'The 78.1% figure is an allocation ratio — how much of a dollar goes to programmes rather than overhead. It is not a cost per person and should not be read as one.',
+      ],
+    },
+    roi: {
+      levers: ['digital-distribution', 'existing-network', 'local-cost-base'],
+      reason:
+        'The film is already shot and already translated. Each additional viewing costs almost nothing, so cost per person falls as reach grows — genuinely the cheapest distribution mechanism on this site. Showings run through churches and local teams that already exist. The efficiency is real; the temptation to describe an impression as an outcome is equally real.',
+    },
     ministryClaims: [
       {
         quote: '78.1% of your donation goes toward advancing the Gospel worldwide',
@@ -708,6 +906,35 @@ export const causes: Cause[] = [
       'TTI trains indigenous church planters in disciple-making, with the explicit aim of multiplying generations of churches rather than single plants — the site reports third-generation plants in Kenya and 21 planters graduating in Mexico.',
     accreditations: [],
     verification: 'self-reported',
+    biblicalAlignment: {
+      mandate:
+        'Paul’s instruction to Timothy is four generations deep in a single sentence — Paul to Timothy to faithful men to others also. A ministry built on that verse is aiming at the thing the verse aims at: not more converts of its own, but more people who can teach.',
+      scriptures: [
+        {
+          ref: '2 Timothy 2:2',
+          text:
+            'And what you have heard from me in the presence of many witnesses entrust to faithful men, who will be able to teach others also.',
+        },
+        {
+          ref: 'Ephesians 4:11–12',
+          text:
+            'And he gave the apostles, the prophets, the evangelists, the shepherds and teachers, to equip the saints for the work of ministry, for building up the body of Christ.',
+        },
+        {
+          ref: 'Matthew 28:19–20',
+          text: 'Go therefore and make disciples of all nations… teaching them to observe all that I have commanded you.',
+        },
+      ],
+      concerns: [
+        'We could not find audited statements or a Form 990 anywhere on the site. Of everything in this directory, this is the one where we know the least about where the money goes.',
+        'Multiplication claims compound, which means an unverified starting number compounds too. “Third-generation churches” is an impressive phrase and an unauditable one.',
+      ],
+    },
+    roi: {
+      levers: ['multiplication', 'local-workers', 'local-cost-base'],
+      reason:
+        'The argument is that training a local church planter who trains other church planters means later generations of churches cost nothing extra — the cost per eventual church falls with every generation. If the multiplication is real, this is the highest-leverage model on the site. Nothing TTI publishes lets anyone check the base rate, so treat the leverage as a claim about the design rather than a measured result.',
+    },
     ministryClaims: [],
     scores: {
       gospelCentrality: { value: 3, note: 'Disciple-making and church planting are the whole programme.' },
@@ -740,6 +967,168 @@ export const causes: Cause[] = [
         label: 'Homepage',
         url: 'https://www.ttiglobal.org/',
         publisher: 'The Timothy Initiative',
+        documentType: 'ministry-website',
+        retrieved: '2026-09-18',
+      },
+    ],
+  },
+  {
+    slug: 'home-of-hope-ministries',
+    name: 'Home of Hope Ministries',
+    tagline:
+      'Residential care, therapy and clinics for children with severe disabilities in Jinja, Uganda.',
+    category: 'children',
+    countries: ['Uganda'],
+    whatTheyDo:
+      'Home of Hope cares for children with severe disabilities whom local authorities found abandoned — children most Ugandan institutions will not take. Alongside the residential home it runs assessment clinics, epilepsy medication rounds, adaptive-equipment fitting, nutrition support for malnourished children, home visits to families raising a disabled child, and school sponsorship. It was started in Jinja in 2007 by Edith Lukabwe, a Ugandan mother of a disabled son; the US charity exists to raise support for it.',
+    ein: '82-1130864',
+    accreditations: [],
+    verification: 'documents-reviewed',
+    biblicalAlignment: {
+      mandate:
+        'Scripture gives the fatherless and the disabled named, specific protection, and it gives God himself as their defender — the one who "settles the solitary in a home". A child with cerebral palsy left at a roadside because a village had no use for her is the exact person the law and the prophets kept putting in front of Israel.',
+      scriptures: [
+        {
+          ref: 'Psalm 68:5–6',
+          text:
+            'Father of the fatherless and protector of widows is God in his holy habitation. God settles the solitary in a home.',
+        },
+        {
+          ref: 'James 1:27',
+          text:
+            'Religion that is pure and undefiled before God the Father is this: to visit orphans and widows in their affliction, and to keep oneself unstained from the world.',
+        },
+        {
+          ref: 'Leviticus 19:14',
+          text:
+            'You shall not curse the deaf or put a stumbling block before the blind, but you shall fear your God: I am the Lord.',
+        },
+      ],
+      concerns: [
+        'Nothing on the site states what the ministry believes, and the programme pages contain no gospel or discipleship content at all. The founder’s account of her call is explicit about obeying God; the description of the work is not. Ask before assuming this is discipleship as well as care.',
+        'Residential care for children is contested in Christian development work, where the consensus has moved towards keeping children in families wherever it is possible. Children abandoned because of a severe disability are the hardest case for that, and Home of Hope does run home visits and family follow-up — but we have seen no written policy on reunification or family strengthening.',
+      ],
+    },
+    roi: {
+      levers: ['local-cost-base', 'local-workers', 'volunteer-leverage'],
+      reason:
+        'The US charity is close to a pure conduit: the 2024 return shows $89,160 of $90,371 in spending paid straight out as grants, with no salaries, no rent and a board that states it works unpaid. The care itself happens in Jinja on Ugandan wages, where income per person is about 79 times below the United States, and roughly $900 covers a year of residential care, therapy, food and medicine for one child. The trade is transparency: because almost everything is granted out of the US entity, its return tells you nothing about how the money was spent once it landed.',
+    },
+    costModel: {
+      outcome: 'year of care for a child',
+      outcomePlural: 'years of care for children',
+      spend: {
+        amount: 90371,
+        basis: 'total-expenses',
+        fiscalYear: '2024',
+        sourceId: 'hoh-990-24',
+      },
+      count: {
+        amount: 100,
+        label: 'children in residential care',
+        fiscalYear: '2026',
+        sourceId: 'hoh-site',
+      },
+      attribution: 'all-program-spend',
+      caveat:
+        'Two mismatches to hold in mind. The spending is calendar 2024; the child count is the website’s current figure, and the website says “nearly 100” rather than 100, so the true cost per child is somewhat higher than this. And the residential children are not the only people served — the clinics, epilepsy rounds and nutrition programme reach others — so charging all spending to the hundred children in the home overstates what one child costs. Home of Hope’s own figure, from a 2018 audit, is about $62 a month.',
+    },
+    ministryClaims: [
+      {
+        quote: 'The monthly expenses per child at Home of Hope are about $62',
+        sourceId: 'hoh-financials',
+        impliedCostPerOutcome: 744,
+        impliedOutcome: 'year of care for a child',
+      },
+      {
+        quote:
+          'Of the donations given to Home of Hope Ministries, about 90% is given directly to our program work at Home of Hope Uganda.',
+        sourceId: 'hoh-financials',
+      },
+    ],
+    scores: {
+      gospelCentrality: {
+        value: 1,
+        note:
+          'The word “Ministries” is in the name and Edith’s account of her call is explicitly about obedience to God. Beyond that there is no statement of faith, no church partnership described and no gospel content in any programme description.',
+      },
+      localLeadership: {
+        value: 3,
+        note:
+          'The strongest case in this directory. Founded, led and staffed in Jinja by Ugandans, out of one Ugandan mother’s experience of raising a disabled son. The American entity is a volunteer board whose function is to send money.',
+      },
+      financialTransparency: {
+        value: 2,
+        note:
+          'Form 990-EZ for 2021 and 2024 posted on the site, the IRS determination letter posted, impact reports shared, and a per-child cost published — unusual candour for an organisation this size. Held back by a 2024 filing posted as a scan, no audit since 2018, and no Ugandan financial statements.',
+      },
+      outcomeEvidence: {
+        value: 1,
+        note:
+          'Programme counts are published but mostly as monthly averages — “up to 8 clients in a month”, “an average of 7 clients” — with no annual totals, and the one cumulative figure has no stated period.',
+      },
+      costEvidence: {
+        value: 2,
+        note:
+          'Both numbers exist and the ministry’s own $62 a month lands within about 20% of the figure its tax return implies. Marked down because the count is imprecise and comes from a different year than the spending.',
+      },
+    },
+    notVerified: [
+      'The 2024 Form 990-EZ on the site is a scan with no text layer. We read it by OCR and checked the three totals against one another — $100,650 less $90,371 is the $10,279 surplus it reports, and $33,848 plus $10,279 is the $44,127 closing balance — so the figures are internally consistent. Confirm against the printed return before quoting them.',
+      '$89,160 of $90,371, or 98.7%, left the US charity as grants to Home of Hope Uganda. The American return therefore says nothing about how the money was actually spent on children, and no Ugandan financial statements are published.',
+      'The $62 monthly figure comes from a 2018 audit of the Ugandan entity. We have not seen that audit, and there appears to be none since. A 2018 cost quoted in 2026 is stale by eight years of Ugandan inflation.',
+      '“Nearly 100 children” is imprecise and undated, and we divided the 2024 spending by it as though it were exactly 100.',
+      '“Home of Hope has been able to assess 1000 clients” has no stated time period, so it cannot be used as a denominator for anything.',
+      'We have not confirmed whether the children living in the home are also counted among the clinic clients, so the programme counts may overlap.',
+    ],
+    notes: [
+      'Started with six children in Jinja in 2007. The US 501(c)(3) was formed in 2017 to raise support for work that already existed.',
+      'The 2024 return reports no salaries, no professional fees and no occupancy costs whatsoever in the US: “All work done by the board is on a voluntary basis.”',
+      'Fifty-one children with disabilities are on the school-sponsorship waiting list against three currently sponsored — the clearest statement on the site of what more money would immediately do.',
+      'This is the smallest organisation in the directory by a wide margin, and the kind the whole project exists to find. It is also the kind where a single change of leadership or a single bad year matters enormously.',
+    ],
+    siteUrl: 'https://www.homeofhopeministries.org/',
+    giveUrl: 'https://www.homeofhopeministries.org/partners',
+    sources: [
+      {
+        id: 'hoh-site',
+        label: 'Homepage',
+        url: 'https://www.homeofhopeministries.org/',
+        publisher: 'Home of Hope Ministries',
+        documentType: 'ministry-website',
+        retrieved: '2026-09-18',
+      },
+      {
+        id: 'hoh-financials',
+        label: 'Financials',
+        url: 'https://www.homeofhopeministries.org/financials',
+        publisher: 'Home of Hope Ministries',
+        documentType: 'ministry-website',
+        retrieved: '2026-09-18',
+      },
+      {
+        id: 'hoh-990-24',
+        label: '2024 Form 990-EZ',
+        url: 'https://www.homeofhopeministries.org/s/2024_HOHM_990-EZ.pdf',
+        publisher: 'Home of Hope Ministries',
+        documentType: 'form-990',
+        retrieved: '2026-09-18',
+        fiscalYear: '2024',
+        note: 'Posted as a scanned image with no text layer. Read by OCR and cross-checked against its own subtotals.',
+      },
+      {
+        id: 'hoh-programs',
+        label: 'Our Programs',
+        url: 'https://www.homeofhopeministries.org/our-programs',
+        publisher: 'Home of Hope Ministries',
+        documentType: 'ministry-website',
+        retrieved: '2026-09-18',
+      },
+      {
+        id: 'hoh-about',
+        label: 'About Us',
+        url: 'https://www.homeofhopeministries.org/about-us',
+        publisher: 'Home of Hope Ministries',
         documentType: 'ministry-website',
         retrieved: '2026-09-18',
       },

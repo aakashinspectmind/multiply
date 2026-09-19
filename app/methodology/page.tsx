@@ -76,6 +76,47 @@ export default function MethodologyPage() {
       </section>
 
       <section>
+        <h2 className="text-2xl font-semibold tracking-tight">
+          Why a dollar goes further, and what that does not mean
+        </h2>
+        <p className="mt-3 text-lg text-gray-800">
+          Every cause page names the mechanism that makes the work cheaper than the same work in a
+          high-income country — local wages instead of sent staff, a well that keeps producing for
+          years, a film that costs nothing to show again, training that multiplies without more
+          money. The mechanism is the argument. Any number attached to it is support, not proof.
+        </p>
+        <p className="mt-3 text-lg text-gray-800">
+          The one number we can source everywhere is the cost base: national income per person, from
+          the World Bank, against the United States. It is 148 times lower in Malawi and 79 times
+          lower in Uganda. That is a real and enormous difference in what a wage, a bag of cement or
+          a nurse’s day costs — and it is the honest core of “$1 goes further here.”
+        </p>
+        <p className="mt-3 text-lg text-gray-800">
+          It is also not an efficiency score. A cheap country is not the same as a good ministry, and
+          a 148× cost base does not mean your gift accomplishes 148 times as much. Poor countries are
+          harder places to work: logistics cost more, equipment is imported at a premium, and
+          oversight is thinner. The ratio tells you why the ceiling is higher. Whether a particular
+          ministry reaches it is what the rest of its page is about.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold tracking-tight">Whether it is the church’s work</h2>
+        <p className="mt-3 text-lg text-gray-800">
+          Each cause states the biblical mandate the work sits on, with the passages quoted so you
+          can weigh them yourself rather than take our summary for it. This is a judgement about the
+          kind of work being done — feeding, healing, translating, sending, defending the
+          fatherless — not a measurement of its results.
+        </p>
+        <p className="mt-3 text-lg text-gray-800">
+          We also write down our reservations, including the ones a ministry would rather we left
+          out: where a statement of faith is missing, where care could become the price of a hearing,
+          where a model is contested among Christians who do this work for a living. A page with no
+          reservations listed means we found none, which is rarer than it sounds.
+        </p>
+      </section>
+
+      <section>
         <h2 className="text-2xl font-semibold tracking-tight">Five questions, three points each</h2>
         <p className="mt-3 text-lg text-gray-800">
           Scores are our own reading of public documents — a desk review, not an audit and not a site
@@ -127,13 +168,17 @@ export default function MethodologyPage() {
         <h2 className="text-2xl font-semibold tracking-tight">Known limits of this version</h2>
         <ul className="mt-3 list-disc space-y-3 pl-5 text-lg text-gray-800">
           <li>
-            Eight causes, all researched in one day from public web pages and PDFs. Nobody has been
-            interviewed.
+            {causes.length} causes, all researched from public web pages and PDFs. Nobody has been
+            interviewed and no site has been visited.
           </li>
           <li>
             The directory is weighted toward large ministries that publish annual reports. Small
             indigenous ministries — often the ones with the lowest costs — are the hardest to verify
             and are underrepresented here.
+          </li>
+          <li>
+            The cost base comes from national averages. A ministry working in one poor province of a
+            middle-income country faces costs its national figure does not show.
           </li>
           <li>
             Nothing on this site is tax advice. Deductibility depends on giving to a qualifying

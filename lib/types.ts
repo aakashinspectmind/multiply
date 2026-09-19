@@ -168,6 +168,90 @@ export type Score = {
   note: string;
 };
 
+/**
+ * Why this work is a biblical mandate, and what we checked doctrinally.
+ *
+ * A judgement, not a measurement. It carries no claim about spiritual results —
+ * that is God's to give and not ours to score (1 Corinthians 3:6–7).
+ */
+export type BiblicalAlignment = {
+  /** The mandate in one or two sentences, in plain words. */
+  mandate: string;
+  /** The passages the work sits on. Reference plus the words being leaned on. */
+  scriptures: { ref: string; text: string }[];
+  /** A statement of faith or doctrinal position we actually read. */
+  doctrine?: { label: string; sourceId: string };
+  /** Honest reservations. Empty only when we genuinely have none. */
+  concerns: string[];
+};
+
+/**
+ * The mechanism that makes a dollar buy more here than the same dollar at home.
+ * Each lever is a structural reason, not a quality judgement.
+ */
+export const ROI_LEVERS = [
+  'local-cost-base',
+  'local-workers',
+  'multiplication',
+  'durable-asset',
+  'digital-distribution',
+  'existing-network',
+  'volunteer-leverage',
+] as const;
+export type RoiLever = (typeof ROI_LEVERS)[number];
+
+export const ROI_LEVER_LABELS: Record<RoiLever, string> = {
+  'local-cost-base': 'Low local cost base',
+  'local-workers': 'Local workers, not sent staff',
+  multiplication: 'Multiplies without more money',
+  'durable-asset': 'Builds something that lasts',
+  'digital-distribution': 'Costs almost nothing to copy',
+  'existing-network': 'Rides an existing network',
+  'volunteer-leverage': 'Paid staff unlock unpaid hands',
+};
+
+export const ROI_LEVER_EXPLANATIONS: Record<RoiLever, string> = {
+  'local-cost-base':
+    'Wages, rent, fuel and materials are priced to the local economy, so the same work costs a fraction of what it costs in a high-income country.',
+  'local-workers':
+    'The work is done by believers who already live there. No relocation, no expatriate salary, no home-country cost of living to cover.',
+  multiplication:
+    'The thing funded goes on to produce more of itself — a church that plants churches, a leader who trains leaders — so later results are not paid for again.',
+  'durable-asset':
+    'The money buys a well, a building or a piece of equipment that keeps delivering for years after the gift.',
+  'digital-distribution':
+    'Once made, each additional copy or viewing costs close to nothing, so cost per person falls as reach grows.',
+  'existing-network':
+    'Delivery runs through churches, schools or clinics that already exist and are already staffed, so the gift is not paying to build the channel.',
+  'volunteer-leverage':
+    'A small amount of paid coordination puts a much larger number of unpaid hours to work.',
+};
+
+/**
+ * Why a dollar goes further here. About the cost of delivering the work, and
+ * nothing else — we do not claim a return on a soul.
+ */
+export type Roi = {
+  levers: RoiLever[];
+  /** The mechanism in plain words. Required: a lever never stands on its own. */
+  reason: string;
+  /**
+   * A sourced comparison against the same thing bought in a high-cost country.
+   * Only set when both sides have a source. Otherwise the reader gets the
+   * mechanism and no multiplier, which is usually the honest outcome.
+   */
+  comparison?: {
+    /** What the work costs where it happens, e.g. '$795 per child per year'. */
+    here: string;
+    /** The high-cost equivalent, with who says so. */
+    benchmark: string;
+    benchmarkSourceId: string;
+    /** Multiple of the benchmark over here. Rendered as 'about Nx'. */
+    multiple: number;
+    caveat: string;
+  };
+};
+
 export type Cause = {
   slug: string;
   /** Ministry or fund name as it appears on its own materials. */
@@ -182,6 +266,10 @@ export type Cause = {
   /** Accreditations we saw displayed, with the page we saw them on. */
   accreditations: { label: string; sourceId: string }[];
   verification: VerificationLevel;
+  /** Why the work is a biblical mandate. Required on every cause. */
+  biblicalAlignment: BiblicalAlignment;
+  /** Why a dollar goes further here. Required on every cause. */
+  roi: Roi;
   costModel?: CostModel;
   ministryClaims: MinistryClaim[];
   scores: Record<ScoreDimension, Score>;

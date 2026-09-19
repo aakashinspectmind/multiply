@@ -9,9 +9,9 @@ Live pages: the cause list (`/`), one page per cause (`/causes/[slug]`), and the
 
 ## Why it is built this way
 
-The premise — "see what $20 does" — cannot be sourced from ministry marketing. Of eight
-well-known ministries researched on 18 September 2026, **two** published anything resembling a cost
-per outcome, and one of those two advertises a figure about 4× cheaper than its own annual report
+The premise — "see what $20 does" — cannot be sourced from ministry marketing. Of nine
+ministries researched on 18 September 2026, **three** published anything resembling a cost
+per outcome, and one of those advertises a figure about 4× cheaper than its own annual report
 implies — 8× if you divide by the Bibles it actually reports placing. The gap between what
 ministries advertise and what their financial statements support is the thing worth building around.
 
@@ -20,9 +20,13 @@ So the product is not a payment platform. It is the arithmetic, shown:
 - **Every figure has a source.** No number renders without a `sourceId` pointing at an audited
   statement, annual report, Form 990 or ministry page, with the date it was read.
 - **No figure is invented.** A cause with no published spending-and-count pair shows
-  "nothing here to divide" rather than a guess. Three of eight currently do.
+  "nothing here to divide" rather than a guess. Five of nine currently do.
 - **Small gifts are not rounded up.** Below the cost of one outcome the site says how many gifts of
   that size it takes — the pooling that makes small gifts add up, stated accurately.
+- **Every cause says why it is the church's work, and why a dollar goes further.** The biblical
+  mandate with the passages quoted, plus the mechanism behind the leverage — local wages, a durable
+  asset, multiplication — and the one number that is sourceable everywhere: World Bank national
+  income per person against the United States. 148× lower in Malawi, 79× in Uganda.
 - **We never touch the money.** Give buttons go to the ministry's own donation page. No custody, no
   cut, no international-transfer or tax-receipt exposure.
 
@@ -45,10 +49,12 @@ lying until the link is fixed.
 
 | Path | What |
 | --- | --- |
-| `data/causes.ts` | The directory. All eight causes, every figure, every source. |
+| `data/causes.ts` | The directory. Every cause, every figure, every source. |
+| `data/cost-base.ts` | World Bank income per person, and the region names that deliberately have none. |
 | `data/site.ts` | Name, tagline, money policy. Rename the project here. |
 | `lib/types.ts` | The data contract, including what each verification level is allowed to mean. |
 | `lib/impact.ts` | The arithmetic: cost per outcome, gift impact, pooling, sorting. |
+| `lib/roi.ts` | Cost-base ratios against the benchmark country. |
 | `scripts/check-sources.mjs` | Integrity and link checks. |
 | `app/methodology/page.tsx` | Scoring rubric and the limits we state out loud. |
 

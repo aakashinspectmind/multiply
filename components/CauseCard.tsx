@@ -7,7 +7,27 @@ import {
   formatSharePercent,
   impactOfGift,
 } from '@/lib/impact';
+import { costBaseHeadline, formatMultiple } from '@/lib/roi';
 import { CATEGORY_LABELS, SPEND_BASIS_LABELS, type Cause } from '@/lib/types';
+
+/** One line: the cost-base leverage, and the passage the work stands on. */
+function LeverageLine({ cause }: { cause: Cause }) {
+  const headline = costBaseHeadline(cause.countries);
+  const anchor = cause.biblicalAlignment.scriptures[0];
+  return (
+    <p className="mt-3 text-base text-gray-700">
+      {headline && (
+        <>
+          <span className="font-medium text-ink">
+            {formatMultiple(headline.multiple)} lower cost base
+          </span>{' '}
+          than the US ({headline.country}) ·{' '}
+        </>
+      )}
+      {anchor.ref}
+    </p>
+  );
+}
 
 function Countries({ countries }: { countries: string[] }) {
   const shown = countries.slice(0, 4);
@@ -83,6 +103,8 @@ export function CauseCard({ cause, amount }: { cause: Cause; amount: number }) {
       <div className="mt-2">
         <Countries countries={cause.countries} />
       </div>
+
+      <LeverageLine cause={cause} />
 
       <div className="mt-4">
         <ImpactLine cause={cause} amount={amount} />

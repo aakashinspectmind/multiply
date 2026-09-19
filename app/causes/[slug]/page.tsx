@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { BiblicalSection } from '@/components/BiblicalSection';
 import { ImpactSection } from '@/components/ImpactSection';
+import { RoiSection } from '@/components/RoiSection';
 import { Scorecard } from '@/components/Scorecard';
 import { VerificationBadge } from '@/components/VerificationBadge';
 import { causes } from '@/data/causes';
@@ -123,6 +125,10 @@ export default async function CausePage({
       </header>
 
       <ImpactSection cause={cause} amount={amount} />
+
+      <BiblicalSection cause={cause} />
+
+      <RoiSection cause={cause} />
 
       <Scorecard cause={cause} />
 

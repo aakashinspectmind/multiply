@@ -170,6 +170,20 @@ export function bestPerCategory(causes: Cause[], amount: number): GiftLine[] {
   );
 }
 
+/**
+ * Kinds of work the directory covers and cannot price.
+ *
+ * The board is built from the causes that have a cost model, so a category where
+ * nothing is divisible simply does not appear — and a reader scanning the rows
+ * has no way to tell an absent mandate from an unpriced one. Every other missing
+ * number on this site is named where it is missing; this one was not.
+ */
+export function unpricedCategories(causes: Cause[]): Category[] {
+  const priced = new Set(causes.filter((cause) => cause.costModel).map((cause) => cause.category));
+  const held = new Set(causes.map((cause) => cause.category));
+  return CATEGORIES.filter((category) => held.has(category) && !priced.has(category));
+}
+
 /** Terse version of what a gift buys, for a dense row rather than a card. */
 export function buysPhrase(line: GiftLine): string {
   if (line.impact.kind === 'funds') {

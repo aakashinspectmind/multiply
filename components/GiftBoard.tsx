@@ -1,5 +1,11 @@
 import Link from 'next/link';
-import { bestPerCategory, buysPhrase, formatMoney, type GiftLine } from '@/lib/impact';
+import {
+  bestPerCategory,
+  buysPhrase,
+  formatMoney,
+  unpricedCategories,
+  type GiftLine,
+} from '@/lib/impact';
 import { CATEGORY_LABELS, type Cause } from '@/lib/types';
 
 function Row({ line, amount }: { line: GiftLine; amount: number }) {
@@ -34,6 +40,7 @@ function Row({ line, amount }: { line: GiftLine; amount: number }) {
  */
 export function GiftBoard({ causes, amount }: { causes: Cause[]; amount: number }) {
   const lines = bestPerCategory(causes, amount);
+  const unpriced = unpricedCategories(causes);
   if (lines.length === 0) return null;
 
   return (
@@ -50,6 +57,19 @@ export function GiftBoard({ causes, amount }: { causes: Cause[]; amount: number 
         Furthest means most units per dollar, from each ministry&rsquo;s own published spending and
         counts. It is an average, not a price, and a cheap outcome is not a better one.
       </p>
+      {unpriced.length > 0 && (
+        <p className="mt-2 text-base text-gray-700">
+          No line above for{' '}
+          {unpriced.map((category, index) => (
+            <span key={category}>
+              {index > 0 && (index === unpriced.length - 1 ? ' or ' : ', ')}
+              <span className="text-ink">{CATEGORY_LABELS[category].toLowerCase()}</span>
+            </span>
+          ))}
+          . Those ministries are in the directory and none of them publishes numbers that divide, so
+          there is nothing to put here rather than nothing to give to.
+        </p>
+      )}
     </section>
   );
 }

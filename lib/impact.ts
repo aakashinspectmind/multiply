@@ -1,5 +1,5 @@
-import type { Cause, CostModel, ScoreDimension, Source } from './types';
-import { SCORE_DIMENSIONS, VERIFICATION_LEVELS } from './types';
+import type { Category, Cause, CostModel, ScoreDimension, Source } from './types';
+import { CATEGORIES, SCORE_DIMENSIONS, VERIFICATION_LEVELS } from './types';
 
 export const GIFT_AMOUNTS = [1, 5, 10, 50, 100, 500] as const;
 export const DEFAULT_AMOUNT = 50;
@@ -85,6 +85,73 @@ export function impactSentence(amount: number, model: CostModel): string {
   return `It takes about ${formatCount(impact.giversNeeded)} gifts of ${formatMoney(
     amount,
   )} to cover one ${model.outcome}. Yours is ${formatSharePercent(impact.sharePercent)} of one.`;
+}
+
+export type GiftLine = {
+  cause: Cause;
+  model: CostModel;
+  perOutcome: number;
+  impact: Impact;
+};
+
+/**
+ * What one gift does across every cause whose arithmetic is complete, most per
+ * dollar first.
+ *
+ * The order does not change when the amount does — outcomes per dollar is a
+ * property of the ministry, not of the gift — but the *lines* do, and the lines
+ * are the point: a person wants to know what their $50 buys, not what a
+ * denominator is.
+ *
+ * Causes with nothing to divide are absent rather than last. They have not
+ * failed a comparison; they never entered one.
+ */
+export function rankByGift(causes: Cause[], amount: number): GiftLine[] {
+  const lines: GiftLine[] = [];
+  for (const cause of causes) {
+    if (!cause.costModel) continue;
+    const perOutcome = costPerOutcome(cause.costModel);
+    lines.push({
+      cause,
+      model: cause.costModel,
+      perOutcome,
+      impact: impactOfGift(amount, perOutcome),
+    });
+  }
+  return lines.sort((a, b) => {
+    if (a.perOutcome !== b.perOutcome) return a.perOutcome - b.perOutcome;
+    return a.cause.name.localeCompare(b.cause.name);
+  });
+}
+
+/**
+ * The most a gift buys in each kind of work — one line per category, in
+ * category order.
+ *
+ * Deliberately not one global winner. Ranking a Bible against a spinal surgery
+ * produces a champion that means nothing, because the cheap outcome wins every
+ * time and cheapness is not the same as need. Inside a category the comparison
+ * is between ministries doing comparable work, which is a question arithmetic
+ * can actually help with.
+ */
+export function bestPerCategory(causes: Cause[], amount: number): GiftLine[] {
+  const ranked = rankByGift(causes, amount);
+  const best = new Map<Category, GiftLine>();
+  for (const line of ranked) {
+    if (!best.has(line.cause.category)) best.set(line.cause.category, line);
+  }
+  return CATEGORIES.map((category) => best.get(category)).filter(
+    (line): line is GiftLine => line !== undefined,
+  );
+}
+
+/** Terse version of what a gift buys, for a dense row rather than a card. */
+export function buysPhrase(line: GiftLine): string {
+  if (line.impact.kind === 'funds') {
+    const noun = line.impact.whole === 1 ? line.model.outcome : line.model.outcomePlural;
+    return `${formatCount(line.impact.whole)} ${noun}`;
+  }
+  return `${formatSharePercent(line.impact.sharePercent)} of one ${line.model.outcome}`;
 }
 
 export function scoreTotal(cause: Cause): number {

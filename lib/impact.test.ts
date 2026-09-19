@@ -2,10 +2,13 @@ import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import { causes } from '../data/causes';
 import {
+  bestPerCategory,
+  buysPhrase,
   costPerOutcome,
   impactOfGift,
   impactSentence,
   formatMoney,
+  rankByGift,
   sortCauses,
   sourceById,
 } from './impact';
@@ -88,4 +91,55 @@ test('causes without a published cost model sort last on cost', () => {
 test('review order puts documents-reviewed causes first', () => {
   const sorted = sortCauses(causes, 'review');
   assert.equal(sorted[0].verification, 'documents-reviewed');
+});
+
+test('the gift ranking omits causes with nothing to divide rather than ranking them last', () => {
+  const lines = rankByGift(causes, 50);
+  assert.equal(
+    lines.length,
+    causes.filter((cause) => cause.costModel).length,
+  );
+  assert.ok(lines.every((line) => line.cause.costModel));
+});
+
+test('the gift ranking is cheapest outcome first', () => {
+  const costs = rankByGift(causes, 50).map((line) => line.perOutcome);
+  assert.deepEqual(costs, [...costs].sort((a, b) => a - b));
+});
+
+test('the ranking order does not move when the amount does', () => {
+  const atOne = rankByGift(causes, 1).map((line) => line.cause.slug);
+  const atMillion = rankByGift(causes, 1_000_000).map((line) => line.cause.slug);
+  assert.deepEqual(atOne, atMillion);
+});
+
+test('the board shows one cause per category, and never a category twice', () => {
+  const lines = bestPerCategory(causes, 50);
+  const seen = lines.map((line) => line.cause.category);
+  assert.deepEqual(seen, [...new Set(seen)]);
+});
+
+test('the board picks the cheapest outcome within each category', () => {
+  for (const line of bestPerCategory(causes, 50)) {
+    const rivals = causes.filter(
+      (cause) => cause.category === line.cause.category && cause.costModel,
+    );
+    for (const rival of rivals) {
+      assert.ok(costPerOutcome(rival.costModel!) >= line.perOutcome);
+    }
+  }
+});
+
+test('buys phrases stay singular for one outcome and fractional below one', () => {
+  const [line] = rankByGift(causes, 1);
+  const cheap = { ...line, perOutcome: 250, impact: impactOfGift(250, 250) };
+  assert.equal(buysPhrase({ ...cheap, model }), '1 surgery');
+  assert.equal(
+    buysPhrase({ ...cheap, model, impact: impactOfGift(500, 250) }),
+    '2 surgeries',
+  );
+  assert.equal(
+    buysPhrase({ ...cheap, model, impact: impactOfGift(25, 250) }),
+    '10% of one surgery',
+  );
 });

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import { CauseCard } from './CauseCard';
+import { GiftBoard } from './GiftBoard';
 import {
   DEFAULT_AMOUNT,
   GIFT_AMOUNTS,
@@ -90,7 +91,11 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
           )}
         </fieldset>
 
-        <div className="mt-5 flex flex-wrap gap-6">
+        <GiftBoard causes={causes} amount={amount} />
+      </div>
+
+      <div className="mt-6 rounded-xl border border-black/10 bg-white p-5">
+        <div className="flex flex-wrap gap-6">
           <label className="text-base text-gray-700">
             <span className="mr-2">Cause</span>
             <select

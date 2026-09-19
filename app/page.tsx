@@ -9,7 +9,7 @@ export default function HomePage() {
     <div className="mx-auto w-full max-w-5xl px-5 py-10">
       <section className="max-w-3xl">
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          What your $20 actually buys, with the division shown.
+          Name an amount. See the furthest it goes, with the division shown.
         </h1>
         <p className="mt-5 text-lg text-gray-700">
           Christian ministries advertise impact in round numbers. This directory takes their audited
@@ -30,9 +30,14 @@ export default function HomePage() {
       <section className="mt-12 max-w-3xl border-t border-black/10 pt-8">
         <h2 className="text-2xl font-semibold tracking-tight">Small gifts, added up honestly</h2>
         <p className="mt-3 text-lg text-gray-700">
-          A $20 gift rarely buys a whole outcome, so the cards say how many gifts of $20 it takes
-          instead of rounding up to one. That is the widow’s two coins arithmetic: individually
+          A small gift rarely buys a whole outcome, so the cards say how many gifts that size it
+          takes instead of rounding up to one. That is the widow’s two coins arithmetic: individually
           small, jointly decisive, and worth counting accurately.
+        </p>
+        <p className="mt-3 text-lg text-gray-700">
+          And the furthest-going dollar is not automatically the best one. Cheap outcomes are cheap
+          partly because they are simple; a heart operation will never cost what a tract costs. The
+          ordering here is arithmetic, and arithmetic is not discernment.
         </p>
         <p className="mt-3 text-lg text-gray-700">
           <Link href="/methodology" className="text-accent underline">

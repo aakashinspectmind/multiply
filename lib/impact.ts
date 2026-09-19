@@ -184,6 +184,23 @@ export function unpricedCategories(causes: Cause[]): Category[] {
   return CATEGORIES.filter((category) => held.has(category) && !priced.has(category));
 }
 
+/**
+ * Categories where exactly one cause has a cost model.
+ *
+ * The board calls every row the furthest a gift goes in that kind of work, which
+ * on these rows is a comparison of one. Children & families picks its line out of
+ * twelve divisible causes; pastors & theological training has a single one, and
+ * the row looks identical. That difference is the reader's to know, because it is
+ * the difference between a winner and the only entrant.
+ */
+export function soleCandidateCategories(causes: Cause[]): Set<Category> {
+  const counts = new Map<Category, number>();
+  for (const cause of causes) {
+    if (cause.costModel) counts.set(cause.category, (counts.get(cause.category) ?? 0) + 1);
+  }
+  return new Set([...counts].filter(([, count]) => count === 1).map(([category]) => category));
+}
+
 /** Terse version of what a gift buys, for a dense row rather than a card. */
 export function buysPhrase(line: GiftLine): string {
   if (line.impact.kind === 'funds') {

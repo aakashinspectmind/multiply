@@ -3,12 +3,22 @@ import {
   bestPerCategory,
   buysPhrase,
   formatMoney,
+  soleCandidateCategories,
   unpricedCategories,
   type GiftLine,
 } from '@/lib/impact';
 import { CATEGORY_LABELS, type Cause } from '@/lib/types';
 
-function Row({ line, amount }: { line: GiftLine; amount: number }) {
+function Row({
+  line,
+  amount,
+  sole,
+}: {
+  line: GiftLine;
+  amount: number;
+  /** No other cause in this category divides, so "furthest" won nothing. */
+  sole: boolean;
+}) {
   return (
     <li className="flex flex-wrap items-baseline gap-x-3 gap-y-1 py-3">
       <span className="w-52 shrink-0 text-base text-gray-700">
@@ -24,6 +34,7 @@ function Row({ line, amount }: { line: GiftLine; amount: number }) {
       <span className="text-base text-gray-700">
         {formatMoney(line.perOutcome)} per {line.model.outcome}
       </span>
+      {sole && <span className="text-base text-gray-600">— the only one we can price</span>}
     </li>
   );
 }
@@ -41,6 +52,7 @@ function Row({ line, amount }: { line: GiftLine; amount: number }) {
 export function GiftBoard({ causes, amount }: { causes: Cause[]; amount: number }) {
   const lines = bestPerCategory(causes, amount);
   const unpriced = unpricedCategories(causes);
+  const sole = soleCandidateCategories(causes);
   if (lines.length === 0) return null;
 
   return (
@@ -50,7 +62,12 @@ export function GiftBoard({ causes, amount }: { causes: Cause[]; amount: number 
       </h2>
       <ul className="mt-1 divide-y divide-black/5">
         {lines.map((line) => (
-          <Row key={line.cause.slug} line={line} amount={amount} />
+          <Row
+            key={line.cause.slug}
+            line={line}
+            amount={amount}
+            sole={sole.has(line.cause.category)}
+          />
         ))}
       </ul>
       <p className="mt-3 text-base text-gray-700">

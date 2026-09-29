@@ -12,6 +12,7 @@ import {
   sortCauses,
   type SortKey,
 } from '@/lib/impact';
+import { searchCauses } from '@/lib/search';
 import { CATEGORY_LABELS, type Cause, type Category } from '@/lib/types';
 
 const SORT_LABELS: Record<SortKey, string> = {
@@ -24,6 +25,7 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
   const [custom, setCustom] = useState('');
   const [category, setCategory] = useState<Category | 'all'>('all');
   const [sort, setSort] = useState<SortKey>('review');
+  const [query, setQuery] = useState('');
 
   const categories = useMemo(
     () =>
@@ -33,10 +35,13 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
     [causes],
   );
 
-  const shown = useMemo(() => {
+  // Search runs last so the chosen order breaks ties between equally good matches.
+  const search = useMemo(() => {
     const filtered = category === 'all' ? causes : causes.filter((c) => c.category === category);
-    return sortCauses(filtered, sort);
-  }, [causes, category, sort]);
+    return searchCauses(sortCauses(filtered, sort), query);
+  }, [causes, category, sort, query]);
+  const shown = search.causes;
+  const searching = search.understood.length > 0;
 
   return (
     <div>
@@ -100,7 +105,27 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
       </div>
 
       <div className="mt-10 border-b border-black/10 pb-4">
-        <div className="flex flex-wrap gap-6">
+        <label className="block">
+          <span className="text-lg font-semibold">Find a cause</span>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="clean water in Africa, orphans in Uganda, persecuted Christians…"
+            className="mt-2 min-h-[44px] w-full rounded-lg bg-white px-4 text-lg text-ink ring-1 ring-black/15 outline-none focus:ring-accent"
+          />
+        </label>
+        {searching && (
+          <p className="mt-3 text-base text-gray-700" aria-live="polite">
+            {shown.length === 0
+              ? 'No ministry here matches that. Try a broader word, or a region instead of a town.'
+              : `${shown.length} ${shown.length === 1 ? 'ministry matches' : 'ministries match'} ${search.understood.join(' + ')}${
+                  search.partial ? ' — none matched every word, so these matched the most' : ''
+                }. Best match first.`}
+          </p>
+        )}
+
+        <div className="mt-5 flex flex-wrap gap-6">
           <label className="text-base text-gray-700">
             <span className="mr-2">Cause</span>
             <select
@@ -135,8 +160,8 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
 
         {sort === 'cost' && (
           <p className="measure mt-4 rounded-lg bg-flag-soft px-4 py-3 text-base text-flag">
-            A Bible and a surgery are not the same purchase. This order is only meaningful inside one
-            cause type — filter first, then compare.
+            A Bible and a surgery are not the same purchase. This order is only meaningful inside
+            one cause type — filter first, then compare.
           </p>
         )}
       </div>

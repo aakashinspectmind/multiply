@@ -51,6 +51,28 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
        * furniture.
        */}
       <div className="rounded-xl border border-black/10 bg-white p-6 shadow-sm sm:p-7">
+        <div className="mb-7">
+          <label className="block">
+            <span className="text-lg font-semibold">Find a cause</span>
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="clean water in Africa, orphans in Uganda, persecuted Christians…"
+              className="mt-2 min-h-[44px] w-full rounded-lg bg-white px-4 text-lg text-ink ring-1 ring-black/15 outline-none focus:ring-accent"
+            />
+          </label>
+          {searching && (
+            <p className="mt-3 text-base text-gray-700" aria-live="polite">
+              {shown.length === 0
+                ? 'No ministry here matches that. Try a broader word, or a region instead of a town.'
+                : `${shown.length} ${shown.length === 1 ? 'ministry matches' : 'ministries match'} ${search.understood.join(' + ')}${
+                    search.partial ? ' — none matched every word, so these matched the most' : ''
+                  }. Best match first.`}
+            </p>
+          )}
+        </div>
+
         <fieldset>
           <legend className="text-lg font-semibold">I want to give</legend>
           <div className="mt-3 flex flex-wrap gap-2">
@@ -101,31 +123,12 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
           )}
         </fieldset>
 
-        <GiftBoard causes={causes} amount={amount} />
+        {/* The board ranks every category; mid-search it would bury the results. */}
+        {!searching && <GiftBoard causes={causes} amount={amount} />}
       </div>
 
       <div className="mt-10 border-b border-black/10 pb-4">
-        <label className="block">
-          <span className="text-lg font-semibold">Find a cause</span>
-          <input
-            type="search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="clean water in Africa, orphans in Uganda, persecuted Christians…"
-            className="mt-2 min-h-[44px] w-full rounded-lg bg-white px-4 text-lg text-ink ring-1 ring-black/15 outline-none focus:ring-accent"
-          />
-        </label>
-        {searching && (
-          <p className="mt-3 text-base text-gray-700" aria-live="polite">
-            {shown.length === 0
-              ? 'No ministry here matches that. Try a broader word, or a region instead of a town.'
-              : `${shown.length} ${shown.length === 1 ? 'ministry matches' : 'ministries match'} ${search.understood.join(' + ')}${
-                  search.partial ? ' — none matched every word, so these matched the most' : ''
-                }. Best match first.`}
-          </p>
-        )}
-
-        <div className="mt-5 flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-6">
           <label className="text-base text-gray-700">
             <span className="mr-2">Cause</span>
             <select

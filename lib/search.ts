@@ -335,7 +335,10 @@ const REGIONS: { phrases: string[]; countries: string[] }[] = [
 const WEIGHTS = { name: 5, category: 4, place: 4, tagline: 3, body: 1 } as const;
 
 function normalize(text: string): string {
-  return text.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  return text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
 }
 
 /**
@@ -445,12 +448,8 @@ export type SearchResult = {
   partial: boolean;
 };
 
-export function searchCauses(causes: Cause[], query: string): SearchResult {
-  const terms = parseQuery(query);
-  const understood = terms.map((t) => t.text);
-  if (terms.length === 0) return { causes, understood, partial: false };
-
-  const scored = causes.map(index).map((entry, order) => {
+function scoreAll(causes: Cause[], terms: Term[]) {
+  return causes.map(index).map((entry, order) => {
     const scores = terms.map((term) => termScore(term, entry));
     return {
       cause: entry.cause,
@@ -459,6 +458,25 @@ export function searchCauses(causes: Cause[], query: string): SearchResult {
       score: scores.reduce((sum, s) => sum + s, 0),
     };
   });
+}
+
+/**
+ * The share of the query's parts each cause matched by word, 0 to 1. The
+ * meaning-based search leans on this a little, so that "jobs" still reaches
+ * the livelihood ministries when the model is unsure.
+ */
+export function keywordCoverage(causes: Cause[], query: string): Map<string, number> {
+  const terms = parseQuery(query);
+  if (terms.length === 0) return new Map();
+  return new Map(scoreAll(causes, terms).map((s) => [s.cause.slug, s.matched / terms.length]));
+}
+
+export function searchCauses(causes: Cause[], query: string): SearchResult {
+  const terms = parseQuery(query);
+  const understood = terms.map((t) => t.text);
+  if (terms.length === 0) return { causes, understood, partial: false };
+
+  const scored = scoreAll(causes, terms);
 
   const best = Math.max(...scored.map((s) => s.matched));
   if (best === 0) return { causes: [], understood, partial: false };

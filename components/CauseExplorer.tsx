@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { CauseCard } from './CauseCard';
 import { GiftBoard } from './GiftBoard';
+import { useMeaningSearch } from './useMeaningSearch';
 import {
   DEFAULT_AMOUNT,
   GIFT_AMOUNTS,
@@ -35,13 +36,36 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
     [causes],
   );
 
-  // Search runs last so the chosen order breaks ties between equally good matches.
-  const search = useMemo(() => {
-    const filtered = category === 'all' ? causes : causes.filter((c) => c.category === category);
-    return searchCauses(sortCauses(filtered, sort), query);
-  }, [causes, category, sort, query]);
-  const shown = search.causes;
-  const searching = search.understood.length > 0;
+  const filtered = useMemo(
+    () =>
+      sortCauses(category === 'all' ? causes : causes.filter((c) => c.category === category), sort),
+    [causes, category, sort],
+  );
+
+  // Word matching answers instantly; matching by meaning takes over once its
+  // model has loaded, and word matching stays if the model never does. Both
+  // run after sorting, so the chosen order breaks ties.
+  const keyword = useMemo(() => searchCauses(filtered, query), [filtered, query]);
+  const meaning = useMeaningSearch(filtered, query);
+  const searching = query.trim() !== '';
+  const byMeaning = meaning.status === 'ready' && meaning.query === query.trim();
+  const shown = !searching ? filtered : byMeaning ? meaning.causes : keyword.causes;
+
+  let status = '';
+  if (byMeaning) {
+    status =
+      shown.length === 0
+        ? 'Nothing here is close to that. Try describing the work, the people or the place.'
+        : `${shown.length} ${shown.length === 1 ? 'ministry' : 'ministries'} closest to what you described, closest first.`;
+  } else if (searching) {
+    status =
+      shown.length === 0
+        ? 'No ministry here matches those words.'
+        : `${shown.length} ${shown.length === 1 ? 'ministry matches' : 'ministries match'} ${keyword.understood.join(' + ')}${
+            keyword.partial ? ' — none matched every word, so these matched the most' : ''
+          }.`;
+    if (meaning.status === 'loading') status += ' Loading search by meaning…';
+  }
 
   return (
     <div>
@@ -58,17 +82,13 @@ export function CauseExplorer({ causes }: { causes: Cause[] }) {
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="clean water in Africa, orphans in Uganda, persecuted Christians…"
+              placeholder="Describe what you care about — e.g. give kids in Africa a future"
               className="mt-2 min-h-[44px] w-full rounded-lg bg-white px-4 text-lg text-ink ring-1 ring-black/15 outline-none focus:ring-accent"
             />
           </label>
           {searching && (
             <p className="mt-3 text-base text-gray-700" aria-live="polite">
-              {shown.length === 0
-                ? 'No ministry here matches that. Try a broader word, or a region instead of a town.'
-                : `${shown.length} ${shown.length === 1 ? 'ministry matches' : 'ministries match'} ${search.understood.join(' + ')}${
-                    search.partial ? ' — none matched every word, so these matched the most' : ''
-                  }. Best match first.`}
+              {status}
             </p>
           )}
         </div>
